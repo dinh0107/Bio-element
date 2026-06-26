@@ -1,0 +1,486 @@
+// ─── Shared UI components (dùng lại trên toàn site) ─────────────
+
+// Layout
+.bio-section {
+    padding: 64px $section-pad-x;
+
+    @include maxWidth(991px) {
+        padding: 48px 20px;
+    }
+}
+
+// Typography
+.bio-title {
+    margin: 0;
+    @include CormorantSemiBold;
+    font-size: 34px;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: $bio-blue-500;
+
+    &--center {
+        text-align: center;
+    }
+
+    &--brown span:last-child {
+        color: $bio-brown;
+    }
+}
+
+.bio-title-display {
+    margin: 0;
+    @include CormorantSemiBold;
+    font-size: 30px;
+    line-height: 38px;
+    text-transform: uppercase;
+}
+
+// Pill buttons
+.bio-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 46px;
+    padding: 10px 24px;
+    border: 1px solid transparent;
+    border-radius: 40px;
+    @include AvertaSemibold;
+    font-size: 18px;
+    line-height: 26px;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+
+    img {
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+    }
+
+    &:hover,
+    &:focus-visible {
+        text-decoration: none;
+        transform: translateY(-1px);
+    }
+
+  &--primary {
+        background: $white;
+        color: $bio-blue;
+        border-color: $white;
+
+        &:hover,
+        &:focus-visible {
+            background: $bio-blue;
+            color: $white;
+            border-color: $bio-blue;
+            img{
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+
+    &--outline-white {
+        background: transparent;
+        color: $white;
+        border-color: $white;
+
+        &:hover,
+        &:focus-visible {
+            background: $bio-blue;
+            color: $white;
+            border-color: $bio-blue;
+            img{
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+
+    &--outline-blue {
+        background: transparent;
+        color: $bio-blue-500;
+        border-color: $bio-blue-500;
+
+        &:hover,
+        &:focus-visible {
+            background: $bio-blue;
+            color: $white;
+            border-color: $bio-blue;
+            img{
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+
+    &--filled {
+        min-height: 40px;
+        padding: 6px 16px;
+        gap: 4px;
+        border: 0;
+        border-radius: 999px;
+        background: $bio-blue-500;
+        color: $white;
+        font-size: 16px;
+        line-height: 24px;
+
+        &:hover,
+        &:focus-visible {
+            background: darken($bio-blue-500, 6%);
+            color: $white;
+        }
+    }
+
+    &--block {
+        width: 100%;
+    }
+
+    &--brown {
+        background: $bio-brown;
+        color: $white;
+        border-color: $bio-brown;
+
+        &:hover,
+        &:focus-visible {
+            background: darken($bio-brown, 6%);
+            border-color: darken($bio-brown, 6%);
+            color: $white;
+        }
+    }
+
+    &--outline-brown {
+        background: transparent;
+        color: $bio-brown;
+        border-color: $bio-brown;
+
+        &:hover,
+        &:focus-visible {
+            background: $bio-brown;
+            color: $white;
+            border-color: $bio-brown;
+        }
+    }
+}
+
+// Expert / author profile row (Figma 736:6890)
+.bio-profile {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    &__avatar {
+        flex-shrink: 0;
+        width: 64px;
+        height: 64px;
+        border: 2px solid $bio-blue-500;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &__meta {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        min-width: 0;
+    }
+
+    &__name {
+        margin: 0;
+        color: $bio-blue-900;
+        @include NotoSerifMedium;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    &__role {
+        margin: 0;
+        color: $bio-blue-900;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+
+// CTA phone form — pill field + inline submit (Figma 962:4620)
+.bio-cta-form {
+    width: 100%;
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    &__label {
+        margin: 0;
+        color: #fafcfd;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+
+        span {
+            color: $bio-red;
+        }
+    }
+
+    &__field {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        height: 48px;
+        padding: 6px 6px 6px 16px;
+        border: 1px solid rgba(183, 206, 218, 0.5);
+        border-radius: 52px;
+    }
+
+    &__input {
+        flex: 1;
+        min-width: 0;
+        height: 100%;
+        border: 0;
+        padding: 0;
+        background: transparent;
+        color: $white;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+        outline: none;
+        box-shadow: none;
+
+        &::placeholder {
+            color: rgba($white, 0.6);
+        }
+    }
+
+    &__submit {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        height: 36px;
+        padding: 6px 16px;
+        border: 0;
+        border-radius: 999px;
+        background: #fafcfd;
+        color: $bio-blue-500;
+        @include AvertaSemibold;
+        font-size: 16px;
+        line-height: 24px;
+        white-space: nowrap;
+        cursor: pointer;
+        flex-shrink: 0;
+        transition: background 0.25s ease;
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+
+        &:hover,
+        &:focus-visible {
+            background: darken(#fafcfd, 4%);
+        }
+    }
+
+    @include maxWidth(575px) {
+        &__field {
+            flex-direction: column;
+            align-items: stretch;
+            height: auto;
+            padding: 12px;
+            border-radius: 16px;
+        }
+
+        &__submit {
+            justify-content: center;
+            width: 100%;
+        }
+    }
+}
+
+
+// Circle arrow (carousel)
+.bio-arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 1px solid $bio-blue-500;
+    border-radius: 40px;
+    background: transparent;
+    cursor: pointer;
+    transition: background 0.25s ease, border-color 0.25s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    img {
+        width: 24px;
+        height: 24px;
+    }
+
+    &:hover,
+    &:focus-visible {
+        background: rgba($bio-blue-500, 0.06);
+    }
+
+    &--prev img {
+        transform: rotate(180deg);
+    }
+}
+
+// Carousel dots (Owl dotsContainer)
+.bio-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    .owl-dot {
+        width: 10px;
+        height: 10px;
+        padding: 0;
+        border: 0;
+        border-radius: 50%;
+        background: rgba($bio-blue-500, 0.25);
+        cursor: pointer;
+        transition: background 0.25s ease;
+
+        &.active {
+            background: $bio-blue-500;
+        }
+
+        span {
+            display: none;
+        }
+    }
+}
+
+// Search pill (header)
+.bio-search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    padding: 8px 16px 8px 8px;
+    border: 1px solid rgba(216, 216, 216, 0.5);
+    border-radius: 40px;
+    background: #f5f5f5;
+    cursor: text;
+    margin: 0;
+
+    img {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+        pointer-events: none;
+    }
+
+    &__input {
+        width: 277px;
+        border: 0;
+        padding: 0;
+        background: transparent;
+        color: $bio-search;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+        outline: none;
+
+        &::placeholder {
+            color: $bio-search;
+        }
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}
+
+// Icon button 24px
+.bio-icon-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+
+    img {
+        display: block;
+        width: 24px;
+        height: 24px;
+    }
+
+    &__badge {
+        position: absolute;
+        top: -8px;
+        right: -9px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 16px;
+        height: 16px;
+        padding: 0 2px;
+        border-radius: 8.5px;
+        background: #b0523b;
+        color: $white;
+        @include AvertaRegular;
+        font-size: 12px;
+        line-height: 16px;
+        box-shadow: 1px 1px 1.5px rgba($black, 0.3);
+    }
+}
+
+// Product badge
+.bio-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    min-height: 28px;
+    padding: 1px 8px;
+    border-radius: 24px;
+    background: $bio-red;
+    color: $white;
+    @include AvertaSemibold;
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    img {
+        width: 12px !important;
+        height: 12px !important;
+    }
+}
+
+// Text link with arrow
+.bio-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: $bio-blue-500;
+    @include AvertaSemibold;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    transition: color 0.25s ease;
+
+    img {
+        width: 16px;
+        height: 16px;
+    }
+
+    &:hover,
+    &:focus-visible {
+        color: $bio-blue;
+        text-decoration: none;
+    }
+}

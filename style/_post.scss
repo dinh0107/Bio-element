@@ -1,0 +1,973 @@
+// Blog post detail (Chi tiết blog)
+
+.post-page {
+    padding: 24px $section-pad-x 56px;
+
+    &__inner {
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+
+    @include maxWidth(991px) {
+        padding: 24px 20px 48px;
+    }
+}
+
+.post-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+
+    &__main {
+        flex: 1 1 auto;
+        min-width: 0;
+        display: flex;
+        gap: 30px;
+    }
+
+    &__toc {
+        flex: 0 0 200px;
+        max-width: 200px;
+        position: sticky;
+        top: 160px;
+        align-self: flex-start;
+
+        #toctoc-head {
+            padding: 8px 0;
+
+            span {
+                @include AvertaSemibold;
+                font-size: 16px;
+                line-height: 24px;
+                text-transform: uppercase;
+                border-bottom: 2px solid #4DBFD9;
+                padding-bottom: 8px;
+            }
+
+            a {
+                display: none;
+            }
+        }
+
+        #toctoc-body {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                display: block;
+                padding: 10px 0;
+                text-decoration: none;
+
+                &:hover,
+                &:focus-visible {
+                    color: $bio-blue-500 !important;
+                    text-decoration: none;
+                }
+
+                &.is-active {
+                    color: $bio-blue-500 !important;
+                }
+            }
+
+            .link {
+                margin: 0;
+                color: inherit;
+                @include AvertaRegular;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+
+    &__sidebar {
+        flex: 0 0 288px;
+        max-width: 288px;
+        position: sticky;
+        top: 120px;
+        align-self: flex-start;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        a.guide-sidebar__product {
+            text-decoration: none;
+            color: inherit;
+
+            &:hover,
+            &:focus-visible {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    }
+
+    @include maxWidth(1199px) {
+        &__main {
+            flex-direction: column;
+        }
+
+        &__toc {
+            flex: 0 0 auto;
+            max-width: none;
+            width: 100%;
+            position: static;
+        }
+    }
+
+    @include maxWidth(991px) {
+        flex-direction: column;
+
+        &__sidebar {
+            flex: 0 0 auto;
+            max-width: none;
+            width: 100%;
+            position: static;
+        }
+    }
+}
+
+.post-article {
+    flex: 1 1 auto;
+    min-width: 0;
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 24px;
+    }
+
+    &__category {
+        margin: 0;
+        color: $bio-blue-500;
+        @include AvertaSemibold;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 1.71px;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        margin: 0;
+        color: $bio-body;
+        @include NotoSerifSemiBold;
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    &__deck {
+        margin: 0;
+        padding: 0 0 0 16px;
+        border-left: 3px solid #4DBFD9;
+        color: $bio-muted;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__divider {
+        margin: 0;
+        border: 0;
+        border-top: 1px solid $bio-border;
+    }
+
+    &__byline {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    &__author {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__avatar {
+        flex: 0 0 40px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: $bio-blue-800;
+        color: $white;
+        @include AvertaSemibold;
+        font-size: 14px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    &__author-name {
+        margin: 0;
+        color: $bio-body;
+        @include AvertaSemibold;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__author-role {
+        margin: 0;
+        color: $bio-muted;
+        @include AvertaRegular;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    &__meta {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    &__meta-item {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        color: $bio-muted;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+
+        i {
+            font-size: 20px;
+            color: $bio-blue-500;
+        }
+    }
+
+    &__dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: $bio-border;
+    }
+
+    &__hero {
+        border-radius: 12px;
+        overflow: hidden;
+        background: $bio-gray-bg;
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+
+    &__body {
+        padding-bottom: 20px;
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+        table{
+            max-width: 100%;
+        };
+    }
+
+    &__text {
+        margin: 0;
+        color: $bio-body;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__heading {
+        margin: 0;
+        color: $bio-body;
+        @include AvertaSemibold;
+        font-size: 18px;
+        line-height: 26px;
+        scroll-margin-top: 120px;
+    }
+
+    &__callout {
+        margin: 0;
+        padding: 16px;
+        border-radius: 8px;
+        background: $bio-blue-900;
+        color: $white;
+    }
+
+    &__callout-label {
+        margin: 0 0 8px;
+        color: $bio-teal;
+        @include AvertaSemibold;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    &__callout-text {
+        margin: 0;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        li {
+            position: relative;
+            padding-left: 16px;
+            color: $bio-body;
+            @include AvertaRegular;
+            font-size: 16px;
+            line-height: 24px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 10px;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background: $bio-blue-500;
+            }
+
+            strong {
+                color: $bio-blue-500;
+                @include AvertaSemibold;
+            }
+        }
+    }
+
+    &__list-title {
+        margin: 0;
+        color: $bio-body;
+        @include AvertaSemibold;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__tags {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 8px 0;
+    }
+
+    &__tags-label {
+        color: $bio-muted;
+        @include AvertaRegular;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    &__tag {
+        display: inline-flex;
+        align-items: center;
+        min-height: 32px;
+        padding: 4px 12px;
+        border-radius: 999px;
+        background: $bio-light-blue;
+        color: $bio-blue-500;
+        @include AvertaRegular;
+        font-size: 14px;
+        line-height: 22px;
+        text-decoration: none;
+
+        &:hover,
+        &:focus-visible {
+            background: darken($bio-light-blue, 4%);
+            color: $bio-blue-500;
+            text-decoration: none;
+        }
+    }
+
+    &__share {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 8px 0;
+        margin-top: 20px;
+    }
+
+    &__share-label {
+        color: $bio-body;
+        @include AvertaSemibold;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__share-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        padding: 0;
+        border: 0;
+        border-radius: 50%;
+        background: $white;
+        color: $bio-blue-500;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background 0.25s ease;
+        padding: 5px;
+        font-size: 12px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+        i {
+            font-size: 14px;
+        }
+
+        &--zalo img {
+            display: block;
+        }
+
+        &:hover,
+        &:focus-visible {
+            background: darken($bio-light-blue, 6%);
+        }
+    }
+
+    &__author-card {
+        margin-top: 8px;
+        padding: 24px;
+        border-radius: 12px;
+        border: 0.5px dashed #0C608F;
+        background: #f2f8ff;
+    }
+
+    &__author-card-head {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+        margin-bottom: 16px;
+    }
+
+    &__author-card-avatar {
+        flex: 0 0 64px;
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background: $bio-blue-800;
+        color: $white;
+        @include AvertaSemibold;
+        font-size: 20px;
+        line-height: 64px;
+        text-align: center;
+    }
+
+    &__author-card-label {
+        margin: 0 0 4px;
+        color: $bio-teal;
+        @include AvertaSemibold;
+        font-size: 14px;
+        line-height: 22px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    &__author-card-name {
+        margin: 0;
+        color: $bio-body;
+        @include NotoSerifSemiBold;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    &__author-card-role {
+        margin: 0;
+        color: $bio-muted;
+        @include AvertaRegular;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    &__author-card-desc {
+        margin: 0 0 16px;
+        color: $bio-body;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__author-card-stats {
+        display: flex;
+        gap: 24px;
+        margin-bottom: 16px;
+        padding: 8px 0;
+    }
+
+    &__author-card-stat {
+        flex: 1 1 0;
+        min-width: 0;
+
+        strong {
+            display: block;
+            color: $bio-blue-500;
+            @include AvertaSemibold;
+            font-size: 22px;
+            line-height: 30px;
+        }
+
+        span {
+            display: block;
+            color: $bio-muted;
+            @include AvertaRegular;
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+
+    &__author-card-link {
+        color: $bio-blue-500;
+        @include AvertaSemibold;
+        font-size: 16px;
+        line-height: 24px;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+
+        &:hover,
+        &:focus-visible {
+            color: darken($bio-blue-500, 8%);
+        }
+    }
+
+    @include maxWidth(767px) {
+        &__title {
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        &__author-card-stats {
+            flex-direction: column;
+            gap: 12px;
+        }
+    }
+}
+.guide-article--featured{
+    .article-date{
+        color: $white;
+    }
+}
+.article-date{
+    color: #6F767C;
+    @include AvertaRegular;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    img{
+        width: 20px;
+        height: 20px;
+    }
+}
+.post-related {
+    padding: 56px 0;
+    background: $bio-light-blue-2;
+
+    &__inner {
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    &__title {
+        @extend .bio-title;
+        text-align: center;
+    }
+
+    &__slider {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        width: 100%;
+    }
+
+    &__track {
+        width: 100%;
+
+        &.owl-carousel {
+            .owl-stage-outer {
+                overflow: hidden;
+            }
+
+            .owl-item {
+                float: left;
+            }
+
+            .owl-nav,
+            .owl-dots {
+                display: none;
+            }
+        }
+    }
+
+    &__dots {
+        @extend .bio-dots;
+    }
+
+    @include maxWidth(991px) {
+        padding: 48px 20px 56px;
+    }
+}
+
+.post-comments {
+    padding: 56px $section-pad-x 80px;
+
+    &__inner {
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    &__title {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0;
+        @extend .bio-title;
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    &__count {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 32px;
+        height: 28px;
+        padding: 0 8px;
+        border-radius: 6px;
+        background: $bio-blue-500;
+        color: $white;
+        @include AvertaSemibold;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    &__sort {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0;
+        color: $bio-muted;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__sort-wrap {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    &__sort-select {
+        appearance: none;
+        border: 0;
+        background: transparent;
+        color: $bio-body;
+        @include AvertaSemibold;
+        font-size: 16px;
+        line-height: 24px;
+        padding-right: 20px;
+        cursor: pointer;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__sort-caret {
+        position: absolute;
+        right: 0;
+        pointer-events: none;
+        font-size: 12px;
+        color: $bio-body;
+    }
+
+    &__form {
+        padding: 16px;
+        border-radius: 12px;
+        background: $bio-light-blue-2;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__form-title {
+        margin: 0;
+        color: $bio-body;
+        @include AvertaSemibold;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__form-sub {
+        margin: 0;
+        color: $bio-muted;
+        @include AvertaRegular;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    &__form-row {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    &__field {
+        display: block;
+        margin: 0;
+
+        input,
+        textarea {
+            width: 100%;
+            min-height: 44px;
+            padding: 10px 16px;
+            border: 1px solid $bio-border;
+            border-radius: 8px;
+            background: $white;
+            color: $bio-body;
+            @include AvertaRegular;
+            font-size: 16px;
+            line-height: 24px;
+
+            &::placeholder {
+                color: $bio-muted;
+            }
+
+            &:focus {
+                outline: none;
+                border-color: $bio-blue-500;
+            }
+        }
+
+        textarea {
+            min-height: 80px;
+            resize: vertical;
+        }
+
+        &--area {
+            width: 100%;
+        }
+    }
+
+    &__form-foot {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    &__rules {
+        margin: 0;
+        color: $bio-muted;
+        @include AvertaRegular;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    &__submit {
+        min-width: 180px;
+        min-height: 44px;
+        padding: 9px 32px;
+        border: 0;
+        border-radius: 999px;
+        background: $bio-blue-500;
+        color: $white;
+        @include AvertaSemibold;
+        font-size: 16px;
+        line-height: 24px;
+        cursor: pointer;
+        transition: background 0.25s ease;
+
+        &:hover,
+        &:focus-visible {
+            background: darken($bio-blue-500, 6%);
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__thread {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__reply {
+        padding-left: 32px;
+        border-left: 2px solid #4DBFD9;
+    }
+
+    &__divider {
+        margin: 0;
+        border: 0;
+        border-top: 1px dashed $bio-border;
+    }
+
+    @include maxWidth(767px) {
+        padding: 48px 20px 64px;
+
+        &__form-row {
+            grid-template-columns: 1fr;
+        }
+
+        &__reply {
+            padding-left: 16px;
+        }
+    }
+}
+
+.post-comment {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+
+    &__top {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    &__avatar {
+        flex: 0 0 38px;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background: $bio-light-blue;
+        color: $bio-blue-500;
+        @include AvertaSemibold;
+        font-size: 13px;
+        line-height: 38px;
+        text-align: center;
+
+        &--expert {
+            background: $bio-blue-800;
+            color: $white;
+        }
+    }
+
+    &__name-row {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    &__name {
+        margin: 0;
+        color: $bio-body;
+        @include AvertaSemibold;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__badge {
+        display: inline-flex;
+        align-items: center;
+        min-height: 22px;
+        padding: 2px 12px;
+        border-radius: 999px;
+        background: $bio-blue-500;
+        color: $white;
+        @include AvertaRegular;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    &__date {
+        margin: 0;
+        color: $bio-muted;
+        @include AvertaRegular;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    &__text {
+        margin: 0;
+        color: $bio-body;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+
+        a {
+            color: $bio-blue-500;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+
+            &:hover,
+            &:focus-visible {
+                color: darken($bio-blue-500, 8%);
+            }
+        }
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        flex-wrap: wrap;
+    }
+
+    &__action {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        color: $bio-muted;
+        @include AvertaRegular;
+        font-size: 14px;
+        line-height: 16px;
+        cursor: pointer;
+
+        i {
+            font-size: 16px;
+        }
+
+        strong {
+            @include AvertaSemibold;
+            font-weight: 600;
+        }
+
+        &.is-active,
+        &:hover,
+        &:focus-visible {
+            color: $bio-blue-500;
+        }
+    }
+}

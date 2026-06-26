@@ -1,0 +1,37 @@
+// Bootstrap 4.6.x overrides — loaded after vendor/bootstrap CSS
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: $container-max;
+    }
+}
+
+// Reset Bootstrap defaults that conflict with Figma design
+.btn:focus,
+.btn.focus,
+.form-control:focus {
+    box-shadow: none;
+}
+
+.hero-slider__btn.btn {
+    border: 1px solid transparent;
+    line-height: 26px;
+
+    &:hover,
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.home-cta__input.form-control {
+    height: auto;
+    border: 0;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+
+    &:focus {
+        background: transparent;
+        border-color: transparent;
+    }
+}

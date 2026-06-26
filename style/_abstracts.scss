@@ -1,0 +1,198 @@
+$bio-blue: #176189;
+$bio-blue-500: #0c608f;
+$bio-blue-800: #0d354b;
+$bio-blue-900: #0a293a;
+$bio-teal: #4dbfd9;
+$bio-teal-light: #4bd9f9;
+$bio-brown: #4e2921;
+$bio-red: #b33a1b;
+$bio-nav: #2c739d;
+$bio-topbar: #2f394b;
+$bio-gray-bg: #f0f0f0;
+$bio-light-blue: #e9f3fb;
+$bio-light-blue-2: #e8f2f8;
+$bio-border: #dce5ee;
+$bio-footer: #293243;
+$bio-body: #020d12;
+$bio-muted: #6f767c;
+$bio-search: rgba(12, 68, 118, 0.6);
+$white: #ffffff;
+$black: #121212;
+$text-muted:#6F767C;
+
+$container-max: 1200px;
+$container-pad: 15px;
+$section-pad-x: 60px;
+
+@font-face {
+    font-family: 'Averta-Regular';
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+    src: url('../webfonts/Averta-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Averta-Semibold';
+    font-display: swap;
+    font-weight: 600;
+    font-style: normal;
+    src: url('../webfonts/Averta-Semibold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Averta-Bold';
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+    src: url('../webfonts/Averta-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Averta-ExtraBold';
+    font-display: swap;
+    font-weight: 800;
+    font-style: normal;
+    src: url('../webfonts/Averta-ExtraBold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Cormorant-Regular';
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+    src: url('../webfonts/Cormorant-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cormorant-Medium';
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal;
+    src: url('../webfonts/Cormorant-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cormorant-SemiBold';
+    font-display: swap;
+    font-weight: 600;
+    font-style: normal;
+    src: url('../webfonts/Cormorant-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cormorant-Bold';
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+    src: url('../webfonts/Cormorant-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NotoSerif-Regular';
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+    src: url('../webfonts/NotoSerif-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NotoSerif-Medium';
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal;
+    src: url('../webfonts/NotoSerif-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NotoSerif-SemiBold';
+    font-display: swap;
+    font-weight: 600;
+    font-style: normal;
+    src: url('../webfonts/NotoSerif-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NotoSerif-Bold';
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+    src: url('../webfonts/NotoSerif-Bold.ttf') format('truetype');
+}
+
+@mixin AvertaRegular {
+    font-family: 'Averta-Regular', sans-serif;
+}
+
+@mixin AvertaSemibold {
+    font-family: 'Averta-Semibold', sans-serif;
+}
+
+@mixin AvertaBold {
+    font-family: 'Averta-Bold', sans-serif;
+}
+
+@mixin AvertaExtraBold {
+    font-family: 'Averta-ExtraBold', sans-serif;
+}
+
+@mixin CormorantRegular {
+    font-family: 'Cormorant-Regular', serif;
+}
+
+@mixin CormorantMedium {
+    font-family: 'Cormorant-Medium', serif;
+}
+
+@mixin CormorantSemiBold {
+    font-family: 'Cormorant-SemiBold', serif;
+}
+
+@mixin CormorantBold {
+    font-family: 'Cormorant-Bold', serif;
+}
+
+@mixin NotoSerifRegular {
+    font-family: 'NotoSerif-Regular', serif;
+}
+
+@mixin NotoSerifMedium {
+    font-family: 'NotoSerif-Medium', serif;
+}
+
+@mixin NotoSerifSemiBold {
+    font-family: 'NotoSerif-SemiBold', serif;
+}
+
+@mixin NotoSerifBold {
+    font-family: 'NotoSerif-Bold', serif;
+}
+
+@mixin Regular {
+    @include AvertaRegular;
+}
+
+@mixin Medium {
+    @include AvertaSemibold;
+}
+
+@mixin SemiBold {
+    @include AvertaSemibold;
+}
+
+@mixin Bold {
+    @include AvertaBold;
+}
+
+@mixin maxWidth($width) {
+    @media (max-width: $width) {
+        @content;
+    }
+}
+
+@mixin line-clamp($value) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: $value;
+}

@@ -1,0 +1,208 @@
+// ─── Policy / legal pages (Figma 439:833) ────────────────────────
+
+.policy-page {
+    padding: 32px $section-pad-x 88px;
+
+    @include maxWidth(991px) {
+        padding: 24px 20px 64px;
+    }
+}
+
+.policy-doc {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    color: #020d12;
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        text-align: center;
+    }
+
+    &__title {
+        margin: 0;
+        @include CormorantSemiBold;
+        font-size: 34px;
+        line-height: 42px;
+        text-transform: uppercase;
+        color: #020d12;
+    }
+
+    &__subtitle {
+        margin: 0;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+        font-style: italic;
+    }
+
+    &__intro {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        p {
+            margin: 0;
+            @include AvertaRegular;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    &__section {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__heading {
+        margin: 0;
+        @include AvertaBold;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    &__subheading {
+        margin: 0;
+        @include AvertaSemibold;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    &__text {
+        margin: 0;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__list {
+        margin: 0;
+        padding-left: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+
+        li {
+            list-style: disc;
+        }
+
+        strong {
+            @include AvertaSemibold;
+        }
+
+        &--links {
+            @include AvertaSemibold;
+            color: $bio-blue-500;
+
+            a {
+                color: inherit;
+                text-decoration: none;
+
+                &:hover,
+                &:focus-visible {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    &__note {
+        margin: 0;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+
+        strong {
+            @include AvertaBold;
+            color: $bio-blue-500;
+        }
+
+        em {
+            font-style: italic;
+        }
+    }
+
+    &__footer-note {
+        margin: 0;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+        font-style: italic;
+
+        &--blue {
+            color: $bio-blue-500;
+        }
+    }
+
+    &__link {
+        @include AvertaSemibold;
+        color: $bio-blue-500;
+        text-decoration: none;
+
+        &:hover,
+        &:focus-visible {
+            color: darken($bio-blue-500, 6%);
+            text-decoration: underline;
+        }
+    }
+}
+
+.policy-table-wrap {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.policy-table {
+    width: 100%;
+    min-width: 640px;
+    border-collapse: collapse;
+
+    th,
+    td {
+        border: 1px solid #ced7df;
+        padding: 12px 24px;
+        vertical-align: top;
+        text-align: left;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+        color: #020d12;
+    }
+
+    th,
+    &__term {
+        @include AvertaSemibold;
+        white-space: nowrap;
+    }
+
+    &__col-term {
+        width: 330px;
+    }
+
+    &--compare {
+        th {
+            width: 50%;
+        }
+    }
+
+    &--cols-3 {
+        th,
+        td {
+            width: 33.33%;
+        }
+    }
+
+    &__value {
+        @include AvertaSemibold;
+        color: $bio-blue-500;
+    }
+}

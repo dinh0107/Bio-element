@@ -1,0 +1,958 @@
+// ─── About page ───────────────────────────────
+
+
+.about-hero {
+    position: relative;
+    padding: 0 $section-pad-x 32px;
+    color: $white;
+    overflow: hidden;
+
+    &__media {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            display: block;
+            height: auto;
+        }
+    }
+
+    &__video {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background: linear-gradient(180deg,
+                rgba(8, 39, 59, 0) 54.92%,
+                rgba(8, 39, 59, 0.9) 87.82%,
+                #08273b 100%);
+        pointer-events: none;
+    }
+
+    &__inner {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 112px;
+        min-height: 600px;
+        max-width: 1220px;
+        margin: 0 auto;
+        padding-top: 120px;
+    }
+
+    &__headline {
+        flex: 0 1 597px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 0 4px 10px rgba($black, 0.2);
+    }
+
+    &__eyebrow {
+        margin: 0;
+        @include AvertaSemibold;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0.4px;
+    }
+
+    &__title {
+        margin: 0;
+        @include AvertaExtraBold;
+        font-size: 42px;
+        line-height: 52px;
+    }
+
+    &__subtitle {
+        margin: 0;
+        @include AvertaSemibold;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0.6px;
+        white-space: nowrap;
+        padding-bottom: 50px;
+    }
+
+    &__side {
+        flex: 0 1 596px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        justify-content: center;
+    }
+
+    &__desc {
+        margin: 0;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: justify;
+    }
+
+    &__actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    &__btn {
+        @extend .bio-btn;
+    }
+
+    @include maxWidth(1199px) {
+        &__inner {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 40px;
+            padding-top: 80px;
+        }
+
+        &__headline,
+        &__side {
+            flex: 1 1 auto;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        &__headline {
+            align-items: flex-start;
+            text-align: left;
+        }
+    }
+
+    @include maxWidth(767px) {
+        min-height: auto;
+        padding: 0 20px 32px;
+
+        &__inner {
+            min-height: 520px;
+            padding-top: 48px;
+        }
+
+        &__title {
+            font-size: 32px;
+            line-height: 40px;
+        }
+    }
+}
+
+.about-why {
+    padding: 88px $section-pad-x;
+    background: $white;
+    border-bottom: 1px solid $bio-light-blue;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        margin: 0;
+        color: $bio-blue-500;
+        @include CormorantSemiBold;
+        font-size: 34px;
+        line-height: 42px;
+        text-align: center;
+        text-transform: uppercase;
+
+        span {
+            color: $bio-brown;
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 30px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        text-align: center;
+
+        &:hover {
+            img {
+                border: 1px solid $bio-blue-500;
+                transform: scale(1.06);
+            }
+        }
+    }
+
+    &__icon {
+        width: 212px;
+        height: 212px;
+        border-radius: 50%;
+        transition: all .5s ease-in-out;
+        border: 1px solid transparent;
+    }
+
+    &__label {
+        margin: 0;
+        color: $bio-blue-900;
+        @include NotoSerifMedium;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    @include maxWidth(991px) {
+        padding: 64px 20px;
+
+        &__grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+
+    @include maxWidth(575px) {
+        &__grid {
+            grid-template-columns: 1fr;
+        }
+
+        &__icon {
+            width: 180px;
+            height: 180px;
+        }
+    }
+}
+.why-professional {
+    border-bottom: 1px solid #E9F2F8;
+    background: #F4F8FC;
+    padding: 30px 0;
+}
+.about-journey {
+    position: relative;
+    padding: 64px $section-pad-x 88px;
+    background: $white;
+    border-bottom: 1px solid $bio-light-blue;
+    overflow: hidden;
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+    }
+
+    &::before {
+        background: url('../images/about/journey-texture.jpg') center / cover no-repeat;
+        opacity: 0.4;
+    }
+
+    &::after {
+        background: url('../images/about/journey-texture-2.jpg') center / cover no-repeat;
+        opacity: 0.1;
+    }
+
+    &__deco {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        width: 100%;
+        max-width: 253px;
+        height: auto;
+        mix-blend-mode: multiply;
+        pointer-events: none;
+        transform: rotateY(180deg);
+    }
+
+    &__inner {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 72px;
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        margin: 0 auto;
+        max-width: 962px;
+        color: $bio-blue-500;
+        @include CormorantSemiBold;
+        font-size: 34px;
+        line-height: 42px;
+        text-align: center;
+        text-transform: uppercase;
+
+        span {
+            color: $bio-brown;
+        }
+    }
+
+    &__story {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px;
+        align-items: center;
+
+        &--reverse {
+            .about-journey__visual {
+                order: 2;
+            }
+
+            .about-journey__content {
+                order: 1;
+                padding-left: 0;
+                padding-right: 32px;
+            }
+        }
+    }
+
+    &__visual {
+        position: relative;
+        border-radius: 16px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg,
+                    rgba(8, 39, 59, 0) 54.92%,
+                    rgba(8, 39, 59, 0.6) 87.82%,
+                    #08273b 100%);
+        }
+    }
+
+    &__caption {
+        position: absolute;
+        left: 24px;
+        bottom: 16px;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        color: $white;
+    }
+
+    &__caption-name {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 0;
+        @include NotoSerifMedium;
+        font-size: 18px;
+        line-height: 26px;
+
+        &::before {
+            content: '';
+            width: 40px;
+            height: 1px;
+            background: $white;
+        }
+    }
+
+    &__caption-role {
+        margin: 0;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding-left: 32px;
+    }
+
+    &__eyebrow {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 0;
+        color: $bio-blue-900;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+
+        &::before {
+            content: '';
+            width: 40px;
+            height: 1px;
+            background: $bio-blue-500;
+        }
+    }
+
+    &__heading {
+        margin: 0;
+        color: $bio-blue-500;
+        @include CormorantSemiBold;
+        font-size: 28px;
+        line-height: 36px;
+        text-transform: uppercase;
+
+        span {
+            color: $bio-brown;
+        }
+    }
+
+    &__text {
+        margin: 0;
+        color: $bio-body;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: justify;
+
+        strong {
+            @include AvertaSemibold;
+        }
+    }
+
+    @include maxWidth(991px) {
+        padding: 48px 20px 64px;
+
+        &__story,
+        &__story--reverse {
+            grid-template-columns: 1fr;
+
+            .about-journey__visual,
+            .about-journey__content {
+                order: initial;
+                padding: 0;
+            }
+        }
+    }
+}
+
+.about-hybrid {
+    position: relative;
+    padding: 0 0 88px;
+    background: $white;
+    overflow: hidden;
+
+    &__banner {
+        position: relative;
+        min-height: 322px;
+        padding: 64px $section-pad-x 0;
+
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url('../images/about/hybrid-banner.jpg') center / cover no-repeat;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(2, 26, 45, 0.5);
+        }
+    }
+
+    &__banner-inner {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 40px;
+        max-width: 1170px;
+        margin: 0 auto;
+        color: $white;
+    }
+
+    &__title {
+        margin: 0;
+        @include CormorantSemiBold;
+        font-size: 34px;
+        line-height: 42px;
+        text-transform: uppercase;
+    }
+
+    &__lead {
+        margin: 0;
+        max-width: 570px;
+        @include AvertaSemibold;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    &__body {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        margin: -120px auto 0;
+        padding: 0 $section-pad-x;
+    }
+
+    &__cards {
+        width: 100%;
+        padding: 32px 40px;
+        border-radius: 16px;
+        background: $white;
+        box-shadow: 0 4px 10px rgba($bio-blue-500, 0.15);
+    }
+
+    &__cards-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 30px;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        padding: 0 32px;
+        text-align: center;
+    }
+
+    &__card-icon {
+        display: block;
+    }
+
+    &__card-title {
+        margin: 0;
+        color: $bio-body;
+        @include NotoSerifSemiBold;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    &__card-desc {
+        margin: 0;
+        color: $bio-body;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__quote {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        align-items: start;
+        gap: 50px;
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    &__quote-main {
+        position: relative;
+        padding-top: 56px;
+    }
+
+    &__quote-mark {
+        display: block;
+        width: 100%;
+        max-width: 72px;
+        height: auto;
+    }
+
+    &__quote-text {
+        margin: 52px auto 0;
+        max-width: 522px;
+        color: $bio-blue-500;
+        @include AvertaBold;
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    &__quote-visual {
+        position: relative;
+        width: 100%;
+    }
+
+    &__quote-figure {
+        width: 100%;
+    }
+
+    &__quote-photo {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    &__quote-profile {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        min-height: 72px;
+        padding: 8px 16px;
+        border-radius: 16px;
+        background: #b7d6f3;
+        box-shadow: 0 2px 5px rgba($black, 0.1);
+    }
+
+    &__quote-profile-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__quote-avatar {
+        flex-shrink: 0;
+        display: block;
+        border-radius: 50%;
+    }
+
+    &__quote-name {
+        margin: 0;
+        color: $bio-blue-900;
+        @include NotoSerifMedium;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__quote-role {
+        margin: 0;
+        color: $bio-muted;
+        @include AvertaRegular;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    @include maxWidth(991px) {
+        &__banner {
+            padding: 48px 20px 0;
+        }
+
+        &__banner-inner {
+            flex-direction: column;
+        }
+
+        &__body {
+            margin-top: -80px;
+            padding: 0 20px;
+        }
+
+        &__cards-grid {
+            grid-template-columns: 1fr;
+        }
+
+        &__quote {
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
+
+        &__quote-main {
+            padding-top: 0;
+        }
+
+        &__quote-text {
+            margin-top: 24px;
+            font-size: 26px;
+            line-height: 34px;
+        }
+
+        &__quote-visual {
+            margin: 0 auto;
+        }
+
+        &__quote-profile {
+            max-width: calc(100% - 24px);
+        }
+    }
+}
+
+.about-therapy {
+    background: $white;
+    height: 720px;
+
+    &__panel {
+        position: relative;
+        padding: 64px 60px;
+        color: $white;
+        overflow: hidden;
+
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: #432620 url('../images/about/therapy-bg.jpg') center / cover no-repeat;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(208.72deg, rgba(12, 68, 118, 1) 3.84%, rgba(12, 68, 118, 0) 50.41%);
+        }
+    }
+
+    &__panel-inner {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        margin: 0;
+        @include CormorantSemiBold;
+        font-size: 34px;
+        line-height: 42px;
+        text-transform: uppercase;
+    }
+
+    &__icons {
+        min-height: 404px;
+        gap: 58px;
+    }
+
+    &__icon-wrap {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 96px;
+        height: 96px;
+        border: 1px solid rgba($white, 0.35);
+        border-radius: 50%;
+
+        img {
+            display: block;
+        }
+    }
+
+    &__step-num {
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: $bio-red;
+        color: $white;
+        @include NotoSerifSemiBold;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        min-height: 96px;
+        justify-content: center;
+        padding-bottom: 24px;
+        border-bottom: 1px dashed rgba($white, 0.2);
+
+        &:last-child {
+            border-bottom: 0;
+            padding-bottom: 0;
+        }
+    }
+
+    &__item-title {
+        margin: 0;
+        @include AvertaSemibold;
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    &__item-desc {
+        margin: 0;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__visual {
+        position: relative;
+        overflow: hidden;
+
+        img.about-therapy__model {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &__watermark {
+        position: absolute;
+        top: 36px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: min(703px, 90%);
+        height: auto;
+        opacity: 0.9;
+        pointer-events: none;
+    }
+
+    @include maxWidth(991px) {
+        &__panel {
+            padding: 48px 20px;
+        }
+
+        &__icons {
+            min-height: auto;
+            gap: 24px;
+        }
+    }
+}
+
+.about-partners {
+    padding: 88px $section-pad-x 64px;
+    background: $white;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        margin: 0;
+        color: $bio-blue-500;
+        @include CormorantSemiBold;
+        font-size: 34px;
+        line-height: 42px;
+        text-align: center;
+        text-transform: uppercase;
+
+        span {
+            color: $bio-brown;
+        }
+    }
+
+    &__logos {
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        overflow: hidden;
+        -webkit-mask-image: linear-gradient(90deg, transparent, $black 6%, $black 94%, transparent);
+        mask-image: linear-gradient(90deg, transparent, $black 6%, $black 94%, transparent);
+
+        &:hover .about-partners__logos-track {
+            animation-play-state: paused;
+        }
+    }
+
+    &__logos-track {
+        display: flex;
+        width: max-content;
+        animation: about-partners-logos-marquee 40s linear infinite;
+
+        @media (prefers-reduced-motion: reduce) {
+            animation: none;
+        }
+    }
+
+    &__logos-group {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        padding-right: 32px;
+    }
+
+    &__logo {
+        display: block;
+        flex-shrink: 0;
+        width: 124px;
+        height: auto;
+        border-radius: 8px;
+        background: $white;
+    }
+
+    &__slider {
+        gap: 24px;
+        width: 100%;
+    }
+
+    &__track {
+        width: 100%;
+
+        &.owl-carousel {
+            .owl-stage-outer {
+                overflow: hidden;
+            }
+
+            .owl-item {
+                float: left;
+            }
+
+            .owl-nav,
+            .owl-dots {
+                display: none;
+            }
+        }
+    }
+
+    &__dots {
+        @extend .bio-dots;
+        display: flex;
+    }
+
+    @include maxWidth(767px) {
+        padding: 64px 20px 48px;
+    }
+}
+
+@keyframes about-partners-logos-marquee {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+
+.acne{
+    .about-hero__headline{
+        align-items: start;
+    }
+    .about-hero__subtitle{
+        white-space: wrap;
+        padding: 0;
+        text-align: left;
+        width: 500px;
+    }
+}

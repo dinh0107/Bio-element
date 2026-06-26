@@ -1,0 +1,1179 @@
+.product-detail {
+    padding: 32px $section-pad-x 64px;
+
+    &__inner {
+        max-width: 1320px;
+        margin: 0 auto;
+    }
+
+    &__layout {
+        display: flex;
+        align-items: flex-start;
+        gap: 32px;
+    }
+
+    &__gallery-wrap {
+        display: flex;
+        gap: 16px;
+        position: sticky;
+        top: 154px;
+        flex: 0 0 724px;
+        max-width: 724px;
+    }
+
+    &__thumbs {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        flex: 0 0 83px;
+    }
+
+    &__thumb {
+        padding: 0;
+        border: 1px solid transparent;
+        border-radius: 12px;
+        background: $bio-gray-bg;
+        overflow: hidden;
+        cursor: pointer;
+
+        &.is-active {
+            border-color: $bio-blue-500;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+
+    &__main {
+        position: relative;
+        flex: 1 1 auto;
+        border-radius: 16px;
+        background: $bio-gray-bg;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+
+    &__badge {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        z-index: 1;
+    }
+
+    &__wishlist {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        z-index: 1;
+        width: 32px;
+        height: 32px;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__info {
+        flex: 1 1 0;
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__header {
+        padding-bottom: 16px;
+        border-bottom: 1px solid $bio-border;
+    }
+
+    &__category {
+        margin: 0 0 8px;
+        color: $bio-blue-500;
+        @include AvertaSemibold;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 1.71px;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        margin: 0;
+        color: $bio-body;
+        @include NotoSerifMedium;
+        font-size: 30px;
+        line-height: 38px;
+        font-weight: 500;
+    }
+
+    &__meta {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-top: 16px;
+    }
+
+    &__rating {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        color: #ffb535;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+
+        strong {
+            color: $bio-brown;
+            @include AvertaSemibold;
+        }
+    }
+
+    &__sep {
+        width: 1px;
+        height: 16px;
+        background: $bio-border;
+    }
+
+    &__sold {
+        margin: 0;
+        color: $bio-muted;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+
+        strong {
+            color: $bio-body;
+            @include AvertaSemibold;
+        }
+    }
+
+    &__price-row {
+        display: flex;
+        align-items: flex-end;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    &__price {
+        margin: 0;
+        color: $bio-body;
+        @include AvertaSemibold;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.48px;
+    }
+
+    &__price-old {
+        margin: 0;
+        color: $bio-muted;
+        @include AvertaRegular;
+        font-size: 18px;
+        line-height: 28px;
+        text-decoration: line-through;
+    }
+
+    &__discount {
+        display: inline-flex;
+        align-items: center;
+        padding: 2px 8px;
+        border-radius: 8px;
+        background: $bio-red;
+        color: $white;
+        @include AvertaSemibold;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__sizes {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    &__size {
+        padding: 8px 16px;
+        border: 1px solid $bio-border;
+        border-radius: 28px;
+        background: transparent;
+        color: $bio-blue-800;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+        cursor: pointer;
+
+        &.is-active {
+            border-color: $bio-blue-800;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__actions-row {
+        display: flex;
+        gap: 8px;
+        align-items: stretch;
+    }
+
+    &__qty {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        height: 50px;
+        padding: 0 16px;
+        border: 1px solid $bio-border;
+        border-radius: 52px;
+        flex: 0 0 140px;
+    }
+
+    &__qty-btn {
+        width: 24px;
+        height: 24px;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        color: $bio-body;
+        @include AvertaSemibold;
+        font-size: 20px;
+        line-height: 1;
+        cursor: pointer;
+    }
+
+    &__qty-input {
+        width: 40px;
+        border: 0;
+        background: transparent;
+        color: $bio-body;
+        @include AvertaSemibold;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        -moz-appearance: textfield;
+
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    }
+
+    &__buy {
+        flex: 1 1 auto;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        padding: 0 24px;
+        border: 0;
+        border-radius: 52px;
+        background: $bio-blue-500;
+        box-shadow: 0 8px 10px rgba(77, 191, 217, 0.15);
+        color: $white;
+        @include AvertaSemibold;
+        font-size: 18px;
+        line-height: 26px;
+        cursor: pointer;
+
+        &:hover,
+        &:focus-visible {
+            background: darken($bio-blue-500, 6%);
+            color: $white;
+        }
+    }
+
+    &__cart {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+        height: 50px;
+        padding: 0 24px;
+        border: 1px solid $bio-blue-500;
+        border-radius: 52px;
+        background: transparent;
+        color: $bio-blue-500;
+        @include AvertaSemibold;
+        font-size: 18px;
+        line-height: 26px;
+        cursor: pointer;
+
+        img {
+            width: 24px;
+            height: 24px;
+        }
+
+        &:hover,
+        &:focus-visible {
+            background: rgba($bio-blue-500, 0.06);
+        }
+    }
+
+    &__highlights {
+        margin: 0;
+        padding-left: 24px;
+        color: $bio-body;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+
+        li + li {
+            margin-top: 0;
+        }
+    }
+
+    &__trust {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+        padding: 16px;
+        border: 1px solid $bio-border;
+        border-radius: 8px;
+        background: $bio-gray-bg;
+    }
+
+    &__trust-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        text-align: center;
+    }
+
+    &__trust-icon {
+        width: 40px;
+        height: 40px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: $bio-blue-500;
+        color: $white;
+        font-size: 18px;
+    }
+
+    &__trust-title {
+        margin: 0;
+        color: $bio-blue-900;
+        @include AvertaSemibold;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    &__trust-text {
+        margin: 0;
+        color: #3d4a51;
+        @include AvertaRegular;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    &__divider {
+        width: 100%;
+        height: 1px;
+        margin: 0;
+        border: 0;
+        background: $bio-border;
+    }
+
+    &__journey-title {
+        margin: 0;
+        color: $bio-body;
+        @include NotoSerifMedium;
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 500;
+    }
+
+    &__journey-grid {
+        margin-right: -4px;
+        margin-left: -4px;
+        margin-top: 20px;
+        > [class*='col-'] {
+            padding-right: 4px;
+            padding-left: 4px;
+            margin-bottom: 8px;
+        }
+    }
+
+    &__journey-card {
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+        height: 100%;
+
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    &__bundle-title {
+        margin: 0;
+        color: $bio-body;
+        @include NotoSerifMedium;
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 500;
+    }
+
+    &__bundle-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__bundle-item {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 16px 0;
+        border-bottom: 1px solid $bio-border;
+
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+
+    &__bundle-check {
+        position: relative;
+        flex: 0 0 24px;
+
+        input {
+            position: absolute;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        span {
+            display: block;
+            width: 24px;
+            height: 24px;
+            border: 1px solid $bio-border;
+            border-radius: 4px;
+            background: $white;
+        }
+
+        input:checked + span {
+            border-color: $bio-blue-500;
+            background: $bio-blue-500;
+            box-shadow: inset 0 0 0 3px $white;
+        }
+    }
+
+    &__bundle-media {
+        flex: 0 0 76px;
+        height: 87px;
+        border-radius: 8px;
+        overflow: hidden;
+        background: $bio-gray-bg;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__bundle-body {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+
+    &__bundle-category {
+        margin: 0;
+        color: $bio-blue-500;
+        @include AvertaSemibold;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    &__bundle-name {
+        margin: 0;
+        color: $bio-body;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__bundle-price {
+        margin: 0;
+        color: $bio-body;
+        @include AvertaSemibold;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__bundle-add {
+        flex: 0 0 46px;
+        width: 46px;
+        height: 46px;
+        padding: 0;
+        border: 0;
+        border-radius: 8px;
+        background: #edeae9;
+        cursor: pointer;
+
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    &__bundle-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding-top: 24px;
+        border-top: 1px solid $bio-border;
+    }
+
+    &__bundle-total-label {
+        margin: 0 0 4px;
+        color: $bio-muted;
+        @include AvertaRegular;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    &__bundle-total-row {
+        display: flex;
+        align-items: flex-end;
+        gap: 8px;
+    }
+
+    &__bundle-total {
+        margin: 0;
+        color: $bio-body;
+        @include AvertaSemibold;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    &__bundle-old {
+        margin: 0;
+        color: $bio-muted;
+        @include AvertaRegular;
+        font-size: 18px;
+        line-height: 28px;
+        text-decoration: line-through;
+    }
+
+    &__bundle-buy {
+        flex: 0 0 auto;
+        min-width: 219px;
+        height: 50px;
+        padding: 0 32px;
+        border: 0;
+        border-radius: 52px;
+        background: $bio-blue-500;
+        color: $white;
+        @include AvertaSemibold;
+        font-size: 18px;
+        line-height: 26px;
+        cursor: pointer;
+
+        &:hover,
+        &:focus-visible {
+            background: darken($bio-blue-500, 6%);
+            color: $white;
+        }
+    }
+
+    @include maxWidth(1199px) {
+        &__layout {
+            flex-direction: column;
+        }
+
+        &__gallery-wrap {
+            position: static;
+            flex: none;
+            max-width: none;
+            width: 100%;
+        }
+
+    }
+
+    @include maxWidth(991px) {
+        padding: 24px 20px 48px;
+
+        &__trust {
+            grid-template-columns: 1fr;
+        }
+
+        &__bundle-footer {
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        &__bundle-buy {
+            width: 100%;
+            min-width: 0;
+        }
+    }
+
+    @include maxWidth(575px) {
+        padding: 20px 16px 40px;
+
+        &__gallery-wrap {
+            flex-direction: column-reverse;
+        }
+
+        &__thumbs {
+            flex-direction: row;
+            flex: none;
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        &__thumb {
+            flex: 0 0 72px;
+            width: 72px;
+            height: 82px;
+        }
+
+        &__main {
+            min-height: 320px;
+        }
+
+        &__title {
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        &__actions-row {
+            flex-direction: column;
+        }
+
+        &__qty {
+            flex: none;
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}
+
+.product-tabs {
+    padding: 30px 0;
+    &__nav-wrap {
+        margin: 0 auto;
+    background: #f4f8fc;
+    padding: 0 $section-pad-x;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    &__link {
+        padding: 16px 24px;
+        border: 0;
+        border-bottom: 2px solid transparent;
+        background: transparent;
+        color: $bio-muted;
+        @include AvertaBold;
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &.is-active {
+            border-bottom-color: #0c4476;
+            color: $bio-blue-500;
+        }
+    }
+
+    &__panels {
+        margin: 0 auto;
+        padding: 40px 0;
+    }
+
+    @include maxWidth(991px) {
+        &__nav-wrap,
+        &__panels {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+
+    @include maxWidth(575px) {
+        &__nav-wrap,
+        &__panels {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        &__link {
+            padding: 14px 16px;
+            font-size: 14px;
+        }
+    }
+}
+
+.product-desc {
+    &__title {
+        margin: 0 0 24px;
+        color: $bio-blue-500;
+        @include CormorantSemiBold;
+        font-size: 34px;
+        line-height: 42px;
+        text-transform: uppercase;
+    }
+
+    &__lead {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 24px;
+        color: $bio-body;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    &__subtitle {
+        margin: 0 0 16px;
+        color: $bio-body;
+        @include AvertaSemibold;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    &__text {
+        margin: 0 0 16px;
+        color: $bio-body;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__heading {
+        margin: 0 0 16px;
+        color: $bio-body;
+        @include AvertaSemibold;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    &__highlights {
+        margin: 0 0 16px;
+        padding-left: 24px;
+        color: $bio-blue-500;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__closing {
+        margin: 0;
+        color: $bio-body;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.product-ingredients,
+.product-usage {
+    &__title {
+        margin: 0 0 24px;
+        color: $bio-blue-500;
+        @include CormorantSemiBold;
+        font-size: 34px;
+        line-height: 42px;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        margin: 0 0 16px;
+        color: $bio-body;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__list {
+        margin: 0;
+        padding-left: 24px;
+        color: $bio-body;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.product-reviews {
+    padding-top: 40px;
+    border-top: 1px solid $bio-border;
+    margin-top: 30px;
+    &__title {
+        margin: 0 0 24px;
+        color: $bio-blue-500;
+        @include CormorantSemiBold;
+        font-size: 34px;
+        line-height: 42px;
+        text-transform: uppercase;
+    }
+
+    &__summary {
+        display: grid;
+        grid-template-columns: 254px 1fr auto;
+        gap: 24px;
+        align-items: center;
+        padding: 24px;
+        border: 1px solid $bio-border;
+        border-radius: 12px;
+        margin-bottom: 24px;
+    }
+
+    &__score-wrap {
+        text-align: center;
+    }
+
+    &__score {
+        margin: 0;
+        color: $bio-body;
+        @include AvertaBold;
+        font-size: 64px;
+        line-height: 1;
+    }
+
+    &__stars {
+        color: #ffb535;
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    &__count {
+        margin: 8px 0 0;
+        color: $bio-muted;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__bars {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    &__bar-row {
+        display: grid;
+        grid-template-columns: 32px 1fr 40px;
+        gap: 8px;
+        align-items: center;
+    }
+
+    &__bar-label {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        color: $bio-body;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__bar-track {
+        height: 8px;
+        border-radius: 4px;
+        background: $bio-border;
+        overflow: hidden;
+    }
+
+    &__bar-fill {
+        height: 100%;
+        border-radius: inherit;
+        background: #ffb535;
+    }
+
+    &__bar-count {
+        color: $bio-body;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: right;
+    }
+
+    &__write {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        height: 50px;
+        padding: 0 32px;
+        border: 0;
+        border-radius: 52px;
+        background: $bio-blue-500;
+        color: $white;
+        @include AvertaSemibold;
+        font-size: 18px;
+        line-height: 26px;
+        cursor: pointer;
+        white-space: nowrap;
+
+        i {
+            font-size: 16px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        display: flex;
+        gap: 16px;
+        padding: 24px 0;
+        border-bottom: 1px solid $bio-border;
+    }
+
+    &__avatar {
+        flex: 0 0 48px;
+        width: 48px;
+        height: 48px;
+        border-radius: 23px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: $white;
+        @include AvertaSemibold;
+        font-size: 20px;
+        line-height: 1;
+
+        &--yellow {
+            background: linear-gradient(135deg, #ffd86b 0%, #f5a623 100%);
+        }
+
+        &--green {
+            background: linear-gradient(135deg, #7ed56f 0%, #28b485 100%);
+        }
+
+        &--blue {
+            background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+        }
+
+        &--red {
+            background: linear-gradient(135deg, #ff7675 0%, #d63031 100%);
+        }
+    }
+
+    &__body {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+
+    &__head {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 12px;
+    }
+
+    &__name {
+        margin: 0;
+        color: $bio-body;
+        @include AvertaSemibold;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    &__meta {
+        margin: 4px 0 0;
+        color: $bio-brown;
+        @include AvertaRegular;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    &__item-stars {
+        display: inline-flex;
+        gap: 2px;
+        margin-left: 8px;
+        color: #ffb535;
+        font-size: 12px;
+    }
+
+    &__badge {
+        display: inline-flex;
+        align-items: center;
+        padding: 4px 8px;
+        border-radius: 6px;
+        background: $bio-blue-500;
+        color: $white;
+        @include AvertaSemibold;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    &__text {
+        margin: 0 0 12px;
+        color: $bio-blue-800;
+        @include AvertaRegular;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    &__photos {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    &__photo {
+        width: 140px;
+        height: 88px;
+        border-radius: 8px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__more-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        padding-top: 24px;
+    }
+
+    &__more {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 238px;
+        height: 40px;
+        padding: 0 24px;
+        border: 1px solid $bio-blue-500;
+        border-radius: 52px;
+        background: transparent;
+        color: $bio-blue-500;
+        @include AvertaSemibold;
+        font-size: 16px;
+        line-height: 24px;
+        cursor: pointer;
+    }
+
+    &__shown {
+        margin: 0;
+        color: $bio-muted;
+        @include AvertaRegular;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    @include maxWidth(991px) {
+        &__summary {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+
+        &__write {
+            width: 100%;
+        }
+    }
+}
+
+.product-related {
+    padding: 30px 0;
+    background: #F4F8FC;
+
+    &__inner {
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        margin: 0 0 40px;
+        color: $bio-blue-500;
+        @include CormorantSemiBold;
+        font-size: 34px;
+        line-height: 42px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__track {
+        width: 100%;
+
+        &.owl-carousel {
+            .owl-stage-outer {
+                overflow: hidden;
+            }
+
+            .owl-item {
+                float: left;
+            }
+
+            .owl-nav,
+            .owl-dots {
+                display: none;
+            }
+        }
+
+        .product-card {
+            height: 100%;
+        }
+
+        .product-card__media {
+            aspect-ratio: 270 / 308;
+        }
+
+        .product-card__image {
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .product-card__badge {
+            img {
+                width: 12px;
+                height: 12px;
+            }
+        }
+    }
+
+    &__dots {
+        @extend .bio-dots;
+        margin-top: 32px;
+    }
+
+    @include maxWidth(991px) {
+        padding: 48px 20px;
+    }
+
+    @include maxWidth(575px) {
+        padding: 40px 16px;
+    }
+}

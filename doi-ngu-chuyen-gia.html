@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Đội ngũ chuyên gia – Bioelements</title>
+    <meta name="description"
+        content="Đội ngũ chuyên gia Bioelements – những nhà khoa học làn da kiến tạo chuẩn mực trị liệu và chữa lành.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css"
+        integrity="sha512-rt/SrQ4UNIaGfDyEXZtNcyWvQeOq0QLygHluFQcSjaGB04IxWhal71tKuzP6K8eYXYB6vJV4pHkXcmFGGQ1/0w=="
+        crossorigin="anonymous" />
+    <link href="style/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/icon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="site-header sticky-top">
+        <div class="site-header__topbar">
+            <a href="#" class="site-header__topbar-msg mb-0">
+                <img src="images/header/icon-sparkle.svg" alt="" loading="lazy">
+                <span>Dành cho spa &amp; chuyên gia da liễu</span>
+                <img src="images/header/icon-sparkle.svg" alt="" loading="lazy">
+            </a>
+            <div class="container">
+                <div class="site-header__topbar-row d-flex justify-content-end">
+                    <div class="site-header__topbar-auth">
+                        <a class="site-header__topbar-auth-link" href="#">
+                            <img src="images/header/icon-user.svg" alt="" width="20" height="20" loading="lazy">
+                            Đăng ký
+                        </a>
+                        /
+                        <a class="site-header__topbar-auth-link" href="#">Đăng nhập</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-header__main">
+            <div class="container">
+                <div class="site-header__main-inner d-flex align-items-center justify-content-between">
+                    <a class="site-header__logo" href="/">
+                        <img src="images/header/logo.png" alt="Bioelements" width="216" height="44" loading="eager"
+                            decoding="async">
+                    </a>
+                    <div class="site-header__tools d-flex align-items-center">
+                        <label class="site-header__search bio-search mb-0">
+                            <img src="images/header/icon-search.svg" alt="" loading="lazy">
+                            <input class="site-header__search-input bio-search__input" type="search" name="q"
+                                placeholder="Serum trị thâm, gel rửa mặt...." autocomplete="off">
+                        </label>
+                        <button type="button" class="site-header__icon-btn bio-icon-btn">
+                            <img src="images/header/icon-heart.svg" alt="" loading="lazy">
+                        </button>
+                        <button type="button" class="site-header__icon-btn site-header__icon-btn--cart bio-icon-btn">
+                            <img src="images/header/icon-cart.svg" alt="" loading="lazy">
+                            <span class="site-header__cart-count bio-icon-btn__badge">0</span>
+                        </button>
+                        <button type="button" class="site-header__nav-toggle d-lg-none" data-nav-toggle>
+                            <span class="site-header__nav-toggle-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-header__nav-panel" data-nav-panel>
+            <nav class="site-header__nav">
+                <div class="container">
+                    <ul class="site-header__nav-inner d-flex justify-content-center list-unstyled mb-0">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="ve-chung-toi.html">Tinh hoa Bioelements</a></li>
+                        <li>
+                            <a href="#">
+                                Sản phẩm
+                                <span class="site-header__nav-caret fa-sharp fa-solid fa-chevron-down"></span>
+                            </a>
+                            <ul class="site-header__submenu list-unstyled mb-0">
+                                <li><a href="#">Serum &amp; tinh chất</a></li>
+                                <li><a href="#">Sữa rửa mặt &amp; tẩy trang</a></li>
+                                <li><a href="#">Kem dưỡng &amp; phục hồi</a></li>
+                                <li><a href="#">Combo chăm sóc da</a></li>
+                                <li><a class="site-header__submenu-all" href="#">Xem tất cả sản phẩm</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Liệu trình chuyên nghiệp</a></li>
+                        <li><a href="cam-nang.html">Kiến thức</a></li>
+                        <li><a href="lien-he.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="site-header__nav-overlay" data-nav-overlay hidden></div>
+    </header>
+
+    <div class="team-hero">
+        <img class="team-hero__img" src="images/team/hero-team.png"
+            alt="Đội ngũ chuyên gia Bioelements – Những nhà khoa học làn da kiến tạo chuẩn mực trị liệu &amp; chữa lành"
+            width="1440" height="600" loading="eager" decoding="async">
+    </div>
+
+    <div class="team-process">
+        <div class="container">
+            <h2 class="team-process__title">Quy trình tham vấn</h2>
+            <ul class="nav nav-tabs team-process__nav" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#process-b2b" role="tab">Khách hàng B2B (Spa,
+                        Clinic)</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#process-b2c" role="tab">Khách hàng B2C</a>
+                </li>
+            </ul>
+            <div class="tab-content team-process__content">
+                <div class="tab-pane fade show active" id="process-b2b" role="tabpanel">
+                    <div class="team-process__list">
+                        <article class="proc-step">
+                            <div class="proc-step__media">
+                                <img src="images/team/step-member-1.jpg" alt="Cố vấn chiến lược" width="370" height="200"
+                                    loading="lazy">
+                            </div>
+                            <div class="proc-step__body">
+                                <img class="proc-step__badge" src="images/team/icon-doi-ngu.svg" alt="" width="56"
+                                    height="64" loading="lazy">
+                                <h3 class="proc-step__title">Cố vấn chiến lược</h3>
+                                <p class="proc-step__desc">Chủ tịch Phạm Trường Linh sẽ trực tiếp tham vấn về định hướng
+                                    phát
+                                    triển hệ sinh thái Spa/Clinic và tối ưu hóa danh mục dịch vụ.</p>
+                            </div>
+                        </article>
+                        <article class="proc-step">
+                            <div class="proc-step__media">
+                                <img src="images/team/step-member-2.jpg" alt="Đào tạo chuyển giao" width="370"
+                                    height="200" loading="lazy">
+                            </div>
+                            <div class="proc-step__body">
+                                <img class="proc-step__badge" src="images/team/icon-doi-ngu.svg" alt="" width="56"
+                                    height="64" loading="lazy">
+                                <h3 class="proc-step__title">Đào tạo chuyển giao</h3>
+                                <p class="proc-step__desc">Đội ngũ bác sĩ, chuyên gia Bioelements đào tạo &amp; chuyển
+                                    giao
+                                    giải pháp dịch vụ khác biệt tăng trưởng doanh số &amp; mang đến trải nghiệm thượng
+                                    lưu cho
+                                    khách hàng. Hướng dẫn kỹ thuật SkinReading® (đọc vị làn da) và hệ thống Custom
+                                    Blending®
+                                    để đối tác tự tinh chỉnh công thức trị liệu độc bản tại cơ sở.</p>
+                            </div>
+                        </article>
+                        <article class="proc-step">
+                            <div class="proc-step__media">
+                                <img src="images/team/step-member-3.jpg" alt="Kiểm soát và Đồng hành" width="370"
+                                    height="200" loading="lazy">
+                            </div>
+                            <div class="proc-step__body">
+                                <img class="proc-step__badge" src="images/team/icon-doi-ngu.svg" alt="" width="56"
+                                    height="64" loading="lazy">
+                                <h3 class="proc-step__title">Kiểm soát và Đồng hành</h3>
+                                <p class="proc-step__desc">Bác sĩ chuyên môn giám sát chất lượng thực thi liệu trình tại
+                                    cơ
+                                    sở của đối tác, đảm bảo tay nghề kỹ thuật viên đạt chuẩn “Nhà khoa học làn da”.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="process-b2c" role="tabpanel">
+                    <div class="team-process__list">
+                        <article class="proc-step">
+                            <div class="proc-step__media">
+                                <img src="images/team/step-member-1.jpg" alt="Tư vấn cá nhân hóa" width="370" height="200"
+                                    loading="lazy">
+                            </div>
+                            <div class="proc-step__body">
+                                <img class="proc-step__badge" src="images/team/icon-doi-ngu.svg" alt="" width="56"
+                                    height="64" loading="lazy">
+                                <h3 class="proc-step__title">Tư vấn cá nhân hóa</h3>
+                                <p class="proc-step__desc">Bác sĩ chuyên môn Bioelements lắng nghe tình trạng da và nhu
+                                    cầu
+                                    chăm sóc, đề xuất phác đồ trị liệu phù hợp với từng cá thể.</p>
+                            </div>
+                        </article>
+                        <article class="proc-step">
+                            <div class="proc-step__media">
+                                <img src="images/team/step-member-2.jpg" alt="SkinReading®" width="370" height="200"
+                                    loading="lazy">
+                            </div>
+                            <div class="proc-step__body">
+                                <img class="proc-step__badge" src="images/team/icon-doi-ngu.svg" alt="" width="56"
+                                    height="64" loading="lazy">
+                                <h3 class="proc-step__title">SkinReading®</h3>
+                                <p class="proc-step__desc">Đọc vị làn da bằng kỹ thuật SkinReading® để xác định nguyên
+                                    nhân
+                                    gốc rễ và hướng điều trị chính xác, tránh điều trị máy móc.</p>
+                            </div>
+                        </article>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="team-experts">
+        <div class="container">
+            <h2 class="team-experts__title">Đội ngũ chuyên gia</h2>
+            <div class="team-experts__grid">
+                <article class="ec">
+                    <div class="ec__photo">
+                        <img src="images/team/truong-linh.jpg" alt="Mr. Phạm Trường Linh" width="569" height="360"
+                            loading="lazy">
+                        <div class="ec__overlay">
+                            <p class="ec__name">Mr. Phạm Trường Linh</p>
+                            <p class="ec__role">Chủ tịch HĐQT · Labo De Dermafirm Việt Nam · Phó Chủ tịch VNBA</p>
+                        </div>
+                    </div>
+                    <div class="ec__body">
+                        <div class="ec__sig">
+                            <img src="images/about/quote-mark.svg" alt="" width="25" height="20" loading="lazy">
+                            <p>Làm kinh doanh làm đẹp phải coi mình là đối thủ lớn nhất để không ngừng nâng tầm chuẩn
+                                mực chuyên môn.</p>
+                        </div>
+                        <ul class="ec__proof">
+                            <li class="ec__proof-item">
+                               <img src="/images/icons/check.svg" alt="">
+                                <span><strong>25 năm</strong> kinh nghiệm trong ngành làm đẹp Việt Nam.</span>
+                            </li>
+                            <li class="ec__proof-item">
+                                <img src="/images/icons/check.svg" alt="">
+                                <span>Xây dựng mạng lưới <strong>2.000+ Spa/Clinic</strong> đối tác toàn quốc.</span>
+                            </li>
+                            <li class="ec__proof-item">
+                                <img src="/images/icons/check.svg" alt="">
+                                <span><strong>Phó Chủ tịch</strong> Hội Đào tạo phát triển nghề làm đẹp Việt
+                                    Nam.</span>
+                            </li>
+                        </ul>
+                        <div class="ec__foot">
+                            <div class="ec__social">
+                                <a class="ec__social-link" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a class="ec__social-link" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a class="ec__social-link ec__social-link--zalo" href="#">Zalo</a>
+                            </div>
+                            <a class="ec__link" href="#">Xem hồ sơ chi tiết</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="ec">
+                    <div class="ec__photo">
+                        <img src="images/team/thuy.jpg" alt="Hồ Phương Thuỳ" width="569" height="360"
+                            loading="lazy">
+                        <div class="ec__overlay">
+                            <p class="ec__name">Hồ Phương Thuỳ</p>
+                            <p class="ec__role">Thạc sĩ, Bác sĩ chuyên môn</p>
+                        </div>
+                    </div>
+                    <div class="ec__body">
+                        <div class="ec__sig">
+                            <img src="images/about/quote-mark.svg" alt="" width="25" height="20" loading="lazy">
+                            <p>Mỗi làn da là một cá thể sống luôn biến động, khoa học phải đi đôi với sự vỗ về tâm
+                                trí.</p>
+                        </div>
+                        <ul class="ec__proof">
+                            <li class="ec__proof-item">
+                                <img src="/images/icons/check.svg" alt="">
+                                <span><strong>Thạc sĩ - Bác sĩ</strong> nội trú Da liễu ĐH Y Hà Nội.</span>
+                            </li>
+                            <li class="ec__proof-item">
+                                <img src="/images/icons/check.svg" alt="">
+                                <span><strong>Chuyên gia đào tạo</strong> hệ thống Bioelements Việt Nam.</span>
+                            </li>
+                            <li class="ec__proof-item">
+                                <img src="/images/icons/check.svg" alt="">
+                                <span>Diễn giả tại các hội thảo Da liễu toàn quốc.</span>
+                            </li>
+                        </ul>
+                        <div class="ec__foot">
+                            <div class="ec__social">
+                                <a class="ec__social-link" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a class="ec__social-link" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a class="ec__social-link ec__social-link--zalo" href="#">Zalo</a>
+                            </div>
+                            <a class="ec__link" href="#">Xem hồ sơ chi tiết</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <div class="team-consult">
+        <div class="container">
+            <div class="team-consult__wrap">
+                <div class="team-consult__intro">
+                    <h2 class="team-consult__heading">
+                        <span class="team-consult__heading-main">Yêu cầu tham vấn</span>
+                        <span class="team-consult__heading-sub">cùng đội ngũ chuyên gia hàng đầu.</span>
+                    </h2>
+                    <p class="team-consult__desc">Đội ngũ Bioelements luôn sẵn sàng tham vấn riêng cho từng khách
+                        hàng và đối tác — phản hồi trong vòng <strong>02 giờ làm việc</strong> kể từ lúc nhận yêu cầu.
+                    </p>
+                    <div class="team-consult__photo">
+                        <img src="images/team/consult-photo.png" alt="Đội ngũ chuyên gia Bioelements" width="540"
+                            height="453" loading="lazy">
+                    </div>
+                </div>
+
+                <form class="book-form" action="#" method="post" novalidate>
+                    <p class="book-form__title">Đăng ký nhận tư vấn</p>
+                    <div class="book-form__rows">
+                        <div class="book-form__row">
+                            <label class="book-form__field">
+                                <span class="book-form__label">Họ và tên <span>*</span></span>
+                                <input class="book-form__input" type="text" name="name" data-field="name"
+                                    placeholder="Nhập họ &amp; tên" autocomplete="name">
+                            </label>
+                            <label class="book-form__field">
+                                <span class="book-form__label">Số điện thoại <span>*</span></span>
+                                <input class="book-form__input" type="tel" name="phone" data-field="phone"
+                                    placeholder="Số điện thoại của bạn" autocomplete="tel">
+                            </label>
+                        </div>
+                        <label class="book-form__field">
+                            <span class="book-form__label">Tình trạng da/ Nhu cầu doanh nghiệp <span>*</span></span>
+                            <textarea class="book-form__textarea" name="message" data-field="message"
+                                placeholder="Nhập nội dung..."></textarea>
+                        </label>
+                        <div class="book-form__field">
+                            <span class="book-form__label">Chuyên gia mong muốn kết nối <span>*</span></span>
+                            <div class="book-form__experts">
+                                <label class="ep-opt">
+                                    <input class="ep-opt__input" type="radio" name="expert" value="pham-truong-linh">
+                                    <span class="ep-opt__main">
+                                        <img class="ep-opt__avatar" src="images/home/expert-linh.jpg"
+                                            alt="Phạm Trường Linh" width="40" height="40" loading="lazy">
+                                        <span>
+                                            <span class="ep-opt__name">Phạm Trường Linh</span>
+                                            <span class="ep-opt__role">Thạc sĩ, Bác sĩ chuyên môn</span>
+                                        </span>
+                                    </span>
+                                    <span class="ep-opt__social">
+                                        <a class="ep-opt__social-link" href="#"><i
+                                                class="fa-brands fa-facebook-f"></i></a>
+                                        <a class="ep-opt__social-link" href="#"><i
+                                                class="fa-brands fa-linkedin-in"></i></a>
+                                        <a class="ep-opt__social-link ep-opt__social-link--zalo" href="#">Zalo</a>
+                                    </span>
+                                </label>
+                                <label class="ep-opt">
+                                    <input class="ep-opt__input" type="radio" name="expert" value="ho-phuong-thuy">
+                                    <span class="ep-opt__main">
+                                        <img class="ep-opt__avatar" src="images/home/expert-thuy.jpg"
+                                            alt="Hồ Phương Thuỳ" width="40" height="40" loading="lazy">
+                                        <span>
+                                            <span class="ep-opt__name">Hồ Phương Thuỳ</span>
+                                            <span class="ep-opt__role">Thạc sĩ, Bác sĩ chuyên môn</span>
+                                        </span>
+                                    </span>
+                                    <span class="ep-opt__social">
+                                        <a class="ep-opt__social-link" href="#"><i
+                                                class="fa-brands fa-facebook-f"></i></a>
+                                        <a class="ep-opt__social-link" href="#"><i
+                                                class="fa-brands fa-linkedin-in"></i></a>
+                                        <a class="ep-opt__social-link ep-opt__social-link--zalo" href="#">Zalo</a>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <label class="book-form__consent">
+                        <input type="checkbox" name="consent" checked>
+                        <p><strong>Bioelements</strong> cam kết bảo mật tuyệt đối dữ liệu khách hàng và tuân thủ quy
+                            tắc ứng xử chuyên môn cao nhất trong mọi phác đồ trị liệu cá nhân hóa.</p>
+                    </label>
+                    <button class="book-form__submit" type="submit">
+                        Gửi yêu cầu tham vấn
+                        <img src="images/icons/arrow-right-white.svg" alt="" width="16" height="16" loading="lazy">
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+            <div class="site-footer__top">
+                <div class="site-footer__brand">
+                    <a class="site-footer__logo" href="/">
+                        <img src="images/footer/logo-footer.png" alt="Bioelements" width="294" height="60"
+                            loading="lazy">
+                    </a>
+                    <div class="site-footer__brand-body">
+                        <p class="site-footer__about">Công ty Cổ phần Labo De Dermafirm Việt Nam —<br>Nhà phân phối độc
+                            quyền thương hiệu Bioelements (USA) tại Việt Nam.</p>
+                        <div class="site-footer__office">
+                            <p class="site-footer__office-title">Trụ sở chính · Hà Nội</p>
+                            <p class="site-footer__contact-item">
+                                <i class="site-footer__icon fa-sharp fa-solid fa-location-dot"></i>
+                                Tòa C, Nhà khách La Thành, 226 Vạn Phúc , Phường Ngọc Hà, Thành Phố Hà Nội
+                            </p>
+                            <p class="site-footer__contact-item">
+                                <i class="site-footer__icon fa-sharp fa-solid fa-phone"></i>
+                                0911.966.116
+                            </p>
+                        </div>
+                        <hr class="site-footer__divider">
+                        <div class="site-footer__office">
+                            <p class="site-footer__office-title">Chi nhánh · TP. Hồ Chí Minh</p>
+                            <p class="site-footer__contact-item">
+                                <i class="site-footer__icon fa-sharp fa-solid fa-location-dot"></i>
+                                114 Nguyễn Hoàng, Phường An Phú, TP. Thủ Đức.
+                            </p>
+                            <p class="site-footer__contact-item">
+                                <i class="site-footer__icon fa-sharp fa-solid fa-phone"></i>
+                                093.901.6969
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="site-footer__col site-footer__col--explore">
+                    <p class="site-footer__col-title">Khám phá</p>
+                    <ul class="site-footer__links">
+                        <li><a class="site-footer__link" href="#">Toàn bộ sản phẩm</a></li>
+                        <li><a class="site-footer__link" href="#">Liệu trình chuyên nghiệp</a></li>
+                        <li><a class="site-footer__link" href="ve-chung-toi.html">Tinh hoa Bioelements</a></li>
+                        <li><a class="site-footer__link" href="#">Công nghệ</a></li>
+                        <li><a class="site-footer__link" href="cam-nang.html">Cẩm nang</a></li>
+                        <li><a class="site-footer__link" href="#">Hệ thống Spa &amp; Clinic</a></li>
+                        <li><a class="site-footer__link" href="tin-tuc.html">Tin tức</a></li>
+                        <li><a class="site-footer__link" href="lien-he.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="site-footer__col site-footer__col--policy">
+                    <p class="site-footer__col-title">chính sách</p>
+                    <ul class="site-footer__links">
+                        <li><a class="site-footer__link" href="chinh-sach-mua-hang.html">Chính sách mua hàng</a></li>
+                        <li><a class="site-footer__link" href="chinh-sach-bao-mat.html">Chính sách bảo mật</a></li>
+                        <li><a class="site-footer__link" href="dieu-khoan-su-dung.html">Điều khoản sử dụng</a></li>
+                        <li><a class="site-footer__link" href="#">Chính sách vận chuyển</a></li>
+                    </ul>
+                </div>
+                <div class="site-footer__contact">
+                    <div class="site-footer__contact-block">
+                        <p class="site-footer__col-title">Liên hệ với chúng tôi</p>
+                        <div class="site-footer__email-group">
+                            <p class="site-footer__office-title">Kết nối qua email:</p>
+                            <div class="site-footer__email-row">
+                                <i class="site-footer__icon fa-sharp fa-solid fa-envelope"></i>
+                                <a class="site-footer__email"
+                                    href="mailto:marketing@bioelements.vn">marketing@bioelements.vn</a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="site-footer__col-title">Follow us</p>
+                    <div class="site-footer__socials">
+                        <a class="site-footer__social" href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a class="site-footer__social" href="#">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a class="site-footer__social" href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a class="site-footer__social site-footer__social--zalo" href="#">
+                            zalo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="site-footer__bottom">
+                <hr class="site-footer__divider site-footer__divider--bottom">
+                <p class="site-footer__copy">© 2026 Bioelements Việt Nam · Labo De Dermafirm JSC</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"
+        integrity="sha512-7rusk8kGPFynZWu26OKbTeI+QPoYchtxsmPeBqkHIEXJxeun4yJ4ISYe7C6sz9wdxeE1Gk3VxsIWgCZTc+vX3g=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <script src="js/bio.js"></script>
+</body>
+
+</html>

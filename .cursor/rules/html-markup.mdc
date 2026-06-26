@@ -1,0 +1,11 @@
+---
+description: HTML markup conventions for Bio-element theme
+alwaysApply: true
+---
+
+# HTML markup
+
+- Do not add classes to `<body>`. Scope page styles with BEM section wrappers (e.g. `.about-hero`, `.home-cta`) or a top-level `<main>` wrapper if needed.
+- Avoid `id` attributes. Prefer `data-*` hooks for JavaScript (e.g. `data-nav-toggle`, `data-nav-panel`, `data-field`).
+- Do not use `aria-*` unless explicitly requested.
+- Navigation active state: use `li.is-active` on the current menu item, not body/page classes.

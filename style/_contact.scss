@@ -1,0 +1,885 @@
+// ─── Contact page (Figma 407:3949) ───────────────────────────────
+
+.contact-hero {
+    display: flex;
+    min-height: 600px;
+
+    @include maxWidth(991px) {
+        flex-direction: column;
+        min-height: 0;
+    }
+
+    &__copy {
+        position: relative;
+        flex: 1 1 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 600px;
+        padding: 120px 60px 64px;
+        color: $white;
+        overflow: hidden;
+
+        @include maxWidth(991px) {
+            min-height: 420px;
+            padding: 100px 20px 48px;
+        }
+    }
+
+    &__bg {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        background: #432620;
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(204.84deg, $bio-blue 3.84%, rgba($bio-blue, 0) 50.41%);
+        }
+    }
+
+    &__inner {
+        position: relative;
+        z-index: 1;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__headline {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        text-transform: uppercase;
+        text-shadow: 0 4px 10px rgba($black, 0.2);
+    }
+
+    &__title {
+        margin: 0;
+        @include AvertaExtraBold;
+        font-size: 42px;
+        line-height: 52px;
+
+        @include maxWidth(575px) {
+            font-size: 32px;
+            line-height: 40px;
+        }
+    }
+
+    &__subtitle {
+        margin: 0;
+        @include AvertaSemibold;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0.6px;
+    }
+
+    &__desc {
+        margin: 0;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: justify;
+    }
+
+    &__visual {
+        flex: 1 1 50%;
+        min-height: 600px;
+        overflow: hidden;
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            min-height: 600px;
+        }
+
+        @include maxWidth(991px) {
+            min-height: 320px;
+
+            img {
+                min-height: 320px;
+            }
+        }
+    }
+}
+
+.contact-lookup {
+    padding: 64px $section-pad-x;
+
+    @include maxWidth(991px) {
+        padding: 48px 20px;
+    }
+
+    &__card {
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 40px;
+        border: 1px solid #dce5ee;
+        border-radius: 20px;
+        background: $white;
+        box-shadow:
+            0 20px 40px -16px rgba($bio-blue, 0.18),
+            0 4px 12px 0 rgba($bio-blue, 0.08);
+
+        @include maxWidth(575px) {
+            padding: 24px;
+        }
+    }
+
+    &__head {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 32px;
+    }
+
+    &__icon {
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 88px;
+        height: 88px;
+        padding: 18px;
+        border-radius: 18px;
+        background: #e8f0f8;
+
+        img {
+            width: 56px;
+            height: 56px;
+        }
+    }
+
+    &__title {
+        margin: 0 0 8px;
+        @include AvertaSemibold;
+        font-size: 28px;
+        line-height: 36px;
+        color: #020d12;
+    }
+
+    &__desc {
+        margin: 0;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+        color:#6F767C;
+    }
+
+    &__form {
+        display: flex;
+        gap: 16px;
+
+        .bio-btn {
+            flex-shrink: 0;
+        }
+
+        @include maxWidth(767px) {
+            flex-direction: column;
+
+            .bio-btn {
+                width: 100%;
+            }
+        }
+    }
+
+    &__input {
+        flex: 1;
+        min-width: 0;
+        height: 56px;
+        padding: 12px 24px;
+        border: 1px solid rgba(183, 206, 218, 0.5);
+        border-radius: 52px;
+        background: #f4f8fc;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+        color: #020d12;
+        outline: none;
+
+        &::placeholder {
+            color: #6F767C;
+        }
+    }
+}
+
+.contact-channels {
+    padding: 0 $section-pad-x 64px;
+
+    @include maxWidth(991px) {
+        padding: 0 20px 48px;
+    }
+
+    &__title {
+        margin: 0 auto 40px;
+        max-width: 1320px;
+    }
+
+    &__grid {
+        display: flex;
+        gap: 30px;
+        max-width: 1170px;
+        margin: 0 auto;
+
+        @include maxWidth(991px) {
+            flex-direction: column;
+        }
+    }
+
+    &__card {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 24px;
+        border: 1px solid #dce5ee;
+        border-radius: 20px;
+        background: $white;
+    }
+
+    &__icon {
+        display: inline-flex;
+        padding: 12px;
+        border-radius: 16px;
+        width: max-content;
+        img {
+            width: 40px;
+            height: 40px;
+        }
+
+        &--blue {
+            background: #e8f0f8;
+        }
+
+        &--brown {
+            background: #eadad6;
+        }
+
+        &--teal {
+            background: #b8e2ec;
+        }
+    }
+
+    &__name {
+        margin: 0;
+        font-family: 'Noto Serif', serif;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        color: #020d12;
+    }
+
+    &__desc {
+        margin: 0;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+        color: $text-muted;
+    }
+
+    &__actions {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: auto;
+    }
+}
+
+.contact-consult {
+    padding: 64px $section-pad-x;
+    background: #f4f8fc;
+
+    @include maxWidth(991px) {
+        padding: 48px 20px;
+    }
+
+    &__intro {
+        max-width: 1000px;
+        margin: 0 auto 40px;
+        text-align: center;
+    }
+
+    &__desc {
+        margin: 16px 0 0;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+        color: #0d354b;
+    }
+
+    &__grid {
+        display: flex;
+        gap: 30px;
+        max-width: 1170px;
+        margin: 0 auto;
+
+        @include maxWidth(991px) {
+            flex-direction: column;
+        }
+    }
+
+    &__form-card,
+    &__info-card {
+        padding: 32px;
+        border-radius: 20px;
+        background: $white;
+        box-shadow:
+            0 2px 4px rgba($bio-blue, 0.04),
+            0 1px 1px rgba($bio-blue, 0.05);
+    }
+
+    &__form-card {
+        flex: 1;
+        min-width: 0;
+    }
+
+    &__info-card {
+        flex: 0 0 470px;
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+
+        @include maxWidth(991px) {
+            flex: 1;
+        }
+    }
+
+    &__card-title {
+        margin: 0;
+        font-family: 'Noto Serif', serif;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        color: $bio-blue-500;
+    }
+
+    &__divider {
+        margin: 0;
+        border: 0;
+        border-top: 1px solid #e8eff3;
+    }
+
+    &__office-title {
+        margin: 0;
+        @include AvertaBold;
+        font-size: 14px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: $bio-brown;
+    }
+
+    &__office-block {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__offices {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__contact-row {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+        color: #020d12;
+
+        i {
+            flex-shrink: 0;
+            width: 20px;
+            margin-top: 2px;
+            font-size: 20px;
+            line-height: 1;
+            color: $bio-teal;
+            text-align: center;
+        }
+    }
+
+    &__email {
+        @include AvertaSemibold;
+        font-size: 16px;
+        line-height: 24px;
+        color: #020d12;
+        text-decoration: underline;
+        text-transform: capitalize;
+
+        &:hover,
+        &:focus-visible {
+            color: #020d12;
+            text-decoration: underline;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            color: $bio-blue-500;
+            font-size: 20px;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+
+    &__hours {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 16px;
+        border-radius: 12px;
+        background: #f5f5f5;
+    }
+
+    &__hours-icon {
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        background: $white;
+        box-shadow: 0 2px 2px rgba(6, 21, 86, 0.15);
+        color: $bio-blue-500;
+        font-size: 20px;
+    }
+
+    &__hours-text {
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+        color: #3d4a51;
+
+        strong {
+            display: block;
+            @include AvertaSemibold;
+            color: #020d12;
+        }
+    }
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &__fields {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__row {
+        display: flex;
+        gap: 16px;
+
+        @include maxWidth(575px) {
+            flex-direction: column;
+        }
+    }
+
+    &__field {
+        flex: 1;
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    &__label {
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+        color: #0d354b;
+
+        span {
+            color: $bio-red;
+        }
+    }
+
+    &__control {
+        height: 44px;
+        padding: 12px 16px;
+        border: 1px solid rgba(183, 206, 218, 0.5);
+        border-radius: 52px;
+        background: #f4f8fc;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+        color: #020d12;
+        outline: none;
+        width: 100%;
+
+        &::placeholder {
+            color: $text-muted;
+        }
+
+        &:focus {
+            border-color: $bio-blue-500;
+        }
+
+        &--select {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M4 6l4 4 4-4' stroke='%230c608f' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 16px center;
+            padding-right: 40px;
+        }
+    }
+
+    &__upload {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        min-height: 132px;
+        padding: 24px;
+        border: 1px dashed $bio-brown;
+        border-radius: 12px;
+        text-align: center;
+        cursor: pointer;
+        transition: background 0.2s ease;
+
+        &:hover {
+            background: rgba($bio-brown, 0.04);
+        }
+
+        input {
+            display: none;
+        }
+    }
+
+    &__upload-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 44px;
+        background: rgba($bio-red, 0.15);
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &__upload-title {
+        margin: 0;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+        color: #0a1929;
+    }
+
+    &__upload-hint {
+        margin: 0;
+        @include AvertaRegular;
+        font-size: 14px;
+        line-height: 22px;
+        color: $text-muted;
+    }
+
+    &__consent {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+
+        input {
+            flex-shrink: 0;
+            margin-top: 5px;
+            width: 16px;
+            height: 16px;
+            accent-color: $bio-blue-500;
+        }
+
+        label {
+            margin: 0;
+            @include AvertaRegular;
+            font-size: 16px;
+            line-height: 24px;
+            color: #020d12;
+        }
+    }
+}
+
+.contact-offices {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-top: 64px;
+
+    &__title {
+        margin: 0 0 40px;
+    }
+
+    &__grid {
+        display: flex;
+        gap: 30px;
+
+        @include maxWidth(991px) {
+            flex-direction: column;
+        }
+    }
+
+    &__card {
+        position: relative;
+        flex: 1;
+        height: 340px;
+        border-radius: 16px;
+        overflow: hidden;
+
+        @include maxWidth(991px) {
+            height: 280px;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 16px;
+            background: linear-gradient(123.02deg, #0a1929 1.07%, rgba(10, 25, 41, 0) 42.73%);
+            mix-blend-mode: multiply;
+            pointer-events: none;
+        }
+    }
+
+    &__label {
+        position: absolute;
+        z-index: 1;
+        top: 20px;
+        left: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        color: $white;
+    }
+
+    &__eyebrow {
+        margin: 0;
+        @include AvertaSemibold;
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: uppercase;
+        opacity: 0.7;
+    }
+
+    &__name {
+        margin: 0;
+        font-family: 'Noto Serif', serif;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    &__map {
+        position: absolute;
+        z-index: 1;
+        top: 46px;
+        right: 24px;
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        min-height: 36px;
+        padding: 6px 16px;
+        border-radius: 999px;
+        background: #fafcfd;
+        @include AvertaSemibold;
+        font-size: 16px;
+        line-height: 24px;
+        color: $bio-blue-500;
+        text-decoration: none;
+        transition: background 0.2s ease;
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+
+        &:hover {
+            background: darken(#fafcfd, 4%);
+            text-decoration: none;
+            color: $bio-blue-500;
+        }
+    }
+}
+
+
+
+
+.contact-faq {
+    padding: 64px $section-pad-x;
+
+    @include maxWidth(991px) {
+        padding: 48px 20px;
+    }
+
+    &__title {
+        margin: 0 auto 40px;
+        max-width: 1320px;
+    }
+
+    &__accordion {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    &__item {
+        margin-bottom: 12px;
+        border: 1px solid #dce5ee;
+        border-radius: 14px;
+        background: $white;
+        box-shadow:
+            0 2px 8px rgba($bio-blue, 0.04),
+            0 1px 2px rgba($bio-blue, 0.05);
+        overflow: hidden;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:has(.collapse.show) {
+            border-color: $bio-teal;
+        }
+    }
+
+    &__header {
+        padding: 0;
+        border: 0;
+        background: transparent;
+    }
+
+    &__question {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        padding: 16px 24px;
+        border: 0;
+        border-bottom: 1px solid transparent;
+        background: transparent;
+        text-align: left;
+        text-decoration: none;
+        white-space: normal;
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+            text-decoration: none;
+            color: inherit;
+            box-shadow: none;
+        }
+
+        &:not(.collapsed) {
+            border-bottom-color: #e8eff3;
+        }
+    }
+
+    &__num {
+        flex-shrink: 0;
+        @include AvertaSemibold;
+        font-size: 16px;
+        line-height: 24px;
+        color: $bio-blue-500;
+    }
+
+    &__text {
+        flex: 1;
+        margin: 0;
+        font-family: 'Noto Serif', serif;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 26px;
+        color: #020d12;
+    }
+
+    &__toggle {
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: #e8f0f8;
+        color: $bio-blue-500;
+        font-size: 14px;
+        line-height: 1;
+        transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    &__toggle-minus {
+        display: none !important;
+    }
+
+    &__question:not(.collapsed) &__toggle {
+        background: $bio-blue-500;
+        color: $white;
+    }
+
+    &__question:not(.collapsed) &__toggle-plus {
+        display: none;
+    }
+
+    &__question:not(.collapsed) &__toggle-minus {
+        display: block !important;
+    }
+
+    &__answer {
+        padding: 16px 24px 16px 64px;
+        @include AvertaRegular;
+        font-size: 16px;
+        line-height: 24px;
+        color: #020d12;
+    }
+
+    &__cta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    &__cta-text {
+        margin: 0;
+        @include AvertaSemibold;
+        font-size: 18px;
+        line-height: 26px;
+        color: #020d12;
+    }
+}
