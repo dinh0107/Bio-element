@@ -6,25 +6,12 @@
 .hero-slider {
     position: relative;
     width: 100%;
-    min-height: 600px;
     overflow: hidden;
     background: $bio-blue;
 
-    &::before {
-        content: '';
-        position: absolute;
-        inset: 0;
-        z-index: 0;
-        background: url('../images/home/banner.jpg') center / cover no-repeat;
-        pointer-events: none;
-    }
-
-    &::after {
-        content: '';
-        position: absolute;
-        inset: 0 49.72% 0 0;
-        z-index: 1;
-        pointer-events: none;
+    .hero-slide {
+        position: relative;
+        overflow: hidden;
     }
 
     &__content {
@@ -39,6 +26,22 @@
         width: 597px;
         max-width: calc(100% - 120px);
         z-index: 2;
+    }
+
+    .owl-item {
+        .hero-slider__content {
+            opacity: 0;
+            transform: translate(-50%, calc(-50% + 24px));
+            transition: opacity 0.65s ease, transform 0.65s ease;
+        }
+
+        &.active {
+            .hero-slider__content {
+                opacity: 1;
+                transform: translate(-50%, -50%);
+                transition-delay: 0.18s;
+            }
+        }
     }
 
     &__text {
@@ -87,12 +90,6 @@
     }
 
     @include maxWidth(991px) {
-        height: 520px;
-
-        &::after {
-            inset: 0;
-        }
-
         &__content {
             left: 50%;
             transform: translate(-50%, -50%);
@@ -116,8 +113,6 @@
     }
 
     @include maxWidth(575px) {
-        height: 460px;
-
         &__title {
             font-size: 26px;
             line-height: 34px;
@@ -272,6 +267,21 @@
     &__nav {
         height: 50px;
         background: $white;
+    }
+
+    &.is-scrolled {
+        .site-header__nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1030;
+            box-shadow: 0 4px 24px rgba($bio-blue-900, 0.08);
+        }
+
+        .site-header__nav-panel {
+            height: 50px;
+        }
     }
 
     &__nav-inner {
@@ -513,6 +523,7 @@
             position: absolute;
             top: 0;
             right: 0;
+            left: auto;
             bottom: 0;
             width: min(320px, 88vw);
             height: auto;
@@ -523,6 +534,20 @@
             transition: transform 0.3s ease;
             overflow-y: auto;
             pointer-events: auto;
+        }
+
+        &.is-scrolled {
+            .site-header__nav-panel {
+                height: auto;
+            }
+
+            .site-header__nav {
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: auto;
+                box-shadow: -8px 0 32px rgba($bio-blue-900, 0.12);
+            }
         }
 
         &__nav-inner {
@@ -1445,7 +1470,22 @@
         z-index: 0;
         width: 100%;
         height: 100%;
-        transition: opacity 0.35s ease;
+        object-fit: cover;
+        opacity: 1;
+        transition: opacity 0.45s ease, transform 0.45s ease;
+        will-change: opacity, transform;
+        backface-visibility: hidden;
+
+        &--next {
+            opacity: 0;
+            transform: scale(1.015);
+            pointer-events: none;
+
+            &.is-visible {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
 
         &.is-swapping {
             opacity: 0;
