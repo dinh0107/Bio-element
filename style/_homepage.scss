@@ -4,16 +4,6 @@
     padding-right: $container-pad !important;
 }
 .hero-slider {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    background: $bio-blue;
-
-    .hero-slide {
-        position: relative;
-        overflow: hidden;
-    }
-
     &__content {
         position: absolute;
         left: calc(50% - 361.5px);
