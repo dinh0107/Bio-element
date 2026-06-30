@@ -25,6 +25,10 @@
     &--brown span:last-child {
         color: $bio-brown;
     }
+    @include maxWidth(600px){
+        font-size: 22px;
+        line-height: 30px;
+    }
 }
 
 .bio-title-display {
@@ -45,7 +49,7 @@
     padding: 10px 24px;
     border: 1px solid transparent;
     border-radius: 40px;
-    @include AvertaSemibold;
+    @include BeVietnamPro-SemiBold;
     font-size: 18px;
     line-height: 26px;
     text-decoration: none;
@@ -195,7 +199,7 @@
     &__role {
         margin: 0;
         color: $bio-blue-900;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 16px;
         line-height: 24px;
     }
@@ -215,7 +219,7 @@
     &__label {
         margin: 0;
         color: #fafcfd;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 16px;
         line-height: 24px;
 
@@ -242,7 +246,7 @@
         padding: 0;
         background: transparent;
         color: $white;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 16px;
         line-height: 24px;
         outline: none;
@@ -263,7 +267,7 @@
         border-radius: 999px;
         background: #fafcfd;
         color: $bio-blue-500;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 16px;
         line-height: 24px;
         white-space: nowrap;
@@ -283,18 +287,7 @@
     }
 
     @include maxWidth(575px) {
-        &__field {
-            flex-direction: column;
-            align-items: stretch;
-            height: auto;
-            padding: 12px;
-            border-radius: 16px;
-        }
-
-        &__submit {
-            justify-content: center;
-            width: 100%;
-        }
+      
     }
 }
 
@@ -384,7 +377,7 @@
         padding: 0;
         background: transparent;
         color: $bio-search;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 16px;
         line-height: 24px;
         letter-spacing: 0.32px;
@@ -433,7 +426,7 @@
         border-radius: 8.5px;
         background: #b0523b;
         color: $white;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 12px;
         line-height: 16px;
         box-shadow: 1px 1px 1.5px rgba($black, 0.3);
@@ -450,7 +443,7 @@
     border-radius: 24px;
     background: $bio-red;
     color: $white;
-    @include AvertaSemibold;
+    @include BeVietnamPro-SemiBold;
     font-size: 12px;
     line-height: 20px;
     text-transform: uppercase;
@@ -467,7 +460,7 @@
     align-items: center;
     gap: 8px;
     color: $bio-blue-500;
-    @include AvertaSemibold;
+    @include BeVietnamPro-SemiBold;
     font-size: 16px;
     line-height: 24px;
     text-decoration: none;

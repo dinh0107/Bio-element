@@ -1,0 +1,574 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Há»“ PhÆ°Æ¡ng ThÃ¹y</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css"
+        integrity="sha512-rt/SrQ4UNIaGfDyEXZtNcyWvQeOq0QLygHluFQcSjaGB04IxWhal71tKuzP6K8eYXYB6vJV4pHkXcmFGGQ1/0w=="
+        crossorigin="anonymous" />
+    <link rel="shortcut icon"
+        href="//bioelements.com/cdn/shop/files/bioelements_ccf5911c-fa98-4b23-b8bf-b8233e41f4d3.png?crop=center&amp;height=32&amp;v=1737804771&amp;width=32"
+        type="image/png">
+    <link href="style/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/icon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="site-header__topbar">
+            <a href="#" class="site-header__topbar-msg mb-0">
+                <img src="images/header/icon-sparkle.svg" alt="" loading="lazy">
+                <span>DÃ nh cho spa chuyÃªn gia da liá»…u</span>
+                <img src="images/header/icon-sparkle.svg" alt="" loading="lazy">
+            </a>
+            <div class="container">
+                <div class="site-header__topbar-row d-flex justify-content-end">
+                    <div class="site-header__topbar-auth">
+                        <a class="site-header__topbar-auth-link" href="#">
+                            <img src="images/header/icon-user.svg" alt="" width="20" height="20" loading="lazy">
+                            ÄÄƒng kÃ½
+                        </a>
+                        /
+                        <a class="site-header__topbar-auth-link" href="#">ÄÄƒng nháº­p</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-header__main">
+            <div class="container">
+                <div class="site-header__main-inner d-flex align-items-center justify-content-between">
+                    <a class="site-header__logo" href="/">
+                        <img src="images/header/logo.png" alt="Bioelements" width="216" height="44" loading="eager"
+                            decoding="async">
+                    </a>
+                    <div class="site-header__tools d-flex align-items-center">
+                        <label class="site-header__search bio-search mb-0">
+                            <img src="images/header/icon-search.svg" alt="" loading="lazy">
+                            <input class="site-header__search-input bio-search__input" type="search" name="q"
+                                placeholder="Serum trá»‹ thÃ¢m, gel rá»­a máº·t...." autocomplete="off">
+                        </label>
+                        <a href="" class="site-header__icon-btn bio-icon-btn">
+                            <img src="images/header/icon-heart.svg" alt="" loading="lazy">
+                        </a>
+                        <a href="" class="site-header__icon-btn site-header__icon-btn--cart bio-icon-btn">
+                            <img src="images/header/icon-cart.svg" alt="" loading="lazy">
+                            <span class="site-header__cart-count bio-icon-btn__badge">0</span>
+                        </a>
+                        <button type="button" class="site-header__nav-toggle d-lg-none" data-nav-toggle>
+                            <span class="site-header__nav-toggle-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-header__nav-panel" data-nav-panel>
+            <nav class="site-header__nav">
+                <button type="button" class="site-header__nav-close d-lg-none" aria-label="Đóng menu" data-nav-close>
+                    <span class="fa-sharp fa-solid fa-xmark" aria-hidden="true"></span>
+                </button>
+                <div class="container" id="menu-scroll">
+                    <ul class="site-header__nav-inner d-flex justify-content-center list-unstyled mb-0">
+                        <li class="is-active"><a href="#">Trang chá»§</a></li>
+                        <li><a href="tinh-hoa-chi-tiet.html">Tinh hoa Bioelements</a></li>
+                        <li>
+                            <a href="tay-trang-bioelements.html">
+                                Sáº£n pháº©m
+                                <span class="site-header__nav-caret fa-sharp fa-solid fa-chevron-down"></span>
+                            </a>
+                            <ul class="site-header__submenu list-unstyled mb-0">
+                                <li><a href="tay-trang-bioelements.html">Serum &amp; tinh cháº¥t</a></li>
+                                <li><a href="tay-trang-bioelements.html">Sá»¯a rá»­a máº·t &amp; táº©y trang</a></li>
+                                <li><a href="tay-trang-bioelements.html">Kem dÆ°á»¡ng &amp; phá»¥c há»“i</a></li>
+                                <li><a href="tay-trang-bioelements.html">Combo chÄƒm sÃ³c da</a></li>
+                                <li><a class="site-header__submenu-all" href="tay-trang-bioelements.html">Xem táº¥t cáº£ sáº£n
+                                        pháº©m</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="lieu-trinh-chuyen-nghiep.html">Liá»‡u trÃ¬nh chuyÃªn nghiá»‡p</a></li>
+                        <li><a href="cam-nang.html">Kiáº¿n thá»©c</a></li>
+                        <li><a href="lien-he.html">LiÃªn há»‡</a></li>
+                    </ul>
+                    <div class="box-icon-scroll">
+                        <a href="" class="site-header__icon-btn bio-icon-btn">
+                            <img src="images/header/icon-heart.svg" alt="" loading="lazy">
+                        </a>
+                        <a href="" class="site-header__icon-btn site-header__icon-btn--cart bio-icon-btn">
+                            <img src="images/header/icon-cart.svg" alt="" loading="lazy">
+                            <span class="site-header__cart-count bio-icon-btn__badge">0</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="site-header__nav-overlay" data-nav-overlay hidden></div>
+    </header>
+
+    <div class="expert-detail-hero">
+        <a href="">
+            <img src="images/chuyen-gia/gt-2.jpg" alt="" class="img-fluid w-100">
+        </a>
+    </div>
+
+    <div class="expert-story">
+        <div class="container">
+            <h2 class="title">CÃ¢u chuyá»‡n nghá» nghiá»‡p</h2>
+            <div class="row expert-story__grid">
+                <div class="col-lg-7">
+                    <div class="expert-story__media">
+                        <img class="expert-story__photo" src="images/chuyen-gia/hpt.jpg" alt="Mr. Pháº¡m TrÆ°á»ng Linh"
+                            width="700" height="432" loading="lazy">
+                        <div class="expert-story__quote">
+                            <img class="expert-story__quote-icon" src="images/about/quote-mark.svg" alt="" width="25"
+                                height="20" loading="lazy">
+                            <p>Má»—i lÃ n da lÃ  má»™t cÃ¡ thá»ƒ sá»‘ng luÃ´n biáº¿n Ä‘á»™ng; trá»‹ liá»‡u thá»±c thá»¥ khÃ´ng chá»‰ dá»«ng láº¡i á»Ÿ bá»
+                                máº·t sinh há»c mÃ  pháº£i báº¯t Ä‘áº§u báº±ng viá»‡c tháº¥u hiá»ƒu bá»‘i cáº£nh sá»‘ng vÃ  vá»— vá» tÃ¢m trÃ­ khÃ¡ch
+                                hÃ ng</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 expert-story__content">
+                    <div class="expert-story__metric">
+                        <p class="expert-story__number">20+</p>
+                        <p class="expert-story__label">nÄƒm kinh nghiá»‡m trong ngÃ nh</p>
+                    </div>
+                    <p class="expert-story__desc">Tá»« nhá»¯ng ngÃ y nghiÃªn cá»©u chuyÃªn sÃ¢u táº¡i Äáº¡i há»c Y HÃ  Ná»™i, bÃ¡c sÄ© Ä‘Ã£
+                        nháº­n tháº¥y sá»± "kiá»‡t sá»©c" cá»§a lÃ n da Viá»‡t trÆ°á»›c lÃ n sÃ³ng treatment ná»“ng Ä‘á»™ cao. CÃ¢u chuyá»‡n ká»ƒ vá»
+                        hÃ nh trÃ¬nh tÃ¬m kiáº¿m sá»± cÃ¢n báº±ng giá»¯a khoa há»c thá»±c chá»©ng vÃ  sá»± chá»¯a lÃ nh tÃ¢m trÃ­, Ä‘Æ°a triáº¿t lÃ½
+                        SkinReadingÂ® trá»Ÿ thÃ nh "kim chá»‰ nam" trong viá»‡c giáº£i quyáº¿t ná»—i Ä‘au cá»§a khÃ¡ch hÃ ng bá»‹ tá»•n thÆ°Æ¡ng
+                        hÃ ng rÃ o báº£o vá»‡ da.</p>
+                    <a class="expert-story__cta" href="lien-he.html">
+                        <span>LiÃªn há»‡ chuyÃªn gia</span>
+                        <img src="images/icons/arrow-right-white.svg" alt="" width="16" height="16" loading="lazy">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="expert-expertise">
+        <div class="expert-expertise__texture" aria-hidden="true"></div>
+        <div class="container">
+            <h2 class="title text-center">LÄ©nh vá»±c chuyÃªn sÃ¢u</h2>
+            <div class="row expert-expertise__grid">
+                <div class="col-lg-4">
+                    <article class="expert-expertise__card">
+                        <img class="expert-expertise__img" src="images/chuyen-gia/linh-vuc.jpg"
+                            alt="TÆ° váº¥n chiáº¿n lÆ°á»£c váº­n hÃ nh há»‡ thá»‘ng Spa/Clinic" width="374" height="200"
+                            loading="lazy">
+                        <div class="expert-expertise__body">
+                            <p class="expert-expertise__num">01</p>
+                            <h3 class="expert-expertise__name">Äiá»u trá»‹ trá»©ng cÃ¡, sáº¹o má»¥n vÃ  kiá»ƒm soÃ¡t bÃ­t táº¯c lá»— chÃ¢n
+                                lÃ´ng.</h3>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4">
+                    <article class="expert-expertise__card">
+                        <img class="expert-expertise__img" src="images/chuyen-gia/linh-vuc.jpg"
+                            alt="XÃ¢y dá»±ng mÃ´ hÃ¬nh kinh doanh dá»±a trÃªn giÃ¡ trá»‹ bá»n vá»¯ng" width="374" height="200"
+                            loading="lazy">
+                        <div class="expert-expertise__body">
+                            <p class="expert-expertise__num">02</p>
+                            <h3 class="expert-expertise__name">Xá»­ lÃ½ tÄƒng sáº¯c tá»‘, nÃ¡m mÃ¡.
+                            </h3>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4">
+                    <article class="expert-expertise__card">
+                        <img class="expert-expertise__img" src="images/chuyen-gia/linh-vuc.jpg"
+                            alt="Äá»‹nh hÆ°á»›ng phÃ¡t triá»ƒn há»‡ sinh thÃ¡i má»¹ pháº©m sinh há»c vÃ  Hybrid Cosmetics" width="374"
+                            height="200" loading="lazy">
+                        <div class="expert-expertise__body">
+                            <p class="expert-expertise__num">03</p>
+                            <h3 class="expert-expertise__name">Phá»¥c há»“i da nháº¡y cáº£m, da á»©ng Ä‘á» vÃ  Rosacea.</h3>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="process-master">
+        <div class="container">
+            <h2 class="title title-cormorant text-center">Quy trÃ¬nh "Äá»c vá»‹ Ä‘a táº§ng" 5 bÆ°á»›c:</h2>
+
+            <div class="process-wap">
+                <div class="process-item">
+                    <div class="process-icon">
+                        <img src="/images/chuyen-gia/icon-1.svg" alt="">
+                        <span class="process-step">I</span>
+                    </div>
+                    <div class="process-content">
+                        <p>PhÃ¢n tÃ­ch SkinReading&copy;</p>
+                    </div>
+                </div>
+                <div class="process-item">
+                    <div class="process-icon">
+                        <img src="/images/chuyen-gia/icon-2.svg" alt="">
+                        <span class="process-step">II</span>
+                    </div>
+                    <div class="process-content">
+                        <p>Â Soi da lÃ¢m sÃ ng bÃ³c tÃ¡ch cÆ¡ cháº¿ viÃªm tiá»m áº©n.</p>
+                    </div>
+                </div>
+                <div class="process-item">
+                    <div class="process-icon">
+                        <img src="/images/chuyen-gia/icon-3.svg" alt="">
+                        <span class="process-step">III</span>
+                    </div>
+                    <div class="process-content">
+                        <p>Tinh chá»‰nh hoáº¡t cháº¥t Custom Blending &copy; ngay táº¡i phÃ²ng Lab.Â </p>
+                    </div>
+                </div>
+                <div class="process-item">
+                    <div class="process-icon">
+                        <img src="/images/chuyen-gia/icon-4.svg" alt="">
+                        <span class="process-step">IV</span>
+                    </div>
+                    <div class="process-content">
+                        <p>Trá»‹ liá»‡u káº¿t há»£p Healing khÆ¡i thÃ´ng nÄƒng lÆ°á»£ng.Â </p>
+                    </div>
+                </div>
+                <div class="process-item">
+                    <div class="process-icon">
+                        <img src="/images/chuyen-gia/icon-5.svg" alt="">
+                        <span class="process-step">V</span>
+                    </div>
+                    <div class="process-content">
+                        <p>Theo dÃµi pháº£n á»©ng táº¿ bÃ o vÃ  tá»‘i Æ°u lá»™ trÃ¬nh táº¡i nhÃ .</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="home-results pt-0">
+        <div class="container home-results__inner">
+            <h2 class="results__title">Minh chá»©ngÂ káº¿t quáº£ Ä‘iá»u trá»‹Â thá»±c táº¿.</h2>
+            <div class="home-results__slider ">
+                <div class="home-results__track owl-carousel owl-results">
+                    <article class="ba-card">
+                        <div class="ba-card__media">
+                            <div class="ba-card__half">
+                                <img src="images/home/before-1.jpg" alt="Äiá»u trá»‹ da má»¥n â€“ trÆ°á»›c" width="210"
+                                    height="264" loading="lazy">
+                                <span class="ba-card__badge ba-card__badge--before">TrÆ°á»›c</span>
+                            </div>
+                            <div class="ba-card__half">
+                                <img src="images/home/affter-1.jpg" alt="Äiá»u trá»‹ da má»¥n â€“ sau" width="210" height="264"
+                                    loading="lazy">
+                                <span class="ba-card__badge ba-card__badge--after">Sau</span>
+                            </div>
+                        </div>
+                        <h3 class="ba-card__title">Äiá»u trá»‹ da má»¥n, bÃ­t táº¯c</h3>
+                    </article>
+                    <article class="ba-card">
+                        <div class="ba-card__media">
+                            <div class="ba-card__half">
+                                <img src="images/home/before-2.jpg" alt="ChÄƒm sÃ³c lÃ n da lÃ£o hÃ³a â€“ trÆ°á»›c" width="210"
+                                    height="264" loading="lazy">
+                                <span class="ba-card__badge ba-card__badge--before">TrÆ°á»›c</span>
+                            </div>
+                            <div class="ba-card__half">
+                                <img src="images/home/affter-2.jpg" alt="ChÄƒm sÃ³c lÃ n da lÃ£o hÃ³a â€“ sau" width="210"
+                                    height="264" loading="lazy">
+                                <span class="ba-card__badge ba-card__badge--after">Sau</span>
+                            </div>
+                        </div>
+                        <h3 class="ba-card__title">ChÄƒm sÃ³c lÃ n da lÃ£o hÃ³a</h3>
+                    </article>
+
+                    <article class="ba-card">
+                        <div class="ba-card__media">
+                            <div class="ba-card__half">
+                                <img src="images/home/before-2.jpg" alt="ChÄƒm sÃ³c lÃ n da lÃ£o hÃ³a â€“ trÆ°á»›c" width="210"
+                                    height="264" loading="lazy">
+                                <span class="ba-card__badge ba-card__badge--before">TrÆ°á»›c</span>
+                            </div>
+                            <div class="ba-card__half">
+                                <img src="images/home/affter-2.jpg" alt="ChÄƒm sÃ³c lÃ n da lÃ£o hÃ³a â€“ sau" width="210"
+                                    height="264" loading="lazy">
+                                <span class="ba-card__badge ba-card__badge--after">Sau</span>
+                            </div>
+                        </div>
+                        <h3 class="ba-card__title">ChÄƒm sÃ³c lÃ n da lÃ£o hÃ³a</h3>
+                    </article>
+                    <article class="ba-card">
+                        <div class="ba-card__media">
+                            <div class="ba-card__half">
+                                <img src="images/home/before-2.jpg" alt="ChÄƒm sÃ³c lÃ n da lÃ£o hÃ³a â€“ trÆ°á»›c" width="210"
+                                    height="264" loading="lazy">
+                                <span class="ba-card__badge ba-card__badge--before">TrÆ°á»›c</span>
+                            </div>
+                            <div class="ba-card__half">
+                                <img src="images/home/affter-2.jpg" alt="ChÄƒm sÃ³c lÃ n da lÃ£o hÃ³a â€“ sau" width="210"
+                                    height="264" loading="lazy">
+                                <span class="ba-card__badge ba-card__badge--after">Sau</span>
+                            </div>
+                        </div>
+                        <h3 class="ba-card__title">ChÄƒm sÃ³c lÃ n da lÃ£o hÃ³a</h3>
+                    </article>
+                    <article class="ba-card">
+                        <div class="ba-card__media">
+                            <div class="ba-card__half">
+                                <img src="images/home/before-3.jpg" alt="Äiá»u trá»‹ nÃ¡m &amp; tá»•n thÆ°Æ¡ng â€“ trÆ°á»›c"
+                                    width="210" height="264" loading="lazy">
+                                <span class="ba-card__badge ba-card__badge--before">TrÆ°á»›c</span>
+                            </div>
+                            <div class="ba-card__half">
+                                <img src="images/home/affter-3.jpg" alt="Äiá»u trá»‹ nÃ¡m &amp; tá»•n thÆ°Æ¡ng â€“ sau"
+                                    width="210" height="264" loading="lazy">
+                                <span class="ba-card__badge ba-card__badge--after">Sau</span>
+                            </div>
+                        </div>
+                        <h3 class="ba-card__title">Äiá»u trá»‹ nÃ¡m &amp; tá»•n thÆ°Æ¡ng</h3>
+                    </article>
+                    <article class="ba-card">
+                        <div class="ba-card__media">
+                            <div class="ba-card__half">
+                                <img src="images/home/before-3.jpg" alt="Äiá»u trá»‹ nÃ¡m &amp; tá»•n thÆ°Æ¡ng â€“ trÆ°á»›c"
+                                    width="210" height="264" loading="lazy">
+                                <span class="ba-card__badge ba-card__badge--before">TrÆ°á»›c</span>
+                            </div>
+                            <div class="ba-card__half">
+                                <img src="images/home/affter-3.jpg" alt="Äiá»u trá»‹ nÃ¡m &amp; tá»•n thÆ°Æ¡ng â€“ sau"
+                                    width="210" height="264" loading="lazy">
+                                <span class="ba-card__badge ba-card__badge--after">Sau</span>
+                            </div>
+                        </div>
+                        <h3 class="ba-card__title">Äiá»u trá»‹ nÃ¡m tá»•n thÆ°Æ¡ng</h3>
+                    </article>
+                </div>
+                <div class="home-results__dots bio-dots"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="master-album">
+        <div class="container">
+            <h2 class="title text-center">hÃ¬nh áº£nh</h2>
+
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-item--large">
+                    <img src="/images/chuyen-gia/gallery-1.jpg" alt="">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="/images/chuyen-gia/gallery-2.jpg" alt="">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="/images/chuyen-gia/gallery-3.jpg" alt="">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="/images/chuyen-gia/gallery-4.jpg" alt="">
+                </div>
+
+                <div class="gallery-item gallery-item--more">
+                    <img src="/images/chuyen-gia/gallery-1.jpg" alt="">
+                    <div class="gallery-overlay">
+                        <span>
+                            <i class="fa-sharp fa-thin fa-images"></i>
+                            <br>
+                            Xem táº¥t cáº£ 12 áº£nh
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="team-consult master-consult">
+        <div class="container">
+            <div class="team-consult__wrap">
+                <div class="team-consult__intro">
+                    <h2 class="team-consult__heading">
+                        <span class="team-consult__heading-main">YÃªu cáº§u tham váº¥n chiáº¿n lÆ°á»£c</span>
+                    </h2>
+                    <p class="team-consult__desc">â€œ TÃ´i cam káº¿t Ä‘á»“ng hÃ nh cÃ¹ng cÃ¡c báº¡n Ä‘á»ƒ thay Ä‘á»•i diá»‡n máº¡o ngÃ nh tháº©m
+                        má»¹ Viá»‡t Nam báº±ng khoa há»c thá»±c chá»©ng vÃ  sá»± tá»­ táº¿ tuyá»‡t Ä‘á»‘iâ€
+                    </p>
+                    <div class="master-connect">
+                        <h2>káº¿t ná»‘i vá»›i chuyÃªn gia</h2>
+                        <div class="master__socials">
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                zalo
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="about-hybrid__quote-visual">
+                        <div class="about-hybrid__quote-figure">
+                            <img class="about-hybrid__quote-photo" src="images/chuyen-gia/image-form.png" alt="Mr. Pháº¡m TrÆ°á»ng Linh"
+                                width="373" height="390" loading="lazy">
+                        </div>
+                            
+                    </div>
+                </div>
+
+                <form class="book-form" action="#" method="post" novalidate>
+                    <p class="book-form__title text-left">ÄÄƒng kÃ½ nháº­n tÆ° váº¥n</p>
+                    <div class="book-form__rows">
+                        <label class="book-form__field">
+                            <span class="book-form__label">Há» vÃ  tÃªn <span>*</span></span>
+                            <input class="book-form__input" type="text" name="name" data-field="name"
+                                placeholder="Nháº­p há» tÃªn" autocomplete="name">
+                        </label>
+                        <label class="book-form__field">
+                            <span class="book-form__label">Sá»‘ Ä‘iá»‡n thoáº¡i <span>*</span></span>
+                            <input class="book-form__input" type="tel" name="phone" data-field="phone"
+                                placeholder="Sá»‘ Ä‘iá»‡n thoáº¡i cá»§a báº¡n" autocomplete="tel">
+                        </label>
+                        <label class="book-form__field">
+                            <span class="book-form__label">TÃ¬nh tráº¡ng da/ Nhu cáº§u doanh nghiá»‡p <span>*</span></span>
+                            <textarea class="book-form__textarea" name="message" data-field="message"
+                                placeholder="Nháº­p ná»™i dung..."></textarea>
+                        </label>
+                    </div>
+                    <label class="book-form__consent">
+                        <input type="checkbox" name="consent" checked>
+                        <p><strong>Bioelements</strong> cam káº¿t báº£o máº­t tuyá»‡t Ä‘á»‘i dá»¯ liá»‡u khÃ¡ch hÃ ng vÃ  tuÃ¢n thá»§ quy
+                            táº¯c á»©ng xá»­ chuyÃªn mÃ´n cao nháº¥t trong má»i phÃ¡c Ä‘á»“ trá»‹ liá»‡u cÃ¡ nhÃ¢n hÃ³a.</p>
+                    </label>
+                    <button class="book-form__submit" type="submit">
+                        Gá»­i yÃªu cáº§u tham váº¥n
+                        <img src="images/icons/arrow-right-white.svg" alt="" width="16" height="16" loading="lazy">
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+            <div class="site-footer__top">
+                <div class="site-footer__brand">
+                    <a class="site-footer__logo" href="/">
+                        <img src="images/footer/logo-footer.png" alt="Bioelements" width="294" height="60"
+                            loading="lazy">
+                    </a>
+                    <div class="site-footer__brand-body">
+                        <p class="site-footer__about">CÃ´ng ty Cá»• pháº§n Labo De Dermafirm Viá»‡t Nam â€”<br>NhÃ  phÃ¢n phá»‘i Ä‘á»™c
+                            quyá»n thÆ°Æ¡ng hiá»‡u Bioelements (USA) táº¡i Viá»‡t Nam.</p>
+                        <div class="site-footer__office">
+                            <p class="site-footer__office-title">Trá»¥ sá»Ÿ chÃ­nh Â· HÃ  Ná»™i</p>
+                            <p class="site-footer__contact-item">
+                                <i class="site-footer__icon fa-sharp fa-solid fa-location-dot"></i>
+                                TÃ²a C, NhÃ  khÃ¡ch La ThÃ nh, 226 Váº¡n PhÃºc , PhÆ°á»ng Ngá»c HÃ , ThÃ nh Phá»‘ HÃ  Ná»™i
+                            </p>
+                            <p class="site-footer__contact-item">
+                                <i class="site-footer__icon fa-sharp fa-solid fa-phone"></i>
+                                0911.966.116
+                            </p>
+                        </div>
+                        <hr class="site-footer__divider">
+                        <div class="site-footer__office">
+                            <p class="site-footer__office-title">Chi nhÃ¡nh Â· TP. Há»“ ChÃ­ Minh</p>
+                            <p class="site-footer__contact-item">
+                                <i class="site-footer__icon fa-sharp fa-solid fa-location-dot"></i>
+                                114 Nguyá»…n HoÃ ng, PhÆ°á»ng An PhÃº, TP. Thá»§ Äá»©c.
+                            </p>
+                            <p class="site-footer__contact-item">
+                                <i class="site-footer__icon fa-sharp fa-solid fa-phone"></i>
+                                093.901.6969
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="site-footer__col site-footer__col--explore">
+                    <p class="site-footer__col-title">KhÃ¡m phÃ¡</p>
+                    <ul class="site-footer__links">
+                        <li><a class="site-footer__link" href="#">ToÃ n bá»™ sáº£n pháº©m</a></li>
+                        <li><a class="site-footer__link" href="#">Liá»‡u trÃ¬nh chuyÃªn nghiá»‡p</a></li>
+                        <li><a class="site-footer__link" href="#">Tinh hoa Bioelements</a></li>
+                        <li><a class="site-footer__link" href="#">CÃ´ng nghá»‡</a></li>
+                        <li><a class="site-footer__link" href="#">Cáº©m nang</a></li>
+                        <li><a class="site-footer__link" href="#">Há»‡ thá»‘ng Spa &amp; Clinic</a></li>
+                        <li><a class="site-footer__link" href="#">Tin tá»©c</a></li>
+                        <li><a class="site-footer__link" href="lien-he.html">LiÃªn há»‡</a></li>
+                    </ul>
+                </div>
+                <div class="site-footer__col site-footer__col--policy">
+                    <p class="site-footer__col-title">chÃ­nh sÃ¡ch</p>
+                    <ul class="site-footer__links">
+                        <li><a class="site-footer__link" href="chinh-sach-mua-hang.html">ChÃ­nh sÃ¡ch mua hÃ ng</a></li>
+                        <li><a class="site-footer__link" href="chinh-sach-bao-mat.html">ChÃ­nh sÃ¡ch báº£o máº­t</a></li>
+                        <li><a class="site-footer__link" href="dieu-khoan-su-dung.html">Äiá»u khoáº£n sá»­ dá»¥ng</a></li>
+                        <li><a class="site-footer__link" href="#">ChÃ­nh sÃ¡ch váº­n chuyá»ƒn</a></li>
+                    </ul>
+                </div>
+                <div class="site-footer__contact">
+                    <div class="site-footer__contact-block">
+                        <p class="site-footer__col-title">LiÃªn há»‡ vá»›i chÃºng tÃ´i</p>
+                        <div class="site-footer__email-group">
+                            <p class="site-footer__office-title">Káº¿t ná»‘i qua email:</p>
+                            <div class="site-footer__email-row">
+                                <i class="site-footer__icon fa-sharp fa-solid fa-envelope"></i>
+                                <a class="site-footer__email"
+                                    href="mailto:marketing@bioelements.vn">marketing@bioelements.vn</a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="site-footer__col-title">Follow us</p>
+                    <div class="site-footer__socials">
+                        <a class="site-footer__social" href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a class="site-footer__social" href="#">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a class="site-footer__social" href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a class="site-footer__social site-footer__social--zalo" href="#">
+                            zalo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="site-footer__bottom">
+                <hr class="site-footer__divider site-footer__divider--bottom">
+                <p class="site-footer__copy">Â© 2026 Bioelements Viá»‡t Nam Â· Labo De Dermafirm JSC</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"
+        integrity="sha512-7rusk8kGPFynZWu26OKbTeI+QPoYchtxsmPeBqkHIEXJxeun4yJ4ISYe7C6sz9wdxeE1Gk3VxsIWgCZTc+vX3g=="
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <script src="js/bio.js"></script>
+</body>
+
+</html>
+

@@ -56,6 +56,46 @@ $section-pad-x: 60px;
     src: url('../webfonts/Averta-ExtraBold.otf') format('opentype');
 }
 
+
+
+
+
+@font-face {
+    font-family: 'BeVietnamPro-Regular';
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+    src: url('../webfonts/BeVietnamPro-Regular.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'BeVietnamPro-SemiBold';
+    font-display: swap;
+    font-weight: 600;
+    font-style: normal;
+    src: url('../webfonts/BeVietnamPro-SemiBold.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'BeVietnamPro-Bold';
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+    src: url('../webfonts/BeVietnamPro-Bold.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'BeVietnamPro-ExtraBold.ttf';
+    font-display: swap;
+    font-weight: 800;
+    font-style: normal;
+    src: url('../webfonts/BeVietnamPro-ExtraBold.ttf') format('opentype');
+}
+
+
+
+
+
 @font-face {
     font-family: 'Cormorant-Regular';
     font-display: swap;
@@ -120,6 +160,31 @@ $section-pad-x: 60px;
     src: url('../webfonts/NotoSerif-Bold.ttf') format('truetype');
 }
 
+
+
+
+//BE
+
+
+@mixin BeVietnamPro-Regular {
+     font-family: 'BeVietnamPro-Regular';
+}
+
+@mixin BeVietnamPro-SemiBold {
+      font-family: 'BeVietnamPro-SemiBold';
+}
+
+@mixin BeVietnamPro-Bold {
+    font-family: 'BeVietnamPro-Bold';
+}
+
+@mixin BeVietnamPro-ExtraBold {
+     font-family: 'BeVietnamPro-ExtraBold.ttf';
+}
+
+//END
+
+
 @mixin AvertaRegular {
     font-family: 'Averta-Regular', sans-serif;
 }
@@ -169,19 +234,19 @@ $section-pad-x: 60px;
 }
 
 @mixin Regular {
-    @include AvertaRegular;
+    @include BeVietnamPro-Regular;
 }
 
 @mixin Medium {
-    @include AvertaSemibold;
+    @include BeVietnamPro-SemiBold;
 }
 
 @mixin SemiBold {
-    @include AvertaSemibold;
+    @include BeVietnamPro-SemiBold;
 }
 
 @mixin Bold {
-    @include AvertaBold;
+    @include BeVietnamPro-Bold;
 }
 
 @mixin maxWidth($width) {

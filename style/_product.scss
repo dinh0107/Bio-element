@@ -103,7 +103,7 @@
     &__category {
         margin: 0 0 8px;
         color: $bio-blue-500;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 14px;
         line-height: 22px;
         letter-spacing: 1.71px;
@@ -131,13 +131,13 @@
         align-items: center;
         gap: 4px;
         color: #ffb535;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 16px;
         line-height: 24px;
 
         strong {
             color: $bio-brown;
-            @include AvertaSemibold;
+            @include BeVietnamPro-SemiBold;
         }
     }
 
@@ -150,13 +150,13 @@
     &__sold {
         margin: 0;
         color: $bio-muted;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 16px;
         line-height: 24px;
 
         strong {
             color: $bio-body;
-            @include AvertaSemibold;
+            @include BeVietnamPro-SemiBold;
         }
     }
 
@@ -170,7 +170,7 @@
     &__price {
         margin: 0;
         color: $bio-body;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 24px;
         line-height: 32px;
         letter-spacing: 0.48px;
@@ -179,7 +179,7 @@
     &__price-old {
         margin: 0;
         color: $bio-muted;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 18px;
         line-height: 28px;
         text-decoration: line-through;
@@ -192,7 +192,7 @@
         border-radius: 8px;
         background: $bio-red;
         color: $white;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 16px;
         line-height: 24px;
     }
@@ -210,7 +210,7 @@
         border-radius: 28px;
         background: transparent;
         color: $bio-blue-800;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 16px;
         line-height: 24px;
         cursor: pointer;
@@ -250,7 +250,7 @@
         border: 0;
         background: transparent;
         color: $bio-body;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 20px;
         line-height: 1;
         cursor: pointer;
@@ -261,7 +261,7 @@
         border: 0;
         background: transparent;
         color: $bio-body;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 18px;
         line-height: 26px;
         text-align: center;
@@ -286,7 +286,7 @@
         background: $bio-blue-500;
         box-shadow: 0 8px 10px rgba(77, 191, 217, 0.15);
         color: $white;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 18px;
         line-height: 26px;
         cursor: pointer;
@@ -310,7 +310,7 @@
         border-radius: 52px;
         background: transparent;
         color: $bio-blue-500;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 18px;
         line-height: 26px;
         cursor: pointer;
@@ -330,7 +330,7 @@
         margin: 0;
         padding-left: 24px;
         color: $bio-body;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 16px;
         line-height: 24px;
 
@@ -372,7 +372,7 @@
     &__trust-title {
         margin: 0;
         color: $bio-blue-900;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 14px;
         line-height: 22px;
     }
@@ -380,7 +380,7 @@
     &__trust-text {
         margin: 0;
         color: #3d4a51;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 14px;
         line-height: 22px;
     }
@@ -499,7 +499,7 @@
     &__bundle-category {
         margin: 0;
         color: $bio-blue-500;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 14px;
         line-height: 22px;
     }
@@ -507,7 +507,7 @@
     &__bundle-name {
         margin: 0;
         color: $bio-body;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 16px;
         line-height: 24px;
     }
@@ -515,7 +515,7 @@
     &__bundle-price {
         margin: 0;
         color: $bio-body;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 16px;
         line-height: 24px;
     }
@@ -548,7 +548,7 @@
     &__bundle-total-label {
         margin: 0 0 4px;
         color: $bio-muted;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 14px;
         line-height: 22px;
     }
@@ -562,7 +562,7 @@
     &__bundle-total {
         margin: 0;
         color: $bio-body;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 24px;
         line-height: 32px;
     }
@@ -570,7 +570,7 @@
     &__bundle-old {
         margin: 0;
         color: $bio-muted;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 18px;
         line-height: 28px;
         text-decoration: line-through;
@@ -585,7 +585,7 @@
         border-radius: 52px;
         background: $bio-blue-500;
         color: $white;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 18px;
         line-height: 26px;
         cursor: pointer;
@@ -692,7 +692,7 @@
         border-bottom: 2px solid transparent;
         background: transparent;
         color: $bio-muted;
-        @include AvertaBold;
+        @include BeVietnamPro-Bold;
         font-size: 16px;
         line-height: 24px;
         text-transform: uppercase;
@@ -747,7 +747,7 @@
         gap: 16px;
         margin-bottom: 24px;
         color: $bio-body;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 16px;
         line-height: 24px;
 
@@ -759,7 +759,7 @@
     &__subtitle {
         margin: 0 0 16px;
         color: $bio-body;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 24px;
         line-height: 32px;
     }
@@ -767,7 +767,7 @@
     &__text {
         margin: 0 0 16px;
         color: $bio-body;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 16px;
         line-height: 24px;
     }
@@ -775,7 +775,7 @@
     &__heading {
         margin: 0 0 16px;
         color: $bio-body;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 18px;
         line-height: 26px;
     }
@@ -784,7 +784,7 @@
         margin: 0 0 16px;
         padding-left: 24px;
         color: $bio-blue-500;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 16px;
         line-height: 24px;
     }
@@ -792,7 +792,7 @@
     &__closing {
         margin: 0;
         color: $bio-body;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 16px;
         line-height: 24px;
     }
@@ -812,7 +812,7 @@
     &__text {
         margin: 0 0 16px;
         color: $bio-body;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 16px;
         line-height: 24px;
     }
@@ -821,7 +821,7 @@
         margin: 0;
         padding-left: 24px;
         color: $bio-body;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 16px;
         line-height: 24px;
     }
@@ -858,7 +858,7 @@
     &__score {
         margin: 0;
         color: $bio-body;
-        @include AvertaBold;
+        @include BeVietnamPro-Bold;
         font-size: 64px;
         line-height: 1;
     }
@@ -872,7 +872,7 @@
     &__count {
         margin: 8px 0 0;
         color: $bio-muted;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 16px;
         line-height: 24px;
     }
@@ -895,7 +895,7 @@
         align-items: center;
         gap: 4px;
         color: $bio-body;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 16px;
         line-height: 24px;
     }
@@ -915,7 +915,7 @@
 
     &__bar-count {
         color: $bio-body;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 16px;
         line-height: 24px;
         text-align: right;
@@ -932,7 +932,7 @@
         border-radius: 52px;
         background: $bio-blue-500;
         color: $white;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 18px;
         line-height: 26px;
         cursor: pointer;
@@ -964,7 +964,7 @@
         align-items: center;
         justify-content: center;
         color: $white;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 20px;
         line-height: 1;
 
@@ -1001,7 +1001,7 @@
     &__name {
         margin: 0;
         color: $bio-body;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 18px;
         line-height: 26px;
     }
@@ -1009,7 +1009,7 @@
     &__meta {
         margin: 4px 0 0;
         color: $bio-brown;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 14px;
         line-height: 22px;
     }
@@ -1029,7 +1029,7 @@
         border-radius: 6px;
         background: $bio-blue-500;
         color: $white;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 14px;
         line-height: 18px;
     }
@@ -1037,7 +1037,7 @@
     &__text {
         margin: 0 0 12px;
         color: $bio-blue-800;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 14px;
         line-height: 22px;
     }
@@ -1080,7 +1080,7 @@
         border-radius: 52px;
         background: transparent;
         color: $bio-blue-500;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 16px;
         line-height: 24px;
         cursor: pointer;
@@ -1089,7 +1089,7 @@
     &__shown {
         margin: 0;
         color: $bio-muted;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 14px;
         line-height: 22px;
     }

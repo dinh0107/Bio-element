@@ -38,7 +38,7 @@
     &__desc {
         margin: 0;
         color: $bio-blue-800;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 16px;
         line-height: 24px;
     }
@@ -68,7 +68,7 @@
         border: 0;
         background: transparent;
         color: $bio-body;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 16px;
         line-height: 24px;
 
@@ -89,7 +89,7 @@
         border-radius: 999px;
         background: $bio-blue-500;
         color: $white;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 16px;
         line-height: 24px;
         cursor: pointer;
@@ -110,7 +110,7 @@
         border-radius: 40px;
         background: $bio-blue-500;
         color: $white;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 18px;
         line-height: 26px;
         text-decoration: none;
@@ -263,7 +263,7 @@
         display: inline-flex;
         align-items: center;
         gap: 4px;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 16px;
         line-height: 24px;
         transition: gap 0.3s ease;
@@ -399,14 +399,14 @@
 
     &__card-label {
         color: rgba($white, 0.7);
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 16px;
         line-height: 24px;
     }
 
     &__card-value {
         color: #eef3f1;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 18px;
         line-height: 26px;
     }
@@ -428,7 +428,7 @@
 
         span {
             color: $white;
-            @include AvertaSemibold;
+            @include BeVietnamPro-SemiBold;
             font-size: 16px;
             line-height: 24px;
             white-space: nowrap;
@@ -444,7 +444,7 @@
         border-radius: 40px;
         background: $white;
         color: $bio-blue;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 18px;
         line-height: 26px;
         text-decoration: none;

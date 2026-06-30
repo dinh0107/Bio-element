@@ -1,5 +1,5 @@
-/* ==========================================================================
-   Đội ngũ chuyên gia (team page)
+﻿/* ==========================================================================
+   Äá»™i ngÅ© chuyÃªn gia (team page)
    ========================================================================== */
 
 .team-hero {
@@ -12,7 +12,7 @@
     }
 }
 
-/* --- Quy trình tham vấn --------------------------------------------------- */
+/* --- Quy trÃ¬nh tham váº¥n --------------------------------------------------- */
 .team-process {
     padding: 64px 0;
 
@@ -150,6 +150,7 @@
     &:hover {
         transform: translateY(-6px);
         box-shadow: 0 18px 36px -18px rgba(12, 68, 118, .35);
+
         &::before {
             width: 100%;
         }
@@ -203,7 +204,7 @@
     }
 }
 
-/* --- Đội ngũ chuyên gia --------------------------------------------------- */
+/* --- Äá»™i ngÅ© chuyÃªn gia --------------------------------------------------- */
 .team-experts {
     padding: 64px 0;
     background: #f5f9fd;
@@ -384,6 +385,7 @@
         text-decoration: none;
         transition: background-color .25s ease, color .25s ease;
         font-size: 12px;
+
         &:hover {
             background: $bio-blue-500;
             color: $white;
@@ -410,7 +412,7 @@
     }
 }
 
-/* --- Yêu cầu tham vấn (form) ---------------------------------------------- */
+/* --- YÃªu cáº§u tham váº¥n (form) ---------------------------------------------- */
 .team-consult {
     padding: 64px 0;
 
@@ -740,4 +742,668 @@
 .ep-opt:has(.ep-opt__input:checked) {
     border-color: $bio-blue-500;
     background: #f4f8fc;
+}
+
+/* --- Chi tiet chuyen gia --------------------------------------------------- */
+.expert-detail-hero {
+    width: 100%;
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.title {
+    @include CormorantSemiBold;
+    margin: 0 0 40px;
+    color: $bio-blue-500;
+    font-size: 34px;
+    line-height: 42px;
+    text-transform: uppercase;
+
+    @include maxWidth(767px) {
+        margin-bottom: 28px;
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+.title-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.achievements {
+    padding: 30px 0;
+}
+
+.expert-story {
+    padding: 64px 0;
+    background: $white;
+
+    @include maxWidth(767px) {
+        padding: 40px 0;
+    }
+
+
+    &__grid {
+        align-items: flex-start;
+    }
+
+    &__media {
+        position: relative;
+        min-height: 480px;
+
+        @include maxWidth(991px) {
+            min-height: 0;
+            padding-bottom: 72px;
+        }
+
+        @include maxWidth(575px) {
+            padding-bottom: 0;
+        }
+    }
+
+    &__photo {
+        display: block;
+        width: 100%;
+        border-radius: 16px;
+    }
+
+    &__quote {
+        position: absolute;
+        right: -30px;
+        bottom: 3px;
+        z-index: 2;
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+        width: 386px;
+        padding: 24px;
+        overflow: hidden;
+        border: 6px solid $white;
+        border-radius: 16px;
+        background: url('../images/chuyen-gia/story-bg.jpg') center / cover, #1E73BE;
+        color: $white;
+
+        @include maxWidth(991px) {
+            right: 24px;
+        }
+
+        @include maxWidth(575px) {
+            position: relative;
+            right: auto;
+            bottom: auto;
+            width: calc(100% - 24px);
+            margin: -48px auto 0;
+            padding: 18px;
+            border-width: 4px;
+        }
+
+        p {
+            position: relative;
+            z-index: 1;
+            flex: 1;
+            margin: 0;
+            @include SemiBold;
+            color: $white;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: justify;
+        }
+    }
+
+    &__quote-icon {
+        position: relative;
+        z-index: 1;
+        flex-shrink: 0;
+        width: 25px;
+        height: 20px;
+        margin-top: 2px;
+        filter: brightness(0) invert(1);
+        opacity: .55;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 47px;
+        justify-content: space-around;
+        height: 100%;
+        gap: 32px;
+
+        @include maxWidth(991px) {
+            gap: 32px;
+            padding-left: 15px;
+            padding-top: 40px;
+        }
+    }
+
+    &__metric {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+        margin: 0;
+
+        @include maxWidth(991px) {
+            align-items: flex-start;
+        }
+    }
+
+    &__number {
+        margin: 0;
+        @include BeVietnamPro-ExtraBold;
+        color: $bio-blue-500;
+        font-size: 164px;
+        line-height: 132px;
+        background: url('../images/chuyen-gia/thanh-tich-1.jpg') center / cover;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @include maxWidth(767px) {
+            font-size: 112px;
+            line-height: 96px;
+        }
+    }
+
+    &__label {
+        margin: 0;
+        color: $bio-blue-500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        width: 100%;
+    }
+
+    &__desc {
+        margin: 0;
+        color: $black;
+        font-size: 16px;
+        line-height: 24px;
+        @include Regular;
+    }
+
+    &__cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        min-height: 40px;
+        padding: 6px 16px;
+        border-radius: 999px;
+        background: $bio-blue-500;
+        color: $white;
+        @include SemiBold;
+        font-size: 16px;
+        line-height: 24px;
+        text-decoration: none;
+        transition: background-color .25s ease;
+
+        &:hover {
+            background: #0a527a;
+            color: $white;
+            text-decoration: none;
+        }
+
+        img {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
+
+.expert-expertise {
+    position: relative;
+    isolation: isolate;
+    padding: 64px 0;
+    overflow: hidden;
+    background: #eaf8fb url('../images/chuyen-gia/linh-vuc-bg.jpg') center / cover no-repeat;
+
+    @include maxWidth(767px) {
+        padding: 40px 0;
+    }
+
+
+
+    &__title {
+        @include CormorantSemiBold;
+        max-width: 736px;
+        margin: 0 auto 40px;
+        color: $bio-blue-500;
+        font-size: 34px;
+        line-height: 42px;
+        text-align: center;
+        text-transform: uppercase;
+
+        @include maxWidth(767px) {
+            margin-bottom: 28px;
+            font-size: 28px;
+            line-height: 36px;
+        }
+    }
+
+    &__grid {
+        margin-right: -12px;
+        margin-left: -12px;
+
+        >[class*="col-"] {
+            padding-right: 12px;
+            padding-left: 12px;
+        }
+
+        @include maxWidth(991px) {
+            max-width: 520px;
+            margin: 0 auto;
+
+            >[class*="col-"]+[class*="col-"] {
+                margin-top: 24px;
+            }
+        }
+    }
+
+    &__card {
+        position: relative;
+        min-height: 200px;
+        overflow: hidden;
+        border-radius: 12px;
+        background: #01205f;
+    }
+
+    &__img {
+        position: relative;
+        width: 100%;
+    }
+
+    &__card::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(75deg, #01205f 13%, rgba(1, 32, 95, .2) 77%, rgba(1, 32, 95, 0) 94%);
+    }
+
+    &__body {
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+        inset: 0;
+        padding: 24px;
+        top: 0;
+    }
+
+    &__num {
+        margin: 0;
+        @include BeVietnamPro-ExtraBold;
+        color: #45ddff;
+        font-size: 40px;
+        line-height: 42px;
+        letter-spacing: .8px;
+        text-transform: uppercase;
+    }
+
+    &__name {
+        max-width: 285px;
+        margin: 0;
+        @include SemiBold;
+        color: $white;
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+
+.achievement-card {
+    img {
+        width: 100%;
+        display: block;
+        border-radius: 10px;
+    }
+
+    p {
+        color: #020D12;
+        text-align: center;
+        font-size: 17px;
+        line-height: 26px;
+        @include SemiBold;
+        margin-top: 24px;
+    }
+}
+
+.progress-bottom {
+    border: 1px solid #86EEFF;
+    background: linear-gradient(90deg, #5ED3FF 52.4%, #2A63D1 100%);
+    width: 100%;
+    height: 13px;
+    margin-top: 30px;
+    position: relative;
+
+}
+
+.achievement-dot {
+    width: 24px;
+    height: 24px;
+    border-radius: 24px;
+    border: 1px solid #0C608F;
+    background: #FFF;
+    box-shadow: 0 0 8.1px 0 #7AF7FF inset;
+    position: absolute;
+
+    &:nth-child(1) {
+        left: 28%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &:nth-child(2) {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &:nth-child(3) {
+        right: 28%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.box-press {
+    border-radius: 16px;
+    border: 1px solid #DCE5EE;
+    background: linear-gradient(180deg, #D7E3FD 0%, #FBFCFE 100%);
+    box-shadow: 0 20px 40px -16px rgba(12, 68, 118, 0.18), 0 4px 12px 0 rgba(12, 68, 118, 0.08);
+}
+
+.the-press-item {
+    img {
+        width: 100%;
+        border-radius: 12px;
+        border: 1px solid #DCE5EE;
+    }
+
+    p {
+        color: #0D354B;
+        font-size: 18px;
+        @include NotoSerifMedium;
+        line-height: 26px;
+        margin-top: 16px;
+
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.info-press {
+    padding: 32px 48px;
+}
+
+.the-press {
+    padding: 30px 0;
+
+    h2 {
+        color: #020D12;
+        @include NotoSerifMedium;
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 16px;
+    }
+}
+
+.img-thuml-press {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.feedback-master {
+    padding: 32px 0 64px 0;
+}
+
+.testimonial-card {
+    border-radius: 16px;
+    border: 1px solid #DCE5EE;
+    background: #FAFCFD;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        transform: scale(1.1);
+        background: url(/images/chuyen-gia/bg-feedback.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all .5s ease-in-out;
+        z-index: -1;
+    }
+
+    img {
+        width: 40px !important;
+        height: 40px;
+        border-radius: 40px;
+        border: 1px solid #0C608F;
+    }
+
+    &:hover {
+        background: transparent;
+        border-color: #0C608F;
+    }
+}
+
+.testimonial-footer {
+    display: flex;
+    gap: 16px;
+    border-top: 1px solid #DCE5EE;
+    margin-top: 16px;
+    padding: 16px 0 0 0;
+
+    p {
+        color: #0A293A;
+        @include NotoSerifRegular;
+        font-size: 14px;
+        line-height: 22px;
+        margin: 0;
+    }
+
+    span {
+        color: #6F767C;
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+.testimonial-rating {
+    color: #D4A85C;
+    margin-bottom: 16px;
+}
+
+.testimonial-content {
+    color: #0A293A;
+
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.master-album {
+    padding: 0 0 60px 0;
+}
+
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 220px 220px;
+    gap: 10px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Ảnh lớn bên trái */
+.gallery-item--large {
+    grid-row: 1 / span 2;
+    grid-column: 1;
+}
+
+/* Overlay ảnh cuối */
+.gallery-item--more .gallery-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-item--more span {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    ;
+}
+
+.master-consult {
+    background: #F2F8FF;
+}
+
+.master__socials {
+    display: flex;
+    gap: 12px;
+    margin-left: 16px;
+}
+
+.master-connect {
+    display: flex;
+    align-items: center;
+
+    h2 {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 0;
+        color: #0C608F;
+        font-family: "BeVietnamPro-Regular";
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        white-space: nowrap;
+
+        &::before {
+            content: "";
+            flex-shrink: 0;
+            width: 14px;
+            height: 1.5px;
+            background: #0C608F;
+        }
+    }
+
+    a {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: 1px solid #B7CEDA;
+        color: #0C608F;
+        text-decoration: none;
+    }
+}
+
+.title-cormorant {
+    @include CormorantSemiBold;
+}
+
+.process-master {
+    padding: 64px 0;
+}
+
+.process-wap {
+    display: flex;
+    padding: 64px 0;
+    border-radius: 24px;
+    border: 1px solid #DCE5EE;
+    background: #FFF;
+    box-shadow: 0 20px 40px -16px rgba(12, 68, 118, 0.18), 0 4px 12px 0 rgba(12, 68, 118, 0.08);
+    justify-content: space-around;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 100px;
+        width: 80%;
+        height: 2px;
+        border-radius: 2px;
+        opacity: 0.5;
+        background: #B8E2EC;
+    }
+}
+
+.process-icon {
+    width: 68px;
+    height: 68px;
+    border-radius: 50px;
+    border: 2.5px solid #0C608F;
+    background: #FFF;
+    box-shadow: 0 8px 20px -6px rgba(127, 212, 168, 0.40);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.process-step {
+    display: flex;
+    width: 26px;
+    height: 26px;
+    padding: 3.922px 0 1.078px 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 2px solid #FFF;
+    background: #B33A1B;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+    color: #fff;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 13px;
+}
+
+
+.process-content {
+    margin-top: 32px;
+    color: #020D12;
+    text-align: center;
+    @include NotoSerifMedium;
+    font-size: 16px;
+    line-height: 24px;
+    width: 168px;
+
 }

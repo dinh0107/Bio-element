@@ -1,13 +1,14 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="vi">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cẩm nang chăm sóc da – Bioelements Việt Nam</title>
+    <title>Cáº©m nang chÄƒm sÃ³c da â€“ Bioelements Viá»‡t Nam</title>
     <meta name="description"
-        content="Cẩm nang chuyên gia Bioelements — kiến thức chăm sóc da mặt sinh học, SkinReading® và hướng dẫn từ chuyên gia da liễu.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css"
+        content="Cáº©m nang chuyÃªn gia Bioelements â€” kiáº¿n thá»©c chÄƒm sÃ³c da máº·t sinh há»c, SkinReadingÂ® vÃ  hÆ°á»›ng dáº«n tá»« chuyÃªn gia da liá»…u.">
+    <link rel="shortcut icon" href="//bioelements.com/cdn/shop/files/bioelements_ccf5911c-fa98-4b23-b8bf-b8233e41f4d3.png?crop=center&amp;height=32&amp;v=1737804771&amp;width=32" type="image/png">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css"
         integrity="sha512-rt/SrQ4UNIaGfDyEXZtNcyWvQeOq0QLygHluFQcSjaGB04IxWhal71tKuzP6K8eYXYB6vJV4pHkXcmFGGQ1/0w=="
         crossorigin="anonymous" />
     <link href="style/style.css" rel="stylesheet">
@@ -22,7 +23,7 @@
         <div class="site-header__topbar">
             <a href="#" class="site-header__topbar-msg mb-0">
                 <img src="images/header/icon-sparkle.svg" alt="" loading="lazy">
-                <span>Dành cho spa &amp; chuyên gia da liễu</span>
+                <span>DÃ nh cho spa &amp; chuyÃªn gia da liá»…u</span>
                 <img src="images/header/icon-sparkle.svg" alt="" loading="lazy">
             </a>
             <div class="container">
@@ -30,10 +31,10 @@
                     <div class="site-header__topbar-auth">
                         <a class="site-header__topbar-auth-link" href="#">
                             <img src="images/header/icon-user.svg" alt="" width="20" height="20" loading="lazy">
-                            Đăng ký
+                            ÄÄƒng kÃ½
                         </a>
                         /
-                        <a class="site-header__topbar-auth-link" href="#">Đăng nhập</a>
+                        <a class="site-header__topbar-auth-link" href="#">ÄÄƒng nháº­p</a>
                     </div>
                 </div>
             </div>
@@ -41,7 +42,7 @@
         <div class="site-header__main">
             <div class="container">
                 <div class="site-header__main-inner d-flex align-items-center justify-content-between">
-                    <a class="site-header__logo" href="index.html">
+                    <a class="site-header__logo" href="/">
                         <img src="images/header/logo.png" alt="Bioelements" width="216" height="44" loading="eager"
                             decoding="async">
                     </a>
@@ -49,15 +50,15 @@
                         <label class="site-header__search bio-search mb-0">
                             <img src="images/header/icon-search.svg" alt="" loading="lazy">
                             <input class="site-header__search-input bio-search__input" type="search" name="q"
-                                placeholder="Serum trị thâm, gel rửa mặt...." autocomplete="off">
+                                placeholder="Serum trá»‹ thÃ¢m, gel rá»­a máº·t...." autocomplete="off">
                         </label>
-                        <button type="button" class="site-header__icon-btn bio-icon-btn">
+                        <a href=""  class="site-header__icon-btn bio-icon-btn">
                             <img src="images/header/icon-heart.svg" alt="" loading="lazy">
-                        </button>
-                        <button type="button" class="site-header__icon-btn site-header__icon-btn--cart bio-icon-btn">
+                        </a>
+                        <a href="" class="site-header__icon-btn site-header__icon-btn--cart bio-icon-btn">
                             <img src="images/header/icon-cart.svg" alt="" loading="lazy">
                             <span class="site-header__cart-count bio-icon-btn__badge">0</span>
-                        </button>
+                        </a>
                         <button type="button" class="site-header__nav-toggle d-lg-none" data-nav-toggle>
                             <span class="site-header__nav-toggle-icon"></span>
                         </button>
@@ -67,33 +68,44 @@
         </div>
         <div class="site-header__nav-panel" data-nav-panel>
             <nav class="site-header__nav">
-                <div class="container">
+                <button type="button" class="site-header__nav-close d-lg-none" aria-label="Đóng menu" data-nav-close>
+                    <span class="fa-sharp fa-solid fa-xmark" aria-hidden="true"></span>
+                </button>
+                <div class="container" id="menu-scroll">
                     <ul class="site-header__nav-inner d-flex justify-content-center list-unstyled mb-0">
-                        <li><a href="index.html">Trang chủ</a></li>
-                        <li><a href="ve-chung-toi.html">Tinh hoa Bioelements</a></li>
+                        <li class="is-active"><a href="#">Trang chá»§</a></li>
+                       <li><a href="tinh-hoa-chi-tiet.html">Tinh hoa Bioelements</a></li>
                         <li>
-                            <a href="#">
-                                Sản phẩm
+                            <a href="tay-trang-bioelements.html">
+                                Sáº£n pháº©m
                                 <span class="site-header__nav-caret fa-sharp fa-solid fa-chevron-down"></span>
                             </a>
                             <ul class="site-header__submenu list-unstyled mb-0">
-                                <li><a href="#">Serum &amp; tinh chất</a></li>
-                                <li><a href="#">Sữa rửa mặt &amp; tẩy trang</a></li>
-                                <li><a href="#">Kem dưỡng &amp; phục hồi</a></li>
-                                <li><a href="#">Combo chăm sóc da</a></li>
-                                <li><a class="site-footer__submenu-all" href="#">Xem tất cả sản phẩm</a></li>
+                                <li><a href="tay-trang-bioelements.html">Serum &amp; tinh cháº¥t</a></li>
+                                <li><a href="tay-trang-bioelements.html">Sá»¯a rá»­a máº·t &amp; táº©y trang</a></li>
+                                <li><a href="tay-trang-bioelements.html">Kem dÆ°á»¡ng &amp; phá»¥c há»“i</a></li>
+                                <li><a href="tay-trang-bioelements.html">Combo chÄƒm sÃ³c da</a></li>
+                                <li><a class="site-header__submenu-all" href="tay-trang-bioelements.html">Xem táº¥t cáº£ sáº£n pháº©m</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Liệu trình chuyên nghiệp</a></li>
-                        <li class="is-active"><a href="cam-nang.html">Kiến thức</a></li>
-                        <li><a href="lien-he.html">Liên hệ</a></li>
+                        <li><a href="lieu-trinh-chuyen-nghiep.html">Liá»‡u trÃ¬nh chuyÃªn nghiá»‡p</a></li>
+                        <li><a href="cam-nang.html">Kiáº¿n thá»©c</a></li>
+                        <li><a href="lien-he.html">LiÃªn há»‡</a></li>
                     </ul>
+                    <div class="box-icon-scroll">
+                        <a href=""  class="site-header__icon-btn bio-icon-btn">
+                            <img src="images/header/icon-heart.svg" alt="" loading="lazy">
+                        </a>
+                        <a href="" class="site-header__icon-btn site-header__icon-btn--cart bio-icon-btn">
+                            <img src="images/header/icon-cart.svg" alt="" loading="lazy">
+                            <span class="site-header__cart-count bio-icon-btn__badge">0</span>
+                        </a>
+                    </div>
                 </div>
             </nav>
         </div>
         <div class="site-header__nav-overlay" data-nav-overlay hidden></div>
     </header>
-
     <div class="guide-hero">
         <span class="guide-hero__blur guide-hero__blur--orange"></span>
         <span class="guide-hero__blur guide-hero__blur--blue"></span>
@@ -102,13 +114,13 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
                     <path d="M0.0763056 5.62649C-0.0259022 5.65538 -0.0259018 5.81434 0.0763061 5.84324C3.60422 6.84064 4.91286 9.67276 5.3889 11.3801C5.42221 11.4996 5.88247 11.4996 5.91578 11.3801C6.39183 9.67276 7.70047 6.84064 11.2284 5.84324C11.3306 5.81434 11.3306 5.65538 11.2284 5.62649C7.70047 4.62909 6.39183 1.79697 5.91579 0.0896044C5.88247 -0.0298738 5.42222 -0.0298759 5.3889 0.0896022C4.91286 1.79696 3.60422 4.62909 0.0763056 5.62649Z" fill="#0C608F"/>
                   </svg>
-                Cẩm nang chuyên gia
+                Cáº©m nang chuyÃªn gia
             </span>
-            <h1 class="guide-hero__title">Cẩm nang chăm sóc da mặt sinh học</h1>
-            <p class="guide-hero__desc">Khôi phục hàng rào bảo vệ &amp; đánh thức vẻ đẹp tự nhiên.</p>
+            <h1 class="guide-hero__title">Cáº©m nang chÄƒm sÃ³c da máº·t sinh há»c</h1>
+            <p class="guide-hero__desc">KhÃ´i phá»¥c hÃ ng rÃ o báº£o vá»‡ &amp; Ä‘Ã¡nh thá»©c váº» Ä‘áº¹p tá»± nhiÃªn.</p>
             <form class="guide-hero__search" action="#" method="get">
                 <i class="fa-light fa-magnifying-glass"></i>
-                <input class="guide-hero__search-input" type="search" name="q" placeholder="Tìm kiếm tin tức..."
+                <input class="guide-hero__search-input" type="search" name="q" placeholder="TÃ¬m kiáº¿m tin tá»©c..."
                     autocomplete="off">
                 <button class="guide-hero__search-btn" type="submit">Search</button>
             </form>
@@ -117,12 +129,12 @@
 
     <div class="guide-chips" data-guide-chips>
         <div class="guide-chips__inner">
-            <a href="" class="guide-chips__chip is-active" data-guide-chip>Tất cả</a>
-            <a href="" class="guide-chips__chip" data-guide-chip>Hàng rào bảo vệ da</a>
-            <a href="" class="guide-chips__chip" data-guide-chip>Da nhạy cảm</a>
-            <a href="" class="guide-chips__chip" data-guide-chip>Điều trị mụn</a>
-            <a href="" class="guide-chips__chip" data-guide-chip>Chống lão hóa</a>
-            <a href="" class="guide-chips__chip" data-guide-chip>SkinReading®</a>
+            <a href="" class="guide-chips__chip is-active" data-guide-chip>Táº¥t cáº£</a>
+            <a href="" class="guide-chips__chip" data-guide-chip>HÃ ng rÃ o báº£o vá»‡ da</a>
+            <a href="" class="guide-chips__chip" data-guide-chip>Da nháº¡y cáº£m</a>
+            <a href="" class="guide-chips__chip" data-guide-chip>Äiá»u trá»‹ má»¥n</a>
+            <a href="" class="guide-chips__chip" data-guide-chip>Chá»‘ng lÃ£o hÃ³a</a>
+            <a href="" class="guide-chips__chip" data-guide-chip>SkinReadingÂ®</a>
             <button type="button" class="guide-chips__search">
                 <i class="fa-light fa-magnifying-glass"></i>
             </button>
@@ -132,35 +144,35 @@
     <div class="guide-page">
         <div class="guide-page__inner">
             <section class="guide-featured">
-                <h2 class="guide-featured__title"><span>Kiến thức nền tảng</span> <em>từ Chuyên gia</em></h2>
+                <h2 class="guide-featured__title"><span>Kiáº¿n thá»©c ná»n táº£ng</span> <em>tá»« ChuyÃªn gia</em></h2>
                 <div class="guide-featured__layout">
                     <a href="chi-tiet-bai-viet.html" class="guide-article guide-article--featured">
                         <div class="guide-article__media">
-                            <img src="images/article/article-big.jpg" alt="SkinReading — Nghệ thuật đọc vị tâm lý làn da"
+                            <img src="images/article/article-big.jpg" alt="SkinReading â€” Nghá»‡ thuáº­t Ä‘á»c vá»‹ tÃ¢m lÃ½ lÃ n da"
                                 loading="lazy">
                         </div>
                         <div class="guide-article__body">
                             <div class="guide-article__meta">
                                 <p class="guide-article__category">SkinReading</p>
                                 <span class="guide-article__dot"></span>
-                                <p class="guide-article__time">12 phút đọc</p>
+                                <p class="guide-article__time">12 phÃºt Ä‘á»c</p>
                             </div>
-                            <h3 class="guide-article__title">SkinReading® — Nghệ thuật đọc vị tâm lý làn da từ
+                            <h3 class="guide-article__title">SkinReadingÂ® â€” Nghá»‡ thuáº­t Ä‘á»c vá»‹ tÃ¢m lÃ½ lÃ n da tá»«
                                 Bioelements</h3>
-                            <p class="guide-article__excerpt">Khám phá phương pháp độc quyền 34 năm tuổi của
-                                Bioelements: cách chuyên gia đọc được trạng thái thật của làn da để pha chế công thức cá
-                                nhân hóa cho từng người.</p>
+                            <p class="guide-article__excerpt">KhÃ¡m phÃ¡ phÆ°Æ¡ng phÃ¡p Ä‘á»™c quyá»n 34 nÄƒm tuá»•i cá»§a
+                                Bioelements: cÃ¡ch chuyÃªn gia Ä‘á»c Ä‘Æ°á»£c tráº¡ng thÃ¡i tháº­t cá»§a lÃ n da Ä‘á»ƒ pha cháº¿ cÃ´ng thá»©c cÃ¡
+                                nhÃ¢n hÃ³a cho tá»«ng ngÆ°á»i.</p>
                             <hr class="guide-article__divider">
                             <div class="guide-article__footer">
                                 <div class="guide-article__author">
                                     <span class="guide-article__avatar">HT</span>
                                     <div>
-                                        <p class="guide-article__author-name">Ths. BSNT Hồ Phương Thùy</p>
-                                        <p class="guide-article__author-role">Bác sĩ Da liễu · ĐH Y Hà Nội</p>
+                                        <p class="guide-article__author-name">Ths. BSNT Há»“ PhÆ°Æ¡ng ThÃ¹y</p>
+                                        <p class="guide-article__author-role">BÃ¡c sÄ© Da liá»…u Â· ÄH Y HÃ  Ná»™i</p>
                                     </div>
                                 </div>
                                 <span class="guide-article__more">
-                                    Đọc thêm
+                                    Äá»c thÃªm
                                     <img src="images/home/icon-arrow-white.svg" alt="" loading="lazy">
                                 </span>
                             </div>
@@ -173,15 +185,15 @@
                             </div>
                             <div class="guide-article__body">
                                 <div class="guide-article__meta">
-                                    <p class="guide-article__category">Hàng rào bảo vệ</p>
+                                    <p class="guide-article__category">HÃ ng rÃ o báº£o vá»‡</p>
                                     <span class="guide-article__dot"></span>
-                                    <p class="guide-article__time">8 phút đọc</p>
+                                    <p class="guide-article__time">8 phÃºt Ä‘á»c</p>
                                 </div>
-                                <h3 class="guide-article__title">Hàng rào bảo vệ da: vì sao là nền tảng của mọi liệu
-                                    trình?</h3>
-                                <p class="guide-article__excerpt">Khám phá phương pháp độc quyền 34 năm tuổi của
-                                    Bioelements: cách chuyên gia đọc được trạng thái thật của làn da để pha chế công
-                                    thức cá nhân hóa cho từng người.</p>
+                                <h3 class="guide-article__title">HÃ ng rÃ o báº£o vá»‡ da: vÃ¬ sao lÃ  ná»n táº£ng cá»§a má»i liá»‡u
+                                    trÃ¬nh?</h3>
+                                <p class="guide-article__excerpt">KhÃ¡m phÃ¡ phÆ°Æ¡ng phÃ¡p Ä‘á»™c quyá»n 34 nÄƒm tuá»•i cá»§a
+                                    Bioelements: cÃ¡ch chuyÃªn gia Ä‘á»c Ä‘Æ°á»£c tráº¡ng thÃ¡i tháº­t cá»§a lÃ n da Ä‘á»ƒ pha cháº¿ cÃ´ng
+                                    thá»©c cÃ¡ nhÃ¢n hÃ³a cho tá»«ng ngÆ°á»i.</p>
                                 <hr class="guide-article__divider">
                                 <div class="guide-article__footer">
                                     <div class="guide-article__author">
@@ -189,12 +201,12 @@
                                             <img src="images/home/expert-barbara-avatar.jpg" alt="" loading="lazy">
                                         </span>
                                         <div>
-                                            <p class="guide-article__author-name">Ths. BSNT Hồ Phương Thùy</p>
-                                            <p class="guide-article__author-role">Bác sĩ Da liễu · ĐH Y Hà Nội</p>
+                                            <p class="guide-article__author-name">Ths. BSNT Há»“ PhÆ°Æ¡ng ThÃ¹y</p>
+                                            <p class="guide-article__author-role">BÃ¡c sÄ© Da liá»…u Â· ÄH Y HÃ  Ná»™i</p>
                                         </div>
                                     </div>
                                     <span class="guide-article__more">
-                                        Đọc thêm
+                                        Äá»c thÃªm
                                         <img src="images/home/icon-arrow-blue.svg" alt="" loading="lazy">
                                     </span>
                                 </div>
@@ -206,14 +218,14 @@
                             </div>
                             <div class="guide-article__body">
                                 <div class="guide-article__meta">
-                                    <p class="guide-article__category">Da nhạy cảm</p>
+                                    <p class="guide-article__category">Da nháº¡y cáº£m</p>
                                     <span class="guide-article__dot"></span>
-                                    <p class="guide-article__time">8 phút đọc</p>
+                                    <p class="guide-article__time">8 phÃºt Ä‘á»c</p>
                                 </div>
-                                <h3 class="guide-article__title">5 dấu hiệu da nhạy cảm cần điều chỉnh routine ngay</h3>
-                                <p class="guide-article__excerpt">Khám phá phương pháp độc quyền 34 năm tuổi của
-                                    Bioelements: cách chuyên gia đọc được trạng thái thật của làn da để pha chế công
-                                    thức cá nhân hóa cho từng người.</p>
+                                <h3 class="guide-article__title">5 dáº¥u hiá»‡u da nháº¡y cáº£m cáº§n Ä‘iá»u chá»‰nh routine ngay</h3>
+                                <p class="guide-article__excerpt">KhÃ¡m phÃ¡ phÆ°Æ¡ng phÃ¡p Ä‘á»™c quyá»n 34 nÄƒm tuá»•i cá»§a
+                                    Bioelements: cÃ¡ch chuyÃªn gia Ä‘á»c Ä‘Æ°á»£c tráº¡ng thÃ¡i tháº­t cá»§a lÃ n da Ä‘á»ƒ pha cháº¿ cÃ´ng
+                                    thá»©c cÃ¡ nhÃ¢n hÃ³a cho tá»«ng ngÆ°á»i.</p>
                                 <hr class="guide-article__divider">
                                 <div class="guide-article__footer">
                                     <div class="guide-article__author">
@@ -221,12 +233,12 @@
                                             <img src="images/home/expert-barbara-avatar.jpg" alt="" loading="lazy">
                                         </span>
                                         <div>
-                                            <p class="guide-article__author-name">Ths. BSNT Hồ Phương Thùy</p>
-                                            <p class="guide-article__author-role">Bác sĩ Da liễu · ĐH Y Hà Nội</p>
+                                            <p class="guide-article__author-name">Ths. BSNT Há»“ PhÆ°Æ¡ng ThÃ¹y</p>
+                                            <p class="guide-article__author-role">BÃ¡c sÄ© Da liá»…u Â· ÄH Y HÃ  Ná»™i</p>
                                         </div>
                                     </div>
                                     <span class="guide-article__more">
-                                        Đọc thêm
+                                        Äá»c thÃªm
                                         <img src="images/home/icon-arrow-blue.svg" alt="" loading="lazy">
                                     </span>
                                 </div>
@@ -238,15 +250,15 @@
                             </div>
                             <div class="guide-article__body">
                                 <div class="guide-article__meta">
-                                    <p class="guide-article__category">Chống lão hóa</p>
+                                    <p class="guide-article__category">Chá»‘ng lÃ£o hÃ³a</p>
                                     <span class="guide-article__dot"></span>
-                                    <p class="guide-article__time">8 phút đọc</p>
+                                    <p class="guide-article__time">8 phÃºt Ä‘á»c</p>
                                 </div>
-                                <h3 class="guide-article__title">Bio-Retinol vs Retinol truyền thống: khác biệt ở đâu?
+                                <h3 class="guide-article__title">Bio-Retinol vs Retinol truyá»n thá»‘ng: khÃ¡c biá»‡t á»Ÿ Ä‘Ã¢u?
                                 </h3>
-                                <p class="guide-article__excerpt">Khám phá phương pháp độc quyền 34 năm tuổi của
-                                    Bioelements: cách chuyên gia đọc được trạng thái thật của làn da để pha chế công
-                                    thức cá nhân hóa cho từng người.</p>
+                                <p class="guide-article__excerpt">KhÃ¡m phÃ¡ phÆ°Æ¡ng phÃ¡p Ä‘á»™c quyá»n 34 nÄƒm tuá»•i cá»§a
+                                    Bioelements: cÃ¡ch chuyÃªn gia Ä‘á»c Ä‘Æ°á»£c tráº¡ng thÃ¡i tháº­t cá»§a lÃ n da Ä‘á»ƒ pha cháº¿ cÃ´ng
+                                    thá»©c cÃ¡ nhÃ¢n hÃ³a cho tá»«ng ngÆ°á»i.</p>
                                 <hr class="guide-article__divider">
                                 <div class="guide-article__footer">
                                     <div class="guide-article__author">
@@ -254,12 +266,12 @@
                                             <img src="images/home/expert-barbara-avatar.jpg" alt="" loading="lazy">
                                         </span>
                                         <div>
-                                            <p class="guide-article__author-name">Ths. BSNT Hồ Phương Thùy</p>
-                                            <p class="guide-article__author-role">Bác sĩ Da liễu · ĐH Y Hà Nội</p>
+                                            <p class="guide-article__author-name">Ths. BSNT Há»“ PhÆ°Æ¡ng ThÃ¹y</p>
+                                            <p class="guide-article__author-role">BÃ¡c sÄ© Da liá»…u Â· ÄH Y HÃ  Ná»™i</p>
                                         </div>
                                     </div>
                                     <span class="guide-article__more">
-                                        Đọc thêm
+                                        Äá»c thÃªm
                                         <img src="images/home/icon-arrow-blue.svg" alt="" loading="lazy">
                                     </span>
                                 </div>
@@ -273,14 +285,14 @@
                 <div class="guide-layout__main">
                     <div class="guide-list">
                         <div class="guide-list__head">
-                            <h2 class="guide-list__title">Tất cả bài viết</h2>
+                            <h2 class="guide-list__title">Táº¥t cáº£ bÃ i viáº¿t</h2>
                             <label class="guide-list__sort">
                                 Sort by:
                                 <span class="guide-list__sort-select-wrap">
                                     <select class="guide-list__sort-select">
-                                        <option selected>Mới nhất</option>
-                                        <option>Phổ biến nhất</option>
-                                        <option>Cũ nhất</option>
+                                        <option selected>Má»›i nháº¥t</option>
+                                        <option>Phá»• biáº¿n nháº¥t</option>
+                                        <option>CÅ© nháº¥t</option>
                                     </select>
                                     <i class="guide-list__sort-caret fa-sharp fa-solid fa-chevron-down"></i>
                                 </span>
@@ -295,13 +307,13 @@
                                     <div class="guide-article__meta">
                                         <p class="guide-article__category">SkinReading</p>
                                         <span class="guide-article__dot"></span>
-                                        <p class="guide-article__time">12 phút đọc</p>
+                                        <p class="guide-article__time">12 phÃºt Ä‘á»c</p>
                                     </div>
-                                    <h3 class="guide-article__title">Top 3 sai lầm khiến da treatment mãi không phục hồi
+                                    <h3 class="guide-article__title">Top 3 sai láº§m khiáº¿n da treatment mÃ£i khÃ´ng phá»¥c há»“i
                                     </h3>
-                                    <p class="guide-article__excerpt">Khám phá phương pháp độc quyền 34 năm tuổi của
-                                        Bioelements: cách chuyên gia đọc được trạng thái thật của làn da để pha chế công
-                                        thức cá nhân hóa cho từng người.</p>
+                                    <p class="guide-article__excerpt">KhÃ¡m phÃ¡ phÆ°Æ¡ng phÃ¡p Ä‘á»™c quyá»n 34 nÄƒm tuá»•i cá»§a
+                                        Bioelements: cÃ¡ch chuyÃªn gia Ä‘á»c Ä‘Æ°á»£c tráº¡ng thÃ¡i tháº­t cá»§a lÃ n da Ä‘á»ƒ pha cháº¿ cÃ´ng
+                                        thá»©c cÃ¡ nhÃ¢n hÃ³a cho tá»«ng ngÆ°á»i.</p>
                                     <hr class="guide-article__divider">
                                     <div class="guide-article__footer">
                                         <div class="guide-article__author">
@@ -309,12 +321,12 @@
                                                 <img src="images/home/expert-barbara-avatar.jpg" alt="" loading="lazy">
                                             </span>
                                             <div>
-                                                <p class="guide-article__author-name">Ths. BSNT Hồ Phương Thùy</p>
-                                                <p class="guide-article__author-role">Bác sĩ Da liễu · ĐH Y Hà Nội</p>
+                                                <p class="guide-article__author-name">Ths. BSNT Há»“ PhÆ°Æ¡ng ThÃ¹y</p>
+                                                <p class="guide-article__author-role">BÃ¡c sÄ© Da liá»…u Â· ÄH Y HÃ  Ná»™i</p>
                                             </div>
                                         </div>
                                         <span class="guide-article__more">
-                                            Đọc thêm
+                                            Äá»c thÃªm
                                             <img src="images/home/icon-arrow-blue.svg" alt="" loading="lazy">
                                         </span>
                                     </div>
@@ -326,15 +338,15 @@
                                 </div>
                                 <div class="guide-article__body">
                                     <div class="guide-article__meta">
-                                        <p class="guide-article__category">Hàng rào bảo vệ</p>
+                                        <p class="guide-article__category">HÃ ng rÃ o báº£o vá»‡</p>
                                         <span class="guide-article__dot"></span>
-                                        <p class="guide-article__time">12 phút đọc</p>
+                                        <p class="guide-article__time">12 phÃºt Ä‘á»c</p>
                                     </div>
-                                    <h3 class="guide-article__title">Hàng rào bảo vệ da: tại sao đây là chìa khóa của
-                                        mọi liệu trình điều trị?</h3>
-                                    <p class="guide-article__excerpt">Khám phá phương pháp độc quyền 34 năm tuổi của
-                                        Bioelements: cách chuyên gia đọc được trạng thái thật của làn da để pha chế công
-                                        thức cá nhân hóa cho từng người.</p>
+                                    <h3 class="guide-article__title">HÃ ng rÃ o báº£o vá»‡ da: táº¡i sao Ä‘Ã¢y lÃ  chÃ¬a khÃ³a cá»§a
+                                        má»i liá»‡u trÃ¬nh Ä‘iá»u trá»‹?</h3>
+                                    <p class="guide-article__excerpt">KhÃ¡m phÃ¡ phÆ°Æ¡ng phÃ¡p Ä‘á»™c quyá»n 34 nÄƒm tuá»•i cá»§a
+                                        Bioelements: cÃ¡ch chuyÃªn gia Ä‘á»c Ä‘Æ°á»£c tráº¡ng thÃ¡i tháº­t cá»§a lÃ n da Ä‘á»ƒ pha cháº¿ cÃ´ng
+                                        thá»©c cÃ¡ nhÃ¢n hÃ³a cho tá»«ng ngÆ°á»i.</p>
                                     <hr class="guide-article__divider">
                                     <div class="guide-article__footer">
                                         <div class="guide-article__author">
@@ -342,12 +354,12 @@
                                                 <img src="images/home/expert-barbara-avatar.jpg" alt="" loading="lazy">
                                             </span>
                                             <div>
-                                                <p class="guide-article__author-name">Ths. BSNT Hồ Phương Thùy</p>
-                                                <p class="guide-article__author-role">Bác sĩ Da liễu · ĐH Y Hà Nội</p>
+                                                <p class="guide-article__author-name">Ths. BSNT Há»“ PhÆ°Æ¡ng ThÃ¹y</p>
+                                                <p class="guide-article__author-role">BÃ¡c sÄ© Da liá»…u Â· ÄH Y HÃ  Ná»™i</p>
                                             </div>
                                         </div>
                                         <span class="guide-article__more">
-                                            Đọc thêm
+                                            Äá»c thÃªm
                                             <img src="images/home/icon-arrow-blue.svg" alt="" loading="lazy">
                                         </span>
                                     </div>
@@ -359,15 +371,15 @@
                                 </div>
                                 <div class="guide-article__body">
                                     <div class="guide-article__meta">
-                                        <p class="guide-article__category">Da nhạy cảm</p>
+                                        <p class="guide-article__category">Da nháº¡y cáº£m</p>
                                         <span class="guide-article__dot"></span>
-                                        <p class="guide-article__time">12 phút đọc</p>
+                                        <p class="guide-article__time">12 phÃºt Ä‘á»c</p>
                                     </div>
-                                    <h3 class="guide-article__title">Da nhạy cảm không phải loại da — đây là trạng thái
-                                        có thể phục hồi</h3>
-                                    <p class="guide-article__excerpt">Khám phá phương pháp độc quyền 34 năm tuổi của
-                                        Bioelements: cách chuyên gia đọc được trạng thái thật của làn da để pha chế công
-                                        thức cá nhân hóa cho từng người.</p>
+                                    <h3 class="guide-article__title">Da nháº¡y cáº£m khÃ´ng pháº£i loáº¡i da â€” Ä‘Ã¢y lÃ  tráº¡ng thÃ¡i
+                                        cÃ³ thá»ƒ phá»¥c há»“i</h3>
+                                    <p class="guide-article__excerpt">KhÃ¡m phÃ¡ phÆ°Æ¡ng phÃ¡p Ä‘á»™c quyá»n 34 nÄƒm tuá»•i cá»§a
+                                        Bioelements: cÃ¡ch chuyÃªn gia Ä‘á»c Ä‘Æ°á»£c tráº¡ng thÃ¡i tháº­t cá»§a lÃ n da Ä‘á»ƒ pha cháº¿ cÃ´ng
+                                        thá»©c cÃ¡ nhÃ¢n hÃ³a cho tá»«ng ngÆ°á»i.</p>
                                     <hr class="guide-article__divider">
                                     <div class="guide-article__footer">
                                         <div class="guide-article__author">
@@ -375,12 +387,12 @@
                                                 <img src="images/home/expert-barbara-avatar.jpg" alt="" loading="lazy">
                                             </span>
                                             <div>
-                                                <p class="guide-article__author-name">Ths. BSNT Hồ Phương Thùy</p>
-                                                <p class="guide-article__author-role">Bác sĩ Da liễu · ĐH Y Hà Nội</p>
+                                                <p class="guide-article__author-name">Ths. BSNT Há»“ PhÆ°Æ¡ng ThÃ¹y</p>
+                                                <p class="guide-article__author-role">BÃ¡c sÄ© Da liá»…u Â· ÄH Y HÃ  Ná»™i</p>
                                             </div>
                                         </div>
                                         <span class="guide-article__more">
-                                            Đọc thêm
+                                            Äá»c thÃªm
                                             <img src="images/home/icon-arrow-blue.svg" alt="" loading="lazy">
                                         </span>
                                     </div>
@@ -392,15 +404,15 @@
                                 </div>
                                 <div class="guide-article__body">
                                     <div class="guide-article__meta">
-                                        <p class="guide-article__category">Điều trị mụn</p>
+                                        <p class="guide-article__category">Äiá»u trá»‹ má»¥n</p>
                                         <span class="guide-article__dot"></span>
-                                        <p class="guide-article__time">12 phút đọc</p>
+                                        <p class="guide-article__time">12 phÃºt Ä‘á»c</p>
                                     </div>
-                                    <h3 class="guide-article__title">Mụn tái phát: hiểu đúng cơ chế viêm và hệ vi sinh
+                                    <h3 class="guide-article__title">Má»¥n tÃ¡i phÃ¡t: hiá»ƒu Ä‘Ãºng cÆ¡ cháº¿ viÃªm vÃ  há»‡ vi sinh
                                         da</h3>
-                                    <p class="guide-article__excerpt">Khám phá phương pháp độc quyền 34 năm tuổi của
-                                        Bioelements: cách chuyên gia đọc được trạng thái thật của làn da để pha chế công
-                                        thức cá nhân hóa cho từng người.</p>
+                                    <p class="guide-article__excerpt">KhÃ¡m phÃ¡ phÆ°Æ¡ng phÃ¡p Ä‘á»™c quyá»n 34 nÄƒm tuá»•i cá»§a
+                                        Bioelements: cÃ¡ch chuyÃªn gia Ä‘á»c Ä‘Æ°á»£c tráº¡ng thÃ¡i tháº­t cá»§a lÃ n da Ä‘á»ƒ pha cháº¿ cÃ´ng
+                                        thá»©c cÃ¡ nhÃ¢n hÃ³a cho tá»«ng ngÆ°á»i.</p>
                                     <hr class="guide-article__divider">
                                     <div class="guide-article__footer">
                                         <div class="guide-article__author">
@@ -408,12 +420,12 @@
                                                 <img src="images/home/expert-barbara-avatar.jpg" alt="" loading="lazy">
                                             </span>
                                             <div>
-                                                <p class="guide-article__author-name">Ths. BSNT Hồ Phương Thùy</p>
-                                                <p class="guide-article__author-role">Bác sĩ Da liễu · ĐH Y Hà Nội</p>
+                                                <p class="guide-article__author-name">Ths. BSNT Há»“ PhÆ°Æ¡ng ThÃ¹y</p>
+                                                <p class="guide-article__author-role">BÃ¡c sÄ© Da liá»…u Â· ÄH Y HÃ  Ná»™i</p>
                                             </div>
                                         </div>
                                         <span class="guide-article__more">
-                                            Đọc thêm
+                                            Äá»c thÃªm
                                             <img src="images/home/icon-arrow-blue.svg" alt="" loading="lazy">
                                         </span>
                                     </div>
@@ -425,15 +437,15 @@
                                 </div>
                                 <div class="guide-article__body">
                                     <div class="guide-article__meta">
-                                        <p class="guide-article__category">Chống lão hóa</p>
+                                        <p class="guide-article__category">Chá»‘ng lÃ£o hÃ³a</p>
                                         <span class="guide-article__dot"></span>
-                                        <p class="guide-article__time">12 phút đọc</p>
+                                        <p class="guide-article__time">12 phÃºt Ä‘á»c</p>
                                     </div>
-                                    <h3 class="guide-article__title">Lão hóa từ ti thể: tại sao collagen cần năng lượng
-                                        tế bào</h3>
-                                    <p class="guide-article__excerpt">Khám phá phương pháp độc quyền 34 năm tuổi của
-                                        Bioelements: cách chuyên gia đọc được trạng thái thật của làn da để pha chế công
-                                        thức cá nhân hóa cho từng người.</p>
+                                    <h3 class="guide-article__title">LÃ£o hÃ³a tá»« ti thá»ƒ: táº¡i sao collagen cáº§n nÄƒng lÆ°á»£ng
+                                        táº¿ bÃ o</h3>
+                                    <p class="guide-article__excerpt">KhÃ¡m phÃ¡ phÆ°Æ¡ng phÃ¡p Ä‘á»™c quyá»n 34 nÄƒm tuá»•i cá»§a
+                                        Bioelements: cÃ¡ch chuyÃªn gia Ä‘á»c Ä‘Æ°á»£c tráº¡ng thÃ¡i tháº­t cá»§a lÃ n da Ä‘á»ƒ pha cháº¿ cÃ´ng
+                                        thá»©c cÃ¡ nhÃ¢n hÃ³a cho tá»«ng ngÆ°á»i.</p>
                                     <hr class="guide-article__divider">
                                     <div class="guide-article__footer">
                                         <div class="guide-article__author">
@@ -441,12 +453,12 @@
                                                 <img src="images/home/expert-barbara-avatar.jpg" alt="" loading="lazy">
                                             </span>
                                             <div>
-                                                <p class="guide-article__author-name">Ths. BSNT Hồ Phương Thùy</p>
-                                                <p class="guide-article__author-role">Bác sĩ Da liễu · ĐH Y Hà Nội</p>
+                                                <p class="guide-article__author-name">Ths. BSNT Há»“ PhÆ°Æ¡ng ThÃ¹y</p>
+                                                <p class="guide-article__author-role">BÃ¡c sÄ© Da liá»…u Â· ÄH Y HÃ  Ná»™i</p>
                                             </div>
                                         </div>
                                         <span class="guide-article__more">
-                                            Đọc thêm
+                                            Äá»c thÃªm
                                             <img src="images/home/icon-arrow-blue.svg" alt="" loading="lazy">
                                         </span>
                                     </div>
@@ -457,7 +469,7 @@
                                 <div class="guide-promo__overlay"></div>
                                 <div class="guide-promo__inner">
                                     <div class="guide-promo__head">
-                                        <h3 class="guide-promo__title"><em>Kiến thức nền tảng</em> từ Chuyên gia</h3>
+                                        <h3 class="guide-promo__title"><em>Kiáº¿n thá»©c ná»n táº£ng</em> tá»« ChuyÃªn gia</h3>
                                         <div class="guide-promo__nav">
                                             <button type="button" class="guide-promo__nav-btn" data-guide-promo-prev>
                                                 <i class="fa-sharp fa-solid fa-chevron-left"></i>
@@ -475,11 +487,11 @@
                                                     <img src="images/header/icon-heart.svg" alt="" loading="lazy">
                                                 </button>
                                             </div>
-                                            <p class="guide-promo__card-name">Bioelements recovery serum phục hồi</p>
-                                            <div class="guide-promo__card-rating"><span>★★★★★</span>
+                                            <p class="guide-promo__card-name">Bioelements recovery serum phá»¥c há»“i</p>
+                                            <div class="guide-promo__card-rating"><span>â˜…â˜…â˜…â˜…â˜…</span>
                                                 <strong>4.9</strong></div>
-                                            <p class="guide-promo__card-price">2,400,000đ
-                                                <small>-10%</small><span>2,666,000đ</span></p>
+                                            <p class="guide-promo__card-price">2,400,000Ä‘
+                                                <small>-10%</small><span>2,666,000Ä‘</span></p>
                                         </div>
                                         <div class="guide-promo__card">
                                             <div class="guide-promo__card-media">
@@ -488,11 +500,11 @@
                                                     <img src="images/header/icon-heart.svg" alt="" loading="lazy">
                                                 </button>
                                             </div>
-                                            <p class="guide-promo__card-name">Bioelements recovery serum phục hồi</p>
-                                            <div class="guide-promo__card-rating"><span>★★★★★</span>
+                                            <p class="guide-promo__card-name">Bioelements recovery serum phá»¥c há»“i</p>
+                                            <div class="guide-promo__card-rating"><span>â˜…â˜…â˜…â˜…â˜…</span>
                                                 <strong>4.9</strong></div>
-                                            <p class="guide-promo__card-price">2,400,000đ
-                                                <small>-10%</small><span>2,666,000đ</span></p>
+                                            <p class="guide-promo__card-price">2,400,000Ä‘
+                                                <small>-10%</small><span>2,666,000Ä‘</span></p>
                                         </div>
                                         <div class="guide-promo__card">
                                             <div class="guide-promo__card-media">
@@ -501,11 +513,11 @@
                                                     <img src="images/header/icon-heart.svg" alt="" loading="lazy">
                                                 </button>
                                             </div>
-                                            <p class="guide-promo__card-name">Bioelements recovery serum phục hồi</p>
-                                            <div class="guide-promo__card-rating"><span>★★★★★</span>
+                                            <p class="guide-promo__card-name">Bioelements recovery serum phá»¥c há»“i</p>
+                                            <div class="guide-promo__card-rating"><span>â˜…â˜…â˜…â˜…â˜…</span>
                                                 <strong>4.9</strong></div>
-                                            <p class="guide-promo__card-price">2,400,000đ
-                                                <small>-10%</small><span>2,666,000đ</span></p>
+                                            <p class="guide-promo__card-price">2,400,000Ä‘
+                                                <small>-10%</small><span>2,666,000Ä‘</span></p>
                                         </div>
                                         <div class="guide-promo__card">
                                             <div class="guide-promo__card-media">
@@ -514,11 +526,11 @@
                                                     <img src="images/header/icon-heart.svg" alt="" loading="lazy">
                                                 </button>
                                             </div>
-                                            <p class="guide-promo__card-name">Bioelements recovery serum phục hồi</p>
-                                            <div class="guide-promo__card-rating"><span>★★★★★</span>
+                                            <p class="guide-promo__card-name">Bioelements recovery serum phá»¥c há»“i</p>
+                                            <div class="guide-promo__card-rating"><span>â˜…â˜…â˜…â˜…â˜…</span>
                                                 <strong>4.9</strong></div>
-                                            <p class="guide-promo__card-price">2,400,000đ
-                                                <small>-10%</small><span>2,666,000đ</span></p>
+                                            <p class="guide-promo__card-price">2,400,000Ä‘
+                                                <small>-10%</small><span>2,666,000Ä‘</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -529,15 +541,15 @@
                                 </div>
                                 <div class="guide-article__body">
                                     <div class="guide-article__meta">
-                                        <p class="guide-article__category">Làm sáng da</p>
+                                        <p class="guide-article__category">LÃ m sÃ¡ng da</p>
                                         <span class="guide-article__dot"></span>
-                                        <p class="guide-article__time">12 phút đọc</p>
+                                        <p class="guide-article__time">12 phÃºt Ä‘á»c</p>
                                     </div>
-                                    <h3 class="guide-article__title">Melasma &amp; thâm nám: tiếp cận sinh học thay vì
-                                        tẩy trắng</h3>
-                                    <p class="guide-article__excerpt">Khám phá phương pháp độc quyền 34 năm tuổi của
-                                        Bioelements: cách chuyên gia đọc được trạng thái thật của làn da để pha chế công
-                                        thức cá nhân hóa cho từng người.</p>
+                                    <h3 class="guide-article__title">Melasma &amp; thÃ¢m nÃ¡m: tiáº¿p cáº­n sinh há»c thay vÃ¬
+                                        táº©y tráº¯ng</h3>
+                                    <p class="guide-article__excerpt">KhÃ¡m phÃ¡ phÆ°Æ¡ng phÃ¡p Ä‘á»™c quyá»n 34 nÄƒm tuá»•i cá»§a
+                                        Bioelements: cÃ¡ch chuyÃªn gia Ä‘á»c Ä‘Æ°á»£c tráº¡ng thÃ¡i tháº­t cá»§a lÃ n da Ä‘á»ƒ pha cháº¿ cÃ´ng
+                                        thá»©c cÃ¡ nhÃ¢n hÃ³a cho tá»«ng ngÆ°á»i.</p>
                                     <hr class="guide-article__divider">
                                     <div class="guide-article__footer">
                                         <div class="guide-article__author">
@@ -545,12 +557,12 @@
                                                 <img src="images/home/expert-barbara-avatar.jpg" alt="" loading="lazy">
                                             </span>
                                             <div>
-                                                <p class="guide-article__author-name">Ths. BSNT Hồ Phương Thùy</p>
-                                                <p class="guide-article__author-role">Bác sĩ Da liễu · ĐH Y Hà Nội</p>
+                                                <p class="guide-article__author-name">Ths. BSNT Há»“ PhÆ°Æ¡ng ThÃ¹y</p>
+                                                <p class="guide-article__author-role">BÃ¡c sÄ© Da liá»…u Â· ÄH Y HÃ  Ná»™i</p>
                                             </div>
                                         </div>
                                         <span class="guide-article__more">
-                                            Đọc thêm
+                                            Äá»c thÃªm
                                             <img src="images/home/icon-arrow-blue.svg" alt="" loading="lazy">
                                         </span>
                                     </div>
@@ -564,13 +576,13 @@
                                     <div class="guide-article__meta">
                                         <p class="guide-article__category">SkinReading</p>
                                         <span class="guide-article__dot"></span>
-                                        <p class="guide-article__time">12 phút đọc</p>
+                                        <p class="guide-article__time">12 phÃºt Ä‘á»c</p>
                                     </div>
-                                    <h3 class="guide-article__title">SkinReading® trong spa: quy trình đọc da 5 bước của
-                                        chuyên gia</h3>
-                                    <p class="guide-article__excerpt">Khám phá phương pháp độc quyền 34 năm tuổi của
-                                        Bioelements: cách chuyên gia đọc được trạng thái thật của làn da để pha chế công
-                                        thức cá nhân hóa cho từng người.</p>
+                                    <h3 class="guide-article__title">SkinReadingÂ® trong spa: quy trÃ¬nh Ä‘á»c da 5 bÆ°á»›c cá»§a
+                                        chuyÃªn gia</h3>
+                                    <p class="guide-article__excerpt">KhÃ¡m phÃ¡ phÆ°Æ¡ng phÃ¡p Ä‘á»™c quyá»n 34 nÄƒm tuá»•i cá»§a
+                                        Bioelements: cÃ¡ch chuyÃªn gia Ä‘á»c Ä‘Æ°á»£c tráº¡ng thÃ¡i tháº­t cá»§a lÃ n da Ä‘á»ƒ pha cháº¿ cÃ´ng
+                                        thá»©c cÃ¡ nhÃ¢n hÃ³a cho tá»«ng ngÆ°á»i.</p>
                                     <hr class="guide-article__divider">
                                     <div class="guide-article__footer">
                                         <div class="guide-article__author">
@@ -578,12 +590,12 @@
                                                 <img src="images/home/expert-barbara-avatar.jpg" alt="" loading="lazy">
                                             </span>
                                             <div>
-                                                <p class="guide-article__author-name">Ths. BSNT Hồ Phương Thùy</p>
-                                                <p class="guide-article__author-role">Bác sĩ Da liễu · ĐH Y Hà Nội</p>
+                                                <p class="guide-article__author-name">Ths. BSNT Há»“ PhÆ°Æ¡ng ThÃ¹y</p>
+                                                <p class="guide-article__author-role">BÃ¡c sÄ© Da liá»…u Â· ÄH Y HÃ  Ná»™i</p>
                                             </div>
                                         </div>
                                         <span class="guide-article__more">
-                                            Đọc thêm
+                                            Äá»c thÃªm
                                             <img src="images/home/icon-arrow-blue.svg" alt="" loading="lazy">
                                         </span>
                                     </div>
@@ -595,15 +607,15 @@
                                 </div>
                                 <div class="guide-article__body">
                                     <div class="guide-article__meta">
-                                        <p class="guide-article__category">Hàng rào bảo vệ</p>
+                                        <p class="guide-article__category">HÃ ng rÃ o báº£o vá»‡</p>
                                         <span class="guide-article__dot"></span>
-                                        <p class="guide-article__time">12 phút đọc</p>
+                                        <p class="guide-article__time">12 phÃºt Ä‘á»c</p>
                                     </div>
-                                    <h3 class="guide-article__title">Ceramide 3:1:1 — công thức lipid phục hồi hàng rào
+                                    <h3 class="guide-article__title">Ceramide 3:1:1 â€” cÃ´ng thá»©c lipid phá»¥c há»“i hÃ ng rÃ o
                                         da</h3>
-                                    <p class="guide-article__excerpt">Khám phá phương pháp độc quyền 34 năm tuổi của
-                                        Bioelements: cách chuyên gia đọc được trạng thái thật của làn da để pha chế công
-                                        thức cá nhân hóa cho từng người.</p>
+                                    <p class="guide-article__excerpt">KhÃ¡m phÃ¡ phÆ°Æ¡ng phÃ¡p Ä‘á»™c quyá»n 34 nÄƒm tuá»•i cá»§a
+                                        Bioelements: cÃ¡ch chuyÃªn gia Ä‘á»c Ä‘Æ°á»£c tráº¡ng thÃ¡i tháº­t cá»§a lÃ n da Ä‘á»ƒ pha cháº¿ cÃ´ng
+                                        thá»©c cÃ¡ nhÃ¢n hÃ³a cho tá»«ng ngÆ°á»i.</p>
                                     <hr class="guide-article__divider">
                                     <div class="guide-article__footer">
                                         <div class="guide-article__author">
@@ -611,12 +623,12 @@
                                                 <img src="images/home/expert-barbara-avatar.jpg" alt="" loading="lazy">
                                             </span>
                                             <div>
-                                                <p class="guide-article__author-name">Ths. BSNT Hồ Phương Thùy</p>
-                                                <p class="guide-article__author-role">Bác sĩ Da liễu · ĐH Y Hà Nội</p>
+                                                <p class="guide-article__author-name">Ths. BSNT Há»“ PhÆ°Æ¡ng ThÃ¹y</p>
+                                                <p class="guide-article__author-role">BÃ¡c sÄ© Da liá»…u Â· ÄH Y HÃ  Ná»™i</p>
                                             </div>
                                         </div>
                                         <span class="guide-article__more">
-                                            Đọc thêm
+                                            Äá»c thÃªm
                                             <img src="images/home/icon-arrow-blue.svg" alt="" loading="lazy">
                                         </span>
                                     </div>
@@ -628,15 +640,15 @@
                                 </div>
                                 <div class="guide-article__body">
                                     <div class="guide-article__meta">
-                                        <p class="guide-article__category">Điều trị mụn</p>
+                                        <p class="guide-article__category">Äiá»u trá»‹ má»¥n</p>
                                         <span class="guide-article__dot"></span>
-                                        <p class="guide-article__time">12 phút đọc</p>
+                                        <p class="guide-article__time">12 phÃºt Ä‘á»c</p>
                                     </div>
-                                    <h3 class="guide-article__title">Salicylic Acid liều thấp + Probiotic: điều trị mụn
-                                        an toàn hơn</h3>
-                                    <p class="guide-article__excerpt">Khám phá phương pháp độc quyền 34 năm tuổi của
-                                        Bioelements: cách chuyên gia đọc được trạng thái thật của làn da để pha chế công
-                                        thức cá nhân hóa cho từng người.</p>
+                                    <h3 class="guide-article__title">Salicylic Acid liá»u tháº¥p + Probiotic: Ä‘iá»u trá»‹ má»¥n
+                                        an toÃ n hÆ¡n</h3>
+                                    <p class="guide-article__excerpt">KhÃ¡m phÃ¡ phÆ°Æ¡ng phÃ¡p Ä‘á»™c quyá»n 34 nÄƒm tuá»•i cá»§a
+                                        Bioelements: cÃ¡ch chuyÃªn gia Ä‘á»c Ä‘Æ°á»£c tráº¡ng thÃ¡i tháº­t cá»§a lÃ n da Ä‘á»ƒ pha cháº¿ cÃ´ng
+                                        thá»©c cÃ¡ nhÃ¢n hÃ³a cho tá»«ng ngÆ°á»i.</p>
                                     <hr class="guide-article__divider">
                                     <div class="guide-article__footer">
                                         <div class="guide-article__author">
@@ -644,12 +656,12 @@
                                                 <img src="images/home/expert-barbara-avatar.jpg" alt="" loading="lazy">
                                             </span>
                                             <div>
-                                                <p class="guide-article__author-name">Ths. BSNT Hồ Phương Thùy</p>
-                                                <p class="guide-article__author-role">Bác sĩ Da liễu · ĐH Y Hà Nội</p>
+                                                <p class="guide-article__author-name">Ths. BSNT Há»“ PhÆ°Æ¡ng ThÃ¹y</p>
+                                                <p class="guide-article__author-role">BÃ¡c sÄ© Da liá»…u Â· ÄH Y HÃ  Ná»™i</p>
                                             </div>
                                         </div>
                                         <span class="guide-article__more">
-                                            Đọc thêm
+                                            Äá»c thÃªm
                                             <img src="images/home/icon-arrow-blue.svg" alt="" loading="lazy">
                                         </span>
                                     </div>
@@ -661,15 +673,15 @@
                                 </div>
                                 <div class="guide-article__body">
                                     <div class="guide-article__meta">
-                                        <p class="guide-article__category">Chống lão hóa</p>
+                                        <p class="guide-article__category">Chá»‘ng lÃ£o hÃ³a</p>
                                         <span class="guide-article__dot"></span>
-                                        <p class="guide-article__time">12 phút đọc</p>
+                                        <p class="guide-article__time">12 phÃºt Ä‘á»c</p>
                                     </div>
-                                    <h3 class="guide-article__title">Bio-Retinol Complex: retinoid thế hệ mới cho da
-                                        nhạy cảm</h3>
-                                    <p class="guide-article__excerpt">Khám phá phương pháp độc quyền 34 năm tuổi của
-                                        Bioelements: cách chuyên gia đọc được trạng thái thật của làn da để pha chế công
-                                        thức cá nhân hóa cho từng người.</p>
+                                    <h3 class="guide-article__title">Bio-Retinol Complex: retinoid tháº¿ há»‡ má»›i cho da
+                                        nháº¡y cáº£m</h3>
+                                    <p class="guide-article__excerpt">KhÃ¡m phÃ¡ phÆ°Æ¡ng phÃ¡p Ä‘á»™c quyá»n 34 nÄƒm tuá»•i cá»§a
+                                        Bioelements: cÃ¡ch chuyÃªn gia Ä‘á»c Ä‘Æ°á»£c tráº¡ng thÃ¡i tháº­t cá»§a lÃ n da Ä‘á»ƒ pha cháº¿ cÃ´ng
+                                        thá»©c cÃ¡ nhÃ¢n hÃ³a cho tá»«ng ngÆ°á»i.</p>
                                     <hr class="guide-article__divider">
                                     <div class="guide-article__footer">
                                         <div class="guide-article__author">
@@ -677,12 +689,12 @@
                                                 <img src="images/home/expert-barbara-avatar.jpg" alt="" loading="lazy">
                                             </span>
                                             <div>
-                                                <p class="guide-article__author-name">Ths. BSNT Hồ Phương Thùy</p>
-                                                <p class="guide-article__author-role">Bác sĩ Da liễu · ĐH Y Hà Nội</p>
+                                                <p class="guide-article__author-name">Ths. BSNT Há»“ PhÆ°Æ¡ng ThÃ¹y</p>
+                                                <p class="guide-article__author-role">BÃ¡c sÄ© Da liá»…u Â· ÄH Y HÃ  Ná»™i</p>
                                             </div>
                                         </div>
                                         <span class="guide-article__more">
-                                            Đọc thêm
+                                            Äá»c thÃªm
                                             <img src="images/home/icon-arrow-blue.svg" alt="" loading="lazy">
                                         </span>
                                     </div>
@@ -704,14 +716,14 @@
                 </div>
                 <aside class="guide-layout__sidebar guide-sidebar">
                     <div class="guide-sidebar__widget">
-                        <h3 class="guide-sidebar__title">Sản phẩm nổi bật</h3>
+                        <h3 class="guide-sidebar__title">Sáº£n pháº©m ná»•i báº­t</h3>
                         <div class="guide-sidebar__product">
                             <div class="guide-sidebar__product-media">
                                 <img src="images/home/product-1.png" alt="" loading="lazy">
                             </div>
                             <div class="guide-sidebar__product-body">
-                                <p class="guide-sidebar__product-name">Bioelements recovery serum phục hồi</p>
-                                <p class="guide-sidebar__product-price">2,400,000đ</p>
+                                <p class="guide-sidebar__product-name">Bioelements recovery serum phá»¥c há»“i</p>
+                                <p class="guide-sidebar__product-price">2,400,000Ä‘</p>
                             </div>
                         </div>
                         <div class="guide-sidebar__product">
@@ -719,8 +731,8 @@
                                 <img src="images/home/product-2.png" alt="" loading="lazy">
                             </div>
                             <div class="guide-sidebar__product-body">
-                                <p class="guide-sidebar__product-name">Peptide Architect™ Anti-Aging Serum</p>
-                                <p class="guide-sidebar__product-price">2,400,000đ</p>
+                                <p class="guide-sidebar__product-name">Peptide Architectâ„¢ Anti-Aging Serum</p>
+                                <p class="guide-sidebar__product-price">2,400,000Ä‘</p>
                             </div>
                         </div>
                         <div class="guide-sidebar__product">
@@ -728,8 +740,8 @@
                                 <img src="images/home/product-1.png" alt="" loading="lazy">
                             </div>
                             <div class="guide-sidebar__product-body">
-                                <p class="guide-sidebar__product-name">Crucial Moisture™ Chống lão hóa</p>
-                                <p class="guide-sidebar__product-price">2,400,000đ</p>
+                                <p class="guide-sidebar__product-name">Crucial Moistureâ„¢ Chá»‘ng lÃ£o hÃ³a</p>
+                                <p class="guide-sidebar__product-price">2,400,000Ä‘</p>
                             </div>
                         </div>
                         <div class="guide-sidebar__product">
@@ -737,8 +749,8 @@
                                 <img src="images/home/product-2.png" alt="" loading="lazy">
                             </div>
                             <div class="guide-sidebar__product-body">
-                                <p class="guide-sidebar__product-name">Really Rich Moisture™ Dưỡng ẩm</p>
-                                <p class="guide-sidebar__product-price">2,400,000đ</p>
+                                <p class="guide-sidebar__product-name">Really Rich Moistureâ„¢ DÆ°á»¡ng áº©m</p>
+                                <p class="guide-sidebar__product-price">2,400,000Ä‘</p>
                             </div>
                         </div>
                         <div class="guide-sidebar__product">
@@ -746,8 +758,8 @@
                                 <img src="images/home/product-1.png" alt="" loading="lazy">
                             </div>
                             <div class="guide-sidebar__product-body">
-                                <p class="guide-sidebar__product-name">Sleepwear™ Kem dưỡng đêm</p>
-                                <p class="guide-sidebar__product-price">2,400,000đ</p>
+                                <p class="guide-sidebar__product-name">Sleepwearâ„¢ Kem dÆ°á»¡ng Ä‘Ãªm</p>
+                                <p class="guide-sidebar__product-price">2,400,000Ä‘</p>
                             </div>
                         </div>
                     </div>
@@ -755,64 +767,64 @@
                         <img class="guide-sidebar__lead-bg" src="images/home/combo.png" alt="" loading="lazy">
                         <div class="guide-sidebar__lead-overlay"></div>
                         <div class="guide-sidebar__lead-inner">
-                            <div class="guide-sidebar__lead-label">quà tặng độc quyền</div>
-                            <h3 class="guide-sidebar__lead-title">Nhận cẩm nang <span>SkinReading®</span> miễn phí</h3>
-                            <p class="guide-sidebar__lead-text">Đăng ký để nhận file PDF độc quyền + mã giảm giá
-                                <strong>10%</strong> cho đơn hàng dược mỹ phẩm đầu tiên.</p>
+                            <div class="guide-sidebar__lead-label">quÃ  táº·ng Ä‘á»™c quyá»n</div>
+                            <h3 class="guide-sidebar__lead-title">Nháº­n cáº©m nang <span>SkinReadingÂ®</span> miá»…n phÃ­</h3>
+                            <p class="guide-sidebar__lead-text">ÄÄƒng kÃ½ Ä‘á»ƒ nháº­n file PDF Ä‘á»™c quyá»n + mÃ£ giáº£m giÃ¡
+                                <strong>10%</strong> cho Ä‘Æ¡n hÃ ng dÆ°á»£c má»¹ pháº©m Ä‘áº§u tiÃªn.</p>
                             <form class="guide-sidebar__form" action="#" method="post" novalidate>
                                 <label class="guide-sidebar__field-group">
-                                    <span class="guide-sidebar__field-label">Họ và tên <span>*</span></span>
+                                    <span class="guide-sidebar__field-label">Há» vÃ  tÃªn <span>*</span></span>
                                     <input class="guide-sidebar__field" type="text" name="name" data-field="name"
-                                        placeholder="Họ và tên" autocomplete="name" required>
+                                        placeholder="Há» vÃ  tÃªn" autocomplete="name" required>
                                 </label>
                                 <label class="guide-sidebar__field-group">
                                     <span class="guide-sidebar__field-label">Email <span>*</span></span>
                                     <input class="guide-sidebar__field" type="email" name="email" data-field="email"
-                                        placeholder="Địa chỉ email" autocomplete="email" required>
+                                        placeholder="Äá»‹a chá»‰ email" autocomplete="email" required>
                                 </label>
-                                <p class="guide-sidebar__note">Chúng tôi tôn trọng quyền riêng tư · Không spam</p>
-                                <button class="guide-sidebar__submit" type="submit">Nhận cẩm nang miễn phí</button>
+                                <p class="guide-sidebar__note">ChÃºng tÃ´i tÃ´n trá»ng quyá»n riÃªng tÆ° Â· KhÃ´ng spam</p>
+                                <button class="guide-sidebar__submit" type="submit">Nháº­n cáº©m nang miá»…n phÃ­</button>
                             </form>
                         </div>
                     </div>
                     <div class="guide-sidebar__card">
                         <div class="guide-sidebar__card-head">
-                            <p class="guide-sidebar__card-title">Danh mục sản phẩm</p>
+                            <p class="guide-sidebar__card-title">Danh má»¥c sáº£n pháº©m</p>
                         </div>
                         <ul class="guide-sidebar__cat-list">
                             <li>
                                 <a class="guide-sidebar__cat is-active" href="#">
-                                    <span class="guide-sidebar__cat-name">Tẩy trang &amp; Làm sạch</span>
+                                    <span class="guide-sidebar__cat-name">Táº©y trang &amp; LÃ m sáº¡ch</span>
                                     <span class="guide-sidebar__cat-count">12</span>
                                 </a>
                             </li>
                             <li>
                                 <a class="guide-sidebar__cat" href="#">
-                                    <span class="guide-sidebar__cat-name">Serum &amp; Tinh chất</span>
+                                    <span class="guide-sidebar__cat-name">Serum &amp; Tinh cháº¥t</span>
                                     <span class="guide-sidebar__cat-count">12</span>
                                 </a>
                             </li>
                             <li>
                                 <a class="guide-sidebar__cat" href="#">
-                                    <span class="guide-sidebar__cat-name">Kem dưỡng ẩm</span>
+                                    <span class="guide-sidebar__cat-name">Kem dÆ°á»¡ng áº©m</span>
                                     <span class="guide-sidebar__cat-count">12</span>
                                 </a>
                             </li>
                             <li>
                                 <a class="guide-sidebar__cat" href="#">
-                                    <span class="guide-sidebar__cat-name">Chống nắng &amp; Bảo vệ</span>
+                                    <span class="guide-sidebar__cat-name">Chá»‘ng náº¯ng &amp; Báº£o vá»‡</span>
                                     <span class="guide-sidebar__cat-count">12</span>
                                 </a>
                             </li>
                             <li>
                                 <a class="guide-sidebar__cat" href="#">
-                                    <span class="guide-sidebar__cat-name">Mặt nạ &amp; Đặc trị</span>
+                                    <span class="guide-sidebar__cat-name">Máº·t náº¡ &amp; Äáº·c trá»‹</span>
                                     <span class="guide-sidebar__cat-count">12</span>
                                 </a>
                             </li>
                             <li>
                                 <a class="guide-sidebar__cat" href="#">
-                                    <span class="guide-sidebar__cat-name">Chăm sóc vùng mắt</span>
+                                    <span class="guide-sidebar__cat-name">ChÄƒm sÃ³c vÃ¹ng máº¯t</span>
                                     <span class="guide-sidebar__cat-count">12</span>
                                 </a>
                             </li>
@@ -834,45 +846,45 @@
             <aside class="guide-knowledge__toc" id="toctoc"></aside>
             <span class="guide-knowledge__divider"></span>
             <article class="guide-knowledge__content">
-                <h2 class="guide-knowledge__title">Chăm sóc da dưới góc nhìn sinh học</h2>
+                <h2 class="guide-knowledge__title">ChÄƒm sÃ³c da dÆ°á»›i gÃ³c nhÃ¬n sinh há»c</h2>
                 <div class="guide-knowledge__body" data-guide-toc-source>
-                    <h3 class="guide-knowledge__heading">Mụn — không chỉ là vấn đề bề mặt</h3>
-                    <p class="guide-knowledge__text">Mụn không đơn thuần là dầu thừa hay bụi bẩn. Dưới góc nhìn sinh
-                        học, mụn là kết quả của mất cân bằng hệ vi sinh trên da kết hợp với rối loạn nội tiết, stress
-                        oxy hóa và phản ứng viêm cấp tính. Việc điều trị mụn bằng các sản phẩm có nồng độ axit cao hay
-                        kháng sinh mạnh — dù hiệu quả tức thì — có thể phá vỡ hàng rào bảo vệ, làm yếu hệ vi sinh và
-                        khiến mụn quay lại nặng hơn.</p>
-                    <p class="guide-knowledge__text">Cách tiếp cận của Bioelements: kiểm soát viêm và phục hồi hệ vi
-                        sinh đồng thời. Salicylic Acid liều thấp kết hợp Probiotic Complex giúp loại bỏ tế bào chết,
-                        thông thoáng lỗ chân lông mà vẫn giữ cho hệ vi sinh lành mạnh — đây là lý do tại sao 89% người
-                        dùng các sản phẩm điều trị mụn của Bioelements báo cáo da ít tái phát hơn sau 8 tuần.</p>
-                    <h3 class="guide-knowledge__heading">Lão hóa — câu chuyện của ti thể và collagen</h3>
-                    <p class="guide-knowledge__text">Lão hóa da bắt đầu từ cấp độ tế bào, cụ thể là sự suy giảm chức
-                        năng ti thể (mitochondria) — &quot;nhà máy năng lượng&quot; của tế bào. Khi ti thể yếu đi, các
-                        nguyên bào sợi (fibroblast) không còn đủ năng lượng để sản xuất collagen và elastin — dẫn đến da
-                        chùng nhão, nếp nhăn, mất độ đàn hồi.</p>
-                    <p class="guide-knowledge__text">Bio-Retinol Complex của Bioelements là một phức hợp retinoid thế hệ
-                        mới, hoạt động nhẹ nhàng hơn Retinol thuần truyền thống nhưng vẫn kích thích chu trình tái tạo
-                        tế bào và tăng sản xuất collagen — phù hợp cả với da nhạy cảm vốn không chịu được Retinol mạnh.
+                    <h3 class="guide-knowledge__heading">Má»¥n â€” khÃ´ng chá»‰ lÃ  váº¥n Ä‘á» bá» máº·t</h3>
+                    <p class="guide-knowledge__text">Má»¥n khÃ´ng Ä‘Æ¡n thuáº§n lÃ  dáº§u thá»«a hay bá»¥i báº©n. DÆ°á»›i gÃ³c nhÃ¬n sinh
+                        há»c, má»¥n lÃ  káº¿t quáº£ cá»§a máº¥t cÃ¢n báº±ng há»‡ vi sinh trÃªn da káº¿t há»£p vá»›i rá»‘i loáº¡n ná»™i tiáº¿t, stress
+                        oxy hÃ³a vÃ  pháº£n á»©ng viÃªm cáº¥p tÃ­nh. Viá»‡c Ä‘iá»u trá»‹ má»¥n báº±ng cÃ¡c sáº£n pháº©m cÃ³ ná»“ng Ä‘á»™ axit cao hay
+                        khÃ¡ng sinh máº¡nh â€” dÃ¹ hiá»‡u quáº£ tá»©c thÃ¬ â€” cÃ³ thá»ƒ phÃ¡ vá»¡ hÃ ng rÃ o báº£o vá»‡, lÃ m yáº¿u há»‡ vi sinh vÃ 
+                        khiáº¿n má»¥n quay láº¡i náº·ng hÆ¡n.</p>
+                    <p class="guide-knowledge__text">CÃ¡ch tiáº¿p cáº­n cá»§a Bioelements: kiá»ƒm soÃ¡t viÃªm vÃ  phá»¥c há»“i há»‡ vi
+                        sinh Ä‘á»“ng thá»i. Salicylic Acid liá»u tháº¥p káº¿t há»£p Probiotic Complex giÃºp loáº¡i bá» táº¿ bÃ o cháº¿t,
+                        thÃ´ng thoÃ¡ng lá»— chÃ¢n lÃ´ng mÃ  váº«n giá»¯ cho há»‡ vi sinh lÃ nh máº¡nh â€” Ä‘Ã¢y lÃ  lÃ½ do táº¡i sao 89% ngÆ°á»i
+                        dÃ¹ng cÃ¡c sáº£n pháº©m Ä‘iá»u trá»‹ má»¥n cá»§a Bioelements bÃ¡o cÃ¡o da Ã­t tÃ¡i phÃ¡t hÆ¡n sau 8 tuáº§n.</p>
+                    <h3 class="guide-knowledge__heading">LÃ£o hÃ³a â€” cÃ¢u chuyá»‡n cá»§a ti thá»ƒ vÃ  collagen</h3>
+                    <p class="guide-knowledge__text">LÃ£o hÃ³a da báº¯t Ä‘áº§u tá»« cáº¥p Ä‘á»™ táº¿ bÃ o, cá»¥ thá»ƒ lÃ  sá»± suy giáº£m chá»©c
+                        nÄƒng ti thá»ƒ (mitochondria) â€” &quot;nhÃ  mÃ¡y nÄƒng lÆ°á»£ng&quot; cá»§a táº¿ bÃ o. Khi ti thá»ƒ yáº¿u Ä‘i, cÃ¡c
+                        nguyÃªn bÃ o sá»£i (fibroblast) khÃ´ng cÃ²n Ä‘á»§ nÄƒng lÆ°á»£ng Ä‘á»ƒ sáº£n xuáº¥t collagen vÃ  elastin â€” dáº«n Ä‘áº¿n da
+                        chÃ¹ng nhÃ£o, náº¿p nhÄƒn, máº¥t Ä‘á»™ Ä‘Ã n há»“i.</p>
+                    <p class="guide-knowledge__text">Bio-Retinol Complex cá»§a Bioelements lÃ  má»™t phá»©c há»£p retinoid tháº¿ há»‡
+                        má»›i, hoáº¡t Ä‘á»™ng nháº¹ nhÃ ng hÆ¡n Retinol thuáº§n truyá»n thá»‘ng nhÆ°ng váº«n kÃ­ch thÃ­ch chu trÃ¬nh tÃ¡i táº¡o
+                        táº¿ bÃ o vÃ  tÄƒng sáº£n xuáº¥t collagen â€” phÃ¹ há»£p cáº£ vá»›i da nháº¡y cáº£m vá»‘n khÃ´ng chá»‹u Ä‘Æ°á»£c Retinol máº¡nh.
                     </p>
-                    <p class="guide-knowledge__text">Lưu ý từ chuyên gia: Không có &quot;thần dược&quot; chống lão hóa.
-                        Hiệu quả thực sự đến từ sự kết hợp 3 yếu tố: chống nắng nghiêm túc hằng ngày, chăm sóc đúng cơ
-                        chế sinh học, và lối sống lành mạnh (ngủ đủ, giảm stress, dinh dưỡng cân bằng).</p>
-                    <h3 class="guide-knowledge__heading">Da nhạy cảm — không phải &quot;loại da&quot;, mà là &quot;trạng
-                        thái&quot;</h3>
-                    <p class="guide-knowledge__text">Đây là quan điểm cốt lõi trong phương pháp SkinReading® của
-                        Bioelements: nhạy cảm không phải bản chất di truyền cố định mà là trạng thái tạm thời của da khi
-                        hàng rào bảo vệ bị tổn thương. Điều đó có nghĩa: nếu phục hồi đúng cách, làn da có thể
-                        &quot;thoát khỏi&quot; trạng thái nhạy cảm và trở lại khoẻ mạnh.</p>
-                    <p class="guide-knowledge__text">Cách phục hồi đúng bao gồm: ngừng dùng các sản phẩm có cồn và hương
-                        liệu tổng hợp, bổ sung lipid tự nhiên (ceramide, cholesterol, fatty acids) theo tỉ lệ 3:1:1 — mô
-                        phỏng đúng cấu trúc lớp sừng. Đồng thời, tránh việc &quot;chăm da quá mức&quot; — chỉ cần một
-                        routine tối giản 3 bước (làm sạch dịu nhẹ + dưỡng ẩm phục hồi + chống nắng) trong giai đoạn da
-                        đang hồi phục.</p>
-                    <p class="guide-knowledge__text">Nếu bạn đang băn khoăn không biết làn da mình ở trạng thái nào, hãy
-                        bắt đầu với bài viết &quot;SkinReading® — Nghệ thuật đọc vị tâm lý làn da&quot; ở đầu trang,
-                        hoặc đặt lịch tư vấn miễn phí với chuyên gia của chúng tôi. Mỗi làn da là một câu chuyện riêng —
-                        và Bioelements ở đây để cùng bạn viết tiếp câu chuyện đó.</p>
+                    <p class="guide-knowledge__text">LÆ°u Ã½ tá»« chuyÃªn gia: KhÃ´ng cÃ³ &quot;tháº§n dÆ°á»£c&quot; chá»‘ng lÃ£o hÃ³a.
+                        Hiá»‡u quáº£ thá»±c sá»± Ä‘áº¿n tá»« sá»± káº¿t há»£p 3 yáº¿u tá»‘: chá»‘ng náº¯ng nghiÃªm tÃºc háº±ng ngÃ y, chÄƒm sÃ³c Ä‘Ãºng cÆ¡
+                        cháº¿ sinh há»c, vÃ  lá»‘i sá»‘ng lÃ nh máº¡nh (ngá»§ Ä‘á»§, giáº£m stress, dinh dÆ°á»¡ng cÃ¢n báº±ng).</p>
+                    <h3 class="guide-knowledge__heading">Da nháº¡y cáº£m â€” khÃ´ng pháº£i &quot;loáº¡i da&quot;, mÃ  lÃ  &quot;tráº¡ng
+                        thÃ¡i&quot;</h3>
+                    <p class="guide-knowledge__text">ÄÃ¢y lÃ  quan Ä‘iá»ƒm cá»‘t lÃµi trong phÆ°Æ¡ng phÃ¡p SkinReadingÂ® cá»§a
+                        Bioelements: nháº¡y cáº£m khÃ´ng pháº£i báº£n cháº¥t di truyá»n cá»‘ Ä‘á»‹nh mÃ  lÃ  tráº¡ng thÃ¡i táº¡m thá»i cá»§a da khi
+                        hÃ ng rÃ o báº£o vá»‡ bá»‹ tá»•n thÆ°Æ¡ng. Äiá»u Ä‘Ã³ cÃ³ nghÄ©a: náº¿u phá»¥c há»“i Ä‘Ãºng cÃ¡ch, lÃ n da cÃ³ thá»ƒ
+                        &quot;thoÃ¡t khá»i&quot; tráº¡ng thÃ¡i nháº¡y cáº£m vÃ  trá»Ÿ láº¡i khoáº» máº¡nh.</p>
+                    <p class="guide-knowledge__text">CÃ¡ch phá»¥c há»“i Ä‘Ãºng bao gá»“m: ngá»«ng dÃ¹ng cÃ¡c sáº£n pháº©m cÃ³ cá»“n vÃ  hÆ°Æ¡ng
+                        liá»‡u tá»•ng há»£p, bá»• sung lipid tá»± nhiÃªn (ceramide, cholesterol, fatty acids) theo tá»‰ lá»‡ 3:1:1 â€” mÃ´
+                        phá»ng Ä‘Ãºng cáº¥u trÃºc lá»›p sá»«ng. Äá»“ng thá»i, trÃ¡nh viá»‡c &quot;chÄƒm da quÃ¡ má»©c&quot; â€” chá»‰ cáº§n má»™t
+                        routine tá»‘i giáº£n 3 bÆ°á»›c (lÃ m sáº¡ch dá»‹u nháº¹ + dÆ°á»¡ng áº©m phá»¥c há»“i + chá»‘ng náº¯ng) trong giai Ä‘oáº¡n da
+                        Ä‘ang há»“i phá»¥c.</p>
+                    <p class="guide-knowledge__text">Náº¿u báº¡n Ä‘ang bÄƒn khoÄƒn khÃ´ng biáº¿t lÃ n da mÃ¬nh á»Ÿ tráº¡ng thÃ¡i nÃ o, hÃ£y
+                        báº¯t Ä‘áº§u vá»›i bÃ i viáº¿t &quot;SkinReadingÂ® â€” Nghá»‡ thuáº­t Ä‘á»c vá»‹ tÃ¢m lÃ½ lÃ n da&quot; á»Ÿ Ä‘áº§u trang,
+                        hoáº·c Ä‘áº·t lá»‹ch tÆ° váº¥n miá»…n phÃ­ vá»›i chuyÃªn gia cá»§a chÃºng tÃ´i. Má»—i lÃ n da lÃ  má»™t cÃ¢u chuyá»‡n riÃªng â€”
+                        vÃ  Bioelements á»Ÿ Ä‘Ã¢y Ä‘á»ƒ cÃ¹ng báº¡n viáº¿t tiáº¿p cÃ¢u chuyá»‡n Ä‘Ã³.</p>
                 </div>
             </article>
         </div>
@@ -887,13 +899,13 @@
                             loading="lazy">
                     </a>
                     <div class="site-footer__brand-body">
-                        <p class="site-footer__about">Công ty Cổ phần Labo De Dermafirm Việt Nam —<br>Nhà phân phối độc
-                            quyền thương hiệu Bioelements (USA) tại Việt Nam.</p>
+                        <p class="site-footer__about">CÃ´ng ty Cá»• pháº§n Labo De Dermafirm Viá»‡t Nam â€”<br>NhÃ  phÃ¢n phá»‘i Ä‘á»™c
+                            quyá»n thÆ°Æ¡ng hiá»‡u Bioelements (USA) táº¡i Viá»‡t Nam.</p>
                         <div class="site-footer__office">
-                            <p class="site-footer__office-title">Trụ sở chính · Hà Nội</p>
+                            <p class="site-footer__office-title">Trá»¥ sá»Ÿ chÃ­nh Â· HÃ  Ná»™i</p>
                             <p class="site-footer__contact-item">
                                 <i class="site-footer__icon fa-sharp fa-solid fa-location-dot"></i>
-                                Tòa C, Nhà khách La Thành, 226 Vạn Phúc , Phường Ngọc Hà, Thành Phố Hà Nội
+                                TÃ²a C, NhÃ  khÃ¡ch La ThÃ nh, 226 Váº¡n PhÃºc , PhÆ°á»ng Ngá»c HÃ , ThÃ nh Phá»‘ HÃ  Ná»™i
                             </p>
                             <p class="site-footer__contact-item">
                                 <i class="site-footer__icon fa-sharp fa-solid fa-phone"></i>
@@ -902,10 +914,10 @@
                         </div>
                         <hr class="site-footer__divider">
                         <div class="site-footer__office">
-                            <p class="site-footer__office-title">Chi nhánh · TP. Hồ Chí Minh</p>
+                            <p class="site-footer__office-title">Chi nhÃ¡nh Â· TP. Há»“ ChÃ­ Minh</p>
                             <p class="site-footer__contact-item">
                                 <i class="site-footer__icon fa-sharp fa-solid fa-location-dot"></i>
-                                114 Nguyễn Hoàng, Phường An Phú, TP. Thủ Đức.
+                                114 Nguyá»…n HoÃ ng, PhÆ°á»ng An PhÃº, TP. Thá»§ Äá»©c.
                             </p>
                             <p class="site-footer__contact-item">
                                 <i class="site-footer__icon fa-sharp fa-solid fa-phone"></i>
@@ -915,32 +927,32 @@
                     </div>
                 </div>
                 <div class="site-footer__col site-footer__col--explore">
-                    <p class="site-footer__col-title">Khám phá</p>
+                    <p class="site-footer__col-title">KhÃ¡m phÃ¡</p>
                     <ul class="site-footer__links">
-                        <li><a class="site-footer__link" href="#">Toàn bộ sản phẩm</a></li>
-                        <li><a class="site-footer__link" href="#">Liệu trình chuyên nghiệp</a></li>
+                        <li><a class="site-footer__link" href="#">ToÃ n bá»™ sáº£n pháº©m</a></li>
+                        <li><a class="site-footer__link" href="#">Liá»‡u trÃ¬nh chuyÃªn nghiá»‡p</a></li>
                         <li><a class="site-footer__link" href="ve-chung-toi.html">Tinh hoa Bioelements</a></li>
-                        <li><a class="site-footer__link" href="#">Công nghệ</a></li>
-                        <li><a class="site-footer__link" href="cam-nang.html">Cẩm nang</a></li>
-                        <li><a class="site-footer__link" href="#">Hệ thống Spa &amp; Clinic</a></li>
-                        <li><a class="site-footer__link" href="#">Tin tức</a></li>
-                        <li><a class="site-footer__link" href="lien-he.html">Liên hệ</a></li>
+                        <li><a class="site-footer__link" href="#">CÃ´ng nghá»‡</a></li>
+                        <li><a class="site-footer__link" href="cam-nang.html">Cáº©m nang</a></li>
+                        <li><a class="site-footer__link" href="#">Há»‡ thá»‘ng Spa &amp; Clinic</a></li>
+                        <li><a class="site-footer__link" href="#">Tin tá»©c</a></li>
+                        <li><a class="site-footer__link" href="lien-he.html">LiÃªn há»‡</a></li>
                     </ul>
                 </div>
                 <div class="site-footer__col site-footer__col--policy">
-                    <p class="site-footer__col-title">chính sách</p>
+                    <p class="site-footer__col-title">chÃ­nh sÃ¡ch</p>
                     <ul class="site-footer__links">
-                        <li><a class="site-footer__link" href="chinh-sach-mua-hang.html">Chính sách mua hàng</a></li>
-                        <li><a class="site-footer__link" href="chinh-sach-bao-mat.html">Chính sách bảo mật</a></li>
-                        <li><a class="site-footer__link" href="dieu-khoan-su-dung.html">Điều khoản sử dụng</a></li>
-                        <li><a class="site-footer__link" href="#">Chính sách vận chuyển</a></li>
+                        <li><a class="site-footer__link" href="chinh-sach-mua-hang.html">ChÃ­nh sÃ¡ch mua hÃ ng</a></li>
+                        <li><a class="site-footer__link" href="chinh-sach-bao-mat.html">ChÃ­nh sÃ¡ch báº£o máº­t</a></li>
+                        <li><a class="site-footer__link" href="dieu-khoan-su-dung.html">Äiá»u khoáº£n sá»­ dá»¥ng</a></li>
+                        <li><a class="site-footer__link" href="#">ChÃ­nh sÃ¡ch váº­n chuyá»ƒn</a></li>
                     </ul>
                 </div>
                 <div class="site-footer__contact">
                     <div class="site-footer__contact-block">
-                        <p class="site-footer__col-title">Liên hệ với chúng tôi</p>
+                        <p class="site-footer__col-title">LiÃªn há»‡ vá»›i chÃºng tÃ´i</p>
                         <div class="site-footer__email-group">
-                            <p class="site-footer__office-title">Kết nối qua email:</p>
+                            <p class="site-footer__office-title">Káº¿t ná»‘i qua email:</p>
                             <div class="site-footer__email-row">
                                 <i class="site-footer__icon fa-sharp fa-solid fa-envelope"></i>
                                 <a class="site-footer__email"
@@ -967,7 +979,7 @@
             </div>
             <div class="site-footer__bottom">
                 <hr class="site-footer__divider site-footer__divider--bottom">
-                <p class="site-footer__copy">© 2026 Bioelements Việt Nam · Labo De Dermafirm JSC</p>
+                <p class="site-footer__copy">Â© 2026 Bioelements Viá»‡t Nam Â· Labo De Dermafirm JSC</p>
             </div>
         </div>
     </footer>
@@ -977,6 +989,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"
         integrity="sha512-7rusk8kGPFynZWu26OKbTeI+QPoYchtxsmPeBqkHIEXJxeun4yJ4ISYe7C6sz9wdxeE1Gk3VxsIWgCZTc+vX3g=="
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous"></script>
@@ -984,3 +998,5 @@
 </body>
 
 </html>
+
+

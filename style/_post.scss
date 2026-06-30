@@ -36,7 +36,7 @@
             padding: 8px 0;
 
             span {
-                @include AvertaSemibold;
+                @include BeVietnamPro-SemiBold;
                 font-size: 16px;
                 line-height: 24px;
                 text-transform: uppercase;
@@ -72,7 +72,7 @@
             .link {
                 margin: 0;
                 color: inherit;
-                @include AvertaRegular;
+                @include BeVietnamPro-Regular;
                 font-size: 16px;
                 line-height: 24px;
             }
@@ -140,7 +140,7 @@
     &__category {
         margin: 0;
         color: $bio-blue-500;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 14px;
         line-height: 22px;
         letter-spacing: 1.71px;
@@ -160,7 +160,7 @@
         padding: 0 0 0 16px;
         border-left: 3px solid #4DBFD9;
         color: $bio-muted;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 16px;
         line-height: 24px;
     }
@@ -192,7 +192,7 @@
         border-radius: 50%;
         background: $bio-blue-800;
         color: $white;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 14px;
         line-height: 40px;
         text-align: center;
@@ -201,7 +201,7 @@
     &__author-name {
         margin: 0;
         color: $bio-body;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 16px;
         line-height: 24px;
     }
@@ -209,7 +209,7 @@
     &__author-role {
         margin: 0;
         color: $bio-muted;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 14px;
         line-height: 22px;
     }
@@ -226,7 +226,7 @@
         align-items: center;
         gap: 4px;
         color: $bio-muted;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 16px;
         line-height: 24px;
 
@@ -270,7 +270,7 @@
     &__text {
         margin: 0;
         color: $bio-body;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 16px;
         line-height: 24px;
     }
@@ -278,7 +278,7 @@
     &__heading {
         margin: 0;
         color: $bio-body;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 18px;
         line-height: 26px;
         scroll-margin-top: 120px;
@@ -295,14 +295,14 @@
     &__callout-label {
         margin: 0 0 8px;
         color: $bio-teal;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 14px;
         line-height: 22px;
     }
 
     &__callout-text {
         margin: 0;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 16px;
         line-height: 24px;
     }
@@ -325,7 +325,7 @@
             position: relative;
             padding-left: 16px;
             color: $bio-body;
-            @include AvertaRegular;
+            @include BeVietnamPro-Regular;
             font-size: 16px;
             line-height: 24px;
 
@@ -342,7 +342,7 @@
 
             strong {
                 color: $bio-blue-500;
-                @include AvertaSemibold;
+                @include BeVietnamPro-SemiBold;
             }
         }
     }
@@ -350,7 +350,7 @@
     &__list-title {
         margin: 0;
         color: $bio-body;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 16px;
         line-height: 24px;
     }
@@ -365,7 +365,7 @@
 
     &__tags-label {
         color: $bio-muted;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 14px;
         line-height: 22px;
     }
@@ -378,7 +378,7 @@
         border-radius: 999px;
         background: $bio-light-blue;
         color: $bio-blue-500;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 14px;
         line-height: 22px;
         text-decoration: none;
@@ -401,7 +401,7 @@
 
     &__share-label {
         color: $bio-body;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 16px;
         line-height: 24px;
     }
@@ -460,7 +460,7 @@
         border-radius: 50%;
         background: $bio-blue-800;
         color: $white;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 20px;
         line-height: 64px;
         text-align: center;
@@ -469,7 +469,7 @@
     &__author-card-label {
         margin: 0 0 4px;
         color: $bio-teal;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 14px;
         line-height: 22px;
         text-transform: uppercase;
@@ -487,7 +487,7 @@
     &__author-card-role {
         margin: 0;
         color: $bio-muted;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 14px;
         line-height: 22px;
     }
@@ -495,7 +495,7 @@
     &__author-card-desc {
         margin: 0 0 16px;
         color: $bio-body;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 16px;
         line-height: 24px;
     }
@@ -514,7 +514,7 @@
         strong {
             display: block;
             color: $bio-blue-500;
-            @include AvertaSemibold;
+            @include BeVietnamPro-SemiBold;
             font-size: 22px;
             line-height: 30px;
         }
@@ -522,7 +522,7 @@
         span {
             display: block;
             color: $bio-muted;
-            @include AvertaRegular;
+            @include BeVietnamPro-Regular;
             font-size: 14px;
             line-height: 22px;
         }
@@ -530,7 +530,7 @@
 
     &__author-card-link {
         color: $bio-blue-500;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 16px;
         line-height: 24px;
         text-decoration: underline;
@@ -561,7 +561,7 @@
 }
 .article-date{
     color: #6F767C;
-    @include AvertaRegular;
+    @include BeVietnamPro-Regular;
     font-size: 16px;
     line-height: 24px;
     display: flex;
@@ -665,7 +665,7 @@
         border-radius: 6px;
         background: $bio-blue-500;
         color: $white;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 14px;
         line-height: 18px;
     }
@@ -676,7 +676,7 @@
         gap: 8px;
         margin: 0;
         color: $bio-muted;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 16px;
         line-height: 24px;
     }
@@ -692,7 +692,7 @@
         border: 0;
         background: transparent;
         color: $bio-body;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 16px;
         line-height: 24px;
         padding-right: 20px;
@@ -723,7 +723,7 @@
     &__form-title {
         margin: 0;
         color: $bio-body;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 16px;
         line-height: 24px;
     }
@@ -731,7 +731,7 @@
     &__form-sub {
         margin: 0;
         color: $bio-muted;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 14px;
         line-height: 22px;
     }
@@ -755,7 +755,7 @@
             border-radius: 8px;
             background: $white;
             color: $bio-body;
-            @include AvertaRegular;
+            @include BeVietnamPro-Regular;
             font-size: 16px;
             line-height: 24px;
 
@@ -790,7 +790,7 @@
     &__rules {
         margin: 0;
         color: $bio-muted;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 14px;
         line-height: 22px;
     }
@@ -803,7 +803,7 @@
         border-radius: 999px;
         background: $bio-blue-500;
         color: $white;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 16px;
         line-height: 24px;
         cursor: pointer;
@@ -869,7 +869,7 @@
         border-radius: 50%;
         background: $bio-light-blue;
         color: $bio-blue-500;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 13px;
         line-height: 38px;
         text-align: center;
@@ -890,7 +890,7 @@
     &__name {
         margin: 0;
         color: $bio-body;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 16px;
         line-height: 24px;
     }
@@ -903,7 +903,7 @@
         border-radius: 999px;
         background: $bio-blue-500;
         color: $white;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 12px;
         line-height: 18px;
     }
@@ -911,7 +911,7 @@
     &__date {
         margin: 0;
         color: $bio-muted;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 14px;
         line-height: 20px;
     }
@@ -919,7 +919,7 @@
     &__text {
         margin: 0;
         color: $bio-body;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 16px;
         line-height: 24px;
 
@@ -950,7 +950,7 @@
         border: 0;
         background: transparent;
         color: $bio-muted;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 14px;
         line-height: 16px;
         cursor: pointer;
@@ -960,7 +960,7 @@
         }
 
         strong {
-            @include AvertaSemibold;
+            @include BeVietnamPro-SemiBold;
             font-weight: 600;
         }
 

@@ -1,0 +1,215 @@
+@include maxWidth(600px) {
+    .box-icon-scroll {
+        display: none !important;
+    }
+
+    .site-header__topbar {
+        display: none;
+    }
+
+    .site-header {
+        position: sticky;
+        z-index: 999;
+        top: 0;
+        background: #fff;
+    }
+
+    .hero-slide__bg {
+        height: 400px;
+    }
+
+    .hero-slider__content {
+        max-width: 100%;
+    }
+
+    .hero-slider__actions {
+        a {
+            width: max-content !important;
+            padding: 3px 14px;
+            min-height: auto;
+        }
+    }
+
+    .bio-btn {
+        font-size: 12px;
+    }
+
+    .home-essence,
+    .home-bestsellers {
+        padding: 30px 0;
+    }
+
+    .home-essence__title {
+        width: 100%;
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .home-essence__inner,
+    .home-bestsellers__inner {
+        gap: 20px;
+    }
+
+    .home-bestsellers__title {
+        font-size: 24px;
+    }
+
+    .home-combo__desc {
+        font-size: 14px;
+    }
+
+    .home-therapies__desc,
+    .home-therapies__tab-num,
+    .home-therapies__tab-name {
+        font-size: 14px;
+    }
+
+    .home-therapies__featured-title {
+        font-size: 20px;
+    }
+
+    .home-therapies__featured-text {
+        font-size: 14px;
+        line-height: 24px;
+        height: auto;
+    }
+
+    .home-therapies__featured-body {
+        padding: 15px;
+    }
+
+    .home-experts__watermark {
+        display: none;
+    }
+
+    .home-therapies__tab {
+        padding: 10px 16px 10px 12px;
+    }
+
+    .home-experts__featured {
+        width:auto;
+        gap: 20px;
+    }
+
+    .home-experts__featured-content {
+        padding-left: 15px;
+        gap: 20px;
+    }
+
+    .bio-profile__role {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .bio-profile__avatar {
+        width: 44px;
+        height: 44px;
+    }
+
+    .home-experts__inner {
+        gap: 20px;
+    }
+
+    .home-experts__bio {
+        font-size: 14px;
+    }
+
+    .home-experts__presence img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .home-experts__presence {
+        font-size: 16px;
+    }
+
+    .home-experts__members {
+        margin-top: 25px;
+        gap: 20px;
+    }
+
+    .home-experts__vn-desc {
+        font-size: 14px;
+    }
+    .home-experts__vn-title{
+        font-size: 22px;
+    }
+
+    .expert-card__photo img {
+    height: auto;
+}
+    .expert-card__photo {
+        min-height: 134px;
+    }
+    .expert-card{
+        padding: 8px;
+        gap:0;
+        margin-bottom: 20px
+    }
+    .expert-card__arrow{
+        display: none;
+    }
+    .home-experts__vn-grid{
+        display: block;
+    }
+    .home-results__banner-text {
+    font-size: 14px;
+}
+.ba-card__title {
+    font-size: 18px;
+}
+.home-results__banner{
+    padding: 20px;
+}
+.home-results__banner-inner ,.home-results__inner{
+    gap:10px
+}
+.home-blog__all{
+    display: none;
+}
+.home-blog{
+    padding-top: 0;
+}
+.home-blog__inner{
+    gap: 20px;
+}
+.bio-cta-form__submit{
+    span{
+        display: none;
+    }
+}
+.bio-title-display, .home-cta__title{
+    font-size: 25px;
+}
+.home-cta{
+    padding-bottom: 0;
+}
+.site-footer{
+    padding: 30px 0
+}
+.catalog-breadcrumb{
+    display: none;
+}
+.catalog-hero__inner {
+    width: 95%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.catalog-toolbar__sort{
+    span{
+        display: none;
+    }
+}
+.catalog-toolbar__controls{
+    justify-content: space-between;
+}
+    .catalog-toolbar__sort {
+        width: 100%;
+        justify-content: end;
+        font-size: 12px;
+    }
+    .catalog-toolbar__filters ,.catalog-toolbar__sort-select{
+        font-size: 12px;
+    }
+}

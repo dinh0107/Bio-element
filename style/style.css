@@ -28,6 +28,34 @@
   src: url("../webfonts/Averta-ExtraBold.otf") format("opentype");
 }
 @font-face {
+  font-family: "BeVietnamPro-Regular";
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../webfonts/BeVietnamPro-Regular.ttf") format("opentype");
+}
+@font-face {
+  font-family: "BeVietnamPro-SemiBold";
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+  src: url("../webfonts/BeVietnamPro-SemiBold.ttf") format("opentype");
+}
+@font-face {
+  font-family: "BeVietnamPro-Bold";
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+  src: url("../webfonts/BeVietnamPro-Bold.ttf") format("opentype");
+}
+@font-face {
+  font-family: "BeVietnamPro-ExtraBold.ttf";
+  font-display: swap;
+  font-weight: 800;
+  font-style: normal;
+  src: url("../webfonts/BeVietnamPro-ExtraBold.ttf") format("opentype");
+}
+@font-face {
   font-family: "Cormorant-Regular";
   font-display: swap;
   font-weight: 400;
@@ -106,6 +134,12 @@
 .bio-title--brown span:last-child {
   color: #4e2921;
 }
+@media (max-width: 600px) {
+  .bio-title, .post-comments__title, .post-related__title, .home-blog__title, .home-experts__title, .home-therapies__title, .home-combo__title, .home-bestsellers__title, .home-essence__title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
 
 .bio-title-display, .home-cta__title {
   margin: 0;
@@ -124,7 +158,7 @@
   padding: 10px 24px;
   border: 1px solid transparent;
   border-radius: 40px;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 18px;
   line-height: 26px;
   text-decoration: none;
@@ -249,7 +283,7 @@
 .bio-profile__role {
   margin: 0;
   color: #0a293a;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -265,7 +299,7 @@
 .bio-cta-form__label {
   margin: 0;
   color: #fafcfd;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -289,7 +323,7 @@
   padding: 0;
   background: transparent;
   color: #ffffff;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
   outline: none;
@@ -311,7 +345,7 @@
   border-radius: 999px;
   background: #fafcfd;
   color: #0c608f;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 16px;
   line-height: 24px;
   white-space: nowrap;
@@ -326,20 +360,6 @@
 .bio-cta-form__submit:hover, .bio-cta-form__submit:focus-visible {
   background: rgb(235.4285714286, 243.2571428571, 247.1714285714);
 }
-@media (max-width: 575px) {
-  .bio-cta-form__field {
-    flex-direction: column;
-    align-items: stretch;
-    height: auto;
-    padding: 12px;
-    border-radius: 16px;
-  }
-  .bio-cta-form__submit {
-    justify-content: center;
-    width: 100%;
-  }
-}
-
 .bio-arrow, .home-combo__nav-btn, .home-essence__nav-btn {
   display: inline-flex;
   align-items: center;
@@ -415,7 +435,7 @@
   padding: 0;
   background: transparent;
   color: rgba(12, 68, 118, 0.6);
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.32px;
@@ -462,7 +482,7 @@
   border-radius: 8.5px;
   background: #b0523b;
   color: #ffffff;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 12px;
   line-height: 16px;
   box-shadow: 1px 1px 1.5px rgba(18, 18, 18, 0.3);
@@ -477,7 +497,7 @@
   border-radius: 24px;
   background: #b33a1b;
   color: #ffffff;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 12px;
   line-height: 20px;
   text-transform: uppercase;
@@ -492,7 +512,7 @@
   align-items: center;
   gap: 8px;
   color: #0c608f;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 16px;
   line-height: 24px;
   text-decoration: none;
@@ -551,20 +571,20 @@
 }
 .hero-slider__eyebrow {
   margin: 0;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 20px;
   line-height: 28px;
   letter-spacing: 0.4px;
 }
 .hero-slider__title {
   margin: 0;
-  font-family: "Averta-ExtraBold", sans-serif;
+  font-family: "BeVietnamPro-ExtraBold.ttf";
   font-size: 42px;
   line-height: 52px;
 }
 .hero-slider__subtitle {
   margin: 0;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 20px;
   line-height: 28px;
   letter-spacing: 0.6px;
@@ -590,13 +610,13 @@
     line-height: 40px;
   }
   .hero-slider__eyebrow, .hero-slider__subtitle {
-    font-size: 16px;
+    font-size: 10px;
     line-height: 24px;
   }
 }
 @media (max-width: 575px) {
   .hero-slider__title {
-    font-size: 26px;
+    font-size: 20px;
     line-height: 34px;
   }
   .hero-slider__actions {
@@ -643,7 +663,7 @@
   align-items: center;
   gap: 8px;
   transform: translate(-50%, -50%);
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 13px;
   line-height: 22px;
   letter-spacing: 0.26px;
@@ -673,7 +693,7 @@
   padding: 10px 0;
   color: #ffffff;
   text-decoration: none;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 14px;
   line-height: 22px;
   white-space: nowrap;
@@ -752,7 +772,7 @@
   justify-content: center;
   padding: 4px 0;
   color: #2c739d;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 16px;
   line-height: 24px;
   text-decoration: none;
@@ -812,7 +832,7 @@
   padding: 10px 20px;
   width: 100%;
   color: #2c739d;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 15px;
   line-height: 22px;
   text-decoration: none;
@@ -825,7 +845,7 @@
   text-decoration: none;
 }
 .site-header__submenu-all {
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   color: #4e2921 !important;
 }
 .site-header__nav-toggle {
@@ -862,6 +882,9 @@
   top: 7px;
 }
 .site-header__nav-overlay {
+  display: none;
+}
+.site-header__nav-close {
   display: none;
 }
 .site-header.is-menu-open .site-header__nav-overlay {
@@ -920,6 +943,7 @@
     inset: 0;
     z-index: 1040;
     pointer-events: none;
+    background: transparent;
   }
   .site-header__nav {
     position: absolute;
@@ -937,6 +961,29 @@
     overflow-y: auto;
     pointer-events: auto;
   }
+  .site-header__nav-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 1px solid #dce5ee;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #0c608f;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .site-header__nav-close:hover,
+  .site-header__nav-close:focus-visible {
+    background: #e9f3fb;
+    outline: none;
+  }
   .site-header.is-scrolled .site-header__nav-panel {
     height: auto;
   }
@@ -952,13 +999,14 @@
     align-items: flex-start;
     gap: 0;
     height: auto;
+    width: 100%;
   }
   .site-header__nav-inner li {
     width: 100%;
   }
   .site-header__nav-inner a {
     width: 100%;
-    justify-content: flex-start;
+    justify-content: space-between;
     min-height: 44px;
     padding: 10px 0;
   }
@@ -999,7 +1047,7 @@
     display: inline-flex;
   }
   .site-header__nav-panel.is-open {
-    pointer-events: auto;
+    pointer-events: none;
   }
   .site-header__nav-panel.is-open .site-header__nav {
     transform: translateX(0);
@@ -1069,7 +1117,7 @@
 .home-stats__desc {
   margin: 0;
   color: #0d354b;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 14px;
   line-height: 22px;
 }
@@ -1171,7 +1219,7 @@
   left: 16px;
   z-index: 3;
   margin: 0;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 14px;
   line-height: 22px;
   letter-spacing: 1px;
@@ -1195,7 +1243,7 @@
 }
 .home-essence__card-text {
   margin: 0;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
   min-height: 48px;
@@ -1295,7 +1343,7 @@
 .product-card__category {
   margin: 0;
   color: #0c608f;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 14px;
   line-height: 22px;
   letter-spacing: 1.71px;
@@ -1322,13 +1370,13 @@
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 18.6px;
   color: #ffb535;
 }
 .product-card__rating strong {
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 14px;
   color: #4e2921;
   font-weight: 600;
@@ -1343,7 +1391,7 @@
   display: flex;
   flex-direction: column;
   gap: 0;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 14px;
   line-height: 22px;
   color: #6f767c;
@@ -1358,7 +1406,7 @@
   letter-spacing: 0.32px;
 }
 .product-card__price-current strong {
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
 }
 .product-card__price-old {
   text-decoration: line-through;
@@ -1505,7 +1553,7 @@
 .home-combo__desc {
   margin: 0;
   color: #0d354b;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -1571,13 +1619,13 @@
   display: inline-flex;
   align-items: flex-end;
   gap: 8px;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 14px;
   line-height: 22px;
   color: #a0a2a4;
 }
 .home-combo__product-price strong {
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 16px;
   line-height: 24px;
   color: #b33a1b;
@@ -1623,7 +1671,7 @@
     width: 100%;
   }
   .home-combo__content {
-    padding: 48px 20px;
+    padding: 30px 20px;
   }
   .home-combo__visual {
     min-height: 420px;
@@ -1667,7 +1715,7 @@
 .home-therapies__desc {
   margin: 0;
   color: #0d354b;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
   text-align: justify;
@@ -1696,13 +1744,6 @@
   pointer-events: none;
 }
 .home-therapies__featured-img {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
   opacity: 1;
   transition: opacity 0.45s ease, transform 0.45s ease;
   will-change: opacity, transform;
@@ -1740,9 +1781,10 @@
 }
 .home-therapies__featured-text {
   margin: 0;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
+  height: 48px;
 }
 .home-therapies__tabs {
   display: flex;
@@ -1765,10 +1807,18 @@
   background: #ffffff;
   text-align: left;
   cursor: pointer;
-  transition: background 0.25s ease, border-color 0.25s ease;
+  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.25s ease;
+}
+.home-therapies__tab:hover:not(.is-active) {
+  border-color: rgb(192.5384615385, 208.6, 224.6615384615);
+  background: rgba(232, 242, 248, 0.25);
+  transform: translateX(4px);
 }
 .home-therapies__tab.is-active {
   background: #e8f2f8;
+  border-color: #0c608f;
+  transform: translateX(6px);
+  box-shadow: 0 4px 12px rgba(12, 96, 143, 0.06);
 }
 .home-therapies__tab.is-active .home-therapies__tab-name {
   color: #0c608f;
@@ -1802,7 +1852,7 @@
 }
 @media (max-width: 991px) {
   .home-therapies {
-    padding: 48px 20px 56px;
+    padding: 30px 10px;
   }
   .home-therapies__header {
     grid-template-columns: 1fr;
@@ -1815,8 +1865,6 @@
     flex: none;
     width: 100%;
     height: auto;
-    min-height: 360px;
-    aspect-ratio: 784/532;
   }
   .home-therapies__tabs {
     flex: none;
@@ -1829,6 +1877,41 @@
   }
 }
 
+.home-therapies__featured {
+  position: relative;
+}
+
+.home-therapies__featured-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  will-change: opacity;
+}
+
+.home-therapies__featured-img.is-fading {
+  opacity: 0;
+}
+
+#menu-scroll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.box-icon-scroll {
+  display: none;
+  align-items: center;
+  gap: 40px;
+}
+.box-icon-scroll.active {
+  display: flex;
+}
+
 .home-experts {
   position: relative;
   padding: 64px 60px 72px;
@@ -1839,7 +1922,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: url("../images/home/experts-bg.jpg") bottom/cover no-repeat;
+  background: url("../images/home/experts-bg.png") bottom/cover no-repeat;
   opacity: 0.3;
   pointer-events: none;
   z-index: 0;
@@ -1896,7 +1979,7 @@
 }
 .home-experts__headline {
   margin: 0;
-  font-family: "Averta-ExtraBold", sans-serif;
+  font-family: "BeVietnamPro-ExtraBold.ttf";
   font-size: 64px;
   line-height: 80px;
   text-transform: uppercase;
@@ -1908,7 +1991,7 @@
 .home-experts__bio {
   margin: 0;
   color: #0a293a;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
   text-align: justify;
@@ -1917,7 +2000,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-family: "Averta-Bold", sans-serif;
+  font-family: "BeVietnamPro-Bold";
   font-size: 18px;
   line-height: 26px;
   color: #0a293a;
@@ -1950,7 +2033,7 @@
 .home-experts__vn-desc {
   margin: 0;
   color: #0a293a;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
   text-align: justify;
@@ -1961,13 +2044,8 @@
   width: 100%;
 }
 @media (max-width: 991px) {
-  .home-experts__vn-grid {
-    flex-direction: column;
-  }
-}
-@media (max-width: 991px) {
   .home-experts {
-    padding: 48px 20px 56px;
+    padding: 30px 10px;
   }
   .home-experts__featured-content {
     padding-left: 0;
@@ -1983,7 +2061,7 @@
 }
 @media (max-width: 575px) {
   .home-experts__headline {
-    font-size: 36px;
+    font-size: 30px;
     line-height: 44px;
   }
 }
@@ -2068,7 +2146,7 @@
 .expert-card__meta {
   margin: 0;
   color: #0a293a;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 14px;
   line-height: 22px;
 }
@@ -2088,7 +2166,7 @@
   flex: 1;
   margin: 0;
   color: #0a293a;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -2196,7 +2274,7 @@
 }
 @media (max-width: 991px) {
   .home-results {
-    padding: 48px 20px;
+    padding: 30px 0;
   }
   .home-results__banner-inner {
     flex-direction: column;
@@ -2259,7 +2337,7 @@
   padding: 1px 12px;
   border-radius: 99px;
   color: #ffffff;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 12px;
   line-height: 20px;
   text-transform: uppercase;
@@ -2293,7 +2371,7 @@
 .ba-card__quote {
   margin: 0;
   color: #0a293a;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -2318,7 +2396,7 @@
 .ba-card__role {
   margin: 0;
   color: #6f767c;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 14px;
   line-height: 22px;
 }
@@ -2372,7 +2450,7 @@
   border-radius: 999px;
   background: #0c608f;
   color: #ffffff;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 16px;
   line-height: 24px;
   text-decoration: none;
@@ -2440,7 +2518,7 @@
 .home-blog__category {
   margin: 0;
   color: #0c608f;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 14px;
   line-height: 22px;
   letter-spacing: 1.71px;
@@ -2450,7 +2528,7 @@
   margin: 0;
   color: #262626;
   opacity: 0.7;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 14px;
   line-height: 22px;
   white-space: nowrap;
@@ -2474,7 +2552,7 @@
 }
 .home-blog__link {
   color: #262626;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
   text-decoration: underline;
@@ -2485,7 +2563,7 @@
 }
 @media (max-width: 991px) {
   .home-blog {
-    padding: 32px 20px 56px;
+    padding: 30px 0;
   }
 }
 @media (max-width: 575px) {
@@ -2553,7 +2631,7 @@
 }
 .home-cta__desc {
   margin: 0;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -2586,7 +2664,7 @@
   background: #ffffff;
 }
 .home-cta__or span {
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 14px;
   line-height: 22px;
   white-space: nowrap;
@@ -2625,7 +2703,7 @@
 @media (max-width: 991px) {
   .home-cta {
     margin-bottom: 0;
-    padding: 48px 20px 0;
+    padding: 30px 0;
   }
   .home-cta__deco {
     display: none;
@@ -2644,14 +2722,7 @@
     margin-bottom: 0;
   }
   .home-cta__visual-img {
-    position: relative;
-    top: auto;
-    left: auto;
-    width: 100%;
-    max-width: 566px;
-    height: auto;
-    transform: none;
-    margin: 0 auto;
+    display: none;
   }
 }
 @media (max-width: 575px) {
@@ -2667,7 +2738,7 @@
 }
 
 .site-footer {
-  padding: 48px 60px;
+  padding: 48px 0;
   background: #293243;
   color: #ffffff;
 }
@@ -2713,7 +2784,7 @@
 .site-footer__about {
   margin: 0;
   color: rgba(255, 255, 255, 0.65);
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 22px;
 }
@@ -2725,7 +2796,7 @@
 .site-footer__office-title {
   margin: 0;
   color: #ffffff;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -2744,7 +2815,7 @@
   gap: 8px;
   margin: 0;
   color: #6F767C;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -2793,7 +2864,7 @@
   gap: 10px;
   margin: 0;
   color: #4dbfd9;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 2px;
@@ -2817,7 +2888,7 @@
 }
 .site-footer__link {
   color: #6F767C;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
   text-decoration: none;
@@ -2837,7 +2908,7 @@
 }
 .site-footer__email {
   color: #ffffff;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 16px;
   line-height: 24px;
   text-decoration: underline;
@@ -2888,7 +2959,7 @@
 .site-footer__copy {
   margin: 0;
   color: rgba(255, 255, 255, 0.4);
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 14px;
   line-height: 22px;
   letter-spacing: 2px;
@@ -2940,6 +3011,14 @@
 
 .py-30 {
   padding: 30px 0;
+}
+
+.home-therapies__featured-img {
+  transition: opacity 0.25s ease;
+}
+
+.home-therapies__featured-img.is-changing {
+  opacity: 0;
 }
 
 .about-hero {
@@ -3000,20 +3079,20 @@
 }
 .about-hero__eyebrow {
   margin: 0;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 20px;
   line-height: 28px;
   letter-spacing: 0.4px;
 }
 .about-hero__title {
   margin: 0;
-  font-family: "Averta-ExtraBold", sans-serif;
+  font-family: "BeVietnamPro-ExtraBold.ttf";
   font-size: 42px;
   line-height: 52px;
 }
 .about-hero__subtitle {
   margin: 0;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 20px;
   line-height: 28px;
   letter-spacing: 0.6px;
@@ -3029,7 +3108,7 @@
 }
 .about-hero__desc {
   margin: 0;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
   text-align: justify;
@@ -3261,7 +3340,7 @@
 }
 .about-journey__caption-role {
   margin: 0;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -3277,7 +3356,7 @@
   gap: 10px;
   margin: 0;
   color: #0a293a;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 2px;
@@ -3303,13 +3382,13 @@
 .about-journey__text {
   margin: 0;
   color: #020d12;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
   text-align: justify;
 }
 .about-journey__text strong {
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
 }
 @media (max-width: 991px) {
   .about-journey {
@@ -3370,7 +3449,7 @@
 .about-hybrid__lead {
   margin: 0;
   max-width: 570px;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 18px;
   line-height: 26px;
 }
@@ -3417,7 +3496,7 @@
 .about-hybrid__card-desc {
   margin: 0;
   color: #020d12;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -3444,7 +3523,7 @@
   margin: 52px auto 0;
   max-width: 522px;
   color: #0c608f;
-  font-family: "Averta-Bold", sans-serif;
+  font-family: "BeVietnamPro-Bold";
   font-size: 32px;
   line-height: 40px;
   text-align: center;
@@ -3494,7 +3573,7 @@
 .about-hybrid__quote-role {
   margin: 0;
   color: #6f767c;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 14px;
   line-height: 22px;
 }
@@ -3623,13 +3702,13 @@
 }
 .about-therapy__item-title {
   margin: 0;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 28px;
   line-height: 36px;
 }
 .about-therapy__item-desc {
   margin: 0;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -3827,7 +3906,7 @@
 }
 .contact-hero__title {
   margin: 0;
-  font-family: "Averta-ExtraBold", sans-serif;
+  font-family: "BeVietnamPro-ExtraBold.ttf";
   font-size: 42px;
   line-height: 52px;
 }
@@ -3839,14 +3918,14 @@
 }
 .contact-hero__subtitle {
   margin: 0;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 20px;
   line-height: 28px;
   letter-spacing: 0.6px;
 }
 .contact-hero__desc {
   margin: 0;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
   text-align: justify;
@@ -3916,14 +3995,14 @@
 }
 .contact-lookup__title {
   margin: 0 0 8px;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 28px;
   line-height: 36px;
   color: #020d12;
 }
 .contact-lookup__desc {
   margin: 0;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
   color: #6F767C;
@@ -3951,7 +4030,7 @@
   border: 1px solid rgba(183, 206, 218, 0.5);
   border-radius: 52px;
   background: #f4f8fc;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
   color: #020d12;
@@ -4027,7 +4106,7 @@
 }
 .contact-channels__desc {
   margin: 0;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
   color: #6F767C;
@@ -4055,7 +4134,7 @@
 }
 .contact-consult__desc {
   margin: 16px 0 0;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
   color: #0d354b;
@@ -4107,7 +4186,7 @@
 }
 .contact-consult__office-title {
   margin: 0;
-  font-family: "Averta-Bold", sans-serif;
+  font-family: "BeVietnamPro-Bold";
   font-size: 14px;
   line-height: 22px;
   text-transform: uppercase;
@@ -4127,7 +4206,7 @@
   display: flex;
   align-items: flex-start;
   gap: 8px;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
   color: #020d12;
@@ -4142,7 +4221,7 @@
   text-align: center;
 }
 .contact-consult__email {
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 16px;
   line-height: 24px;
   color: #020d12;
@@ -4194,14 +4273,14 @@
   font-size: 20px;
 }
 .contact-consult__hours-text {
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
   color: #3d4a51;
 }
 .contact-consult__hours-text strong {
   display: block;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   color: #020d12;
 }
 
@@ -4232,7 +4311,7 @@
   gap: 4px;
 }
 .contact-form__label {
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
   color: #0d354b;
@@ -4246,7 +4325,7 @@
   border: 1px solid rgba(183, 206, 218, 0.5);
   border-radius: 52px;
   background: #f4f8fc;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
   color: #020d12;
@@ -4306,14 +4385,14 @@
 }
 .contact-form__upload-title {
   margin: 0;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
   color: #0a1929;
 }
 .contact-form__upload-hint {
   margin: 0;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 14px;
   line-height: 22px;
   color: #6F767C;
@@ -4332,7 +4411,7 @@
 }
 .contact-form__consent label {
   margin: 0;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
   color: #020d12;
@@ -4393,7 +4472,7 @@
 }
 .contact-offices__eyebrow {
   margin: 0;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
@@ -4418,7 +4497,7 @@
   padding: 6px 16px;
   border-radius: 999px;
   background: #fafcfd;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 16px;
   line-height: 24px;
   color: #0c608f;
@@ -4494,7 +4573,7 @@
 }
 .contact-faq__num {
   flex-shrink: 0;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 16px;
   line-height: 24px;
   color: #0c608f;
@@ -4537,7 +4616,7 @@
 }
 .contact-faq__answer {
   padding: 16px 24px 16px 64px;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
   color: #020d12;
@@ -4552,7 +4631,7 @@
 }
 .contact-faq__cta-text {
   margin: 0;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 18px;
   line-height: 26px;
   color: #020d12;
@@ -4592,7 +4671,7 @@
 }
 .policy-doc__subtitle {
   margin: 0;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
   font-style: italic;
@@ -4604,7 +4683,7 @@
 }
 .policy-doc__intro p {
   margin: 0;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -4615,19 +4694,19 @@
 }
 .policy-doc__heading {
   margin: 0;
-  font-family: "Averta-Bold", sans-serif;
+  font-family: "BeVietnamPro-Bold";
   font-size: 24px;
   line-height: 32px;
 }
 .policy-doc__subheading {
   margin: 0;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 18px;
   line-height: 26px;
 }
 .policy-doc__text {
   margin: 0;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -4637,7 +4716,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -4645,10 +4724,10 @@
   list-style: disc;
 }
 .policy-doc__list strong {
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
 }
 .policy-doc__list--links {
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   color: #0c608f;
 }
 .policy-doc__list--links a {
@@ -4660,12 +4739,12 @@
 }
 .policy-doc__note {
   margin: 0;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
 .policy-doc__note strong {
-  font-family: "Averta-Bold", sans-serif;
+  font-family: "BeVietnamPro-Bold";
   color: #0c608f;
 }
 .policy-doc__note em {
@@ -4673,7 +4752,7 @@
 }
 .policy-doc__footer-note {
   margin: 0;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
   font-style: italic;
@@ -4682,7 +4761,7 @@
   color: #0c608f;
 }
 .policy-doc__link {
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   color: #0c608f;
   text-decoration: none;
 }
@@ -4707,13 +4786,13 @@
   padding: 12px 24px;
   vertical-align: top;
   text-align: left;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
   color: #020d12;
 }
 .policy-table th, .policy-table__term {
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   white-space: nowrap;
 }
 .policy-table__col-term {
@@ -4727,7 +4806,7 @@
   width: 33.33%;
 }
 .policy-table__value {
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   color: #0c608f;
 }
 
@@ -4764,7 +4843,7 @@
 .catalog-hero__title {
   margin: 0;
   color: #0c608f;
-  font-family: "Averta-ExtraBold", sans-serif;
+  font-family: "BeVietnamPro-ExtraBold.ttf";
   font-size: 42px;
   line-height: 52px;
   text-transform: uppercase;
@@ -4773,7 +4852,7 @@
   margin: 0;
   max-width: 600px;
   color: #020d12;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -4835,7 +4914,7 @@
   padding: 0;
   background: transparent;
   color: #6f767c;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 14px;
   line-height: 22px;
 }
@@ -4855,7 +4934,7 @@
   text-decoration: underline;
 }
 .catalog-breadcrumb__current {
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
 }
 @media (max-width: 991px) {
   .catalog-breadcrumb {
@@ -4898,7 +4977,7 @@
 .catalog-toolbar__count {
   margin: 0;
   color: #6f767c;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 18px;
   line-height: 26px;
 }
@@ -4915,7 +4994,7 @@
   border: 0;
   background: transparent;
   color: #020d12;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 17px;
   line-height: 24px;
   cursor: pointer;
@@ -4938,7 +5017,7 @@
   border-radius: 50%;
   background: #b0523b;
   color: #ffffff;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 14px;
   line-height: 20px;
 }
@@ -4952,7 +5031,7 @@
   align-items: center;
   gap: 8px;
   color: #6f767c;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 17px;
   line-height: 24px;
 }
@@ -4961,7 +5040,7 @@
   align-items: center;
   gap: 8px;
   color: #020d12;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
 }
 .catalog-toolbar__sort-select-wrap {
   position: relative;
@@ -4974,7 +5053,7 @@
   border: 0;
   background: transparent;
   color: #020d12;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 17px;
   line-height: 24px;
   -webkit-appearance: none;
@@ -5006,7 +5085,6 @@
 }
 @media (max-width: 575px) {
   .catalog-toolbar__controls {
-    flex-wrap: wrap;
     gap: 12px;
   }
   .catalog-toolbar__divider {
@@ -5068,7 +5146,7 @@
   border-radius: 50%;
   background: #edf7fb;
   color: #0c608f;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 14px;
   line-height: 1;
   text-decoration: none;
@@ -5189,7 +5267,7 @@
   border-radius: 32px;
   background: #f0f0f0;
   color: #020d12;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 14px;
   line-height: 22px;
   cursor: pointer;
@@ -5207,7 +5285,7 @@
   border: 0;
   background: transparent;
   color: #0c608f;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 14px;
   line-height: 22px;
   text-decoration: underline;
@@ -5235,7 +5313,7 @@
   border-radius: 40px;
   background: #0c608f;
   color: #ffffff;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 18px;
   line-height: 26px;
   cursor: pointer;
@@ -5274,7 +5352,7 @@
 }
 .catalog-filter-group__icon {
   color: #020d12;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 24px;
   line-height: 1;
 }
@@ -5331,7 +5409,7 @@
 }
 .catalog-filter-check__label {
   color: #0a293a;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 14px;
   line-height: 22px;
 }
@@ -5462,7 +5540,7 @@ input:checked + .catalog-filter-check__box::after {
   padding-bottom: 8px;
   border-bottom: 2px solid #4dbfd9;
   color: #020d12;
-  font-family: "Averta-Bold", sans-serif;
+  font-family: "BeVietnamPro-Bold";
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
@@ -5477,7 +5555,7 @@ input:checked + .catalog-filter-check__box::after {
 }
 .catalog-guide__toc-link {
   color: #020d12;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 14px;
   line-height: 22px;
   text-decoration: none;
@@ -5500,14 +5578,14 @@ input:checked + .catalog-filter-check__box::after {
 .catalog-guide__section-title {
   margin: 0;
   color: #020d12;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 18px;
   line-height: 26px;
 }
 .catalog-guide__paragraph {
   margin: 0;
   color: #020d12;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -5518,17 +5596,17 @@ input:checked + .catalog-filter-check__box::after {
   flex-direction: column;
   gap: 12px;
   color: #020d12;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
 .catalog-guide__list strong {
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
 }
 .catalog-guide__faq-title {
   margin: 0;
   color: #020d12;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 18px;
   line-height: 26px;
 }
@@ -5572,7 +5650,7 @@ input:checked + .catalog-filter-check__box::after {
 .catalog-guide__faq-num {
   flex-shrink: 0;
   color: #0c608f;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 16px;
   line-height: 24px;
 }
@@ -5594,7 +5672,7 @@ input:checked + .catalog-filter-check__box::after {
   border-radius: 50%;
   background: #e8f0f8;
   color: #0c608f;
-  font-family: "Averta-Bold", sans-serif;
+  font-family: "BeVietnamPro-Bold";
   font-size: 18px;
   line-height: 1;
 }
@@ -5614,7 +5692,7 @@ input:checked + .catalog-filter-check__box::after {
 .catalog-guide__faq-answer {
   padding: 16px 24px 16px 64px;
   color: #020d12;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -5671,13 +5749,13 @@ input:checked + .catalog-filter-check__box::after {
   text-transform: uppercase;
 }
 .acne-about .acne-about__subtitle {
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 20px;
   color: #0C608F;
   margin-top: 32px;
 }
 .acne-about .acne-about__desc {
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   color: #0C608F;
   margin-bottom: 32px;
@@ -5703,13 +5781,13 @@ input:checked + .catalog-filter-check__box::after {
   gap: 30px;
 }
 .acne-solution__item h3 {
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 24px;
   text-align: right;
   line-height: 32px;
 }
 .acne-solution__item p {
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
   width: 200px;
@@ -5735,7 +5813,7 @@ input:checked + .catalog-filter-check__box::after {
   border-radius: 38px;
   background: #4E2921;
   color: #fff;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   top: 0;
   font-size: 16px;
   line-height: 24px;
@@ -5802,7 +5880,7 @@ input:checked + .catalog-filter-check__box::after {
   width: 170px;
   color: #0D354B;
   text-align: center;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 15px;
   line-height: 22px;
   margin-top: 40px;
@@ -5836,7 +5914,7 @@ input:checked + .catalog-filter-check__box::after {
 }
 .step-head__content span {
   color: #0D354B;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -5861,7 +5939,7 @@ input:checked + .catalog-filter-check__box::after {
 
 .search-result-title {
   color: #020D12;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 20px;
   line-height: 28px;
 }
@@ -5869,7 +5947,7 @@ input:checked + .catalog-filter-check__box::after {
 .search-toolbar__count {
   margin-top: 30px;
   color: #6F767C;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 18px;
   line-height: 26px;
 }
@@ -5928,7 +6006,7 @@ input:checked + .catalog-filter-check__box::after {
 }
 .card-hybrid p {
   color: #2D3F52;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -5979,7 +6057,7 @@ input:checked + .catalog-filter-check__box::after {
 }
 .hybrid-section .title {
   font-size: 18px;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   color: #1f2937;
 }
 .hybrid-section {
@@ -6153,7 +6231,7 @@ input:checked + .catalog-filter-check__box::after {
 .product-detail__category {
   margin: 0 0 8px;
   color: #0c608f;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 14px;
   line-height: 22px;
   letter-spacing: 1.71px;
@@ -6178,13 +6256,13 @@ input:checked + .catalog-filter-check__box::after {
   align-items: center;
   gap: 4px;
   color: #ffb535;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
 .product-detail__rating strong {
   color: #4e2921;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
 }
 .product-detail__sep {
   width: 1px;
@@ -6194,13 +6272,13 @@ input:checked + .catalog-filter-check__box::after {
 .product-detail__sold {
   margin: 0;
   color: #6f767c;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
 .product-detail__sold strong {
   color: #020d12;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
 }
 .product-detail__price-row {
   display: flex;
@@ -6211,7 +6289,7 @@ input:checked + .catalog-filter-check__box::after {
 .product-detail__price {
   margin: 0;
   color: #020d12;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 24px;
   line-height: 32px;
   letter-spacing: 0.48px;
@@ -6219,7 +6297,7 @@ input:checked + .catalog-filter-check__box::after {
 .product-detail__price-old {
   margin: 0;
   color: #6f767c;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 18px;
   line-height: 28px;
   text-decoration: line-through;
@@ -6231,7 +6309,7 @@ input:checked + .catalog-filter-check__box::after {
   border-radius: 8px;
   background: #b33a1b;
   color: #ffffff;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 16px;
   line-height: 24px;
 }
@@ -6247,7 +6325,7 @@ input:checked + .catalog-filter-check__box::after {
   border-radius: 28px;
   background: transparent;
   color: #0d354b;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
   cursor: pointer;
@@ -6282,7 +6360,7 @@ input:checked + .catalog-filter-check__box::after {
   border: 0;
   background: transparent;
   color: #020d12;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 20px;
   line-height: 1;
   cursor: pointer;
@@ -6292,7 +6370,7 @@ input:checked + .catalog-filter-check__box::after {
   border: 0;
   background: transparent;
   color: #020d12;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 18px;
   line-height: 26px;
   text-align: center;
@@ -6314,7 +6392,7 @@ input:checked + .catalog-filter-check__box::after {
   background: #0c608f;
   box-shadow: 0 8px 10px rgba(77, 191, 217, 0.15);
   color: #ffffff;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 18px;
   line-height: 26px;
   cursor: pointer;
@@ -6335,7 +6413,7 @@ input:checked + .catalog-filter-check__box::after {
   border-radius: 52px;
   background: transparent;
   color: #0c608f;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 18px;
   line-height: 26px;
   cursor: pointer;
@@ -6351,7 +6429,7 @@ input:checked + .catalog-filter-check__box::after {
   margin: 0;
   padding-left: 24px;
   color: #020d12;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -6388,14 +6466,14 @@ input:checked + .catalog-filter-check__box::after {
 .product-detail__trust-title {
   margin: 0;
   color: #0a293a;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 14px;
   line-height: 22px;
 }
 .product-detail__trust-text {
   margin: 0;
   color: #3d4a51;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 14px;
   line-height: 22px;
 }
@@ -6498,21 +6576,21 @@ input:checked + .catalog-filter-check__box::after {
 .product-detail__bundle-category {
   margin: 0;
   color: #0c608f;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 14px;
   line-height: 22px;
 }
 .product-detail__bundle-name {
   margin: 0;
   color: #020d12;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
 .product-detail__bundle-price {
   margin: 0;
   color: #020d12;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 16px;
   line-height: 24px;
 }
@@ -6541,7 +6619,7 @@ input:checked + .catalog-filter-check__box::after {
 .product-detail__bundle-total-label {
   margin: 0 0 4px;
   color: #6f767c;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 14px;
   line-height: 22px;
 }
@@ -6553,14 +6631,14 @@ input:checked + .catalog-filter-check__box::after {
 .product-detail__bundle-total {
   margin: 0;
   color: #020d12;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 24px;
   line-height: 32px;
 }
 .product-detail__bundle-old {
   margin: 0;
   color: #6f767c;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 18px;
   line-height: 28px;
   text-decoration: line-through;
@@ -6574,7 +6652,7 @@ input:checked + .catalog-filter-check__box::after {
   border-radius: 52px;
   background: #0c608f;
   color: #ffffff;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 18px;
   line-height: 26px;
   cursor: pointer;
@@ -6666,7 +6744,7 @@ input:checked + .catalog-filter-check__box::after {
   border-bottom: 2px solid transparent;
   background: transparent;
   color: #6f767c;
-  font-family: "Averta-Bold", sans-serif;
+  font-family: "BeVietnamPro-Bold";
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
@@ -6711,7 +6789,7 @@ input:checked + .catalog-filter-check__box::after {
   gap: 16px;
   margin-bottom: 24px;
   color: #020d12;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -6721,21 +6799,21 @@ input:checked + .catalog-filter-check__box::after {
 .product-desc__subtitle {
   margin: 0 0 16px;
   color: #020d12;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 24px;
   line-height: 32px;
 }
 .product-desc__text {
   margin: 0 0 16px;
   color: #020d12;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
 .product-desc__heading {
   margin: 0 0 16px;
   color: #020d12;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 18px;
   line-height: 26px;
 }
@@ -6743,14 +6821,14 @@ input:checked + .catalog-filter-check__box::after {
   margin: 0 0 16px;
   padding-left: 24px;
   color: #0c608f;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
 .product-desc__closing {
   margin: 0;
   color: #020d12;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -6768,7 +6846,7 @@ input:checked + .catalog-filter-check__box::after {
 .product-usage__text {
   margin: 0 0 16px;
   color: #020d12;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -6777,7 +6855,7 @@ input:checked + .catalog-filter-check__box::after {
   margin: 0;
   padding-left: 24px;
   color: #020d12;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -6811,7 +6889,7 @@ input:checked + .catalog-filter-check__box::after {
 .product-reviews__score {
   margin: 0;
   color: #020d12;
-  font-family: "Averta-Bold", sans-serif;
+  font-family: "BeVietnamPro-Bold";
   font-size: 64px;
   line-height: 1;
 }
@@ -6823,7 +6901,7 @@ input:checked + .catalog-filter-check__box::after {
 .product-reviews__count {
   margin: 8px 0 0;
   color: #6f767c;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -6843,7 +6921,7 @@ input:checked + .catalog-filter-check__box::after {
   align-items: center;
   gap: 4px;
   color: #020d12;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -6860,7 +6938,7 @@ input:checked + .catalog-filter-check__box::after {
 }
 .product-reviews__bar-count {
   color: #020d12;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
   text-align: right;
@@ -6876,7 +6954,7 @@ input:checked + .catalog-filter-check__box::after {
   border-radius: 52px;
   background: #0c608f;
   color: #ffffff;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 18px;
   line-height: 26px;
   cursor: pointer;
@@ -6904,7 +6982,7 @@ input:checked + .catalog-filter-check__box::after {
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 20px;
   line-height: 1;
 }
@@ -6934,14 +7012,14 @@ input:checked + .catalog-filter-check__box::after {
 .product-reviews__name {
   margin: 0;
   color: #020d12;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 18px;
   line-height: 26px;
 }
 .product-reviews__meta {
   margin: 4px 0 0;
   color: #4e2921;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 14px;
   line-height: 22px;
 }
@@ -6959,14 +7037,14 @@ input:checked + .catalog-filter-check__box::after {
   border-radius: 6px;
   background: #0c608f;
   color: #ffffff;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 14px;
   line-height: 18px;
 }
 .product-reviews__text {
   margin: 0 0 12px;
   color: #0d354b;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 14px;
   line-height: 22px;
 }
@@ -7005,7 +7083,7 @@ input:checked + .catalog-filter-check__box::after {
   border-radius: 52px;
   background: transparent;
   color: #0c608f;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 16px;
   line-height: 24px;
   cursor: pointer;
@@ -7013,7 +7091,7 @@ input:checked + .catalog-filter-check__box::after {
 .product-reviews__shown {
   margin: 0;
   color: #6f767c;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 14px;
   line-height: 22px;
 }
@@ -7134,7 +7212,7 @@ input:checked + .catalog-filter-check__box::after {
   border-radius: 999px;
   background: #c9ebff;
   color: #0c608f;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 14px;
   line-height: 22px;
   letter-spacing: 0;
@@ -7155,7 +7233,7 @@ input:checked + .catalog-filter-check__box::after {
 .guide-hero__desc {
   margin: 0;
   color: #020d12;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
   max-width: 800px;
@@ -7185,7 +7263,7 @@ input:checked + .catalog-filter-check__box::after {
   background: transparent;
   color: #020d12;
   outline: none;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -7203,7 +7281,7 @@ input:checked + .catalog-filter-check__box::after {
   border-radius: 999px;
   background: #0c608f;
   color: #ffffff;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 18px;
   line-height: 26px;
   cursor: pointer;
@@ -7262,7 +7340,7 @@ input:checked + .catalog-filter-check__box::after {
   border-radius: 999px;
   background: #f0f0f0;
   color: #0a293a;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 12px;
   line-height: 22px;
   text-transform: uppercase;
@@ -7426,7 +7504,7 @@ input:checked + .catalog-filter-check__box::after {
 .guide-article__category {
   margin: 0;
   color: #0c4476;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 14px;
   line-height: 22px;
   text-transform: uppercase;
@@ -7441,7 +7519,7 @@ input:checked + .catalog-filter-check__box::after {
 .guide-article__time {
   margin: 0;
   color: #6f767c;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -7457,7 +7535,7 @@ input:checked + .catalog-filter-check__box::after {
 .guide-article__excerpt {
   margin: 0;
   color: #3d4a51;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
   display: -webkit-box;
@@ -7494,7 +7572,7 @@ input:checked + .catalog-filter-check__box::after {
   justify-content: center;
   background: #0c608f;
   color: #ffffff;
-  font-family: "Averta-Bold", sans-serif;
+  font-family: "BeVietnamPro-Bold";
   font-size: 18px;
   line-height: 1;
   overflow: hidden;
@@ -7512,14 +7590,14 @@ input:checked + .catalog-filter-check__box::after {
 .guide-article__author-name {
   margin: 0;
   color: #020d12;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 14px;
   line-height: 22px;
 }
 .guide-article__author-role {
   margin: 0;
   color: #6b7785;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 14px;
   line-height: 22px;
 }
@@ -7528,7 +7606,7 @@ input:checked + .catalog-filter-check__box::after {
   align-items: center;
   gap: 8px;
   color: #176189;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 18px;
   line-height: 26px;
   white-space: nowrap;
@@ -7709,7 +7787,7 @@ input:checked + .catalog-filter-check__box::after {
   align-items: center;
   gap: 8px;
   color: #6f767c;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -7725,7 +7803,7 @@ input:checked + .catalog-filter-check__box::after {
   border: 0;
   background: transparent;
   color: #020d12;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 16px;
   line-height: 24px;
   cursor: pointer;
@@ -7872,19 +7950,19 @@ input:checked + .catalog-filter-check__box::after {
   align-items: center;
   gap: 4px;
   color: #ffb535;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 1;
 }
 .guide-promo__card-rating strong {
   color: #ffffff;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 14px;
 }
 .guide-promo__card-price {
   margin: 0;
   color: #ffffff;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 16px;
   line-height: 24px;
 }
@@ -7892,13 +7970,13 @@ input:checked + .catalog-filter-check__box::after {
   margin-left: 8px;
   color: #b33a1b;
   text-decoration: line-through;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 14px;
 }
 .guide-promo__card-price span {
   display: block;
   color: rgba(255, 255, 255, 0.6);
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 14px;
   line-height: 22px;
   text-decoration: line-through;
@@ -7911,7 +7989,7 @@ input:checked + .catalog-filter-check__box::after {
   margin: 0 0 16px;
   padding: 8px 0;
   color: #020d12;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 16px;
   line-height: 24px;
   position: relative;
@@ -7958,14 +8036,14 @@ input:checked + .catalog-filter-check__box::after {
 .guide-sidebar__product-name {
   margin: 0;
   color: #020d12;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 14px;
   line-height: 22px;
 }
 .guide-sidebar__product-price {
   margin: 0;
   color: #020d12;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 16px;
   line-height: 24px;
 }
@@ -8002,7 +8080,7 @@ input:checked + .catalog-filter-check__box::after {
   align-items: center;
   gap: 10px;
   color: #4dbfd9;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 14px;
   line-height: 22px;
   letter-spacing: 2px;
@@ -8027,7 +8105,7 @@ input:checked + .catalog-filter-check__box::after {
 .guide-sidebar__lead-text {
   margin: 0;
   color: rgba(255, 255, 255, 0.7);
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 14px;
   line-height: 22px;
 }
@@ -8048,7 +8126,7 @@ input:checked + .catalog-filter-check__box::after {
 }
 .guide-sidebar__field-label {
   color: #ffffff;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -8063,7 +8141,7 @@ input:checked + .catalog-filter-check__box::after {
   border-radius: 52px;
   background: rgba(255, 255, 255, 0.05);
   color: #ffffff;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -8076,7 +8154,7 @@ input:checked + .catalog-filter-check__box::after {
 .guide-sidebar__note {
   margin: 0;
   color: rgba(255, 255, 255, 0.7);
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 14px;
   line-height: 22px;
 }
@@ -8089,7 +8167,7 @@ input:checked + .catalog-filter-check__box::after {
   background: #ffffff;
   box-shadow: 0 8px 10px rgba(77, 191, 217, 0.15);
   color: #0c608f;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 16px;
   line-height: 24px;
   cursor: pointer;
@@ -8103,7 +8181,7 @@ input:checked + .catalog-filter-check__box::after {
   display: block;
   padding: 10px 16px;
   color: #020d12;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
   text-decoration: none;
@@ -8125,7 +8203,7 @@ input:checked + .catalog-filter-check__box::after {
 .guide-sidebar__card-title {
   margin: 0;
   color: #0c608f;
-  font-family: "Averta-Bold", sans-serif;
+  font-family: "BeVietnamPro-Bold";
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
@@ -8159,14 +8237,14 @@ input:checked + .catalog-filter-check__box::after {
   flex: 1 1 auto;
   min-width: 0;
   color: #020d12;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
 .guide-sidebar__cat-count {
   flex: 0 0 auto;
   color: #94b6c9;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 14px;
   line-height: 22px;
 }
@@ -8194,7 +8272,7 @@ input:checked + .catalog-filter-check__box::after {
   padding: 8px 0;
 }
 .guide-knowledge #toctoc-head span {
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 16px;
   line-height: 24px;
 }
@@ -8220,7 +8298,7 @@ input:checked + .catalog-filter-check__box::after {
 .guide-knowledge #toctoc-body .link {
   margin: 0;
   color: inherit;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -8245,7 +8323,7 @@ input:checked + .catalog-filter-check__box::after {
 .guide-knowledge__heading {
   margin: 0 0 16px;
   color: #020d12;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 18px;
   line-height: 26px;
   scroll-margin-top: 120px;
@@ -8253,7 +8331,7 @@ input:checked + .catalog-filter-check__box::after {
 .guide-knowledge__text {
   margin: 0 0 16px;
   color: #020d12;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -8314,7 +8392,7 @@ input:checked + .catalog-filter-check__box::after {
   padding: 8px 0;
 }
 .post-layout__toc #toctoc-head span {
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
@@ -8343,7 +8421,7 @@ input:checked + .catalog-filter-check__box::after {
 .post-layout__toc #toctoc-body .link {
   margin: 0;
   color: inherit;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -8401,7 +8479,7 @@ input:checked + .catalog-filter-check__box::after {
 .post-article__category {
   margin: 0;
   color: #0c608f;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 14px;
   line-height: 22px;
   letter-spacing: 1.71px;
@@ -8419,7 +8497,7 @@ input:checked + .catalog-filter-check__box::after {
   padding: 0 0 0 16px;
   border-left: 3px solid #4DBFD9;
   color: #6f767c;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -8447,7 +8525,7 @@ input:checked + .catalog-filter-check__box::after {
   border-radius: 50%;
   background: #0d354b;
   color: #ffffff;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 14px;
   line-height: 40px;
   text-align: center;
@@ -8455,14 +8533,14 @@ input:checked + .catalog-filter-check__box::after {
 .post-article__author-name {
   margin: 0;
   color: #020d12;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 16px;
   line-height: 24px;
 }
 .post-article__author-role {
   margin: 0;
   color: #6f767c;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 14px;
   line-height: 22px;
 }
@@ -8477,7 +8555,7 @@ input:checked + .catalog-filter-check__box::after {
   align-items: center;
   gap: 4px;
   color: #6f767c;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -8516,14 +8594,14 @@ input:checked + .catalog-filter-check__box::after {
 .post-article__text {
   margin: 0;
   color: #020d12;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
 .post-article__heading {
   margin: 0;
   color: #020d12;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 18px;
   line-height: 26px;
   scroll-margin-top: 120px;
@@ -8538,13 +8616,13 @@ input:checked + .catalog-filter-check__box::after {
 .post-article__callout-label {
   margin: 0 0 8px;
   color: #4dbfd9;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 14px;
   line-height: 22px;
 }
 .post-article__callout-text {
   margin: 0;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -8565,7 +8643,7 @@ input:checked + .catalog-filter-check__box::after {
   position: relative;
   padding-left: 16px;
   color: #020d12;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -8581,12 +8659,12 @@ input:checked + .catalog-filter-check__box::after {
 }
 .post-article__list li strong {
   color: #0c608f;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
 }
 .post-article__list-title {
   margin: 0;
   color: #020d12;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 16px;
   line-height: 24px;
 }
@@ -8599,7 +8677,7 @@ input:checked + .catalog-filter-check__box::after {
 }
 .post-article__tags-label {
   color: #6f767c;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 14px;
   line-height: 22px;
 }
@@ -8611,7 +8689,7 @@ input:checked + .catalog-filter-check__box::after {
   border-radius: 999px;
   background: #e9f3fb;
   color: #0c608f;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 14px;
   line-height: 22px;
   text-decoration: none;
@@ -8630,7 +8708,7 @@ input:checked + .catalog-filter-check__box::after {
 }
 .post-article__share-label {
   color: #020d12;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 16px;
   line-height: 24px;
 }
@@ -8681,7 +8759,7 @@ input:checked + .catalog-filter-check__box::after {
   border-radius: 50%;
   background: #0d354b;
   color: #ffffff;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 20px;
   line-height: 64px;
   text-align: center;
@@ -8689,7 +8767,7 @@ input:checked + .catalog-filter-check__box::after {
 .post-article__author-card-label {
   margin: 0 0 4px;
   color: #4dbfd9;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 14px;
   line-height: 22px;
   text-transform: uppercase;
@@ -8705,14 +8783,14 @@ input:checked + .catalog-filter-check__box::after {
 .post-article__author-card-role {
   margin: 0;
   color: #6f767c;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 14px;
   line-height: 22px;
 }
 .post-article__author-card-desc {
   margin: 0 0 16px;
   color: #020d12;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -8729,20 +8807,20 @@ input:checked + .catalog-filter-check__box::after {
 .post-article__author-card-stat strong {
   display: block;
   color: #0c608f;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 22px;
   line-height: 30px;
 }
 .post-article__author-card-stat span {
   display: block;
   color: #6f767c;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 14px;
   line-height: 22px;
 }
 .post-article__author-card-link {
   color: #0c608f;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 16px;
   line-height: 24px;
   text-decoration: underline;
@@ -8768,7 +8846,7 @@ input:checked + .catalog-filter-check__box::after {
 
 .article-date {
   color: #6F767C;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
   display: flex;
@@ -8856,7 +8934,7 @@ input:checked + .catalog-filter-check__box::after {
   border-radius: 6px;
   background: #0c608f;
   color: #ffffff;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 14px;
   line-height: 18px;
 }
@@ -8866,7 +8944,7 @@ input:checked + .catalog-filter-check__box::after {
   gap: 8px;
   margin: 0;
   color: #6f767c;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -8882,7 +8960,7 @@ input:checked + .catalog-filter-check__box::after {
   border: 0;
   background: transparent;
   color: #020d12;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 16px;
   line-height: 24px;
   padding-right: 20px;
@@ -8909,14 +8987,14 @@ input:checked + .catalog-filter-check__box::after {
 .post-comments__form-title {
   margin: 0;
   color: #020d12;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 16px;
   line-height: 24px;
 }
 .post-comments__form-sub {
   margin: 0;
   color: #6f767c;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 14px;
   line-height: 22px;
 }
@@ -8938,7 +9016,7 @@ input:checked + .catalog-filter-check__box::after {
   border-radius: 8px;
   background: #ffffff;
   color: #020d12;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -8971,7 +9049,7 @@ input:checked + .catalog-filter-check__box::after {
 .post-comments__rules {
   margin: 0;
   color: #6f767c;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 14px;
   line-height: 22px;
 }
@@ -8983,7 +9061,7 @@ input:checked + .catalog-filter-check__box::after {
   border-radius: 999px;
   background: #0c608f;
   color: #ffffff;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 16px;
   line-height: 24px;
   cursor: pointer;
@@ -9040,7 +9118,7 @@ input:checked + .catalog-filter-check__box::after {
   border-radius: 50%;
   background: #e9f3fb;
   color: #0c608f;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 13px;
   line-height: 38px;
   text-align: center;
@@ -9058,7 +9136,7 @@ input:checked + .catalog-filter-check__box::after {
 .post-comment__name {
   margin: 0;
   color: #020d12;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 16px;
   line-height: 24px;
 }
@@ -9070,21 +9148,21 @@ input:checked + .catalog-filter-check__box::after {
   border-radius: 999px;
   background: #0c608f;
   color: #ffffff;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 12px;
   line-height: 18px;
 }
 .post-comment__date {
   margin: 0;
   color: #6f767c;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 14px;
   line-height: 20px;
 }
 .post-comment__text {
   margin: 0;
   color: #020d12;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -9110,7 +9188,7 @@ input:checked + .catalog-filter-check__box::after {
   border: 0;
   background: transparent;
   color: #6f767c;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 14px;
   line-height: 16px;
   cursor: pointer;
@@ -9119,7 +9197,7 @@ input:checked + .catalog-filter-check__box::after {
   font-size: 16px;
 }
 .post-comment__action strong {
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-weight: 600;
 }
 .post-comment__action.is-active, .post-comment__action:hover, .post-comment__action:focus-visible {
@@ -9161,7 +9239,7 @@ input:checked + .catalog-filter-check__box::after {
 .error-hero__desc {
   margin: 0;
   color: #0d354b;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -9188,7 +9266,7 @@ input:checked + .catalog-filter-check__box::after {
   border: 0;
   background: transparent;
   color: #020d12;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
@@ -9209,7 +9287,7 @@ input:checked + .catalog-filter-check__box::after {
   border-radius: 999px;
   background: #0c608f;
   color: #ffffff;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 16px;
   line-height: 24px;
   cursor: pointer;
@@ -9227,7 +9305,7 @@ input:checked + .catalog-filter-check__box::after {
   border-radius: 40px;
   background: #0c608f;
   color: #ffffff;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 18px;
   line-height: 26px;
   text-decoration: none;
@@ -9359,7 +9437,7 @@ input:checked + .catalog-filter-check__box::after {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 16px;
   line-height: 24px;
   transition: gap 0.3s ease;
@@ -9478,13 +9556,13 @@ input:checked + .catalog-filter-check__box::after {
 }
 .error-channels__card-label {
   color: rgba(255, 255, 255, 0.7);
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   font-size: 16px;
   line-height: 24px;
 }
 .error-channels__card-value {
   color: #eef3f1;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 18px;
   line-height: 26px;
 }
@@ -9503,7 +9581,7 @@ input:checked + .catalog-filter-check__box::after {
 }
 .error-channels__or span {
   color: #ffffff;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 16px;
   line-height: 24px;
   white-space: nowrap;
@@ -9517,7 +9595,7 @@ input:checked + .catalog-filter-check__box::after {
   border-radius: 40px;
   background: #ffffff;
   color: #176189;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 18px;
   line-height: 26px;
   text-decoration: none;
@@ -9549,8 +9627,8 @@ input:checked + .catalog-filter-check__box::after {
 }
 
 /* ==========================================================================
-   Đội ngũ chuyên gia (team page)
-   ========================================================================== */
+  Äá»™i ngÅ© chuyÃªn gia (team page)
+  ========================================================================== */
 .team-hero {
   width: 100%;
 }
@@ -9560,7 +9638,7 @@ input:checked + .catalog-filter-check__box::after {
   height: auto;
 }
 
-/* --- Quy trình tham vấn --------------------------------------------------- */
+/* --- Quy trÃ¬nh tham váº¥n --------------------------------------------------- */
 .team-process {
   padding: 64px 0;
 }
@@ -9611,7 +9689,7 @@ input:checked + .catalog-filter-check__box::after {
   border-radius: 99px;
   background: #f5f8fd;
   color: #0c608f;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 16px;
   line-height: 48px;
   white-space: nowrap;
@@ -9739,7 +9817,7 @@ input:checked + .catalog-filter-check__box::after {
   -webkit-line-clamp: 5;
 }
 
-/* --- Đội ngũ chuyên gia --------------------------------------------------- */
+/* --- Äá»™i ngÅ© chuyÃªn gia --------------------------------------------------- */
 .team-experts {
   padding: 64px 0;
   background: #f5f9fd;
@@ -9850,7 +9928,7 @@ input:checked + .catalog-filter-check__box::after {
 }
 .ec__sig p {
   margin: 0;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   color: #0a1929;
   font-size: 16px;
   line-height: 26px;
@@ -9879,7 +9957,7 @@ input:checked + .catalog-filter-check__box::after {
   color: #0c608f;
 }
 .ec__proof-item strong {
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   color: #0a1929;
 }
 .ec__foot {
@@ -9917,7 +9995,7 @@ input:checked + .catalog-filter-check__box::after {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   color: #0c608f;
   font-size: 16px;
   line-height: 24px;
@@ -9930,7 +10008,7 @@ input:checked + .catalog-filter-check__box::after {
   color: #0c608f;
 }
 
-/* --- Yêu cầu tham vấn (form) ---------------------------------------------- */
+/* --- YÃªu cáº§u tham váº¥n (form) ---------------------------------------------- */
 .team-consult {
   padding: 64px 0;
 }
@@ -9986,7 +10064,7 @@ input:checked + .catalog-filter-check__box::after {
   line-height: 24px;
 }
 .team-consult__desc strong {
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
 }
 .team-consult__photo img {
   display: block;
@@ -10075,7 +10153,7 @@ input:checked + .catalog-filter-check__box::after {
   color: #020d12;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   outline: none;
   transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
@@ -10125,7 +10203,7 @@ input:checked + .catalog-filter-check__box::after {
   line-height: 24px;
 }
 .book-form__consent p strong {
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
 }
 .book-form__submit {
   display: inline-flex;
@@ -10138,7 +10216,7 @@ input:checked + .catalog-filter-check__box::after {
   border-radius: 40px;
   background: #0c608f;
   color: #ffffff;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   font-size: 18px;
   line-height: 26px;
   cursor: pointer;
@@ -10187,7 +10265,7 @@ input:checked + .catalog-filter-check__box::after {
 }
 .ep-opt__name {
   margin: 0;
-  font-family: "Averta-Semibold", sans-serif;
+  font-family: "BeVietnamPro-SemiBold";
   color: #020d12;
   font-size: 16px;
   line-height: 24px;
@@ -10231,12 +10309,814 @@ input:checked + .catalog-filter-check__box::after {
   background: #f4f8fc;
 }
 
+/* --- Chi tiet chuyen gia --------------------------------------------------- */
+.expert-detail-hero {
+  width: 100%;
+}
+.expert-detail-hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.title {
+  font-family: "Cormorant-SemiBold", serif;
+  margin: 0 0 40px;
+  color: #0c608f;
+  font-size: 34px;
+  line-height: 42px;
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  .title {
+    margin-bottom: 28px;
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+.title-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.achievements {
+  padding: 30px 0;
+}
+
+.expert-story {
+  padding: 64px 0;
+  background: #ffffff;
+}
+@media (max-width: 767px) {
+  .expert-story {
+    padding: 40px 0;
+  }
+}
+.expert-story__grid {
+  align-items: flex-start;
+}
+.expert-story__media {
+  position: relative;
+  min-height: 480px;
+}
+@media (max-width: 991px) {
+  .expert-story__media {
+    min-height: 0;
+    padding-bottom: 72px;
+  }
+}
+@media (max-width: 575px) {
+  .expert-story__media {
+    padding-bottom: 0;
+  }
+}
+.expert-story__photo {
+  display: block;
+  width: 100%;
+  border-radius: 16px;
+}
+.expert-story__quote {
+  position: absolute;
+  right: -30px;
+  bottom: 3px;
+  z-index: 2;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  width: 386px;
+  padding: 24px;
+  overflow: hidden;
+  border: 6px solid #ffffff;
+  border-radius: 16px;
+  background: url("../images/chuyen-gia/story-bg.jpg") center/cover, #1E73BE;
+  color: #ffffff;
+}
+@media (max-width: 991px) {
+  .expert-story__quote {
+    right: 24px;
+  }
+}
+@media (max-width: 575px) {
+  .expert-story__quote {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: calc(100% - 24px);
+    margin: -48px auto 0;
+    padding: 18px;
+    border-width: 4px;
+  }
+}
+.expert-story__quote p {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  margin: 0;
+  font-family: "BeVietnamPro-SemiBold";
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+}
+.expert-story__quote-icon {
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+  width: 25px;
+  height: 20px;
+  margin-top: 2px;
+  filter: brightness(0) invert(1);
+  opacity: 0.55;
+}
+.expert-story__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 47px;
+  justify-content: space-around;
+  height: 100%;
+  gap: 32px;
+}
+@media (max-width: 991px) {
+  .expert-story__content {
+    gap: 32px;
+    padding-left: 15px;
+    padding-top: 40px;
+  }
+}
+.expert-story__metric {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  margin: 0;
+}
+@media (max-width: 991px) {
+  .expert-story__metric {
+    align-items: flex-start;
+  }
+}
+.expert-story__number {
+  margin: 0;
+  font-family: "BeVietnamPro-ExtraBold.ttf";
+  color: #0c608f;
+  font-size: 164px;
+  line-height: 132px;
+  background: url("../images/chuyen-gia/thanh-tich-1.jpg") center/cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 767px) {
+  .expert-story__number {
+    font-size: 112px;
+    line-height: 96px;
+  }
+}
+.expert-story__label {
+  margin: 0;
+  color: #0c608f;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width: 100%;
+}
+.expert-story__desc {
+  margin: 0;
+  color: #121212;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "BeVietnamPro-Regular";
+}
+.expert-story__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 40px;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: #0c608f;
+  color: #ffffff;
+  font-family: "BeVietnamPro-SemiBold";
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  transition: background-color 0.25s ease;
+}
+.expert-story__cta:hover {
+  background: #0a527a;
+  color: #ffffff;
+  text-decoration: none;
+}
+.expert-story__cta img {
+  width: 16px;
+  height: 16px;
+}
+
+.expert-expertise {
+  position: relative;
+  isolation: isolate;
+  padding: 64px 0;
+  overflow: hidden;
+  background: #eaf8fb url("../images/chuyen-gia/linh-vuc-bg.jpg") center/cover no-repeat;
+}
+@media (max-width: 767px) {
+  .expert-expertise {
+    padding: 40px 0;
+  }
+}
+.expert-expertise__title {
+  font-family: "Cormorant-SemiBold", serif;
+  max-width: 736px;
+  margin: 0 auto 40px;
+  color: #0c608f;
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  .expert-expertise__title {
+    margin-bottom: 28px;
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+.expert-expertise__grid {
+  margin-right: -12px;
+  margin-left: -12px;
+}
+.expert-expertise__grid > [class*=col-] {
+  padding-right: 12px;
+  padding-left: 12px;
+}
+@media (max-width: 991px) {
+  .expert-expertise__grid {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  .expert-expertise__grid > [class*=col-] + [class*=col-] {
+    margin-top: 24px;
+  }
+}
+.expert-expertise__card {
+  position: relative;
+  min-height: 200px;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #01205f;
+}
+.expert-expertise__img {
+  position: relative;
+  width: 100%;
+}
+.expert-expertise__card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(75deg, #01205f 13%, rgba(1, 32, 95, 0.2) 77%, rgba(1, 32, 95, 0) 94%);
+}
+.expert-expertise__body {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  inset: 0;
+  padding: 24px;
+  top: 0;
+}
+.expert-expertise__num {
+  margin: 0;
+  font-family: "BeVietnamPro-ExtraBold.ttf";
+  color: #45ddff;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+.expert-expertise__name {
+  max-width: 285px;
+  margin: 0;
+  font-family: "BeVietnamPro-SemiBold";
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.achievement-card img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+.achievement-card p {
+  color: #020D12;
+  text-align: center;
+  font-size: 17px;
+  line-height: 26px;
+  font-family: "BeVietnamPro-SemiBold";
+  margin-top: 24px;
+}
+
+.progress-bottom {
+  border: 1px solid #86EEFF;
+  background: linear-gradient(90deg, #5ED3FF 52.4%, #2A63D1 100%);
+  width: 100%;
+  height: 13px;
+  margin-top: 30px;
+  position: relative;
+}
+
+.achievement-dot {
+  width: 24px;
+  height: 24px;
+  border-radius: 24px;
+  border: 1px solid #0C608F;
+  background: #FFF;
+  box-shadow: 0 0 8.1px 0 #7AF7FF inset;
+  position: absolute;
+}
+.achievement-dot:nth-child(1) {
+  left: 28%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.achievement-dot:nth-child(2) {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.achievement-dot:nth-child(3) {
+  right: 28%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box-press {
+  border-radius: 16px;
+  border: 1px solid #DCE5EE;
+  background: linear-gradient(180deg, #D7E3FD 0%, #FBFCFE 100%);
+  box-shadow: 0 20px 40px -16px rgba(12, 68, 118, 0.18), 0 4px 12px 0 rgba(12, 68, 118, 0.08);
+}
+
+.the-press-item img {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #DCE5EE;
+}
+.the-press-item p {
+  color: #0D354B;
+  font-size: 18px;
+  font-family: "NotoSerif-Medium", serif;
+  line-height: 26px;
+  margin-top: 16px;
+}
+.the-press-item:hover {
+  text-decoration: none;
+}
+
+.info-press {
+  padding: 32px 48px;
+}
+
+.the-press {
+  padding: 30px 0;
+}
+.the-press h2 {
+  color: #020D12;
+  font-family: "NotoSerif-Medium", serif;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 16px;
+}
+
+.img-thuml-press {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.feedback-master {
+  padding: 32px 0 64px 0;
+}
+
+.testimonial-card {
+  border-radius: 16px;
+  border: 1px solid #DCE5EE;
+  background: #FAFCFD;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.testimonial-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: scale(1.1);
+  background: url(/images/chuyen-gia/bg-feedback.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease-in-out;
+  z-index: -1;
+}
+.testimonial-card img {
+  width: 40px !important;
+  height: 40px;
+  border-radius: 40px;
+  border: 1px solid #0C608F;
+}
+.testimonial-card:hover {
+  background: transparent;
+  border-color: #0C608F;
+}
+
+.testimonial-footer {
+  display: flex;
+  gap: 16px;
+  border-top: 1px solid #DCE5EE;
+  margin-top: 16px;
+  padding: 16px 0 0 0;
+}
+.testimonial-footer p {
+  color: #0A293A;
+  font-family: "NotoSerif-Regular", serif;
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0;
+}
+.testimonial-footer span {
+  color: #6F767C;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.testimonial-rating {
+  color: #D4A85C;
+  margin-bottom: 16px;
+}
+
+.testimonial-content {
+  color: #0A293A;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.master-album {
+  padding: 0 0 60px 0;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 220px 220px;
+  gap: 10px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Ảnh lớn bên trái */
+.gallery-item--large {
+  grid-row: 1/span 2;
+  grid-column: 1;
+}
+
+/* Overlay ảnh cuối */
+.gallery-item--more .gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-item--more span {
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+
+.master-consult {
+  background: #F2F8FF;
+}
+
+.master__socials {
+  display: flex;
+  gap: 12px;
+  margin-left: 16px;
+}
+
+.master-connect {
+  display: flex;
+  align-items: center;
+}
+.master-connect h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  color: #0C608F;
+  font-family: "BeVietnamPro-Regular";
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.master-connect h2::before {
+  content: "";
+  flex-shrink: 0;
+  width: 14px;
+  height: 1.5px;
+  background: #0C608F;
+}
+.master-connect a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #B7CEDA;
+  color: #0C608F;
+  text-decoration: none;
+}
+
+.title-cormorant {
+  font-family: "Cormorant-SemiBold", serif;
+}
+
+.process-master {
+  padding: 64px 0;
+}
+
+.process-wap {
+  display: flex;
+  padding: 64px 0;
+  border-radius: 24px;
+  border: 1px solid #DCE5EE;
+  background: #FFF;
+  box-shadow: 0 20px 40px -16px rgba(12, 68, 118, 0.18), 0 4px 12px 0 rgba(12, 68, 118, 0.08);
+  justify-content: space-around;
+  position: relative;
+}
+.process-wap::before {
+  content: "";
+  position: absolute;
+  top: 100px;
+  width: 80%;
+  height: 2px;
+  border-radius: 2px;
+  opacity: 0.5;
+  background: #B8E2EC;
+}
+
+.process-icon {
+  width: 68px;
+  height: 68px;
+  border-radius: 50px;
+  border: 2.5px solid #0C608F;
+  background: #FFF;
+  box-shadow: 0 8px 20px -6px rgba(127, 212, 168, 0.4);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.process-step {
+  display: flex;
+  width: 26px;
+  height: 26px;
+  padding: 3.922px 0 1.078px 0;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  border: 2px solid #FFF;
+  background: #B33A1B;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+  color: #fff;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  font-size: 13px;
+}
+
+.process-content {
+  margin-top: 32px;
+  color: #020D12;
+  text-align: center;
+  font-family: "NotoSerif-Medium", serif;
+  font-size: 16px;
+  line-height: 24px;
+  width: 168px;
+}
+
+@media (max-width: 600px) {
+  .box-icon-scroll {
+    display: none !important;
+  }
+  .site-header__topbar {
+    display: none;
+  }
+  .site-header {
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    background: #fff;
+  }
+  .hero-slide__bg {
+    height: 400px;
+  }
+  .hero-slider__content {
+    max-width: 100%;
+  }
+  .hero-slider__actions a {
+    width: -moz-max-content !important;
+    width: max-content !important;
+    padding: 3px 14px;
+    min-height: auto;
+  }
+  .bio-btn, .home-essence__cta, .home-combo__btn, .home-cta__btn--primary, .home-cta__btn--outline, .about-hero__btn {
+    font-size: 12px;
+  }
+  .home-essence,
+  .home-bestsellers {
+    padding: 30px 0;
+  }
+  .home-essence__title {
+    width: 100%;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .home-essence__inner,
+  .home-bestsellers__inner {
+    gap: 20px;
+  }
+  .home-bestsellers__title {
+    font-size: 24px;
+  }
+  .home-combo__desc {
+    font-size: 14px;
+  }
+  .home-therapies__desc,
+  .home-therapies__tab-num,
+  .home-therapies__tab-name {
+    font-size: 14px;
+  }
+  .home-therapies__featured-title {
+    font-size: 20px;
+  }
+  .home-therapies__featured-text {
+    font-size: 14px;
+    line-height: 24px;
+    height: auto;
+  }
+  .home-therapies__featured-body {
+    padding: 15px;
+  }
+  .home-experts__watermark {
+    display: none;
+  }
+  .home-therapies__tab {
+    padding: 10px 16px 10px 12px;
+  }
+  .home-experts__featured {
+    width: auto;
+    gap: 20px;
+  }
+  .home-experts__featured-content {
+    padding-left: 15px;
+    gap: 20px;
+  }
+  .bio-profile__role {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .bio-profile__avatar {
+    width: 44px;
+    height: 44px;
+  }
+  .home-experts__inner {
+    gap: 20px;
+  }
+  .home-experts__bio {
+    font-size: 14px;
+  }
+  .home-experts__presence img {
+    width: 30px;
+    height: 30px;
+  }
+  .home-experts__presence {
+    font-size: 16px;
+  }
+  .home-experts__members {
+    margin-top: 25px;
+    gap: 20px;
+  }
+  .home-experts__vn-desc {
+    font-size: 14px;
+  }
+  .home-experts__vn-title {
+    font-size: 22px;
+  }
+  .expert-card__photo img {
+    height: auto;
+  }
+  .expert-card__photo {
+    min-height: 134px;
+  }
+  .expert-card {
+    padding: 8px;
+    gap: 0;
+    margin-bottom: 20px;
+  }
+  .expert-card__arrow {
+    display: none;
+  }
+  .home-experts__vn-grid {
+    display: block;
+  }
+  .home-results__banner-text {
+    font-size: 14px;
+  }
+  .ba-card__title {
+    font-size: 18px;
+  }
+  .home-results__banner {
+    padding: 20px;
+  }
+  .home-results__banner-inner, .home-results__inner {
+    gap: 10px;
+  }
+  .home-blog__all {
+    display: none;
+  }
+  .home-blog {
+    padding-top: 0;
+  }
+  .home-blog__inner {
+    gap: 20px;
+  }
+  .bio-cta-form__submit span {
+    display: none;
+  }
+  .bio-title-display, .home-cta__title {
+    font-size: 25px;
+  }
+  .home-cta {
+    padding-bottom: 0;
+  }
+  .site-footer {
+    padding: 30px 0;
+  }
+  .catalog-breadcrumb {
+    display: none;
+  }
+  .catalog-hero__inner {
+    width: 95%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .catalog-toolbar__sort span {
+    display: none;
+  }
+  .catalog-toolbar__controls {
+    justify-content: space-between;
+  }
+  .catalog-toolbar__sort {
+    width: 100%;
+    justify-content: end;
+    font-size: 12px;
+  }
+  .catalog-toolbar__filters, .catalog-toolbar__sort-select {
+    font-size: 12px;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Averta-Regular", sans-serif;
+  font-family: "BeVietnamPro-Regular";
   margin: 0;
   color: #121212;
   background: #ffffff;

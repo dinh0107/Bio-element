@@ -1,13 +1,14 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="vi">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Liên hệ – Bioelements Việt Nam</title>
+    <title>LiÃªn há»‡ â€“ Bioelements Viá»‡t Nam</title>
     <meta name="description"
-        content="Liên hệ Bioelements Việt Nam — tư vấn mua hàng, hỗ trợ bảo hành, hợp tác đại lý và đăng ký nhận tư vấn chăm sóc da.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css"
+        content="LiÃªn há»‡ Bioelements Viá»‡t Nam â€” tÆ° váº¥n mua hÃ ng, há»— trá»£ báº£o hÃ nh, há»£p tÃ¡c Ä‘áº¡i lÃ½ vÃ  Ä‘Äƒng kÃ½ nháº­n tÆ° váº¥n chÄƒm sÃ³c da.">
+   <link rel="shortcut icon" href="//bioelements.com/cdn/shop/files/bioelements_ccf5911c-fa98-4b23-b8bf-b8233e41f4d3.png?crop=center&amp;height=32&amp;v=1737804771&amp;width=32" type="image/png">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css"
         integrity="sha512-rt/SrQ4UNIaGfDyEXZtNcyWvQeOq0QLygHluFQcSjaGB04IxWhal71tKuzP6K8eYXYB6vJV4pHkXcmFGGQ1/0w=="
         crossorigin="anonymous" />
     <link href="style/style.css" rel="stylesheet">
@@ -15,11 +16,11 @@
 </head>
 
 <body>
-    <header class="site-header">
+   <header class="site-header">
         <div class="site-header__topbar">
             <a href="#" class="site-header__topbar-msg mb-0">
                 <img src="images/header/icon-sparkle.svg" alt="" loading="lazy">
-                <span>Dành cho spa &amp; chuyên gia da liễu</span>
+                <span>DÃ nh cho spa &amp; chuyÃªn gia da liá»…u</span>
                 <img src="images/header/icon-sparkle.svg" alt="" loading="lazy">
             </a>
             <div class="container">
@@ -27,10 +28,10 @@
                     <div class="site-header__topbar-auth">
                         <a class="site-header__topbar-auth-link" href="#">
                             <img src="images/header/icon-user.svg" alt="" width="20" height="20" loading="lazy">
-                            Đăng ký
+                            ÄÄƒng kÃ½
                         </a>
                         /
-                        <a class="site-header__topbar-auth-link" href="#">Đăng nhập</a>
+                        <a class="site-header__topbar-auth-link" href="#">ÄÄƒng nháº­p</a>
                     </div>
                 </div>
             </div>
@@ -38,7 +39,7 @@
         <div class="site-header__main">
             <div class="container">
                 <div class="site-header__main-inner d-flex align-items-center justify-content-between">
-                    <a class="site-header__logo" href="index.html">
+                    <a class="site-header__logo" href="/">
                         <img src="images/header/logo.png" alt="Bioelements" width="216" height="44" loading="eager"
                             decoding="async">
                     </a>
@@ -46,15 +47,15 @@
                         <label class="site-header__search bio-search mb-0">
                             <img src="images/header/icon-search.svg" alt="" loading="lazy">
                             <input class="site-header__search-input bio-search__input" type="search" name="q"
-                                placeholder="Serum trị thâm, gel rửa mặt...." autocomplete="off">
+                                placeholder="Serum trá»‹ thÃ¢m, gel rá»­a máº·t...." autocomplete="off">
                         </label>
-                        <button type="button" class="site-header__icon-btn bio-icon-btn">
+                        <a href=""  class="site-header__icon-btn bio-icon-btn">
                             <img src="images/header/icon-heart.svg" alt="" loading="lazy">
-                        </button>
-                        <button type="button" class="site-header__icon-btn site-header__icon-btn--cart bio-icon-btn">
+                        </a>
+                        <a href="" class="site-header__icon-btn site-header__icon-btn--cart bio-icon-btn">
                             <img src="images/header/icon-cart.svg" alt="" loading="lazy">
                             <span class="site-header__cart-count bio-icon-btn__badge">0</span>
-                        </button>
+                        </a>
                         <button type="button" class="site-header__nav-toggle d-lg-none" data-nav-toggle>
                             <span class="site-header__nav-toggle-icon"></span>
                         </button>
@@ -64,27 +65,39 @@
         </div>
         <div class="site-header__nav-panel" data-nav-panel>
             <nav class="site-header__nav">
-                <div class="container">
+                <button type="button" class="site-header__nav-close d-lg-none" aria-label="Đóng menu" data-nav-close>
+                    <span class="fa-sharp fa-solid fa-xmark" aria-hidden="true"></span>
+                </button>
+                <div class="container" id="menu-scroll">
                     <ul class="site-header__nav-inner d-flex justify-content-center list-unstyled mb-0">
-                        <li><a href="index.html">Trang chủ</a></li>
-                        <li><a href="ve-chung-toi.html">Tinh hoa Bioelements</a></li>
+                        <li class="is-active"><a href="#">Trang chá»§</a></li>
+                       <li><a href="tinh-hoa-chi-tiet.html">Tinh hoa Bioelements</a></li>
                         <li>
-                            <a href="#">
-                                Sản phẩm
+                            <a href="tay-trang-bioelements.html">
+                                Sáº£n pháº©m
                                 <span class="site-header__nav-caret fa-sharp fa-solid fa-chevron-down"></span>
                             </a>
                             <ul class="site-header__submenu list-unstyled mb-0">
-                                <li><a href="#">Serum &amp; tinh chất</a></li>
-                                <li><a href="#">Sữa rửa mặt &amp; tẩy trang</a></li>
-                                <li><a href="#">Kem dưỡng &amp; phục hồi</a></li>
-                                <li><a href="#">Combo chăm sóc da</a></li>
-                                <li><a class="site-footer__submenu-all" href="#">Xem tất cả sản phẩm</a></li>
+                                <li><a href="tay-trang-bioelements.html">Serum &amp; tinh cháº¥t</a></li>
+                                <li><a href="tay-trang-bioelements.html">Sá»¯a rá»­a máº·t &amp; táº©y trang</a></li>
+                                <li><a href="tay-trang-bioelements.html">Kem dÆ°á»¡ng &amp; phá»¥c há»“i</a></li>
+                                <li><a href="tay-trang-bioelements.html">Combo chÄƒm sÃ³c da</a></li>
+                                <li><a class="site-header__submenu-all" href="tay-trang-bioelements.html">Xem táº¥t cáº£ sáº£n pháº©m</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Liệu trình chuyên nghiệp</a></li>
-                        <li><a href="#">Kiến thức</a></li>
-                        <li class="is-active"><a href="lien-he.html">Liên hệ</a></li>
+                        <li><a href="lieu-trinh-chuyen-nghiep.html">Liá»‡u trÃ¬nh chuyÃªn nghiá»‡p</a></li>
+                        <li><a href="cam-nang.html">Kiáº¿n thá»©c</a></li>
+                        <li><a href="lien-he.html">LiÃªn há»‡</a></li>
                     </ul>
+                    <div class="box-icon-scroll">
+                        <a href=""  class="site-header__icon-btn bio-icon-btn">
+                            <img src="images/header/icon-heart.svg" alt="" loading="lazy">
+                        </a>
+                        <a href="" class="site-header__icon-btn site-header__icon-btn--cart bio-icon-btn">
+                            <img src="images/header/icon-cart.svg" alt="" loading="lazy">
+                            <span class="site-header__cart-count bio-icon-btn__badge">0</span>
+                        </a>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -98,15 +111,15 @@
             </div>
             <div class="contact-hero__inner">
                 <div class="contact-hero__headline">
-                    <h1 class="contact-hero__title">Chúng tôi luôn sẵn sàng</h1>
-                    <p class="contact-hero__subtitle">lắng nghe làn da của bạn</p>
+                    <h1 class="contact-hero__title">ChÃºng tÃ´i luÃ´n sáºµn sÃ ng</h1>
+                    <p class="contact-hero__subtitle">láº¯ng nghe lÃ n da cá»§a báº¡n</p>
                 </div>
-                <p class="contact-hero__desc">Dù bạn cần chuyên gia tư vấn phác đồ SkinReading® hay cần hỗ trợ về đơn
-                    hàng đã mua, đội ngũ Bioelements cam kết phản hồi cho bạn trong vòng X giờ làm việc.</p>
+                <p class="contact-hero__desc">DÃ¹ báº¡n cáº§n chuyÃªn gia tÆ° váº¥n phÃ¡c Ä‘á»“ SkinReadingÂ® hay cáº§n há»— trá»£ vá» Ä‘Æ¡n
+                    hÃ ng Ä‘Ã£ mua, Ä‘á»™i ngÅ© Bioelements cam káº¿t pháº£n há»“i cho báº¡n trong vÃ²ng X giá» lÃ m viá»‡c.</p>
             </div>
         </div>
         <div class="contact-hero__visual">
-            <img src="images/contact/hero-photo.jpg" alt="Sản phẩm Bioelements" loading="eager">
+            <img src="images/contact/hero-photo.jpg" alt="Sáº£n pháº©m Bioelements" loading="eager">
         </div>
     </div>
 
@@ -117,30 +130,30 @@
                     <img src="images/contact/icon-lookup.svg" alt="" loading="lazy">
                 </div>
                 <div>
-                    <h2 class="contact-lookup__title">Tra cứu tình trạng đơn hàng nhanh</h2>
-                    <p class="contact-lookup__desc">Nhập mã đơn hàng hoặc số điện thoại đặt hàng để kiểm tra trạng thái
-                        giao hàng tức thì.</p>
+                    <h2 class="contact-lookup__title">Tra cá»©u tÃ¬nh tráº¡ng Ä‘Æ¡n hÃ ng nhanh</h2>
+                    <p class="contact-lookup__desc">Nháº­p mÃ£ Ä‘Æ¡n hÃ ng hoáº·c sá»‘ Ä‘iá»‡n thoáº¡i Ä‘áº·t hÃ ng Ä‘á»ƒ kiá»ƒm tra tráº¡ng thÃ¡i
+                        giao hÃ ng tá»©c thÃ¬.</p>
                 </div>
             </div>
             <form class="contact-lookup__form" action="#" method="get">
                 <input class="contact-lookup__input" type="text" name="order"
-                    placeholder="Nhập mã đơn hàng hoặc số điện thoại" autocomplete="off">
-                <button class="bio-btn bio-btn--filled" type="submit">Tra cứu đơn hàng</button>
+                    placeholder="Nháº­p mÃ£ Ä‘Æ¡n hÃ ng hoáº·c sá»‘ Ä‘iá»‡n thoáº¡i" autocomplete="off">
+                <button class="bio-btn bio-btn--filled" type="submit">Tra cá»©u Ä‘Æ¡n hÃ ng</button>
             </form>
         </div>
     </d>
 
     <div class="contact-channels">
-        <h2 class="contact-channels__title bio-title bio-title--center">Liên hệ trực tiếp</h2>
+        <h2 class="contact-channels__title bio-title bio-title--center">LiÃªn há»‡ trá»±c tiáº¿p</h2>
         <div class="contact-channels__grid">
             <article class="contact-channels__card">
                 <div class="contact-channels__icon contact-channels__icon--blue">
                     <img src="images/contact/icon-sales.svg" alt="" loading="lazy">
                 </div>
                 <div>
-                    <h3 class="contact-channels__name">Tư vấn Mua hàng</h3>
-                    <p class="contact-channels__desc">Dành cho khách cá nhân cần tư vấn chọn sản phẩm phù hợp, lựa
-                        chọn liệu trình hoặc xây dựng routine chăm sóc da.</p>
+                    <h3 class="contact-channels__name">TÆ° váº¥n Mua hÃ ng</h3>
+                    <p class="contact-channels__desc">DÃ nh cho khÃ¡ch cÃ¡ nhÃ¢n cáº§n tÆ° váº¥n chá»n sáº£n pháº©m phÃ¹ há»£p, lá»±a
+                        chá»n liá»‡u trÃ¬nh hoáº·c xÃ¢y dá»±ng routine chÄƒm sÃ³c da.</p>
                 </div>
                 <div class="contact-channels__actions">
                     <a class="bio-btn bio-btn--filled bio-btn--block" href="tel:0911966116">Hotline: 0911.966.116</a>
@@ -152,9 +165,9 @@
                     <img src="images/contact/icon-support.svg" alt="" loading="lazy">
                 </div>
                 <div>
-                    <h3 class="contact-channels__name">Hỗ trợ &amp; Bảo hành</h3>
-                    <p class="contact-channels__desc">Dành cho khách cần đổi trả, khiếu nại, hoặc xử lý tình huống kích
-                        ứng da. Ưu tiên phản hồi nhanh nhất.</p>
+                    <h3 class="contact-channels__name">Há»— trá»£ &amp; Báº£o hÃ nh</h3>
+                    <p class="contact-channels__desc">DÃ nh cho khÃ¡ch cáº§n Ä‘á»•i tráº£, khiáº¿u náº¡i, hoáº·c xá»­ lÃ½ tÃ¬nh huá»‘ng kÃ­ch
+                        á»©ng da. Æ¯u tiÃªn pháº£n há»“i nhanh nháº¥t.</p>
                 </div>
                 <div class="contact-channels__actions">
                     <a class="bio-btn bio-btn--brown bio-btn--block" href="tel:0911966116">Hotline: 0911.966.116</a>
@@ -166,14 +179,14 @@
                     <img src="images/contact/icon-partner.svg" alt="" loading="lazy">
                 </div>
                 <div>
-                    <h3 class="contact-channels__name">Hợp tác &amp; Bán sỉ</h3>
-                    <p class="contact-channels__desc">Dành cho Chủ Spa, Clinic, Bác sĩ da liễu muốn trở thành đại lý
-                        Bioelements và nhận chính sách hợp tác.</p>
+                    <h3 class="contact-channels__name">Há»£p tÃ¡c &amp; BÃ¡n sá»‰</h3>
+                    <p class="contact-channels__desc">DÃ nh cho Chá»§ Spa, Clinic, BÃ¡c sÄ© da liá»…u muá»‘n trá»Ÿ thÃ nh Ä‘áº¡i lÃ½
+                        Bioelements vÃ  nháº­n chÃ­nh sÃ¡ch há»£p tÃ¡c.</p>
                 </div>
                 <div class="contact-channels__actions">
                     <a class="bio-btn bio-btn--filled bio-btn--block"
-                        href="mailto:marketing@bioelements.vn">Gửi Email Hợp tác</a>
-                    <a class="bio-btn bio-btn--outline-blue bio-btn--block" href="#">Liên hệ</a>
+                        href="mailto:marketing@bioelements.vn">Gá»­i Email Há»£p tÃ¡c</a>
+                    <a class="bio-btn bio-btn--outline-blue bio-btn--block" href="#">LiÃªn há»‡</a>
                 </div>
             </article>
         </div>
@@ -181,83 +194,83 @@
 
     <div class="contact-consult">
         <div class="contact-consult__intro">
-            <h2 class="bio-title bio-title--center bio-title--brown">Bắt đầu hành trình <span>chăm sóc làn da khỏe
-                    đẹp</span></h2>
-            <p class="contact-consult__desc">Để lại thông tin để nhận tư vấn cá nhân hóa từ chuyên gia, giúp bạn hiểu rõ
-                làn da và lựa chọn liệu trình phù hợp.</p>
+            <h2 class="bio-title bio-title--center bio-title--brown">Báº¯t Ä‘áº§u hÃ nh trÃ¬nh <span>chÄƒm sÃ³c lÃ n da khá»e
+                    Ä‘áº¹p</span></h2>
+            <p class="contact-consult__desc">Äá»ƒ láº¡i thÃ´ng tin Ä‘á»ƒ nháº­n tÆ° váº¥n cÃ¡ nhÃ¢n hÃ³a tá»« chuyÃªn gia, giÃºp báº¡n hiá»ƒu rÃµ
+                lÃ n da vÃ  lá»±a chá»n liá»‡u trÃ¬nh phÃ¹ há»£p.</p>
         </div>
         <div class="contact-consult__grid">
             <div class="contact-consult__form-card">
-                <h3 class="contact-consult__card-title">Đăng ký nhận tư vấn</h3>
+                <h3 class="contact-consult__card-title">ÄÄƒng kÃ½ nháº­n tÆ° váº¥n</h3>
                 <form class="contact-form" action="#" method="post">
                     <div class="contact-form__fields">
                         <div class="contact-form__field">
-                            <label class="contact-form__label">Họ và tên <span>*</span></label>
+                            <label class="contact-form__label">Há» vÃ  tÃªn <span>*</span></label>
                             <input class="contact-form__control" type="text" name="name" data-field="name"
-                                placeholder="Nguyễn Văn A" autocomplete="name" required>
+                                placeholder="Nguyá»…n VÄƒn A" autocomplete="name" required>
                         </div>
                         <div class="contact-form__row">
                             <div class="contact-form__field">
-                                <label class="contact-form__label">Số điện thoại <span>*</span></label>
+                                <label class="contact-form__label">Sá»‘ Ä‘iá»‡n thoáº¡i <span>*</span></label>
                                 <input class="contact-form__control" type="tel" name="phone" data-field="phone"
-                                    placeholder="Số điện thoại của bạn" autocomplete="tel" required>
+                                    placeholder="Sá»‘ Ä‘iá»‡n thoáº¡i cá»§a báº¡n" autocomplete="tel" required>
                             </div>
                             <div class="contact-form__field">
                                 <label class="contact-form__label">Email <span>*</span></label>
                                 <input class="contact-form__control" type="email" name="email" data-field="email"
-                                    placeholder="Địa chỉ email" autocomplete="email" required>
+                                    placeholder="Äá»‹a chá»‰ email" autocomplete="email" required>
                             </div>
                         </div>
                         <div class="contact-form__row">
                             <div class="contact-form__field">
-                                <label class="contact-form__label">Phân loại yêu cầu</label>
+                                <label class="contact-form__label">PhÃ¢n loáº¡i yÃªu cáº§u</label>
                                 <select class="contact-form__control contact-form__control--select" name="type"
                                     data-field="type">
-                                    <option value="product">Tư vấn sản phẩm</option>
-                                    <option value="order">Hỗ trợ đơn hàng</option>
-                                    <option value="warranty">Bảo hành &amp; đổi trả</option>
-                                    <option value="partner">Hợp tác đại lý</option>
+                                    <option value="product">TÆ° váº¥n sáº£n pháº©m</option>
+                                    <option value="order">Há»— trá»£ Ä‘Æ¡n hÃ ng</option>
+                                    <option value="warranty">Báº£o hÃ nh &amp; Ä‘á»•i tráº£</option>
+                                    <option value="partner">Há»£p tÃ¡c Ä‘áº¡i lÃ½</option>
                                 </select>
                             </div>
                             <div class="contact-form__field">
-                                <label class="contact-form__label">Mã đơn hàng (nếu có)</label>
+                                <label class="contact-form__label">MÃ£ Ä‘Æ¡n hÃ ng (náº¿u cÃ³)</label>
                                 <input class="contact-form__control" type="text" name="order_id" data-field="order"
                                     placeholder="VD: BIO-2026-0512" autocomplete="off">
                             </div>
                         </div>
                         <div class="contact-form__field">
-                            <label class="contact-form__label">Đính kèm ảnh / video</label>
+                            <label class="contact-form__label">ÄÃ­nh kÃ¨m áº£nh / video</label>
                             <label class="contact-form__upload">
                                 <input type="file" name="attachment" data-field="attachment" accept="image/*,video/*"
                                     multiple>
                                 <span class="contact-form__upload-icon">
                                     <img src="images/contact/icon-upload.svg" alt="" loading="lazy">
                                 </span>
-                                <span class="contact-form__upload-title">Nhấn để tải lên hoặc kéo thả tệp vào đây</span>
-                                <span class="contact-form__upload-hint">Ảnh tình trạng da / sản phẩm lỗi</span>
+                                <span class="contact-form__upload-title">Nháº¥n Ä‘á»ƒ táº£i lÃªn hoáº·c kÃ©o tháº£ tá»‡p vÃ o Ä‘Ã¢y</span>
+                                <span class="contact-form__upload-hint">áº¢nh tÃ¬nh tráº¡ng da / sáº£n pháº©m lá»—i</span>
                             </label>
                         </div>
                     </div>
                     <div class="contact-form__consent">
                         <input type="checkbox" name="consent" data-field="consent" checked>
-                        <label>Bioelements tôn trọng quyền riêng tư của bạn. Thông tin này chỉ được dùng để hỗ trợ liệu
-                            trình và đơn hàng của bạn.</label>
+                        <label>Bioelements tÃ´n trá»ng quyá»n riÃªng tÆ° cá»§a báº¡n. ThÃ´ng tin nÃ y chá»‰ Ä‘Æ°á»£c dÃ¹ng Ä‘á»ƒ há»— trá»£ liá»‡u
+                            trÃ¬nh vÃ  Ä‘Æ¡n hÃ ng cá»§a báº¡n.</label>
                     </div>
                     <button class="bio-btn bio-btn--filled bio-btn--block" type="submit">
-                        Gửi yêu cầu hỗ trợ
+                        Gá»­i yÃªu cáº§u há»— trá»£
                         <img src="images/home/icon-arrow-white.svg" alt="" width="16" height="16" loading="lazy">
                     </button>
                 </form>
             </div>
             <aside class="contact-consult__info-card">
-                <h3 class="contact-consult__card-title">Công ty CP Labo De Dermafirm Việt Nam</h3>
+                <h3 class="contact-consult__card-title">CÃ´ng ty CP Labo De Dermafirm Viá»‡t Nam</h3>
                 <hr class="contact-consult__divider">
                 <div class="contact-consult__offices">
                     <div class="contact-consult__office-block">
-                        <p class="contact-consult__office-title">Trụ sở chính · Hà Nội</p>
+                        <p class="contact-consult__office-title">Trá»¥ sá»Ÿ chÃ­nh Â· HÃ  Ná»™i</p>
                         <p class="contact-consult__contact-row">
                             <i class="fa-sharp fa-solid fa-location-dot"></i>
-                            Tòa C, Nhà khách La Thành, 226 Vạn Phúc , Phường Ngọc Hà, Thành Phố Hà Nội
+                            TÃ²a C, NhÃ  khÃ¡ch La ThÃ nh, 226 Váº¡n PhÃºc , PhÆ°á»ng Ngá»c HÃ , ThÃ nh Phá»‘ HÃ  Ná»™i
                         </p>
                         <p class="contact-consult__contact-row">
                             <i class="fa-sharp fa-solid fa-phone"></i>
@@ -265,10 +278,10 @@
                         </p>
                     </div>
                     <div class="contact-consult__office-block">
-                        <p class="contact-consult__office-title">Chi nhánh · TP. Hồ Chí Minh</p>
+                        <p class="contact-consult__office-title">Chi nhÃ¡nh Â· TP. Há»“ ChÃ­ Minh</p>
                         <p class="contact-consult__contact-row">
                             <i class="fa-sharp fa-solid fa-location-dot"></i>
-                            114 Nguyễn Hoàng, Phường An Phú, TP. Thủ Đức.
+                            114 Nguyá»…n HoÃ ng, PhÆ°á»ng An PhÃº, TP. Thá»§ Äá»©c.
                         </p>
                         <p class="contact-consult__contact-row">
                             <i class="fa-sharp fa-solid fa-phone"></i>
@@ -276,7 +289,7 @@
                         </p>
                     </div>
                     <div class="contact-consult__office-block">
-                        <p class="contact-consult__office-title">kết nối qua email</p>
+                        <p class="contact-consult__office-title">káº¿t ná»‘i qua email</p>
                         <p class="contact-consult__contact-row">
                             <i class="fa-sharp fa-solid fa-envelope"></i>
                             <a class="contact-consult__email"
@@ -297,7 +310,7 @@
                         <i class="fa-sharp fa-solid fa-clock"></i>
                     </div>
                     <div class="contact-consult__hours-text">
-                        Giờ làm việc:
+                        Giá» lÃ m viá»‡c:
                         <strong>8:30 - 17:00 (T2 - T6) &amp; 8:30 - 12:00 (T7).</strong>
                     </div>
                 </div>
@@ -305,13 +318,13 @@
         </div>
 
         <div class="contact-offices">
-            <h2 class="contact-offices__title bio-title">Hệ thống văn phòng</h2>
+            <h2 class="contact-offices__title bio-title">Há»‡ thá»‘ng vÄƒn phÃ²ng</h2>
             <div class="contact-offices__grid">
                 <article class="contact-offices__card">
-                    <img src="images/contact/office-hanoi.jpg" alt="Văn phòng Hà Nội" loading="lazy">
+                    <img src="images/contact/office-hanoi.jpg" alt="VÄƒn phÃ²ng HÃ  Ná»™i" loading="lazy">
                     <div class="contact-offices__label">
-                        <p class="contact-offices__eyebrow">địa chỉ trụ sở</p>
-                        <p class="contact-offices__name">Văn phòng tại<br>Hà Nội</p>
+                        <p class="contact-offices__eyebrow">Ä‘á»‹a chá»‰ trá»¥ sá»Ÿ</p>
+                        <p class="contact-offices__name">VÄƒn phÃ²ng táº¡i<br>HÃ  Ná»™i</p>
                     </div>
                     <a class="contact-offices__map" href="#" target="_blank" rel="noopener">
                         Google map
@@ -319,10 +332,10 @@
                     </a>
                 </article>
                 <article class="contact-offices__card">
-                    <img src="images/contact/ht-tphcm.jpg" alt="Văn phòng TP. Hồ Chí Minh" loading="lazy">
+                    <img src="images/contact/ht-tphcm.jpg" alt="VÄƒn phÃ²ng TP. Há»“ ChÃ­ Minh" loading="lazy">
                     <div class="contact-offices__label">
-                        <p class="contact-offices__eyebrow">địa chỉ chi nhánh</p>
-                        <p class="contact-offices__name">Văn phòng tại<br>TP. Hồ Chí Minh</p>
+                        <p class="contact-offices__eyebrow">Ä‘á»‹a chá»‰ chi nhÃ¡nh</p>
+                        <p class="contact-offices__name">VÄƒn phÃ²ng táº¡i<br>TP. Há»“ ChÃ­ Minh</p>
                     </div>
                     <a class="contact-offices__map" href="#" target="_blank" rel="noopener">
                         Google map
@@ -334,14 +347,14 @@
     </div>
 
     <div class="contact-faq">
-        <h2 class="contact-faq__title bio-title bio-title--center">Các câu hỏi thường gặp</h2>
+        <h2 class="contact-faq__title bio-title bio-title--center">CÃ¡c cÃ¢u há»i thÆ°á»ng gáº·p</h2>
         <div class="contact-faq__accordion accordion" data-faq-accordion>
             <div class="card contact-faq__item">
                 <div class="card-header contact-faq__header">
                     <button class="contact-faq__question btn btn-link" type="button" data-toggle="collapse"
                         data-target=".contact-faq__panel--1" data-parent=".contact-faq__accordion">
                         <span class="contact-faq__num">01.</span>
-                        <span class="contact-faq__text">Tôi có được kiểm tra hàng trước khi thanh toán không?</span>
+                        <span class="contact-faq__text">TÃ´i cÃ³ Ä‘Æ°á»£c kiá»ƒm tra hÃ ng trÆ°á»›c khi thanh toÃ¡n khÃ´ng?</span>
                         <span class="contact-faq__toggle">
                             <i class="fa-sharp fa-solid fa-plus contact-faq__toggle-plus"></i>
                             <i class="fa-sharp fa-solid fa-minus contact-faq__toggle-minus"></i>
@@ -350,9 +363,9 @@
                 </div>
                 <div class="collapse show contact-faq__panel--1">
                     <div class="contact-faq__answer card-body">
-                        Có. Bioelements áp dụng chính sách cho phép khách hàng kiểm tra ngoại quan kiện hàng (tình
-                        trạng niêm phong, đúng sản phẩm) trước khi thanh toán cho đơn vị vận chuyển (COD). Bạn có
-                        quyền từ chối nhận nếu phát hiện sai sản phẩm hoặc kiện hàng bị hư hỏng.
+                        CÃ³. Bioelements Ã¡p dá»¥ng chÃ­nh sÃ¡ch cho phÃ©p khÃ¡ch hÃ ng kiá»ƒm tra ngoáº¡i quan kiá»‡n hÃ ng (tÃ¬nh
+                        tráº¡ng niÃªm phong, Ä‘Ãºng sáº£n pháº©m) trÆ°á»›c khi thanh toÃ¡n cho Ä‘Æ¡n vá»‹ váº­n chuyá»ƒn (COD). Báº¡n cÃ³
+                        quyá»n tá»« chá»‘i nháº­n náº¿u phÃ¡t hiá»‡n sai sáº£n pháº©m hoáº·c kiá»‡n hÃ ng bá»‹ hÆ° há»ng.
                     </div>
                 </div>
             </div>
@@ -361,7 +374,7 @@
                     <button class="contact-faq__question btn btn-link collapsed" type="button" data-toggle="collapse"
                         data-target=".contact-faq__panel--2" data-parent=".contact-faq__accordion">
                         <span class="contact-faq__num">02.</span>
-                        <span class="contact-faq__text">Quy trình xử lý nếu da bị kích ứng khi dùng sản phẩm?</span>
+                        <span class="contact-faq__text">Quy trÃ¬nh xá»­ lÃ½ náº¿u da bá»‹ kÃ­ch á»©ng khi dÃ¹ng sáº£n pháº©m?</span>
                         <span class="contact-faq__toggle">
                             <i class="fa-sharp fa-solid fa-plus contact-faq__toggle-plus"></i>
                             <i class="fa-sharp fa-solid fa-minus contact-faq__toggle-minus"></i>
@@ -370,9 +383,9 @@
                 </div>
                 <div class="collapse contact-faq__panel--2">
                     <div class="contact-faq__answer card-body">
-                        Vui lòng ngừng sử dụng sản phẩm ngay và liên hệ hotline Hỗ trợ &amp; Bảo hành. Đội ngũ chuyên
-                        gia sẽ hướng dẫn bạn ghi nhận triệu chứng, chụp ảnh tình trạng da và đề xuất phác đồ xử lý
-                        hoặc chính sách đổi trả phù hợp.
+                        Vui lÃ²ng ngá»«ng sá»­ dá»¥ng sáº£n pháº©m ngay vÃ  liÃªn há»‡ hotline Há»— trá»£ &amp; Báº£o hÃ nh. Äá»™i ngÅ© chuyÃªn
+                        gia sáº½ hÆ°á»›ng dáº«n báº¡n ghi nháº­n triá»‡u chá»©ng, chá»¥p áº£nh tÃ¬nh tráº¡ng da vÃ  Ä‘á» xuáº¥t phÃ¡c Ä‘á»“ xá»­ lÃ½
+                        hoáº·c chÃ­nh sÃ¡ch Ä‘á»•i tráº£ phÃ¹ há»£p.
                     </div>
                 </div>
             </div>
@@ -381,7 +394,7 @@
                     <button class="contact-faq__question btn btn-link collapsed" type="button" data-toggle="collapse"
                         data-target=".contact-faq__panel--3" data-parent=".contact-faq__accordion">
                         <span class="contact-faq__num">03.</span>
-                        <span class="contact-faq__text">Thời gian giao hàng trung bình là bao lâu?</span>
+                        <span class="contact-faq__text">Thá»i gian giao hÃ ng trung bÃ¬nh lÃ  bao lÃ¢u?</span>
                         <span class="contact-faq__toggle">
                             <i class="fa-sharp fa-solid fa-plus contact-faq__toggle-plus"></i>
                             <i class="fa-sharp fa-solid fa-minus contact-faq__toggle-minus"></i>
@@ -390,9 +403,9 @@
                 </div>
                 <div class="collapse contact-faq__panel--3">
                     <div class="contact-faq__answer card-body">
-                        Đơn hàng nội thành Hà Nội và TP. Hồ Chí Minh thường được giao trong 1–2 ngày làm việc. Các
-                        tỉnh thành khác từ 2–5 ngày làm việc tùy khu vực. Bạn có thể tra cứu nhanh trạng thái đơn
-                        hàng bằng mã đơn hoặc số điện thoại đặt hàng.
+                        ÄÆ¡n hÃ ng ná»™i thÃ nh HÃ  Ná»™i vÃ  TP. Há»“ ChÃ­ Minh thÆ°á»ng Ä‘Æ°á»£c giao trong 1â€“2 ngÃ y lÃ m viá»‡c. CÃ¡c
+                        tá»‰nh thÃ nh khÃ¡c tá»« 2â€“5 ngÃ y lÃ m viá»‡c tÃ¹y khu vá»±c. Báº¡n cÃ³ thá»ƒ tra cá»©u nhanh tráº¡ng thÃ¡i Ä‘Æ¡n
+                        hÃ ng báº±ng mÃ£ Ä‘Æ¡n hoáº·c sá»‘ Ä‘iá»‡n thoáº¡i Ä‘áº·t hÃ ng.
                     </div>
                 </div>
             </div>
@@ -401,7 +414,7 @@
                     <button class="contact-faq__question btn btn-link collapsed" type="button" data-toggle="collapse"
                         data-target=".contact-faq__panel--4" data-parent=".contact-faq__accordion">
                         <span class="contact-faq__num">04.</span>
-                        <span class="contact-faq__text">Tôi là chủ Spa, làm sao để nhận chính sách đại lý?</span>
+                        <span class="contact-faq__text">TÃ´i lÃ  chá»§ Spa, lÃ m sao Ä‘á»ƒ nháº­n chÃ­nh sÃ¡ch Ä‘áº¡i lÃ½?</span>
                         <span class="contact-faq__toggle">
                             <i class="fa-sharp fa-solid fa-plus contact-faq__toggle-plus"></i>
                             <i class="fa-sharp fa-solid fa-minus contact-faq__toggle-minus"></i>
@@ -410,17 +423,17 @@
                 </div>
                 <div class="collapse contact-faq__panel--4">
                     <div class="contact-faq__answer card-body">
-                        Gửi email hợp tác qua kênh Hợp tác &amp; Bán sỉ hoặc điền form đăng ký tư vấn với phân loại
-                        "Hợp tác đại lý". Đội ngũ Bioelements sẽ liên hệ tư vấn chính sách, điều kiện và lộ trình
-                        trở thành đối tác chính thức.
+                        Gá»­i email há»£p tÃ¡c qua kÃªnh Há»£p tÃ¡c &amp; BÃ¡n sá»‰ hoáº·c Ä‘iá»n form Ä‘Äƒng kÃ½ tÆ° váº¥n vá»›i phÃ¢n loáº¡i
+                        "Há»£p tÃ¡c Ä‘áº¡i lÃ½". Äá»™i ngÅ© Bioelements sáº½ liÃªn há»‡ tÆ° váº¥n chÃ­nh sÃ¡ch, Ä‘iá»u kiá»‡n vÃ  lá»™ trÃ¬nh
+                        trá»Ÿ thÃ nh Ä‘á»‘i tÃ¡c chÃ­nh thá»©c.
                     </div>
                 </div>
             </div>
         </div>
         <div class="contact-faq__cta">
-            <p class="contact-faq__cta-text">Vẫn chưa tìm thấy câu trả lời bạn cần?</p>
+            <p class="contact-faq__cta-text">Váº«n chÆ°a tÃ¬m tháº¥y cÃ¢u tráº£ lá»i báº¡n cáº§n?</p>
             <a class="bio-btn bio-btn--filled" href="#">
-                Liên hệ chuyên gia ngay
+                LiÃªn há»‡ chuyÃªn gia ngay
                 <img src="images/home/icon-arrow-white.svg" alt="" width="16" height="16" loading="lazy">
             </a>
         </div>
@@ -435,13 +448,13 @@
                             loading="lazy">
                     </a>
                     <div class="site-footer__brand-body">
-                        <p class="site-footer__about">Công ty Cổ phần Labo De Dermafirm Việt Nam —<br>Nhà phân phối độc
-                            quyền thương hiệu Bioelements (USA) tại Việt Nam.</p>
+                        <p class="site-footer__about">CÃ´ng ty Cá»• pháº§n Labo De Dermafirm Viá»‡t Nam â€”<br>NhÃ  phÃ¢n phá»‘i Ä‘á»™c
+                            quyá»n thÆ°Æ¡ng hiá»‡u Bioelements (USA) táº¡i Viá»‡t Nam.</p>
                         <div class="site-footer__office">
-                            <p class="site-footer__office-title">Trụ sở chính · Hà Nội</p>
+                            <p class="site-footer__office-title">Trá»¥ sá»Ÿ chÃ­nh Â· HÃ  Ná»™i</p>
                             <p class="site-footer__contact-item">
                                 <i class="site-footer__icon fa-sharp fa-solid fa-location-dot"></i>
-                                Tòa C, Nhà khách La Thành, 226 Vạn Phúc , Phường Ngọc Hà, Thành Phố Hà Nội
+                                TÃ²a C, NhÃ  khÃ¡ch La ThÃ nh, 226 Váº¡n PhÃºc , PhÆ°á»ng Ngá»c HÃ , ThÃ nh Phá»‘ HÃ  Ná»™i
                             </p>
                             <p class="site-footer__contact-item">
                                 <i class="site-footer__icon fa-sharp fa-solid fa-phone"></i>
@@ -450,10 +463,10 @@
                         </div>
                         <hr class="site-footer__divider">
                         <div class="site-footer__office">
-                            <p class="site-footer__office-title">Chi nhánh · TP. Hồ Chí Minh</p>
+                            <p class="site-footer__office-title">Chi nhÃ¡nh Â· TP. Há»“ ChÃ­ Minh</p>
                             <p class="site-footer__contact-item">
                                 <i class="site-footer__icon fa-sharp fa-solid fa-location-dot"></i>
-                                114 Nguyễn Hoàng, Phường An Phú, TP. Thủ Đức.
+                                114 Nguyá»…n HoÃ ng, PhÆ°á»ng An PhÃº, TP. Thá»§ Äá»©c.
                             </p>
                             <p class="site-footer__contact-item">
                                 <i class="site-footer__icon fa-sharp fa-solid fa-phone"></i>
@@ -463,32 +476,32 @@
                     </div>
                 </div>
                 <div class="site-footer__col site-footer__col--explore">
-                    <p class="site-footer__col-title">Khám phá</p>
+                    <p class="site-footer__col-title">KhÃ¡m phÃ¡</p>
                     <ul class="site-footer__links">
-                        <li><a class="site-footer__link" href="#">Toàn bộ sản phẩm</a></li>
-                        <li><a class="site-footer__link" href="#">Liệu trình chuyên nghiệp</a></li>
+                        <li><a class="site-footer__link" href="#">ToÃ n bá»™ sáº£n pháº©m</a></li>
+                        <li><a class="site-footer__link" href="#">Liá»‡u trÃ¬nh chuyÃªn nghiá»‡p</a></li>
                         <li><a class="site-footer__link" href="ve-chung-toi.html">Tinh hoa Bioelements</a></li>
-                        <li><a class="site-footer__link" href="#">Công nghệ</a></li>
-                        <li><a class="site-footer__link" href="#">Cẩm nang</a></li>
-                        <li><a class="site-footer__link" href="#">Hệ thống Spa &amp; Clinic</a></li>
-                        <li><a class="site-footer__link" href="#">Tin tức</a></li>
-                        <li><a class="site-footer__link" href="lien-he.html">Liên hệ</a></li>
+                        <li><a class="site-footer__link" href="#">CÃ´ng nghá»‡</a></li>
+                        <li><a class="site-footer__link" href="#">Cáº©m nang</a></li>
+                        <li><a class="site-footer__link" href="#">Há»‡ thá»‘ng Spa &amp; Clinic</a></li>
+                        <li><a class="site-footer__link" href="#">Tin tá»©c</a></li>
+                        <li><a class="site-footer__link" href="lien-he.html">LiÃªn há»‡</a></li>
                     </ul>
                 </div>
                 <div class="site-footer__col site-footer__col--policy">
-                    <p class="site-footer__col-title">chính sách</p>
+                    <p class="site-footer__col-title">chÃ­nh sÃ¡ch</p>
                     <ul class="site-footer__links">
-                        <li><a class="site-footer__link" href="chinh-sach-mua-hang.html">Chính sách mua hàng</a></li>
-                        <li><a class="site-footer__link" href="chinh-sach-bao-mat.html">Chính sách bảo mật</a></li>
-                        <li><a class="site-footer__link" href="dieu-khoan-su-dung.html">Điều khoản sử dụng</a></li>
-                        <li><a class="site-footer__link" href="#">Chính sách vận chuyển</a></li>
+                        <li><a class="site-footer__link" href="chinh-sach-mua-hang.html">ChÃ­nh sÃ¡ch mua hÃ ng</a></li>
+                        <li><a class="site-footer__link" href="chinh-sach-bao-mat.html">ChÃ­nh sÃ¡ch báº£o máº­t</a></li>
+                        <li><a class="site-footer__link" href="dieu-khoan-su-dung.html">Äiá»u khoáº£n sá»­ dá»¥ng</a></li>
+                        <li><a class="site-footer__link" href="#">ChÃ­nh sÃ¡ch váº­n chuyá»ƒn</a></li>
                     </ul>
                 </div>
                 <div class="site-footer__contact">
                     <div class="site-footer__contact-block">
-                        <p class="site-footer__col-title">Liên hệ với chúng tôi</p>
+                        <p class="site-footer__col-title">LiÃªn há»‡ vá»›i chÃºng tÃ´i</p>
                         <div class="site-footer__email-group">
-                            <p class="site-footer__office-title">Kết nối qua email:</p>
+                            <p class="site-footer__office-title">Káº¿t ná»‘i qua email:</p>
                             <div class="site-footer__email-row">
                                 <i class="site-footer__icon fa-sharp fa-solid fa-envelope"></i>
                                 <a class="site-footer__email"
@@ -515,7 +528,7 @@
             </div>
             <div class="site-footer__bottom">
                 <hr class="site-footer__divider site-footer__divider--bottom">
-                <p class="site-footer__copy">© 2026 Bioelements Việt Nam · Labo De Dermafirm JSC</p>
+                <p class="site-footer__copy">Â© 2026 Bioelements Viá»‡t Nam Â· Labo De Dermafirm JSC</p>
             </div>
         </div>
     </footer>
@@ -525,7 +538,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"
         integrity="sha512-7rusk8kGPFynZWu26OKbTeI+QPoYchtxsmPeBqkHIEXJxeun4yJ4ISYe7C6sz9wdxeE1Gk3VxsIWgCZTc+vX3g=="
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/bio.js"></script>
 </body>
 
 </html>
+
+

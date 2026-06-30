@@ -35,7 +35,7 @@
 
     &__subtitle {
         margin: 0;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 16px;
         line-height: 24px;
         font-style: italic;
@@ -48,7 +48,7 @@
 
         p {
             margin: 0;
-            @include AvertaRegular;
+            @include BeVietnamPro-Regular;
             font-size: 16px;
             line-height: 24px;
         }
@@ -62,21 +62,21 @@
 
     &__heading {
         margin: 0;
-        @include AvertaBold;
+        @include BeVietnamPro-Bold;
         font-size: 24px;
         line-height: 32px;
     }
 
     &__subheading {
         margin: 0;
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         font-size: 18px;
         line-height: 26px;
     }
 
     &__text {
         margin: 0;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 16px;
         line-height: 24px;
     }
@@ -87,7 +87,7 @@
         display: flex;
         flex-direction: column;
         gap: 8px;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 16px;
         line-height: 24px;
 
@@ -96,11 +96,11 @@
         }
 
         strong {
-            @include AvertaSemibold;
+            @include BeVietnamPro-SemiBold;
         }
 
         &--links {
-            @include AvertaSemibold;
+            @include BeVietnamPro-SemiBold;
             color: $bio-blue-500;
 
             a {
@@ -117,12 +117,12 @@
 
     &__note {
         margin: 0;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 16px;
         line-height: 24px;
 
         strong {
-            @include AvertaBold;
+            @include BeVietnamPro-Bold;
             color: $bio-blue-500;
         }
 
@@ -133,7 +133,7 @@
 
     &__footer-note {
         margin: 0;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 16px;
         line-height: 24px;
         font-style: italic;
@@ -144,7 +144,7 @@
     }
 
     &__link {
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         color: $bio-blue-500;
         text-decoration: none;
 
@@ -172,7 +172,7 @@
         padding: 12px 24px;
         vertical-align: top;
         text-align: left;
-        @include AvertaRegular;
+        @include BeVietnamPro-Regular;
         font-size: 16px;
         line-height: 24px;
         color: #020d12;
@@ -180,7 +180,7 @@
 
     th,
     &__term {
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         white-space: nowrap;
     }
 
@@ -202,7 +202,7 @@
     }
 
     &__value {
-        @include AvertaSemibold;
+        @include BeVietnamPro-SemiBold;
         color: $bio-blue-500;
     }
 }

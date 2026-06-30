@@ -1,13 +1,14 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="vi">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bioelements Dewluxe – Bioelements Việt Nam</title>
+    <title>Bioelements Dewluxe â€“ Bioelements Viá»‡t Nam</title>
     <meta name="description"
-        content="Bioelements Dewluxe – dầu dưỡng nhẹ giúp bổ sung độ ẩm, nuôi dưỡng làn da mềm mịn và căng bóng tự nhiên.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css"
+        content="Bioelements Dewluxe â€“ dáº§u dÆ°á»¡ng nháº¹ giÃºp bá»• sung Ä‘á»™ áº©m, nuÃ´i dÆ°á»¡ng lÃ n da má»m má»‹n vÃ  cÄƒng bÃ³ng tá»± nhiÃªn.">
+   <link rel="shortcut icon" href="//bioelements.com/cdn/shop/files/bioelements_ccf5911c-fa98-4b23-b8bf-b8233e41f4d3.png?crop=center&amp;height=32&amp;v=1737804771&amp;width=32" type="image/png">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css"
         integrity="sha512-rt/SrQ4UNIaGfDyEXZtNcyWvQeOq0QLygHluFQcSjaGB04IxWhal71tKuzP6K8eYXYB6vJV4pHkXcmFGGQ1/0w=="
         crossorigin="anonymous" />
     <link href="style/style.css" rel="stylesheet">
@@ -22,7 +23,7 @@
         <div class="site-header__topbar">
             <a href="#" class="site-header__topbar-msg mb-0">
                 <img src="images/header/icon-sparkle.svg" alt="" loading="lazy">
-                <span>Dành cho spa &amp; chuyên gia da liễu</span>
+                <span>DÃ nh cho spa &amp; chuyÃªn gia da liá»…u</span>
                 <img src="images/header/icon-sparkle.svg" alt="" loading="lazy">
             </a>
             <div class="container">
@@ -30,10 +31,10 @@
                     <div class="site-header__topbar-auth">
                         <a class="site-header__topbar-auth-link" href="#">
                             <img src="images/header/icon-user.svg" alt="" width="20" height="20" loading="lazy">
-                            Đăng ký
+                            ÄÄƒng kÃ½
                         </a>
                         /
-                        <a class="site-header__topbar-auth-link" href="#">Đăng nhập</a>
+                        <a class="site-header__topbar-auth-link" href="#">ÄÄƒng nháº­p</a>
                     </div>
                 </div>
             </div>
@@ -41,7 +42,7 @@
         <div class="site-header__main">
             <div class="container">
                 <div class="site-header__main-inner d-flex align-items-center justify-content-between">
-                    <a class="site-header__logo" href="index.html">
+                    <a class="site-header__logo" href="/">
                         <img src="images/header/logo.png" alt="Bioelements" width="216" height="44" loading="eager"
                             decoding="async">
                     </a>
@@ -49,15 +50,15 @@
                         <label class="site-header__search bio-search mb-0">
                             <img src="images/header/icon-search.svg" alt="" loading="lazy">
                             <input class="site-header__search-input bio-search__input" type="search" name="q"
-                                placeholder="Serum trị thâm, gel rửa mặt...." autocomplete="off">
+                                placeholder="Serum trá»‹ thÃ¢m, gel rá»­a máº·t...." autocomplete="off">
                         </label>
-                        <button type="button" class="site-header__icon-btn bio-icon-btn">
+                        <a href=""  class="site-header__icon-btn bio-icon-btn">
                             <img src="images/header/icon-heart.svg" alt="" loading="lazy">
-                        </button>
-                        <button type="button" class="site-header__icon-btn site-header__icon-btn--cart bio-icon-btn">
+                        </a>
+                        <a href="" class="site-header__icon-btn site-header__icon-btn--cart bio-icon-btn">
                             <img src="images/header/icon-cart.svg" alt="" loading="lazy">
                             <span class="site-header__cart-count bio-icon-btn__badge">0</span>
-                        </button>
+                        </a>
                         <button type="button" class="site-header__nav-toggle d-lg-none" data-nav-toggle>
                             <span class="site-header__nav-toggle-icon"></span>
                         </button>
@@ -67,40 +68,51 @@
         </div>
         <div class="site-header__nav-panel" data-nav-panel>
             <nav class="site-header__nav">
-                <div class="container">
+                <button type="button" class="site-header__nav-close d-lg-none" aria-label="Đóng menu" data-nav-close>
+                    <span class="fa-sharp fa-solid fa-xmark" aria-hidden="true"></span>
+                </button>
+                <div class="container" id="menu-scroll">
                     <ul class="site-header__nav-inner d-flex justify-content-center list-unstyled mb-0">
-                        <li><a href="index.html">Trang chủ</a></li>
-                        <li><a href="ve-chung-toi.html">Tinh hoa Bioelements</a></li>
+                        <li class="is-active"><a href="#">Trang chá»§</a></li>
+                       <li><a href="tinh-hoa-chi-tiet.html">Tinh hoa Bioelements</a></li>
                         <li>
-                            <a href="#">
-                                Sản phẩm
+                            <a href="tay-trang-bioelements.html">
+                                Sáº£n pháº©m
                                 <span class="site-header__nav-caret fa-sharp fa-solid fa-chevron-down"></span>
                             </a>
                             <ul class="site-header__submenu list-unstyled mb-0">
-                                <li><a href="#">Serum &amp; tinh chất</a></li>
-                                <li><a href="tay-trang-bioelements.html">Sữa rửa mặt &amp; tẩy trang</a></li>
-                                <li><a href="#">Kem dưỡng &amp; phục hồi</a></li>
-                                <li><a href="#">Combo chăm sóc da</a></li>
-                                <li><a class="site-footer__submenu-all" href="#">Xem tất cả sản phẩm</a></li>
+                                <li><a href="tay-trang-bioelements.html">Serum &amp; tinh cháº¥t</a></li>
+                                <li><a href="tay-trang-bioelements.html">Sá»¯a rá»­a máº·t &amp; táº©y trang</a></li>
+                                <li><a href="tay-trang-bioelements.html">Kem dÆ°á»¡ng &amp; phá»¥c há»“i</a></li>
+                                <li><a href="tay-trang-bioelements.html">Combo chÄƒm sÃ³c da</a></li>
+                                <li><a class="site-header__submenu-all" href="tay-trang-bioelements.html">Xem táº¥t cáº£ sáº£n pháº©m</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Liệu trình chuyên nghiệp</a></li>
-                        <li><a href="#">Kiến thức</a></li>
-                        <li><a href="lien-he.html">Liên hệ</a></li>
+                        <li><a href="lieu-trinh-chuyen-nghiep.html">Liá»‡u trÃ¬nh chuyÃªn nghiá»‡p</a></li>
+                        <li><a href="cam-nang.html">Kiáº¿n thá»©c</a></li>
+                        <li><a href="lien-he.html">LiÃªn há»‡</a></li>
                     </ul>
+                    <div class="box-icon-scroll">
+                        <a href=""  class="site-header__icon-btn bio-icon-btn">
+                            <img src="images/header/icon-heart.svg" alt="" loading="lazy">
+                        </a>
+                        <a href="" class="site-header__icon-btn site-header__icon-btn--cart bio-icon-btn">
+                            <img src="images/header/icon-cart.svg" alt="" loading="lazy">
+                            <span class="site-header__cart-count bio-icon-btn__badge">0</span>
+                        </a>
+                    </div>
                 </div>
             </nav>
         </div>
         <div class="site-header__nav-overlay" data-nav-overlay hidden></div>
     </header>
-
     <div class="catalog-breadcrumb">
         <div class="container">
             <nav class="catalog-breadcrumb__nav">
                 <ol class="breadcrumb catalog-breadcrumb__list">
-                    <li class="breadcrumb-item"><a class="catalog-breadcrumb__link" href="index.html">Trang chủ</a></li>
-                    <li class="breadcrumb-item"><a class="catalog-breadcrumb__link" href="#">Sản phẩm</a></li>
-                    <li class="breadcrumb-item"><a class="catalog-breadcrumb__link" href="tay-trang-bioelements.html">Sữa rửa mặt &amp; tẩy trang</a></li>
+                    <li class="breadcrumb-item"><a class="catalog-breadcrumb__link" href="index.html">Trang chá»§</a></li>
+                    <li class="breadcrumb-item"><a class="catalog-breadcrumb__link" href="#">Sáº£n pháº©m</a></li>
+                    <li class="breadcrumb-item"><a class="catalog-breadcrumb__link" href="tay-trang-bioelements.html">Sá»¯a rá»­a máº·t &amp; táº©y trang</a></li>
                     <li class="breadcrumb-item active catalog-breadcrumb__current">Bioelements Dewluxe</li>
                 </ol>
             </nav>
@@ -113,23 +125,23 @@
                 <div class="product-detail__gallery-wrap" data-product-gallery>
                     <div class="product-detail__thumbs">
                         <button type="button" class="product-detail__thumb" data-product-thumb
-                            data-src="images/home/product-1.png" data-alt="Bioelements Dewluxe – góc nhìn 2">
+                            data-src="images/home/product-1.png" data-alt="Bioelements Dewluxe â€“ gÃ³c nhÃ¬n 2">
                             <img src="images/home/product-1.png" alt="" loading="lazy">
                         </button>
                         <button type="button" class="product-detail__thumb" data-product-thumb
-                            data-src="images/home/product-2.png" data-alt="Bioelements Dewluxe – góc nhìn 3">
+                            data-src="images/home/product-2.png" data-alt="Bioelements Dewluxe â€“ gÃ³c nhÃ¬n 3">
                             <img src="images/home/product-2.png" alt="" loading="lazy">
                         </button>
                         <button type="button" class="product-detail__thumb" data-product-thumb
-                            data-src="images/home/product-serum-blue.jpg" data-alt="Bioelements Dewluxe – góc nhìn 4">
+                            data-src="images/home/product-serum-blue.jpg" data-alt="Bioelements Dewluxe â€“ gÃ³c nhÃ¬n 4">
                             <img src="images/home/product-serum-blue.jpg" alt="" loading="lazy">
                         </button>
                         <button type="button" class="product-detail__thumb" data-product-thumb
-                            data-src="images/home/combo-product.jpg" data-alt="Bioelements Dewluxe – góc nhìn 5">
+                            data-src="images/home/combo-product.jpg" data-alt="Bioelements Dewluxe â€“ gÃ³c nhÃ¬n 5">
                             <img src="images/home/combo-product.jpg" alt="" loading="lazy">
                         </button>
                         <button type="button" class="product-detail__thumb" data-product-thumb
-                            data-src="images/home/product-hover-1.jpg" data-alt="Bioelements Dewluxe – góc nhìn 6">
+                            data-src="images/home/product-hover-1.jpg" data-alt="Bioelements Dewluxe â€“ gÃ³c nhÃ¬n 6">
                             <img src="images/home/product-hover-1.jpg" alt="" loading="lazy">
                         </button>
                     </div>
@@ -142,27 +154,27 @@
                             <img src="images/header/icon-heart.svg" alt="" loading="lazy">
                         </button>
                         <img data-product-main-image src="images/home/product-1.png "
-                            alt="Bioelements Dewluxe – 1 fl oz – Lightweight Face Oil" loading="eager" decoding="async">
+                            alt="Bioelements Dewluxe â€“ 1 fl oz â€“ Lightweight Face Oil" loading="eager" decoding="async">
                     </div>
                 </div>
 
                 <div class="product-detail__info">
                     <header class="product-detail__header">
-                        <p class="product-detail__category">Làm sáng da</p>
+                        <p class="product-detail__category">LÃ m sÃ¡ng da</p>
                         <h1 class="product-detail__title">Bioelements Dewluxe - 1 fl oz - Light weight Face Oil</h1>
                         <div class="product-detail__meta">
                             <div class="product-detail__rating">
-                                <span>★★★★★</span>
+                                <span>â˜…â˜…â˜…â˜…â˜…</span>
                                 <strong>4.9</strong>
                             </div>
                             <span class="product-detail__sep"></span>
-                            <p class="product-detail__sold">Đã bán <strong>2.480+</strong> sản phẩm</p>
+                            <p class="product-detail__sold">ÄÃ£ bÃ¡n <strong>2.480+</strong> sáº£n pháº©m</p>
                         </div>
                     </header>
 
                     <div class="product-detail__price-row">
-                        <p class="product-detail__price">2,400,000đ</p>
-                        <p class="product-detail__price-old">2,666,000đ</p>
+                        <p class="product-detail__price">2,400,000Ä‘</p>
+                        <p class="product-detail__price-old">2,666,000Ä‘</p>
                         <span class="product-detail__discount">-10%</span>
                     </div>
 
@@ -174,7 +186,7 @@
                     <div class="product-detail__actions">
                         <div class="product-detail__actions-row">
                             <div class="product-detail__qty" data-product-qty>
-                                <button type="button" class="product-detail__qty-btn" data-product-qty-minus>−</button>
+                                <button type="button" class="product-detail__qty-btn" data-product-qty-minus>âˆ’</button>
                                 <input class="product-detail__qty-input" type="number" value="1" min="1" max="99"
                                     data-product-qty-input>
                                 <button type="button" class="product-detail__qty-btn" data-product-qty-plus>+</button>
@@ -183,15 +195,15 @@
                         </div>
                         <button type="button" class="product-detail__cart">
                             <img src="images/icons/icon-cart-add.svg" alt="" loading="lazy">
-                            Thêm vào giỏ hàng
+                            ThÃªm vÃ o giá» hÃ ng
                         </button>
                     </div>
 
                     <ul class="product-detail__highlights">
-                        <li>Hút sạch độc tố đô thị</li>
-                        <li>Làm dịu làn da khô hoặc kích ứng</li>
-                        <li>Giảm mẩn đỏ, giúp da cân bằng hơn</li>
-                        <li>Thẩm thấu nhanh chóng</li>
+                        <li>HÃºt sáº¡ch Ä‘á»™c tá»‘ Ä‘Ã´ thá»‹</li>
+                        <li>LÃ m dá»‹u lÃ n da khÃ´ hoáº·c kÃ­ch á»©ng</li>
+                        <li>Giáº£m máº©n Ä‘á», giÃºp da cÃ¢n báº±ng hÆ¡n</li>
+                        <li>Tháº©m tháº¥u nhanh chÃ³ng</li>
                     </ul>
 
                     <div class="product-detail__trust">
@@ -199,38 +211,38 @@
                             <span class="product-detail__trust-icon">
                                 <i class="fa-sharp fa-solid fa-truck-fast"></i>
                             </span>
-                            <p class="product-detail__trust-title">Miễn phí giao hàng</p>
-                            <p class="product-detail__trust-text">Freeship đơn từ 500.000đ</p>
+                            <p class="product-detail__trust-title">Miá»…n phÃ­ giao hÃ ng</p>
+                            <p class="product-detail__trust-text">Freeship Ä‘Æ¡n tá»« 500.000Ä‘</p>
                         </div>
                         <div class="product-detail__trust-item">
                             <span class="product-detail__trust-icon">
                                 <i class="fa-sharp fa-solid fa-rotate-left"></i>
                             </span>
-                            <p class="product-detail__trust-title">5 ngày đổi trả</p>
-                            <p class="product-detail__trust-text">Với lỗi do chất lượng sản phẩm</p>
+                            <p class="product-detail__trust-title">5 ngÃ y Ä‘á»•i tráº£</p>
+                            <p class="product-detail__trust-text">Vá»›i lá»—i do cháº¥t lÆ°á»£ng sáº£n pháº©m</p>
                         </div>
                         <div class="product-detail__trust-item">
                             <span class="product-detail__trust-icon">
                                 <i class="fa-sharp fa-solid fa-leaf"></i>
                             </span>
-                            <p class="product-detail__trust-title">Cam kết 5 KHÔNG</p>
-                            <p class="product-detail__trust-text">Không cồn, Paraben, Hương liệu tổng hợp...</p>
+                            <p class="product-detail__trust-title">Cam káº¿t 5 KHÃ”NG</p>
+                            <p class="product-detail__trust-text">KhÃ´ng cá»“n, Paraben, HÆ°Æ¡ng liá»‡u tá»•ng há»£p...</p>
                         </div>
                     </div>
 
                     <hr class="product-detail__divider">
 
                     <div>
-                        <h2 class="product-detail__journey-title">Hành trình cải thiện làn da</h2>
+                        <h2 class="product-detail__journey-title">HÃ nh trÃ¬nh cáº£i thiá»‡n lÃ n da</h2>
                         <div class="row product-detail__journey-grid">
                             <div class="col-12 col-md-4">
                                 <div class="product-detail__journey-card">
-                                    <img src="images/home/affter-1.jpg" alt="Kết quả cải thiện làn da" loading="lazy">
+                                    <img src="images/home/affter-1.jpg" alt="Káº¿t quáº£ cáº£i thiá»‡n lÃ n da" loading="lazy">
                                 </div>
                             </div>
                             <div class="col-12 col-md-4">
                                 <div class="product-detail__journey-card">
-                                    <img src="images/home/affter-2.jpg" alt="Kết quả cải thiện làn da" loading="lazy">
+                                    <img src="images/home/affter-2.jpg" alt="Káº¿t quáº£ cáº£i thiá»‡n lÃ n da" loading="lazy">
                                 </div>
                             </div>
                         </div>
@@ -239,7 +251,7 @@
                     <hr class="product-detail__divider">
 
                     <div>
-                        <h2 class="product-detail__bundle-title">Thường được mua cùng</h2>
+                        <h2 class="product-detail__bundle-title">ThÆ°á»ng Ä‘Æ°á»£c mua cÃ¹ng</h2>
                         <div class="product-detail__bundle-list">
                             <div class="product-detail__bundle-item">
                                 <label class="product-detail__bundle-check">
@@ -250,9 +262,9 @@
                                     <img src="images/home/product-1.png" alt="" loading="lazy">
                                 </div>
                                 <div class="product-detail__bundle-body">
-                                    <p class="product-detail__bundle-category">Làm sáng da</p>
-                                    <p class="product-detail__bundle-name">Bioelements recovery serum / serum phục hồi (30ml)</p>
-                                    <p class="product-detail__bundle-price">2,400,000đ</p>
+                                    <p class="product-detail__bundle-category">LÃ m sÃ¡ng da</p>
+                                    <p class="product-detail__bundle-name">Bioelements recovery serum / serum phá»¥c há»“i (30ml)</p>
+                                    <p class="product-detail__bundle-price">2,400,000Ä‘</p>
                                 </div>
                                 <button type="button" class="product-detail__bundle-add">
                                     <img src="images/icons/icon-cart-add.svg" alt="" loading="lazy">
@@ -267,9 +279,9 @@
                                     <img src="images/home/product-2.png" alt="" loading="lazy">
                                 </div>
                                 <div class="product-detail__bundle-body">
-                                    <p class="product-detail__bundle-category">Làm sáng da</p>
-                                    <p class="product-detail__bundle-name">Bioelements recovery serum / serum phục hồi (30ml)</p>
-                                    <p class="product-detail__bundle-price">2,400,000đ</p>
+                                    <p class="product-detail__bundle-category">LÃ m sÃ¡ng da</p>
+                                    <p class="product-detail__bundle-name">Bioelements recovery serum / serum phá»¥c há»“i (30ml)</p>
+                                    <p class="product-detail__bundle-price">2,400,000Ä‘</p>
                                 </div>
                                 <button type="button" class="product-detail__bundle-add">
                                     <img src="images/icons/icon-cart-add.svg" alt="" loading="lazy">
@@ -284,9 +296,9 @@
                                     <img src="images/home/product-1.png" alt="" loading="lazy">
                                 </div>
                                 <div class="product-detail__bundle-body">
-                                    <p class="product-detail__bundle-category">Làm sáng da</p>
-                                    <p class="product-detail__bundle-name">Bioelements recovery serum / serum phục hồi (30ml)</p>
-                                    <p class="product-detail__bundle-price">2,400,000đ</p>
+                                    <p class="product-detail__bundle-category">LÃ m sÃ¡ng da</p>
+                                    <p class="product-detail__bundle-name">Bioelements recovery serum / serum phá»¥c há»“i (30ml)</p>
+                                    <p class="product-detail__bundle-price">2,400,000Ä‘</p>
                                 </div>
                                 <button type="button" class="product-detail__bundle-add">
                                     <img src="images/icons/icon-cart-add.svg" alt="" loading="lazy">
@@ -301,9 +313,9 @@
                                     <img src="images/home/product-2.png" alt="" loading="lazy">
                                 </div>
                                 <div class="product-detail__bundle-body">
-                                    <p class="product-detail__bundle-category">Làm sáng da</p>
-                                    <p class="product-detail__bundle-name">Bioelements recovery serum / serum phục hồi (30ml)</p>
-                                    <p class="product-detail__bundle-price">2,400,000đ</p>
+                                    <p class="product-detail__bundle-category">LÃ m sÃ¡ng da</p>
+                                    <p class="product-detail__bundle-name">Bioelements recovery serum / serum phá»¥c há»“i (30ml)</p>
+                                    <p class="product-detail__bundle-price">2,400,000Ä‘</p>
                                 </div>
                                 <button type="button" class="product-detail__bundle-add">
                                     <img src="images/icons/icon-cart-add.svg" alt="" loading="lazy">
@@ -312,13 +324,13 @@
                         </div>
                         <div class="product-detail__bundle-footer">
                             <div>
-                                <p class="product-detail__bundle-total-label">Giá combo trọn bộ</p>
+                                <p class="product-detail__bundle-total-label">GiÃ¡ combo trá»n bá»™</p>
                                 <div class="product-detail__bundle-total-row">
-                                    <p class="product-detail__bundle-total">3,500,000đ</p>
-                                    <p class="product-detail__bundle-old">3,666,000đ</p>
+                                    <p class="product-detail__bundle-total">3,500,000Ä‘</p>
+                                    <p class="product-detail__bundle-old">3,666,000Ä‘</p>
                                 </div>
                             </div>
-                            <button type="button" class="product-detail__bundle-buy">Thêm cả 3 vào giỏ</button>
+                            <button type="button" class="product-detail__bundle-buy">ThÃªm cáº£ 3 vÃ o giá»</button>
                         </div>
                     </div>
                 </div>
@@ -329,38 +341,38 @@
     <div class="product-tabs">
         <div class="product-tabs__nav-wrap">
             <div class="product-tabs__nav" data-product-tabs>
-                <button type="button" class="product-tabs__link is-active" data-product-tab="description">Mô tả sản phẩm</button>
-                <button type="button" class="product-tabs__link" data-product-tab="ingredients">Bảng thành phần</button>
-                <button type="button" class="product-tabs__link" data-product-tab="usage">Hướng dẫn sử dụng</button>
+                <button type="button" class="product-tabs__link is-active" data-product-tab="description">MÃ´ táº£ sáº£n pháº©m</button>
+                <button type="button" class="product-tabs__link" data-product-tab="ingredients">Báº£ng thÃ nh pháº§n</button>
+                <button type="button" class="product-tabs__link" data-product-tab="usage">HÆ°á»›ng dáº«n sá»­ dá»¥ng</button>
             </div>
         </div>
         <div class="container">
             <div class="product-tabs__panels">
                 <div class="product-desc" data-product-panel="description">
-                    <h2 class="product-desc__title">mô tả sản phẩm</h2>
+                    <h2 class="product-desc__title">mÃ´ táº£ sáº£n pháº©m</h2>
                     <div class="product-desc__lead">
-                        <p>Flash Foam Cleanser là sữa rửa mặt enzyme tạo bọt thế hệ mới của Bioelements, được phát triển dựa trên nguyên lý "làm sạch sinh học" — sử dụng enzyme thực vật để phân giải bụi bẩn, dầu thừa và độc tố đô thị mà không phá vỡ hàng rào lipid tự nhiên của da.</p>
-                        <p>Kết cấu bọt mịn xốp đặc trưng giúp len lỏi vào từng lỗ chân lông, cuốn trôi bụi mịn PM2.5 và cặn trang điểm, đồng thời để lại lớp màng ẩm nhẹ giúp da không bị khô căng sau khi rửa.</p>
+                        <p>Flash Foam Cleanser lÃ  sá»¯a rá»­a máº·t enzyme táº¡o bá»t tháº¿ há»‡ má»›i cá»§a Bioelements, Ä‘Æ°á»£c phÃ¡t triá»ƒn dá»±a trÃªn nguyÃªn lÃ½ "lÃ m sáº¡ch sinh há»c" â€” sá»­ dá»¥ng enzyme thá»±c váº­t Ä‘á»ƒ phÃ¢n giáº£i bá»¥i báº©n, dáº§u thá»«a vÃ  Ä‘á»™c tá»‘ Ä‘Ã´ thá»‹ mÃ  khÃ´ng phÃ¡ vá»¡ hÃ ng rÃ o lipid tá»± nhiÃªn cá»§a da.</p>
+                        <p>Káº¿t cáº¥u bá»t má»‹n xá»‘p Ä‘áº·c trÆ°ng giÃºp len lá»i vÃ o tá»«ng lá»— chÃ¢n lÃ´ng, cuá»‘n trÃ´i bá»¥i má»‹n PM2.5 vÃ  cáº·n trang Ä‘iá»ƒm, Ä‘á»“ng thá»i Ä‘á»ƒ láº¡i lá»›p mÃ ng áº©m nháº¹ giÃºp da khÃ´ng bá»‹ khÃ´ cÄƒng sau khi rá»­a.</p>
                     </div>
-                    <p class="product-desc__subtitle">Bioelements Dewluxe™ Facial Oil giúp bổ sung độ ẩm đã mất, nuôi dưỡng làn da mềm mịn và căng bóng tự nhiên.</p>
-                    <p class="product-desc__text">Chứa dầu argan, squalane và sea kale, công thức dầu dưỡng nhẹ mặt này giúp khóa ẩm, phục hồi lipid hàng rào bảo vệ da và mang lại hiệu ứng glowy khỏe khoắn mà không gây nặng hay bết dính. Phù hợp với da khô, rất khô hoặc da hỗn hợp, sản phẩm bổ sung axit béo thiết yếu, cấp ẩm sâu và hỗ trợ cải thiện các dấu hiệu lão hóa do ánh nắng nhìn thấy được.</p>
-                    <p class="product-desc__text">Kết cấu bọt mịn xốp đặc trưng giúp len lỏi vào từng lỗ chân lông, cuốn trôi bụi mịn PM2.5 và cặn trang điểm, đồng thời để lại lớp màng ẩm nhẹ giúp da không bị khô căng sau khi rửa.</p>
-                    <h3 class="product-desc__heading">Điểm nổi bật:</h3>
+                    <p class="product-desc__subtitle">Bioelements Dewluxeâ„¢ Facial Oil giÃºp bá»• sung Ä‘á»™ áº©m Ä‘Ã£ máº¥t, nuÃ´i dÆ°á»¡ng lÃ n da má»m má»‹n vÃ  cÄƒng bÃ³ng tá»± nhiÃªn.</p>
+                    <p class="product-desc__text">Chá»©a dáº§u argan, squalane vÃ  sea kale, cÃ´ng thá»©c dáº§u dÆ°á»¡ng nháº¹ máº·t nÃ y giÃºp khÃ³a áº©m, phá»¥c há»“i lipid hÃ ng rÃ o báº£o vá»‡ da vÃ  mang láº¡i hiá»‡u á»©ng glowy khá»e khoáº¯n mÃ  khÃ´ng gÃ¢y náº·ng hay báº¿t dÃ­nh. PhÃ¹ há»£p vá»›i da khÃ´, ráº¥t khÃ´ hoáº·c da há»—n há»£p, sáº£n pháº©m bá»• sung axit bÃ©o thiáº¿t yáº¿u, cáº¥p áº©m sÃ¢u vÃ  há»— trá»£ cáº£i thiá»‡n cÃ¡c dáº¥u hiá»‡u lÃ£o hÃ³a do Ã¡nh náº¯ng nhÃ¬n tháº¥y Ä‘Æ°á»£c.</p>
+                    <p class="product-desc__text">Káº¿t cáº¥u bá»t má»‹n xá»‘p Ä‘áº·c trÆ°ng giÃºp len lá»i vÃ o tá»«ng lá»— chÃ¢n lÃ´ng, cuá»‘n trÃ´i bá»¥i má»‹n PM2.5 vÃ  cáº·n trang Ä‘iá»ƒm, Ä‘á»“ng thá»i Ä‘á»ƒ láº¡i lá»›p mÃ ng áº©m nháº¹ giÃºp da khÃ´ng bá»‹ khÃ´ cÄƒng sau khi rá»­a.</p>
+                    <h3 class="product-desc__heading">Äiá»ƒm ná»•i báº­t:</h3>
                     <ul class="product-desc__highlights">
-                        <li>Mang lại làn da căng bóng tự nhiên mà không gây nhờn dính</li>
-                        <li>Làm dịu làn da đang căng thẳng với chiết xuất sea kale chịu mặn</li>
-                        <li>Chứa hỗn hợp tinh dầu thơm thư giãn</li>
-                        <li>Hỗ trợ tăng cường độ ẩm và củng cố hàng rào bảo vệ da</li>
+                        <li>Mang láº¡i lÃ n da cÄƒng bÃ³ng tá»± nhiÃªn mÃ  khÃ´ng gÃ¢y nhá»n dÃ­nh</li>
+                        <li>LÃ m dá»‹u lÃ n da Ä‘ang cÄƒng tháº³ng vá»›i chiáº¿t xuáº¥t sea kale chá»‹u máº·n</li>
+                        <li>Chá»©a há»—n há»£p tinh dáº§u thÆ¡m thÆ° giÃ£n</li>
+                        <li>Há»— trá»£ tÄƒng cÆ°á»ng Ä‘á»™ áº©m vÃ  cá»§ng cá»‘ hÃ ng rÃ o báº£o vá»‡ da</li>
                     </ul>
-                    <p class="product-desc__closing">Khôi phục độ ẩm và vẻ căng mướt cho làn da cùng Bioelements Dewluxe™ Facial Oil.</p>
+                    <p class="product-desc__closing">KhÃ´i phá»¥c Ä‘á»™ áº©m vÃ  váº» cÄƒng mÆ°á»›t cho lÃ n da cÃ¹ng Bioelements Dewluxeâ„¢ Facial Oil.</p>
     
                     
                 </div>
                 <div class="product-reviews">
-                    <h2 class="product-reviews__title">đánh giá</h2>
+                    <h2 class="product-reviews__title">Ä‘Ã¡nh giÃ¡</h2>
                     <div class="product-reviews__summary">
                         <div class="product-reviews__score-wrap">
-                            <p class="product-reviews__stars">★★★★★</p>
+                            <p class="product-reviews__stars">â˜…â˜…â˜…â˜…â˜…</p>
                             <p class="product-reviews__score">5.0</p>
                             <p class="product-reviews__count">112 Customer Reviews</p>
                         </div>
@@ -419,11 +431,11 @@
                                                 <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
                                             </span>
                                         </p>
-                                        <p class="product-reviews__meta">15/04/2026 · Phân loại: 177ml</p>
+                                        <p class="product-reviews__meta">15/04/2026 Â· PhÃ¢n loáº¡i: 177ml</p>
                                     </div>
                                     <span class="product-reviews__badge">4.9</span>
                                 </div>
-                                <p class="product-reviews__text">It was a busy but wonderful day. Before starting our cruise in Ha Long Bay, we stopped by a silk and bamboo shop. The first thing we did on board was enjoy a delicious lunch — though I was secretly hoping for steamed rice! After that, we visited three amazing destinations.</p>
+                                <p class="product-reviews__text">It was a busy but wonderful day. Before starting our cruise in Ha Long Bay, we stopped by a silk and bamboo shop. The first thing we did on board was enjoy a delicious lunch â€” though I was secretly hoping for steamed rice! After that, we visited three amazing destinations.</p>
                                 <div class="product-reviews__photos">
                                     <div class="product-reviews__photo">
                                         <img src="images/home/before-1.jpg" alt="" loading="lazy">
@@ -445,11 +457,11 @@
                                                 <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
                                             </span>
                                         </p>
-                                        <p class="product-reviews__meta">02/03/2026 · Phân loại: 30ml</p>
+                                        <p class="product-reviews__meta">02/03/2026 Â· PhÃ¢n loáº¡i: 30ml</p>
                                     </div>
                                     <span class="product-reviews__badge">5.0</span>
                                 </div>
-                                <p class="product-reviews__text">Da mình khô và nhạy cảm nhưng dùng Dewluxe rất êm, thấm nhanh không bết. Sau 2 tuần da căng hơn hẳn, makeup cũng bám tốt hơn.</p>
+                                <p class="product-reviews__text">Da mÃ¬nh khÃ´ vÃ  nháº¡y cáº£m nhÆ°ng dÃ¹ng Dewluxe ráº¥t Ãªm, tháº¥m nhanh khÃ´ng báº¿t. Sau 2 tuáº§n da cÄƒng hÆ¡n háº³n, makeup cÅ©ng bÃ¡m tá»‘t hÆ¡n.</p>
                             </div>
                         </article>
                         <article class="product-reviews__item">
@@ -458,16 +470,16 @@
                                 <div class="product-reviews__head">
                                     <div>
                                         <p class="product-reviews__name">
-                                            Thu Hà
+                                            Thu HÃ 
                                             <span class="product-reviews__item-stars">
                                                 <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
                                             </span>
                                         </p>
-                                        <p class="product-reviews__meta">18/02/2026 · Phân loại: 180ml</p>
+                                        <p class="product-reviews__meta">18/02/2026 Â· PhÃ¢n loáº¡i: 180ml</p>
                                     </div>
                                     <span class="product-reviews__badge">4.8</span>
                                 </div>
-                                <p class="product-reviews__text">Mùi thơm nhẹ, dễ chịu. Mình dùng buổi tối sau serum, sáng dậy da mềm và sáng hơn. Đóng gói cẩn thận, giao hàng nhanh.</p>
+                                <p class="product-reviews__text">MÃ¹i thÆ¡m nháº¹, dá»… chá»‹u. MÃ¬nh dÃ¹ng buá»•i tá»‘i sau serum, sÃ¡ng dáº­y da má»m vÃ  sÃ¡ng hÆ¡n. ÄÃ³ng gÃ³i cáº©n tháº­n, giao hÃ ng nhanh.</p>
                             </div>
                         </article>
                         <article class="product-reviews__item">
@@ -481,11 +493,11 @@
                                                 <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
                                             </span>
                                         </p>
-                                        <p class="product-reviews__meta">05/01/2026 · Phân loại: 30ml</p>
+                                        <p class="product-reviews__meta">05/01/2026 Â· PhÃ¢n loáº¡i: 30ml</p>
                                     </div>
                                     <span class="product-reviews__badge">4.9</span>
                                 </div>
-                                <p class="product-reviews__text">Sản phẩm chính hãng, texture mỏng nhẹ. Phù hợp da hỗn hợp thiên khô như mình. Sẽ mua lại size lớn hơn.</p>
+                                <p class="product-reviews__text">Sáº£n pháº©m chÃ­nh hÃ£ng, texture má»ng nháº¹. PhÃ¹ há»£p da há»—n há»£p thiÃªn khÃ´ nhÆ° mÃ¬nh. Sáº½ mua láº¡i size lá»›n hÆ¡n.</p>
                             </div>
                         </article>
                     </div>
@@ -496,23 +508,23 @@
                     </div>
                 </div>
                 <div class="product-ingredients" data-product-panel="ingredients" hidden>
-                    <h2 class="product-ingredients__title">bảng thành phần</h2>
+                    <h2 class="product-ingredients__title">báº£ng thÃ nh pháº§n</h2>
                     <p class="product-ingredients__text">Caprylic/Capric Triglyceride, Squalane, Argania Spinosa Kernel Oil, Crambe Maritima Seed Oil, Tocopherol, Helianthus Annuus Seed Oil, Rosmarinus Officinalis Leaf Extract, Limonene, Linalool, Geraniol.</p>
                     <ul class="product-ingredients__list">
-                        <li>Argan Oil — bổ sung lipid, giúp da mềm mịn</li>
-                        <li>Squalane — khóa ẩm, hỗ trợ hàng rào bảo vệ da</li>
-                        <li>Sea Kale Extract — làm dịu da, hỗ trợ phục hồi</li>
-                        <li>Vitamin E — chống oxy hóa, bảo vệ da</li>
+                        <li>Argan Oil â€” bá»• sung lipid, giÃºp da má»m má»‹n</li>
+                        <li>Squalane â€” khÃ³a áº©m, há»— trá»£ hÃ ng rÃ o báº£o vá»‡ da</li>
+                        <li>Sea Kale Extract â€” lÃ m dá»‹u da, há»— trá»£ phá»¥c há»“i</li>
+                        <li>Vitamin E â€” chá»‘ng oxy hÃ³a, báº£o vá»‡ da</li>
                     </ul>
                 </div>
     
                 <div class="product-usage" data-product-panel="usage" hidden>
-                    <h2 class="product-usage__title">hướng dẫn sử dụng</h2>
-                    <p class="product-usage__text">Sau bước serum, lấy 2–4 giọt Dewluxe™ Facial Oil, thoa đều lên mặt và cổ bằng động tác vỗ nhẹ cho sản phẩm thấm.</p>
+                    <h2 class="product-usage__title">hÆ°á»›ng dáº«n sá»­ dá»¥ng</h2>
+                    <p class="product-usage__text">Sau bÆ°á»›c serum, láº¥y 2â€“4 giá»t Dewluxeâ„¢ Facial Oil, thoa Ä‘á»u lÃªn máº·t vÃ  cá»• báº±ng Ä‘á»™ng tÃ¡c vá»— nháº¹ cho sáº£n pháº©m tháº¥m.</p>
                     <ul class="product-usage__list">
-                        <li>Dùng buổi sáng và/hoặc buổi tối tùy nhu cầu dưỡng ẩm</li>
-                        <li>Có thể pha 1–2 giọt vào kem dưỡng để tăng độ dưỡng</li>
-                        <li>Tránh vùng mắt. Ngừng sử dụng nếu có dấu hiệu kích ứng</li>
+                        <li>DÃ¹ng buá»•i sÃ¡ng vÃ /hoáº·c buá»•i tá»‘i tÃ¹y nhu cáº§u dÆ°á»¡ng áº©m</li>
+                        <li>CÃ³ thá»ƒ pha 1â€“2 giá»t vÃ o kem dÆ°á»¡ng Ä‘á»ƒ tÄƒng Ä‘á»™ dÆ°á»¡ng</li>
+                        <li>TrÃ¡nh vÃ¹ng máº¯t. Ngá»«ng sá»­ dá»¥ng náº¿u cÃ³ dáº¥u hiá»‡u kÃ­ch á»©ng</li>
                     </ul>
                 </div>
             </div>
@@ -523,13 +535,13 @@
 
     <div class="product-related">
         <div class="product-related__inner">
-            <h2 class="product-related__title">sản phẩm liên quan</h2>
+            <h2 class="product-related__title">sáº£n pháº©m liÃªn quan</h2>
             <div class="product-related__track owl-carousel owl-product-related">
                 <article class="product-card">
                     <div class="product-card__media">
                         <a class="product-card__media-link" href="chi-tiet-san-pham.html">
                                     <img class="product-card__image" src="images/home/product-1.png"
-                            alt="Bioelements recovery serum / serum phục hồi (30ml)" loading="lazy">
+                            alt="Bioelements recovery serum / serum phá»¥c há»“i (30ml)" loading="lazy">
                         <img class="product-card__image product-card__image--hover"
                             src="images/home/product-hover-1.jpg" alt="" loading="lazy">
                                 </a>
@@ -542,8 +554,8 @@
                         </button>
                     </div>
                     <div class="product-card__body">
-                        <p class="product-card__category">Làm sáng da</p>
-                        <a class="product-card__name" href="chi-tiet-san-pham.html">Bioelements recovery serum / serum phục hồi (30ml)</a>
+                        <p class="product-card__category">LÃ m sÃ¡ng da</p>
+                        <a class="product-card__name" href="chi-tiet-san-pham.html">Bioelements recovery serum / serum phá»¥c há»“i (30ml)</a>
                         <div class="product-card__rating">
                             <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i
                                 class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i
@@ -552,9 +564,9 @@
                         </div>
                         <div class="product-card__footer">
                             <p class="product-card__price">
-                                <span class="product-card__price-current">Từ: <strong>2,400,000đ</strong><span
+                                <span class="product-card__price-current">Tá»«: <strong>2,400,000Ä‘</strong><span
                                         class="product-card__price-old">-10%</span></span>
-                                <span class="product-card__price-old">2,666,000đ</span>
+                                <span class="product-card__price-old">2,666,000Ä‘</span>
                             </p>
                             <button type="button" class="product-card__cart">
                                 <img src="images/icons/icon-cart-add.svg" alt="" loading="lazy">
@@ -566,15 +578,15 @@
                     <div class="product-card__media">
                         <a class="product-card__media-link" href="chi-tiet-san-pham.html">
                                     <img class="product-card__image" src="images/home/product-2.png"
-                            alt="Bioelements recovery serum / serum phục hồi (30ml)" loading="lazy">
+                            alt="Bioelements recovery serum / serum phá»¥c há»“i (30ml)" loading="lazy">
                                 </a>
                                 <button type="button" class="product-card__wishlist">
                             <img src="images/header/icon-heart.svg" alt="" loading="lazy">
                         </button>
                     </div>
                     <div class="product-card__body">
-                        <p class="product-card__category">Làm sáng da</p>
-                        <a class="product-card__name" href="chi-tiet-san-pham.html">Bioelements recovery serum / serum phục hồi (30ml)</a>
+                        <p class="product-card__category">LÃ m sÃ¡ng da</p>
+                        <a class="product-card__name" href="chi-tiet-san-pham.html">Bioelements recovery serum / serum phá»¥c há»“i (30ml)</a>
                         <div class="product-card__rating">
                             <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i
                                 class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i
@@ -583,9 +595,9 @@
                         </div>
                         <div class="product-card__footer">
                             <p class="product-card__price">
-                                <span class="product-card__price-current">Từ: <strong>2,400,000đ</strong><span
+                                <span class="product-card__price-current">Tá»«: <strong>2,400,000Ä‘</strong><span
                                         class="product-card__price-old">-10%</span></span>
-                                <span class="product-card__price-old">2,666,000đ</span>
+                                <span class="product-card__price-old">2,666,000Ä‘</span>
                             </p>
                             <button type="button" class="product-card__cart">
                                 <img src="images/icons/icon-cart-add.svg" alt="" loading="lazy">
@@ -597,7 +609,7 @@
                     <div class="product-card__media">
                         <a class="product-card__media-link" href="chi-tiet-san-pham.html">
                                     <img class="product-card__image" src="images/home/product-1.png"
-                            alt="Bioelements recovery serum / serum phục hồi (30ml)" loading="lazy">
+                            alt="Bioelements recovery serum / serum phá»¥c há»“i (30ml)" loading="lazy">
                         <img class="product-card__image product-card__image--hover"
                             src="images/home/product-hover-1.jpg" alt="" loading="lazy">
                                 </a>
@@ -610,8 +622,8 @@
                         </button>
                     </div>
                     <div class="product-card__body">
-                        <p class="product-card__category">Làm sáng da</p>
-                        <a class="product-card__name" href="chi-tiet-san-pham.html">Bioelements recovery serum / serum phục hồi (30ml)</a>
+                        <p class="product-card__category">LÃ m sÃ¡ng da</p>
+                        <a class="product-card__name" href="chi-tiet-san-pham.html">Bioelements recovery serum / serum phá»¥c há»“i (30ml)</a>
                         <div class="product-card__rating">
                             <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i
                                 class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i
@@ -620,9 +632,9 @@
                         </div>
                         <div class="product-card__footer">
                             <p class="product-card__price">
-                                <span class="product-card__price-current">Từ: <strong>2,400,000đ</strong><span
+                                <span class="product-card__price-current">Tá»«: <strong>2,400,000Ä‘</strong><span
                                         class="product-card__price-old">-10%</span></span>
-                                <span class="product-card__price-old">2,666,000đ</span>
+                                <span class="product-card__price-old">2,666,000Ä‘</span>
                             </p>
                             <button type="button" class="product-card__cart">
                                 <img src="images/icons/icon-cart-add.svg" alt="" loading="lazy">
@@ -634,15 +646,15 @@
                     <div class="product-card__media">
                         <a class="product-card__media-link" href="chi-tiet-san-pham.html">
                                     <img class="product-card__image" src="images/home/product-2.png"
-                            alt="Bioelements recovery serum / serum phục hồi (30ml)" loading="lazy">
+                            alt="Bioelements recovery serum / serum phá»¥c há»“i (30ml)" loading="lazy">
                                 </a>
                                 <button type="button" class="product-card__wishlist">
                             <img src="images/header/icon-heart.svg" alt="" loading="lazy">
                         </button>
                     </div>
                     <div class="product-card__body">
-                        <p class="product-card__category">Làm sáng da</p>
-                        <a class="product-card__name" href="chi-tiet-san-pham.html">Bioelements recovery serum / serum phục hồi (30ml)</a>
+                        <p class="product-card__category">LÃ m sÃ¡ng da</p>
+                        <a class="product-card__name" href="chi-tiet-san-pham.html">Bioelements recovery serum / serum phá»¥c há»“i (30ml)</a>
                         <div class="product-card__rating">
                             <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i
                                 class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i
@@ -651,9 +663,9 @@
                         </div>
                         <div class="product-card__footer">
                             <p class="product-card__price">
-                                <span class="product-card__price-current">Từ: <strong>2,400,000đ</strong><span
+                                <span class="product-card__price-current">Tá»«: <strong>2,400,000Ä‘</strong><span
                                         class="product-card__price-old">-10%</span></span>
-                                <span class="product-card__price-old">2,666,000đ</span>
+                                <span class="product-card__price-old">2,666,000Ä‘</span>
                             </p>
                             <button type="button" class="product-card__cart">
                                 <img src="images/icons/icon-cart-add.svg" alt="" loading="lazy">
@@ -665,7 +677,7 @@
                     <div class="product-card__media">
                         <a class="product-card__media-link" href="chi-tiet-san-pham.html">
                                     <img class="product-card__image" src="images/home/product-1.png"
-                            alt="Bioelements recovery serum / serum phục hồi (30ml)" loading="lazy">
+                            alt="Bioelements recovery serum / serum phá»¥c há»“i (30ml)" loading="lazy">
                         <img class="product-card__image product-card__image--hover"
                             src="images/home/product-hover-1.jpg" alt="" loading="lazy">
                                 </a>
@@ -674,8 +686,8 @@
                         </button>
                     </div>
                     <div class="product-card__body">
-                        <p class="product-card__category">Làm sáng da</p>
-                        <a class="product-card__name" href="chi-tiet-san-pham.html">Bioelements recovery serum / serum phục hồi (30ml)</a>
+                        <p class="product-card__category">LÃ m sÃ¡ng da</p>
+                        <a class="product-card__name" href="chi-tiet-san-pham.html">Bioelements recovery serum / serum phá»¥c há»“i (30ml)</a>
                         <div class="product-card__rating">
                             <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i
                                 class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i
@@ -684,9 +696,9 @@
                         </div>
                         <div class="product-card__footer">
                             <p class="product-card__price">
-                                <span class="product-card__price-current">Từ: <strong>2,400,000đ</strong><span
+                                <span class="product-card__price-current">Tá»«: <strong>2,400,000Ä‘</strong><span
                                         class="product-card__price-old">-10%</span></span>
-                                <span class="product-card__price-old">2,666,000đ</span>
+                                <span class="product-card__price-old">2,666,000Ä‘</span>
                             </p>
                             <button type="button" class="product-card__cart">
                                 <img src="images/icons/icon-cart-add.svg" alt="" loading="lazy">
@@ -698,15 +710,15 @@
                     <div class="product-card__media">
                         <a class="product-card__media-link" href="chi-tiet-san-pham.html">
                                     <img class="product-card__image" src="images/home/product-2.png"
-                            alt="Bioelements recovery serum / serum phục hồi (30ml)" loading="lazy">
+                            alt="Bioelements recovery serum / serum phá»¥c há»“i (30ml)" loading="lazy">
                                 </a>
                                 <button type="button" class="product-card__wishlist">
                             <img src="images/header/icon-heart.svg" alt="" loading="lazy">
                         </button>
                     </div>
                     <div class="product-card__body">
-                        <p class="product-card__category">Làm sáng da</p>
-                        <a class="product-card__name" href="chi-tiet-san-pham.html">Bioelements recovery serum / serum phục hồi (30ml)</a>
+                        <p class="product-card__category">LÃ m sÃ¡ng da</p>
+                        <a class="product-card__name" href="chi-tiet-san-pham.html">Bioelements recovery serum / serum phá»¥c há»“i (30ml)</a>
                         <div class="product-card__rating">
                             <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i
                                 class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i
@@ -715,9 +727,9 @@
                         </div>
                         <div class="product-card__footer">
                             <p class="product-card__price">
-                                <span class="product-card__price-current">Từ: <strong>2,400,000đ</strong><span
+                                <span class="product-card__price-current">Tá»«: <strong>2,400,000Ä‘</strong><span
                                         class="product-card__price-old">-10%</span></span>
-                                <span class="product-card__price-old">2,666,000đ</span>
+                                <span class="product-card__price-old">2,666,000Ä‘</span>
                             </p>
                             <button type="button" class="product-card__cart">
                                 <img src="images/icons/icon-cart-add.svg" alt="" loading="lazy">
@@ -739,13 +751,13 @@
                             loading="lazy">
                     </a>
                     <div class="site-footer__brand-body">
-                        <p class="site-footer__about">Công ty Cổ phần Labo De Dermafirm Việt Nam —<br>Nhà phân phối độc
-                            quyền thương hiệu Bioelements (USA) tại Việt Nam.</p>
+                        <p class="site-footer__about">CÃ´ng ty Cá»• pháº§n Labo De Dermafirm Viá»‡t Nam â€”<br>NhÃ  phÃ¢n phá»‘i Ä‘á»™c
+                            quyá»n thÆ°Æ¡ng hiá»‡u Bioelements (USA) táº¡i Viá»‡t Nam.</p>
                         <div class="site-footer__office">
-                            <p class="site-footer__office-title">Trụ sở chính · Hà Nội</p>
+                            <p class="site-footer__office-title">Trá»¥ sá»Ÿ chÃ­nh Â· HÃ  Ná»™i</p>
                             <p class="site-footer__contact-item">
                                 <i class="site-footer__icon fa-sharp fa-solid fa-location-dot"></i>
-                                Tòa C, Nhà khách La Thành, 226 Vạn Phúc , Phường Ngọc Hà, Thành Phố Hà Nội
+                                TÃ²a C, NhÃ  khÃ¡ch La ThÃ nh, 226 Váº¡n PhÃºc , PhÆ°á»ng Ngá»c HÃ , ThÃ nh Phá»‘ HÃ  Ná»™i
                             </p>
                             <p class="site-footer__contact-item">
                                 <i class="site-footer__icon fa-sharp fa-solid fa-phone"></i>
@@ -754,10 +766,10 @@
                         </div>
                         <hr class="site-footer__divider">
                         <div class="site-footer__office">
-                            <p class="site-footer__office-title">Chi nhánh · TP. Hồ Chí Minh</p>
+                            <p class="site-footer__office-title">Chi nhÃ¡nh Â· TP. Há»“ ChÃ­ Minh</p>
                             <p class="site-footer__contact-item">
                                 <i class="site-footer__icon fa-sharp fa-solid fa-location-dot"></i>
-                                114 Nguyễn Hoàng, Phường An Phú, TP. Thủ Đức.
+                                114 Nguyá»…n HoÃ ng, PhÆ°á»ng An PhÃº, TP. Thá»§ Äá»©c.
                             </p>
                             <p class="site-footer__contact-item">
                                 <i class="site-footer__icon fa-sharp fa-solid fa-phone"></i>
@@ -767,32 +779,32 @@
                     </div>
                 </div>
                 <div class="site-footer__col site-footer__col--explore">
-                    <p class="site-footer__col-title">Khám phá</p>
+                    <p class="site-footer__col-title">KhÃ¡m phÃ¡</p>
                     <ul class="site-footer__links">
-                        <li><a class="site-footer__link" href="#">Toàn bộ sản phẩm</a></li>
-                        <li><a class="site-footer__link" href="#">Liệu trình chuyên nghiệp</a></li>
+                        <li><a class="site-footer__link" href="#">ToÃ n bá»™ sáº£n pháº©m</a></li>
+                        <li><a class="site-footer__link" href="#">Liá»‡u trÃ¬nh chuyÃªn nghiá»‡p</a></li>
                         <li><a class="site-footer__link" href="ve-chung-toi.html">Tinh hoa Bioelements</a></li>
-                        <li><a class="site-footer__link" href="#">Công nghệ</a></li>
-                        <li><a class="site-footer__link" href="#">Cẩm nang</a></li>
-                        <li><a class="site-footer__link" href="#">Hệ thống Spa &amp; Clinic</a></li>
-                        <li><a class="site-footer__link" href="#">Tin tức</a></li>
-                        <li><a class="site-footer__link" href="lien-he.html">Liên hệ</a></li>
+                        <li><a class="site-footer__link" href="#">CÃ´ng nghá»‡</a></li>
+                        <li><a class="site-footer__link" href="#">Cáº©m nang</a></li>
+                        <li><a class="site-footer__link" href="#">Há»‡ thá»‘ng Spa &amp; Clinic</a></li>
+                        <li><a class="site-footer__link" href="#">Tin tá»©c</a></li>
+                        <li><a class="site-footer__link" href="lien-he.html">LiÃªn há»‡</a></li>
                     </ul>
                 </div>
                 <div class="site-footer__col site-footer__col--policy">
-                    <p class="site-footer__col-title">chính sách</p>
+                    <p class="site-footer__col-title">chÃ­nh sÃ¡ch</p>
                     <ul class="site-footer__links">
-                        <li><a class="site-footer__link" href="chinh-sach-mua-hang.html">Chính sách mua hàng</a></li>
-                        <li><a class="site-footer__link" href="chinh-sach-bao-mat.html">Chính sách bảo mật</a></li>
-                        <li><a class="site-footer__link" href="dieu-khoan-su-dung.html">Điều khoản sử dụng</a></li>
-                        <li><a class="site-footer__link" href="#">Chính sách vận chuyển</a></li>
+                        <li><a class="site-footer__link" href="chinh-sach-mua-hang.html">ChÃ­nh sÃ¡ch mua hÃ ng</a></li>
+                        <li><a class="site-footer__link" href="chinh-sach-bao-mat.html">ChÃ­nh sÃ¡ch báº£o máº­t</a></li>
+                        <li><a class="site-footer__link" href="dieu-khoan-su-dung.html">Äiá»u khoáº£n sá»­ dá»¥ng</a></li>
+                        <li><a class="site-footer__link" href="#">ChÃ­nh sÃ¡ch váº­n chuyá»ƒn</a></li>
                     </ul>
                 </div>
                 <div class="site-footer__contact">
                     <div class="site-footer__contact-block">
-                        <p class="site-footer__col-title">Liên hệ với chúng tôi</p>
+                        <p class="site-footer__col-title">LiÃªn há»‡ vá»›i chÃºng tÃ´i</p>
                         <div class="site-footer__email-group">
-                            <p class="site-footer__office-title">Kết nối qua email:</p>
+                            <p class="site-footer__office-title">Káº¿t ná»‘i qua email:</p>
                             <div class="site-footer__email-row">
                                 <i class="site-footer__icon fa-sharp fa-solid fa-envelope"></i>
                                 <a class="site-footer__email"
@@ -819,7 +831,7 @@
             </div>
             <div class="site-footer__bottom">
                 <hr class="site-footer__divider site-footer__divider--bottom">
-                <p class="site-footer__copy">© 2026 Bioelements Việt Nam · Labo De Dermafirm JSC</p>
+                <p class="site-footer__copy">Â© 2026 Bioelements Viá»‡t Nam Â· Labo De Dermafirm JSC</p>
             </div>
         </div>
     </footer>
@@ -836,3 +848,5 @@
 </body>
 
 </html>
+
+

@@ -1,0 +1,591 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Phạm Trường Linh</title>
+    <meta name="description"
+        content="Trang báº¡n tÃ¬m kiáº¿m khÃ´ng cÃ²n tá»“n táº¡i. KhÃ¡m phÃ¡ giáº£i phÃ¡p Ä‘iá»u trá»‹ chuyÃªn sÃ¢u vÃ  kiáº¿n thá»©c chÄƒm sÃ³c da tá»« Bioelements Viá»‡t Nam.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css"
+        integrity="sha512-rt/SrQ4UNIaGfDyEXZtNcyWvQeOq0QLygHluFQcSjaGB04IxWhal71tKuzP6K8eYXYB6vJV4pHkXcmFGGQ1/0w=="
+        crossorigin="anonymous" />
+    <link rel="shortcut icon"
+        href="//bioelements.com/cdn/shop/files/bioelements_ccf5911c-fa98-4b23-b8bf-b8233e41f4d3.png?crop=center&amp;height=32&amp;v=1737804771&amp;width=32"
+        type="image/png">
+    <link href="style/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/icon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="site-header__topbar">
+            <a href="#" class="site-header__topbar-msg mb-0">
+                <img src="images/header/icon-sparkle.svg" alt="" loading="lazy">
+                <span>Dành cho spa chuyên gia da liễu</span>
+                <img src="images/header/icon-sparkle.svg" alt="" loading="lazy">
+            </a>
+            <div class="container">
+                <div class="site-header__topbar-row d-flex justify-content-end">
+                    <div class="site-header__topbar-auth">
+                        <a class="site-header__topbar-auth-link" href="#">
+                            <img src="images/header/icon-user.svg" alt="" width="20" height="20" loading="lazy">
+                            Đăng ký
+                        </a>
+                        /
+                        <a class="site-header__topbar-auth-link" href="#">Đăng nhập</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-header__main">
+            <div class="container">
+                <div class="site-header__main-inner d-flex align-items-center justify-content-between">
+                    <a class="site-header__logo" href="/">
+                        <img src="images/header/logo.png" alt="Bioelements" width="216" height="44" loading="eager"
+                            decoding="async">
+                    </a>
+                    <div class="site-header__tools d-flex align-items-center">
+                        <label class="site-header__search bio-search mb-0">
+                            <img src="images/header/icon-search.svg" alt="" loading="lazy">
+                            <input class="site-header__search-input bio-search__input" type="search" name="q"
+                                placeholder="Serum trị thâm, gel rửa mặt...." autocomplete="off">
+                        </label>
+                        <a href="" class="site-header__icon-btn bio-icon-btn">
+                            <img src="images/header/icon-heart.svg" alt="" loading="lazy">
+                        </a>
+                        <a href="" class="site-header__icon-btn site-header__icon-btn--cart bio-icon-btn">
+                            <img src="images/header/icon-cart.svg" alt="" loading="lazy">
+                            <span class="site-header__cart-count bio-icon-btn__badge">0</span>
+                        </a>
+                        <button type="button" class="site-header__nav-toggle d-lg-none" data-nav-toggle>
+                            <span class="site-header__nav-toggle-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-header__nav-panel" data-nav-panel>
+            <nav class="site-header__nav">
+                <button type="button" class="site-header__nav-close d-lg-none" aria-label="Đóng menu" data-nav-close>
+                    <span class="fa-sharp fa-solid fa-xmark" aria-hidden="true"></span>
+                </button>
+                <div class="container" id="menu-scroll">
+                    <ul class="site-header__nav-inner d-flex justify-content-center list-unstyled mb-0">
+                        <li class="is-active"><a href="#">Trang chủ</a></li>
+                        <li><a href="tinh-hoa-chi-tiet.html">Tinh hoa Bioelements</a></li>
+                        <li>
+                            <a href="tay-trang-bioelements.html">
+                                Sản phẩm
+                                <span class="site-header__nav-caret fa-sharp fa-solid fa-chevron-down"></span>
+                            </a>
+                            <ul class="site-header__submenu list-unstyled mb-0">
+                                <li><a href="tay-trang-bioelements.html">Serum &amp; tinh chất</a></li>
+                                <li><a href="tay-trang-bioelements.html">Sữa rửa mặt &amp; tẩy trang</a></li>
+                                <li><a href="tay-trang-bioelements.html">Kem dưỡng &amp; phục hồi</a></li>
+                                <li><a href="tay-trang-bioelements.html">Combo chăm sóc da</a></li>
+                                <li><a class="site-header__submenu-all" href="tay-trang-bioelements.html">Xem tất cả sản
+                                        phẩm</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="lieu-trinh-chuyen-nghiep.html">Liệu trình chuyên nghiệp</a></li>
+                        <li><a href="cam-nang.html">Kiến thức</a></li>
+                        <li><a href="lien-he.html">Liên hệ</a></li>
+                    </ul>
+                    <div class="box-icon-scroll">
+                        <a href="" class="site-header__icon-btn bio-icon-btn">
+                            <img src="images/header/icon-heart.svg" alt="" loading="lazy">
+                        </a>
+                        <a href="" class="site-header__icon-btn site-header__icon-btn--cart bio-icon-btn">
+                            <img src="images/header/icon-cart.svg" alt="" loading="lazy">
+                            <span class="site-header__cart-count bio-icon-btn__badge">0</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="site-header__nav-overlay" data-nav-overlay hidden></div>
+    </header>
+
+    <div class="expert-detail-hero">
+        <a href="">
+            <img src="images/chuyen-gia/gt-1.jpg" alt="" class="img-fluid w-100">
+        </a>
+    </div>
+
+    <div class="expert-story">
+        <div class="container">
+            <h2 class="title">Câu chuyện nghề nghiệp</h2>
+            <div class="row expert-story__grid">
+                <div class="col-lg-7">
+                    <div class="expert-story__media">
+                        <img class="expert-story__photo" src="images/chuyen-gia/cau-chuyenj-1.jpg"
+                            alt="Mr. Phạm Trường Linh" width="700" height="432" loading="lazy">
+                        <div class="expert-story__quote">
+                            <img class="expert-story__quote-icon" src="images/about/quote-mark.svg" alt="" width="25"
+                                height="20" loading="lazy">
+                            <p>Muốn đi lâu - phải bắt đầu từ sự tử tế. Làm doanh nhân phải coi mình là đối thủ lớn nhất
+                                để không ngừng nâng tầm chuẩn mực chuyên môn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 expert-story__content">
+                    <div class="expert-story__metric">
+                        <p class="expert-story__number">20+</p>
+                        <p class="expert-story__label">năm kinh nghiệm trong ngành</p>
+                    </div>
+                    <p class="expert-story__desc">Từ một nhà điều hành tận tụy với khát vọng nâng tầm vị thế chuyên gia
+                        thẩm mỹ Việt, ông đã dành hơn 2 thập kỷ để xây dựng hệ sinh thái đối tác tinh hoa. Câu chuyện
+                        bắt đầu từ sự đồng cảm với những làn da Việt bị "kiệt sức" do treatment xâm lấn, dẫn đến quyết
+                        tâm xác lập chuẩn mực mới: Trị liệu song hành cùng Chữa lành (Treatment &amp; Healing).</p>
+                    <a class="expert-story__cta" href="lien-he.html">
+                        <span>Liên hệ chuyên gia</span>
+                        <img src="images/icons/arrow-right-white.svg" alt="" width="16" height="16" loading="lazy">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="expert-expertise">
+        <div class="expert-expertise__texture" aria-hidden="true"></div>
+        <div class="container">
+            <h2 class="title text-center">Lĩnh vực chuyên sâu</h2>
+            <div class="row expert-expertise__grid">
+                <div class="col-lg-4">
+                    <article class="expert-expertise__card">
+                        <img class="expert-expertise__img" src="images/chuyen-gia/linh-vuc.jpg"
+                            alt="Tư vấn chiến lược vận hành hệ thống Spa/Clinic" width="374" height="200"
+                            loading="lazy">
+                        <div class="expert-expertise__body">
+                            <p class="expert-expertise__num">01</p>
+                            <h3 class="expert-expertise__name">Tư vấn chiến lược vận hành hệ thống Spa/Clinic</h3>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4">
+                    <article class="expert-expertise__card">
+                        <img class="expert-expertise__img" src="images/chuyen-gia/linh-vuc.jpg"
+                            alt="Xây dựng mô hình kinh doanh dựa trên giá trị bền vững" width="374" height="200"
+                            loading="lazy">
+                        <div class="expert-expertise__body">
+                            <p class="expert-expertise__num">02</p>
+                            <h3 class="expert-expertise__name">Xây dựng mô hình kinh doanh dựa trên giá trị bền vững
+                            </h3>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4">
+                    <article class="expert-expertise__card">
+                        <img class="expert-expertise__img" src="images/chuyen-gia/linh-vuc.jpg"
+                            alt="Định hướng phát triển hệ sinh thái mỹ phẩm sinh học và Hybrid Cosmetics" width="374"
+                            height="200" loading="lazy">
+                        <div class="expert-expertise__body">
+                            <p class="expert-expertise__num">03</p>
+                            <h3 class="expert-expertise__name">Định hướng phát triển hệ sinh thái mỹ phẩm sinh học &amp;
+                                Hybrid Cosmetics.</h3>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="achievements">
+        <div class="container">
+            <h2 class="title title-icon"><img src="/images/chuyen-gia/icon-thanh-tich.svg" alt="">Thành tích tiêu biểu
+            </h2>
+            <div class="achievement-slide">
+                <div class="achievement-list owl-carousel">
+                    <div class="achievement-card">
+                        <img src="/images/chuyen-gia/thanh-tich-1.jpg" alt="Xây dựng mạng lưới Spa/Clinic"
+                            class="img-fluid">
+
+                        <p>
+                            Xây dựng mạng lưới 2.000+ Spa/Clinic thành công.
+                        </p>
+                    </div>
+                    <div class="achievement-card">
+                        <img src="/images/chuyen-gia/thanh-tich-2.jpg" alt="Thương hiệu Dermafirm">
+
+                        <p>
+                            Phát triển thành công thương hiệu Dermafirm tại Việt Nam trong 15 năm qua.
+                        </p>
+                    </div>
+                    <div class="achievement-card">
+                        <img src="/images/chuyen-gia/thanh-tich-3.jpg" alt="Beauty Awards">
+
+                        <p>
+                            Tổ chức và giám khảo các cuộc thi Beauty Awards danh giá của VNBA.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="progress-bottom">
+            <div class="achievement-dot"></div>
+            <div class="achievement-dot"></div>
+            <div class="achievement-dot"></div>
+        </div>
+    </div>
+
+
+    <div class="the-press">
+        <div class="container">
+            <div class="row box-press">
+                <div class="col-lg-5 pr-lg-0">
+                    <img src="/images/chuyen-gia/chuyen-gia-cup.jpg" alt="" class="img-thuml-press">
+                </div>
+                <div class="col-lg-7 pl-lg-0">
+                    <div class="info-press">
+                        <h2>Báo chí truyền thông</h2>
+                        <div class="the-press-slide owl-carousel">
+                            <a href="" class="the-press-item">
+                                <img src="/images/chuyen-gia/bao-chi.jpg" alt="">
+                                <p>Ông Phạm Trường Linh: Làm doanh nhân phải coi mình là đối thủ lớn nhất" trên
+                                    ProfBeauty</p>
+                            </a>
+                            <a href="" class="the-press-item">
+                                <img src="/images/chuyen-gia/bao-chi.jpg" alt="">
+                                <p>Ông Phạm Trường Linh: Làm doanh nhân phải coi mình là đối thủ lớn nhất" trên
+                                    ProfBeauty</p>
+                            </a>
+                        </div>
+                        <div class="press__dots bio-dots"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="feedback-master">
+        <div class="container">
+            <h2 class="title text-center">Lời chứng thực từ các đối tác</h2>
+            <div class="feedback-slide owl-carousel">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                    </div>
+
+                    <div class="testimonial-content">
+                        Sự tư vấn chiến lược của ông Linh đã giúp chúng tôi thay đổi tư duy làm nghề,
+                        từ kinh doanh sản phẩm sang kiến tạo giá trị thực cho khách hàng
+                    </div>
+
+                    <div class="testimonial-footer">
+                        <div class="testimonial-avatar">
+                            <img src="/images//chuyen-gia/asena-spa-logo.png" alt="Asena Spa">
+                        </div>
+
+                        <div class="testimonial-info">
+                            <p>Asena Spa</p>
+                            <span>Đối tác từ 2018 - TP. HCM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                    </div>
+
+                    <div class="testimonial-content">
+                        Sự tư vấn chiến lược của ông Linh đã giúp chúng tôi thay đổi tư duy làm nghề,
+                        từ kinh doanh sản phẩm sang kiến tạo giá trị thực cho khách hàng
+                    </div>
+
+                    <div class="testimonial-footer">
+                        <div class="testimonial-avatar">
+                            <img src="/images//chuyen-gia/asena-spa-logo.png" alt="Asena Spa">
+                        </div>
+
+                        <div class="testimonial-info">
+                            <p>Asena Spa</p>
+                            <span>Đối tác từ 2018 - TP. HCM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                    </div>
+
+                    <div class="testimonial-content">
+                        Sự tư vấn chiến lược của ông Linh đã giúp chúng tôi thay đổi tư duy làm nghề,
+                        từ kinh doanh sản phẩm sang kiến tạo giá trị thực cho khách hàng
+                    </div>
+
+                    <div class="testimonial-footer">
+                        <div class="testimonial-avatar">
+                            <img src="/images//chuyen-gia/asena-spa-logo.png" alt="Asena Spa">
+                        </div>
+
+                        <div class="testimonial-info">
+                            <p>Asena Spa</p>
+                            <span>Đối tác từ 2018 - TP. HCM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                    </div>
+
+                    <div class="testimonial-content">
+                        Sự tư vấn chiến lược của ông Linh đã giúp chúng tôi thay đổi tư duy làm nghề,
+                        từ kinh doanh sản phẩm sang kiến tạo giá trị thực cho khách hàng
+                    </div>
+
+                    <div class="testimonial-footer">
+                        <div class="testimonial-avatar">
+                            <img src="/images//chuyen-gia/asena-spa-logo.png" alt="Asena Spa">
+                        </div>
+
+                        <div class="testimonial-info">
+                            <p>Asena Spa</p>
+                            <span>Đối tác từ 2018 - TP. HCM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="master-album">
+        <div class="container">
+            <h2 class="title text-center">hình ảnh</h2>
+
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-item--large">
+                    <img src="/images/chuyen-gia/gallery-1.jpg" alt="">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="/images/chuyen-gia/gallery-2.jpg" alt="">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="/images/chuyen-gia/gallery-3.jpg" alt="">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="/images/chuyen-gia/gallery-4.jpg" alt="">
+                </div>
+
+                <div class="gallery-item gallery-item--more">
+                    <img src="/images/chuyen-gia/gallery-1.jpg" alt="">
+                    <div class="gallery-overlay">
+                        <span>
+                            <i class="fa-sharp fa-thin fa-images"></i>
+                            <br>
+                            Xem tất cả 12 ảnh
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="team-consult master-consult">
+        <div class="container">
+            <div class="team-consult__wrap">
+                <div class="team-consult__intro">
+                    <h2 class="team-consult__heading">
+                        <span class="team-consult__heading-main">Yêu cầu tham vấn chiến lược</span>
+                    </h2>
+                    <p class="team-consult__desc">“ Tôi cam kết đồng hành cùng các bạn để thay đổi diện mạo ngành thẩm
+                        mỹ Việt Nam bằng khoa học thực chứng và sự tử tế tuyệt đối”
+                    </p>
+                    <div class="master-connect">
+                        <h2>kết nối với chuyên gia</h2>
+                        <div class="master__socials">
+                            <a  href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a  href="#">
+                                 zalo
+                            </a>
+                            <a  href="#">
+                               <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="about-hybrid__quote-visual">
+                        <div class="about-hybrid__quote-figure">
+                            <img class="about-hybrid__quote-photo" src="images/chuyen-gia/ct-img-form.png" alt="Mr. Phạm Trường Linh"
+                                width="373" height="390" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <form class="book-form" action="#" method="post" novalidate>
+                    <p class="book-form__title text-left">Đăng ký nhận tư vấn</p>
+                    <div class="book-form__rows">
+                        <label class="book-form__field">
+                            <span class="book-form__label">Họ và tên <span>*</span></span>
+                            <input class="book-form__input" type="text" name="name" data-field="name"
+                                placeholder="Nhập họ tên" autocomplete="name">
+                        </label>
+                        <label class="book-form__field">
+                            <span class="book-form__label">Số điện thoại <span>*</span></span>
+                            <input class="book-form__input" type="tel" name="phone" data-field="phone"
+                                placeholder="Số điện thoại của bạn" autocomplete="tel">
+                        </label>
+                        <label class="book-form__field">
+                            <span class="book-form__label">Tình trạng da/ Nhu cầu doanh nghiệp <span>*</span></span>
+                            <textarea class="book-form__textarea" name="message" data-field="message"
+                                placeholder="Nhập nội dung..."></textarea>
+                        </label>
+                    </div>
+                    <label class="book-form__consent">
+                        <input type="checkbox" name="consent" checked>
+                        <p><strong>Bioelements</strong> cam kết bảo mật tuyệt đối dữ liệu khách hàng và tuân thủ quy
+                            tắc ứng xử chuyên môn cao nhất trong mọi phác đồ trị liệu cá nhân hóa.</p>
+                    </label>
+                    <button class="book-form__submit" type="submit">
+                        Gửi yêu cầu tham vấn
+                        <img src="images/icons/arrow-right-white.svg" alt="" width="16" height="16" loading="lazy">
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+            <div class="site-footer__top">
+                <div class="site-footer__brand">
+                    <a class="site-footer__logo" href="/">
+                        <img src="images/footer/logo-footer.png" alt="Bioelements" width="294" height="60"
+                            loading="lazy">
+                    </a>
+                    <div class="site-footer__brand-body">
+                        <p class="site-footer__about">Công ty Cổ phần Labo De Dermafirm Việt Nam —<br>Nhà phân phối độc
+                            quyền thương hiệu Bioelements (USA) tại Việt Nam.</p>
+                        <div class="site-footer__office">
+                            <p class="site-footer__office-title">Trụ sở chính · Hà Nội</p>
+                            <p class="site-footer__contact-item">
+                                <i class="site-footer__icon fa-sharp fa-solid fa-location-dot"></i>
+                                Tòa C, Nhà khách La Thành, 226 Vạn Phúc , Phường Ngọc Hà, Thành Phố Hà Nội
+                            </p>
+                            <p class="site-footer__contact-item">
+                                <i class="site-footer__icon fa-sharp fa-solid fa-phone"></i>
+                                0911.966.116
+                            </p>
+                        </div>
+                        <hr class="site-footer__divider">
+                        <div class="site-footer__office">
+                            <p class="site-footer__office-title">Chi nhánh · TP. Hồ Chí Minh</p>
+                            <p class="site-footer__contact-item">
+                                <i class="site-footer__icon fa-sharp fa-solid fa-location-dot"></i>
+                                114 Nguyễn Hoàng, Phường An Phú, TP. Thủ Đức.
+                            </p>
+                            <p class="site-footer__contact-item">
+                                <i class="site-footer__icon fa-sharp fa-solid fa-phone"></i>
+                                093.901.6969
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="site-footer__col site-footer__col--explore">
+                    <p class="site-footer__col-title">Khám phá</p>
+                    <ul class="site-footer__links">
+                        <li><a class="site-footer__link" href="#">Toàn bộ sản phẩm</a></li>
+                        <li><a class="site-footer__link" href="#">Liệu trình chuyên nghiệp</a></li>
+                        <li><a class="site-footer__link" href="#">Tinh hoa Bioelements</a></li>
+                        <li><a class="site-footer__link" href="#">Công nghệ</a></li>
+                        <li><a class="site-footer__link" href="#">Cẩm nang</a></li>
+                        <li><a class="site-footer__link" href="#">Hệ thống Spa &amp; Clinic</a></li>
+                        <li><a class="site-footer__link" href="#">Tin tức</a></li>
+                        <li><a class="site-footer__link" href="lien-he.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="site-footer__col site-footer__col--policy">
+                    <p class="site-footer__col-title">chính sách</p>
+                    <ul class="site-footer__links">
+                        <li><a class="site-footer__link" href="chinh-sach-mua-hang.html">Chính sách mua hàng</a></li>
+                        <li><a class="site-footer__link" href="chinh-sach-bao-mat.html">Chính sách bảo mật</a></li>
+                        <li><a class="site-footer__link" href="dieu-khoan-su-dung.html">Điều khoản sử dụng</a></li>
+                        <li><a class="site-footer__link" href="#">Chính sách vận chuyển</a></li>
+                    </ul>
+                </div>
+                <div class="site-footer__contact">
+                    <div class="site-footer__contact-block">
+                        <p class="site-footer__col-title">Liên hệ với chúng tôi</p>
+                        <div class="site-footer__email-group">
+                            <p class="site-footer__office-title">Kết nối qua email:</p>
+                            <div class="site-footer__email-row">
+                                <i class="site-footer__icon fa-sharp fa-solid fa-envelope"></i>
+                                <a class="site-footer__email"
+                                    href="mailto:marketing@bioelements.vn">marketing@bioelements.vn</a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="site-footer__col-title">Follow us</p>
+                    <div class="site-footer__socials">
+                        <a class="site-footer__social" href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a class="site-footer__social" href="#">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a class="site-footer__social" href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a class="site-footer__social site-footer__social--zalo" href="#">
+                            zalo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="site-footer__bottom">
+                <hr class="site-footer__divider site-footer__divider--bottom">
+                <p class="site-footer__copy">© 2026 Bioelements Việt Nam · Labo De Dermafirm JSC</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"
+        integrity="sha512-7rusk8kGPFynZWu26OKbTeI+QPoYchtxsmPeBqkHIEXJxeun4yJ4ISYe7C6sz9wdxeE1Gk3VxsIWgCZTc+vX3g=="
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <script src="js/bio.js"></script>
+</body>
+
+</html>

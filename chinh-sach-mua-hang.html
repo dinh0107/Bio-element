@@ -1,13 +1,14 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="vi">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Chính sách mua hàng – Bioelements Việt Nam</title>
+    <title>ChÃ­nh sÃ¡ch mua hÃ ng â€“ Bioelements Viá»‡t Nam</title>
     <meta name="description"
-        content="Chính sách mua hàng Bioelements Việt Nam — đặt hàng, thanh toán, giao nhận, đổi trả và cam kết hàng chính hãng.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css"
+        content="ChÃ­nh sÃ¡ch mua hÃ ng Bioelements Viá»‡t Nam â€” Ä‘áº·t hÃ ng, thanh toÃ¡n, giao nháº­n, Ä‘á»•i tráº£ vÃ  cam káº¿t hÃ ng chÃ­nh hÃ£ng.">
+   <link rel="shortcut icon" href="//bioelements.com/cdn/shop/files/bioelements_ccf5911c-fa98-4b23-b8bf-b8233e41f4d3.png?crop=center&amp;height=32&amp;v=1737804771&amp;width=32" type="image/png">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css"
         integrity="sha512-rt/SrQ4UNIaGfDyEXZtNcyWvQeOq0QLygHluFQcSjaGB04IxWhal71tKuzP6K8eYXYB6vJV4pHkXcmFGGQ1/0w=="
         crossorigin="anonymous" />
     <link href="style/style.css" rel="stylesheet">
@@ -15,11 +16,11 @@
 </head>
 
 <body>
-    <header class="site-header">
+   <header class="site-header">
         <div class="site-header__topbar">
             <a href="#" class="site-header__topbar-msg mb-0">
                 <img src="images/header/icon-sparkle.svg" alt="" loading="lazy">
-                <span>Dành cho spa &amp; chuyên gia da liễu</span>
+                <span>DÃ nh cho spa &amp; chuyÃªn gia da liá»…u</span>
                 <img src="images/header/icon-sparkle.svg" alt="" loading="lazy">
             </a>
             <div class="container">
@@ -27,10 +28,10 @@
                     <div class="site-header__topbar-auth">
                         <a class="site-header__topbar-auth-link" href="#">
                             <img src="images/header/icon-user.svg" alt="" width="20" height="20" loading="lazy">
-                            Đăng ký
+                            ÄÄƒng kÃ½
                         </a>
                         /
-                        <a class="site-header__topbar-auth-link" href="#">Đăng nhập</a>
+                        <a class="site-header__topbar-auth-link" href="#">ÄÄƒng nháº­p</a>
                     </div>
                 </div>
             </div>
@@ -38,7 +39,7 @@
         <div class="site-header__main">
             <div class="container">
                 <div class="site-header__main-inner d-flex align-items-center justify-content-between">
-                    <a class="site-header__logo" href="index.html">
+                    <a class="site-header__logo" href="/">
                         <img src="images/header/logo.png" alt="Bioelements" width="216" height="44" loading="eager"
                             decoding="async">
                     </a>
@@ -46,15 +47,15 @@
                         <label class="site-header__search bio-search mb-0">
                             <img src="images/header/icon-search.svg" alt="" loading="lazy">
                             <input class="site-header__search-input bio-search__input" type="search" name="q"
-                                placeholder="Serum trị thâm, gel rửa mặt...." autocomplete="off">
+                                placeholder="Serum trá»‹ thÃ¢m, gel rá»­a máº·t...." autocomplete="off">
                         </label>
-                        <button type="button" class="site-header__icon-btn bio-icon-btn">
+                        <a href=""  class="site-header__icon-btn bio-icon-btn">
                             <img src="images/header/icon-heart.svg" alt="" loading="lazy">
-                        </button>
-                        <button type="button" class="site-header__icon-btn site-header__icon-btn--cart bio-icon-btn">
+                        </a>
+                        <a href="" class="site-header__icon-btn site-header__icon-btn--cart bio-icon-btn">
                             <img src="images/header/icon-cart.svg" alt="" loading="lazy">
                             <span class="site-header__cart-count bio-icon-btn__badge">0</span>
-                        </button>
+                        </a>
                         <button type="button" class="site-header__nav-toggle d-lg-none" data-nav-toggle>
                             <span class="site-header__nav-toggle-icon"></span>
                         </button>
@@ -64,87 +65,98 @@
         </div>
         <div class="site-header__nav-panel" data-nav-panel>
             <nav class="site-header__nav">
-                <div class="container">
+                <button type="button" class="site-header__nav-close d-lg-none" aria-label="Đóng menu" data-nav-close>
+                    <span class="fa-sharp fa-solid fa-xmark" aria-hidden="true"></span>
+                </button>
+                <div class="container" id="menu-scroll">
                     <ul class="site-header__nav-inner d-flex justify-content-center list-unstyled mb-0">
-                        <li><a href="index.html">Trang chủ</a></li>
-                        <li><a href="ve-chung-toi.html">Tinh hoa Bioelements</a></li>
+                        <li class="is-active"><a href="#">Trang chá»§</a></li>
+                       <li><a href="tinh-hoa-chi-tiet.html">Tinh hoa Bioelements</a></li>
                         <li>
-                            <a href="#">
-                                Sản phẩm
+                            <a href="tay-trang-bioelements.html">
+                                Sáº£n pháº©m
                                 <span class="site-header__nav-caret fa-sharp fa-solid fa-chevron-down"></span>
                             </a>
                             <ul class="site-header__submenu list-unstyled mb-0">
-                                <li><a href="#">Serum &amp; tinh chất</a></li>
-                                <li><a href="#">Sữa rửa mặt &amp; tẩy trang</a></li>
-                                <li><a href="#">Kem dưỡng &amp; phục hồi</a></li>
-                                <li><a href="#">Combo chăm sóc da</a></li>
-                                <li><a class="site-footer__submenu-all" href="#">Xem tất cả sản phẩm</a></li>
+                                <li><a href="tay-trang-bioelements.html">Serum &amp; tinh cháº¥t</a></li>
+                                <li><a href="tay-trang-bioelements.html">Sá»¯a rá»­a máº·t &amp; táº©y trang</a></li>
+                                <li><a href="tay-trang-bioelements.html">Kem dÆ°á»¡ng &amp; phá»¥c há»“i</a></li>
+                                <li><a href="tay-trang-bioelements.html">Combo chÄƒm sÃ³c da</a></li>
+                                <li><a class="site-header__submenu-all" href="tay-trang-bioelements.html">Xem táº¥t cáº£ sáº£n pháº©m</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Liệu trình chuyên nghiệp</a></li>
-                        <li><a href="#">Kiến thức</a></li>
-                        <li><a href="lien-he.html">Liên hệ</a></li>
+                        <li><a href="lieu-trinh-chuyen-nghiep.html">Liá»‡u trÃ¬nh chuyÃªn nghiá»‡p</a></li>
+                        <li><a href="cam-nang.html">Kiáº¿n thá»©c</a></li>
+                        <li><a href="lien-he.html">LiÃªn há»‡</a></li>
                     </ul>
+                    <div class="box-icon-scroll">
+                        <a href=""  class="site-header__icon-btn bio-icon-btn">
+                            <img src="images/header/icon-heart.svg" alt="" loading="lazy">
+                        </a>
+                        <a href="" class="site-header__icon-btn site-header__icon-btn--cart bio-icon-btn">
+                            <img src="images/header/icon-cart.svg" alt="" loading="lazy">
+                            <span class="site-header__cart-count bio-icon-btn__badge">0</span>
+                        </a>
+                    </div>
                 </div>
             </nav>
         </div>
         <div class="site-header__nav-overlay" data-nav-overlay hidden></div>
     </header>
-
     <div class="policy-page">
         <article class="policy-doc">
             <header class="policy-doc__header">
-                <h1 class="policy-doc__title">CHÍNH SÁCH MUA HÀNG</h1>
+                <h1 class="policy-doc__title">CHÃNH SÃCH MUA HÃ€NG</h1>
             </header>
 
             <div class="policy-doc__intro">
-                <p>Cảm ơn Quý khách hàng đã tin tưởng và lựa chọn sản phẩm Bioelements – thương hiệu dược mỹ phẩm sinh
-                    học hàng đầu từ Hoa Kỳ. Chính sách mua hàng dưới đây được xây dựng nhằm đảm bảo quyền lợi và mang
-                    lại trải nghiệm mua sắm minh bạch, thuận tiện nhất cho Quý khách.</p>
+                <p>Cáº£m Æ¡n QuÃ½ khÃ¡ch hÃ ng Ä‘Ã£ tin tÆ°á»Ÿng vÃ  lá»±a chá»n sáº£n pháº©m Bioelements â€“ thÆ°Æ¡ng hiá»‡u dÆ°á»£c má»¹ pháº©m sinh
+                    há»c hÃ ng Ä‘áº§u tá»« Hoa Ká»³. ChÃ­nh sÃ¡ch mua hÃ ng dÆ°á»›i Ä‘Ã¢y Ä‘Æ°á»£c xÃ¢y dá»±ng nháº±m Ä‘áº£m báº£o quyá»n lá»£i vÃ  mang
+                    láº¡i tráº£i nghiá»‡m mua sáº¯m minh báº¡ch, thuáº­n tiá»‡n nháº¥t cho QuÃ½ khÃ¡ch.</p>
             </div>
 
             <section class="policy-doc__section">
-                <h2 class="policy-doc__heading">1. Đặt Hàng &amp; Xác Nhận Đơn Hàng</h2>
-                <h3 class="policy-doc__subheading">1.1. Cách thức đặt hàng</h3>
-                <p class="policy-doc__text">Quý khách có thể đặt hàng qua các kênh chính thức sau:</p>
+                <h2 class="policy-doc__heading">1. Äáº·t HÃ ng &amp; XÃ¡c Nháº­n ÄÆ¡n HÃ ng</h2>
+                <h3 class="policy-doc__subheading">1.1. CÃ¡ch thá»©c Ä‘áº·t hÃ ng</h3>
+                <p class="policy-doc__text">QuÃ½ khÃ¡ch cÃ³ thá»ƒ Ä‘áº·t hÃ ng qua cÃ¡c kÃªnh chÃ­nh thá»©c sau:</p>
                 <ul class="policy-doc__list policy-doc__list--links">
                     <li>Website: <a href="https://bioelements.vn/">https://bioelements.vn/</a></li>
                     <li>Fanpage Facebook: <a href="https://facebook.com/bioelementsvietnam"
                             target="_blank" rel="noopener">facebook.com/bioelementsvietnam</a></li>
-                    <li>Hotline: 0911.966.116 (Hà Nội) – 093.901.6969 (Tp. Hồ Chí Minh)</li>
+                    <li>Hotline: 0911.966.116 (HÃ  Ná»™i) â€“ 093.901.6969 (Tp. Há»“ ChÃ­ Minh)</li>
                 </ul>
-                <h3 class="policy-doc__subheading">1.2. Xác nhận đơn hàng</h3>
-                <p class="policy-doc__text">Sau khi đặt hàng thành công, bộ phận Chăm sóc khách hàng của Bioelements Việt
-                    Nam sẽ liên hệ xác minh thông tin đơn hàng qua số điện thoại đã đăng ký và thống nhất thời gian, hình
-                    thức giao hàng cụ thể.</p>
-                <p class="policy-doc__note"><strong>Lưu ý:</strong> <em>Quý khách vui lòng cung cấp đầy đủ và chính xác
-                        thông tin khi đặt hàng. Bioelements Việt Nam không chịu trách nhiệm với các trường hợp giao hàng
-                        chậm trễ hoặc thất lạc do thông tin không chính xác.</em></p>
+                <h3 class="policy-doc__subheading">1.2. XÃ¡c nháº­n Ä‘Æ¡n hÃ ng</h3>
+                <p class="policy-doc__text">Sau khi Ä‘áº·t hÃ ng thÃ nh cÃ´ng, bá»™ pháº­n ChÄƒm sÃ³c khÃ¡ch hÃ ng cá»§a Bioelements Viá»‡t
+                    Nam sáº½ liÃªn há»‡ xÃ¡c minh thÃ´ng tin Ä‘Æ¡n hÃ ng qua sá»‘ Ä‘iá»‡n thoáº¡i Ä‘Ã£ Ä‘Äƒng kÃ½ vÃ  thá»‘ng nháº¥t thá»i gian, hÃ¬nh
+                    thá»©c giao hÃ ng cá»¥ thá»ƒ.</p>
+                <p class="policy-doc__note"><strong>LÆ°u Ã½:</strong> <em>QuÃ½ khÃ¡ch vui lÃ²ng cung cáº¥p Ä‘áº§y Ä‘á»§ vÃ  chÃ­nh xÃ¡c
+                        thÃ´ng tin khi Ä‘áº·t hÃ ng. Bioelements Viá»‡t Nam khÃ´ng chá»‹u trÃ¡ch nhiá»‡m vá»›i cÃ¡c trÆ°á»ng há»£p giao hÃ ng
+                        cháº­m trá»… hoáº·c tháº¥t láº¡c do thÃ´ng tin khÃ´ng chÃ­nh xÃ¡c.</em></p>
             </section>
 
             <section class="policy-doc__section">
-                <h2 class="policy-doc__heading">2. Hình Thức Thanh Toán</h2>
-                <p class="policy-doc__text">Bioelements Việt Nam chấp nhận 02 hình thức thanh toán:</p>
+                <h2 class="policy-doc__heading">2. HÃ¬nh Thá»©c Thanh ToÃ¡n</h2>
+                <p class="policy-doc__text">Bioelements Viá»‡t Nam cháº¥p nháº­n 02 hÃ¬nh thá»©c thanh toÃ¡n:</p>
                 <div class="policy-table-wrap">
                     <table class="policy-table policy-table--cols-3">
                         <thead>
                             <tr>
-                                <th>Hình thức</th>
-                                <th>Mô tả</th>
-                                <th>Lưu ý</th>
+                                <th>HÃ¬nh thá»©c</th>
+                                <th>MÃ´ táº£</th>
+                                <th>LÆ°u Ã½</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Thanh toán trước (Chuyển khoản)</td>
-                                <td>Chuyển tiền vào tài khoản ngân hàng theo thông tin do Bioelements Việt Nam cung cấp.
+                                <td>Thanh toÃ¡n trÆ°á»›c (Chuyá»ƒn khoáº£n)</td>
+                                <td>Chuyá»ƒn tiá»n vÃ o tÃ i khoáº£n ngÃ¢n hÃ ng theo thÃ´ng tin do Bioelements Viá»‡t Nam cung cáº¥p.
                                 </td>
-                                <td>Đơn hàng được xử lý sau khi xác nhận thanh toán thành công.</td>
+                                <td>ÄÆ¡n hÃ ng Ä‘Æ°á»£c xá»­ lÃ½ sau khi xÃ¡c nháº­n thanh toÃ¡n thÃ nh cÃ´ng.</td>
                             </tr>
                             <tr>
-                                <td>Thanh toán khi nhận hàng (COD)</td>
-                                <td>Thanh toán tiền mặt trực tiếp cho nhân viên giao hàng khi nhận được sản phẩm.</td>
-                                <td>Áp dụng cho đơn hàng giao toàn quốc.</td>
+                                <td>Thanh toÃ¡n khi nháº­n hÃ ng (COD)</td>
+                                <td>Thanh toÃ¡n tiá»n máº·t trá»±c tiáº¿p cho nhÃ¢n viÃªn giao hÃ ng khi nháº­n Ä‘Æ°á»£c sáº£n pháº©m.</td>
+                                <td>Ãp dá»¥ng cho Ä‘Æ¡n hÃ ng giao toÃ n quá»‘c.</td>
                             </tr>
                         </tbody>
                     </table>
@@ -152,124 +164,124 @@
             </section>
 
             <section class="policy-doc__section">
-                <h2 class="policy-doc__heading">3. Chính Sách Giao Nhận</h2>
-                <h3 class="policy-doc__subheading">3.1. Phạm vi giao hàng</h3>
-                <p class="policy-doc__text">Bioelements Việt Nam giao hàng trên toàn quốc.</p>
-                <h3 class="policy-doc__subheading">3.2. Thời gian giao hàng</h3>
+                <h2 class="policy-doc__heading">3. ChÃ­nh SÃ¡ch Giao Nháº­n</h2>
+                <h3 class="policy-doc__subheading">3.1. Pháº¡m vi giao hÃ ng</h3>
+                <p class="policy-doc__text">Bioelements Viá»‡t Nam giao hÃ ng trÃªn toÃ n quá»‘c.</p>
+                <h3 class="policy-doc__subheading">3.2. Thá»i gian giao hÃ ng</h3>
                 <div class="policy-table-wrap">
                     <table class="policy-table policy-table--compare">
                         <thead>
                             <tr>
-                                <th>Khu vực</th>
-                                <th>Thời gian dự kiến</th>
+                                <th>Khu vá»±c</th>
+                                <th>Thá»i gian dá»± kiáº¿n</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Nội thành Hà Nội &amp; Tp. Hồ Chí Minh</td>
-                                <td>2 – 3 ngày làm việc</td>
+                                <td>Ná»™i thÃ nh HÃ  Ná»™i &amp; Tp. Há»“ ChÃ­ Minh</td>
+                                <td>2 â€“ 3 ngÃ y lÃ m viá»‡c</td>
                             </tr>
                             <tr>
-                                <td>Ngoại thành &amp; các tỉnh thành khác</td>
-                                <td>4 – 6 ngày làm việc</td>
+                                <td>Ngoáº¡i thÃ nh &amp; cÃ¡c tá»‰nh thÃ nh khÃ¡c</td>
+                                <td>4 â€“ 6 ngÃ y lÃ m viá»‡c</td>
                             </tr>
                             <tr>
-                                <td>Giao hàng hỏa tốc (nội thành HN &amp; HCM)</td>
-                                <td>Liên hệ hotline để được hỗ trợ</td>
+                                <td>Giao hÃ ng há»a tá»‘c (ná»™i thÃ nh HN &amp; HCM)</td>
+                                <td>LiÃªn há»‡ hotline Ä‘á»ƒ Ä‘Æ°á»£c há»— trá»£</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <p class="policy-doc__note"><strong>Lưu ý:</strong> <em>Thời gian giao hàng được tính từ khi Bioelements
-                        Việt Nam hoàn tất xác nhận đơn hàng, không bao gồm thứ 7, chủ nhật và ngày lễ.</em></p>
-                <h3 class="policy-doc__subheading">3.3. Chi phí vận chuyển</h3>
-                <p class="policy-doc__text">Phí vận chuyển dao động từ 20.000 VNĐ đến 50.000 VNĐ, tùy theo trọng lượng đơn
-                    hàng, hình thức vận chuyển và địa điểm nhận hàng. Chi tiết phí vận chuyển sẽ được thông báo khi xác
-                    nhận đơn.</p>
-                <h3 class="policy-doc__subheading">3.4. Kiểm tra đơn hàng</h3>
-                <p class="policy-doc__text">Để tra cứu trạng thái đơn hàng, Quý khách có thể:</p>
+                <p class="policy-doc__note"><strong>LÆ°u Ã½:</strong> <em>Thá»i gian giao hÃ ng Ä‘Æ°á»£c tÃ­nh tá»« khi Bioelements
+                        Viá»‡t Nam hoÃ n táº¥t xÃ¡c nháº­n Ä‘Æ¡n hÃ ng, khÃ´ng bao gá»“m thá»© 7, chá»§ nháº­t vÃ  ngÃ y lá»….</em></p>
+                <h3 class="policy-doc__subheading">3.3. Chi phÃ­ váº­n chuyá»ƒn</h3>
+                <p class="policy-doc__text">PhÃ­ váº­n chuyá»ƒn dao Ä‘á»™ng tá»« 20.000 VNÄ Ä‘áº¿n 50.000 VNÄ, tÃ¹y theo trá»ng lÆ°á»£ng Ä‘Æ¡n
+                    hÃ ng, hÃ¬nh thá»©c váº­n chuyá»ƒn vÃ  Ä‘á»‹a Ä‘iá»ƒm nháº­n hÃ ng. Chi tiáº¿t phÃ­ váº­n chuyá»ƒn sáº½ Ä‘Æ°á»£c thÃ´ng bÃ¡o khi xÃ¡c
+                    nháº­n Ä‘Æ¡n.</p>
+                <h3 class="policy-doc__subheading">3.4. Kiá»ƒm tra Ä‘Æ¡n hÃ ng</h3>
+                <p class="policy-doc__text">Äá»ƒ tra cá»©u tráº¡ng thÃ¡i Ä‘Æ¡n hÃ ng, QuÃ½ khÃ¡ch cÃ³ thá»ƒ:</p>
                 <ul class="policy-doc__list">
-                    <li>Tra cứu mã đơn hàng trực tiếp trên website bioelements.vn</li>
-                    <li>Liên hệ hotline CSKH: 0911.966.116 (Hà Nội) – 093.901.6969 (Tp. Hồ Chí Minh)</li>
+                    <li>Tra cá»©u mÃ£ Ä‘Æ¡n hÃ ng trá»±c tiáº¿p trÃªn website bioelements.vn</li>
+                    <li>LiÃªn há»‡ hotline CSKH: 0911.966.116 (HÃ  Ná»™i) â€“ 093.901.6969 (Tp. Há»“ ChÃ­ Minh)</li>
                 </ul>
-                <h3 class="policy-doc__subheading">3.5. Lưu ý khi nhận hàng</h3>
-                <p class="policy-doc__text">Đơn hàng không áp dụng đồng kiểm tại thời điểm giao hàng. Để bảo vệ quyền lợi,
-                    Bioelements Việt Nam khuyến khích Quý khách:</p>
+                <h3 class="policy-doc__subheading">3.5. LÆ°u Ã½ khi nháº­n hÃ ng</h3>
+                <p class="policy-doc__text">ÄÆ¡n hÃ ng khÃ´ng Ã¡p dá»¥ng Ä‘á»“ng kiá»ƒm táº¡i thá»i Ä‘iá»ƒm giao hÃ ng. Äá»ƒ báº£o vá»‡ quyá»n lá»£i,
+                    Bioelements Viá»‡t Nam khuyáº¿n khÃ­ch QuÃ½ khÃ¡ch:</p>
                 <ul class="policy-doc__list">
-                    <li>Quay video clip toàn bộ quá trình mở hộp hàng ngay khi nhận</li>
-                    <li>Kiểm tra sản phẩm, tem chống hàng giả QR code và tem phụ thông tin Công ty Labo de Dermafirm
-                        Vietnam trên bao bì.</li>
+                    <li>Quay video clip toÃ n bá»™ quÃ¡ trÃ¬nh má»Ÿ há»™p hÃ ng ngay khi nháº­n</li>
+                    <li>Kiá»ƒm tra sáº£n pháº©m, tem chá»‘ng hÃ ng giáº£ QR code vÃ  tem phá»¥ thÃ´ng tin CÃ´ng ty Labo de Dermafirm
+                        Vietnam trÃªn bao bÃ¬.</li>
                 </ul>
-                <p class="policy-doc__note"><strong>Lưu ý:</strong> <em>Bioelements Việt Nam không giải quyết khiếu nại
-                        nếu Quý khách không cung cấp video clip làm bằng chứng liên quan đến tình trạng đơn hàng.</em>
+                <p class="policy-doc__note"><strong>LÆ°u Ã½:</strong> <em>Bioelements Viá»‡t Nam khÃ´ng giáº£i quyáº¿t khiáº¿u náº¡i
+                        náº¿u QuÃ½ khÃ¡ch khÃ´ng cung cáº¥p video clip lÃ m báº±ng chá»©ng liÃªn quan Ä‘áº¿n tÃ¬nh tráº¡ng Ä‘Æ¡n hÃ ng.</em>
                 </p>
             </section>
 
             <section class="policy-doc__section">
-                <h2 class="policy-doc__heading">4. Chính Sách Đổi Trả</h2>
-                <h3 class="policy-doc__subheading">4.1. Điều kiện đổi trả</h3>
-                <p class="policy-doc__text">Bioelements Việt Nam hỗ trợ đổi trả sản phẩm trong vòng 05 ngày kể từ ngày Quý
-                    khách nhận hàng, với các điều kiện sau:</p>
+                <h2 class="policy-doc__heading">4. ChÃ­nh SÃ¡ch Äá»•i Tráº£</h2>
+                <h3 class="policy-doc__subheading">4.1. Äiá»u kiá»‡n Ä‘á»•i tráº£</h3>
+                <p class="policy-doc__text">Bioelements Viá»‡t Nam há»— trá»£ Ä‘á»•i tráº£ sáº£n pháº©m trong vÃ²ng 05 ngÃ y ká»ƒ tá»« ngÃ y QuÃ½
+                    khÃ¡ch nháº­n hÃ ng, vá»›i cÃ¡c Ä‘iá»u kiá»‡n sau:</p>
                 <ul class="policy-doc__list">
-                    <li>Sản phẩm bị lỗi từ nhà sản xuất: chai bị bong tróc, nứt, vỡ; đầu pump hoặc vòi hút không hoạt
-                        động.</li>
-                    <li>Sản phẩm gây kích ứng với da: Bioelements Việt Nam hỗ trợ đổi trả và loại bỏ kích ứng miễn phí.
+                    <li>Sáº£n pháº©m bá»‹ lá»—i tá»« nhÃ  sáº£n xuáº¥t: chai bá»‹ bong trÃ³c, ná»©t, vá»¡; Ä‘áº§u pump hoáº·c vÃ²i hÃºt khÃ´ng hoáº¡t
+                        Ä‘á»™ng.</li>
+                    <li>Sáº£n pháº©m gÃ¢y kÃ­ch á»©ng vá»›i da: Bioelements Viá»‡t Nam há»— trá»£ Ä‘á»•i tráº£ vÃ  loáº¡i bá» kÃ­ch á»©ng miá»…n phÃ­.
                     </li>
-                    <li>Sản phẩm không đúng với đơn hàng đã đặt (áp dụng với đơn mua online qua website và Fanpage chính
-                        thức).</li>
-                    <li>Sản phẩm còn nguyên tem chống hàng giả QR code của Bioelements Việt Nam.</li>
-                    <li>Mã vạch sản phẩm trùng khớp với thông tin đơn hàng.</li>
-                    <li>Bao bì còn tem phụ thông tin Công ty Labo de Dermafirm Vietnam.</li>
+                    <li>Sáº£n pháº©m khÃ´ng Ä‘Ãºng vá»›i Ä‘Æ¡n hÃ ng Ä‘Ã£ Ä‘áº·t (Ã¡p dá»¥ng vá»›i Ä‘Æ¡n mua online qua website vÃ  Fanpage chÃ­nh
+                        thá»©c).</li>
+                    <li>Sáº£n pháº©m cÃ²n nguyÃªn tem chá»‘ng hÃ ng giáº£ QR code cá»§a Bioelements Viá»‡t Nam.</li>
+                    <li>MÃ£ váº¡ch sáº£n pháº©m trÃ¹ng khá»›p vá»›i thÃ´ng tin Ä‘Æ¡n hÃ ng.</li>
+                    <li>Bao bÃ¬ cÃ²n tem phá»¥ thÃ´ng tin CÃ´ng ty Labo de Dermafirm Vietnam.</li>
                 </ul>
-                <p class="policy-doc__note"><strong>Lưu ý:</strong> <em>Quý khách vui lòng xuất trình hóa đơn mua hàng khi
-                        có yêu cầu đổi trả. Chính sách đổi trả không áp dụng với sản phẩm tặng kèm trong các chương trình
-                        khuyến mãi.</em></p>
-                <h3 class="policy-doc__subheading">4.2. Quy trình đổi trả</h3>
-                <p class="policy-doc__text">Trong vòng 05 ngày kể từ ngày nhận hàng, nếu đủ điều kiện đổi trả, Quý khách
-                    vui lòng thực hiện theo quy trình:</p>
+                <p class="policy-doc__note"><strong>LÆ°u Ã½:</strong> <em>QuÃ½ khÃ¡ch vui lÃ²ng xuáº¥t trÃ¬nh hÃ³a Ä‘Æ¡n mua hÃ ng khi
+                        cÃ³ yÃªu cáº§u Ä‘á»•i tráº£. ChÃ­nh sÃ¡ch Ä‘á»•i tráº£ khÃ´ng Ã¡p dá»¥ng vá»›i sáº£n pháº©m táº·ng kÃ¨m trong cÃ¡c chÆ°Æ¡ng trÃ¬nh
+                        khuyáº¿n mÃ£i.</em></p>
+                <h3 class="policy-doc__subheading">4.2. Quy trÃ¬nh Ä‘á»•i tráº£</h3>
+                <p class="policy-doc__text">Trong vÃ²ng 05 ngÃ y ká»ƒ tá»« ngÃ y nháº­n hÃ ng, náº¿u Ä‘á»§ Ä‘iá»u kiá»‡n Ä‘á»•i tráº£, QuÃ½ khÃ¡ch
+                    vui lÃ²ng thá»±c hiá»‡n theo quy trÃ¬nh:</p>
                 <ul class="policy-doc__list">
-                    <li><strong>Bước 1:</strong> Liên hệ CSKH qua hotline hoặc email để thông báo tình trạng sản phẩm cần
-                        đổi trả.</li>
-                    <li><strong>Bước 2:</strong> Gửi lại sản phẩm cần đổi trả (sản phẩm phải còn nguyên vẹn, không bị hư
-                        hại do tác động cố ý).</li>
-                    <li><strong>Bước 3:</strong> Bioelements Việt Nam xử lý trong vòng 03 ngày làm việc kể từ khi nhận
-                        được sản phẩm và hồ sơ liên quan.</li>
-                    <li><strong>Bước 4:</strong> Trường hợp hoàn tiền, Quý khách sẽ nhận được số tiền hoàn lại vào cuối
-                        tháng.</li>
+                    <li><strong>BÆ°á»›c 1:</strong> LiÃªn há»‡ CSKH qua hotline hoáº·c email Ä‘á»ƒ thÃ´ng bÃ¡o tÃ¬nh tráº¡ng sáº£n pháº©m cáº§n
+                        Ä‘á»•i tráº£.</li>
+                    <li><strong>BÆ°á»›c 2:</strong> Gá»­i láº¡i sáº£n pháº©m cáº§n Ä‘á»•i tráº£ (sáº£n pháº©m pháº£i cÃ²n nguyÃªn váº¹n, khÃ´ng bá»‹ hÆ°
+                        háº¡i do tÃ¡c Ä‘á»™ng cá»‘ Ã½).</li>
+                    <li><strong>BÆ°á»›c 3:</strong> Bioelements Viá»‡t Nam xá»­ lÃ½ trong vÃ²ng 03 ngÃ y lÃ m viá»‡c ká»ƒ tá»« khi nháº­n
+                        Ä‘Æ°á»£c sáº£n pháº©m vÃ  há»“ sÆ¡ liÃªn quan.</li>
+                    <li><strong>BÆ°á»›c 4:</strong> TrÆ°á»ng há»£p hoÃ n tiá»n, QuÃ½ khÃ¡ch sáº½ nháº­n Ä‘Æ°á»£c sá»‘ tiá»n hoÃ n láº¡i vÃ o cuá»‘i
+                        thÃ¡ng.</li>
                 </ul>
-                <p class="policy-doc__note"><strong>Lưu ý:</strong> <em>Quý khách tại Hà Nội có thể đến trực tiếp showroom
-                        để được giải quyết đổi trả trong ngày.</em></p>
-                <h3 class="policy-doc__subheading">4.3. Phí vận chuyển khi đổi trả</h3>
-                <p class="policy-doc__text">Đối với đơn đổi hàng:</p>
+                <p class="policy-doc__note"><strong>LÆ°u Ã½:</strong> <em>QuÃ½ khÃ¡ch táº¡i HÃ  Ná»™i cÃ³ thá»ƒ Ä‘áº¿n trá»±c tiáº¿p showroom
+                        Ä‘á»ƒ Ä‘Æ°á»£c giáº£i quyáº¿t Ä‘á»•i tráº£ trong ngÃ y.</em></p>
+                <h3 class="policy-doc__subheading">4.3. PhÃ­ váº­n chuyá»ƒn khi Ä‘á»•i tráº£</h3>
+                <p class="policy-doc__text">Äá»‘i vá»›i Ä‘Æ¡n Ä‘á»•i hÃ ng:</p>
                 <ul class="policy-doc__list">
-                    <li>Nếu Quý khách muốn đổi sang sản phẩm khác: Quý khách chịu phí vận chuyển cả hai chiều (gửi về kho
-                        và giao đến lần 2).</li>
-                    <li>Nếu lỗi do Bioelements Việt Nam giao nhầm sản phẩm: Bioelements Việt Nam chịu toàn bộ phí vận
-                        chuyển hai chiều.</li>
+                    <li>Náº¿u QuÃ½ khÃ¡ch muá»‘n Ä‘á»•i sang sáº£n pháº©m khÃ¡c: QuÃ½ khÃ¡ch chá»‹u phÃ­ váº­n chuyá»ƒn cáº£ hai chiá»u (gá»­i vá» kho
+                        vÃ  giao Ä‘áº¿n láº§n 2).</li>
+                    <li>Náº¿u lá»—i do Bioelements Viá»‡t Nam giao nháº§m sáº£n pháº©m: Bioelements Viá»‡t Nam chá»‹u toÃ n bá»™ phÃ­ váº­n
+                        chuyá»ƒn hai chiá»u.</li>
                 </ul>
-                <p class="policy-doc__text">Đối với đơn trả hàng:</p>
+                <p class="policy-doc__text">Äá»‘i vá»›i Ä‘Æ¡n tráº£ hÃ ng:</p>
                 <ul class="policy-doc__list">
-                    <li>Trường hợp Quý khách không nhận hàng hoặc hủy đơn sau khi hàng đã được giao: Quý khách chịu phí
-                        vận chuyển chiều đến.</li>
+                    <li>TrÆ°á»ng há»£p QuÃ½ khÃ¡ch khÃ´ng nháº­n hÃ ng hoáº·c há»§y Ä‘Æ¡n sau khi hÃ ng Ä‘Ã£ Ä‘Æ°á»£c giao: QuÃ½ khÃ¡ch chá»‹u phÃ­
+                        váº­n chuyá»ƒn chiá»u Ä‘áº¿n.</li>
                 </ul>
             </section>
 
             <section class="policy-doc__section">
-                <h2 class="policy-doc__heading">5. Cam Kết Hàng Chính Hãng</h2>
-                <p class="policy-doc__text">Bioelements Việt Nam là nhà nhập khẩu và phân phối độc quyền chính thức của
-                    thương hiệu Bioelements Hoa Kỳ tại thị trường Việt Nam. Toàn bộ sản phẩm được phân phối qua website
-                    bioelements.vn và các kênh chính thức đều đảm bảo:</p>
+                <h2 class="policy-doc__heading">5. Cam Káº¿t HÃ ng ChÃ­nh HÃ£ng</h2>
+                <p class="policy-doc__text">Bioelements Viá»‡t Nam lÃ  nhÃ  nháº­p kháº©u vÃ  phÃ¢n phá»‘i Ä‘á»™c quyá»n chÃ­nh thá»©c cá»§a
+                    thÆ°Æ¡ng hiá»‡u Bioelements Hoa Ká»³ táº¡i thá»‹ trÆ°á»ng Viá»‡t Nam. ToÃ n bá»™ sáº£n pháº©m Ä‘Æ°á»£c phÃ¢n phá»‘i qua website
+                    bioelements.vn vÃ  cÃ¡c kÃªnh chÃ­nh thá»©c Ä‘á»u Ä‘áº£m báº£o:</p>
                 <ul class="policy-doc__list">
-                    <li>Nhập khẩu chính ngạch, có đầy đủ giấy tờ pháp lý và chứng nhận lưu hành.</li>
-                    <li>Tem chống hàng giả QR code của Bioelements Việt Nam trên mỗi sản phẩm.</li>
-                    <li>Tem phụ tiếng Việt mang thông tin của Công ty Labo de Dermafirm Vietnam trên bao bì.</li>
-                    <li>Hạn sử dụng còn ít nhất 12 tháng kể từ ngày xuất kho.</li>
+                    <li>Nháº­p kháº©u chÃ­nh ngáº¡ch, cÃ³ Ä‘áº§y Ä‘á»§ giáº¥y tá» phÃ¡p lÃ½ vÃ  chá»©ng nháº­n lÆ°u hÃ nh.</li>
+                    <li>Tem chá»‘ng hÃ ng giáº£ QR code cá»§a Bioelements Viá»‡t Nam trÃªn má»—i sáº£n pháº©m.</li>
+                    <li>Tem phá»¥ tiáº¿ng Viá»‡t mang thÃ´ng tin cá»§a CÃ´ng ty Labo de Dermafirm Vietnam trÃªn bao bÃ¬.</li>
+                    <li>Háº¡n sá»­ dá»¥ng cÃ²n Ã­t nháº¥t 12 thÃ¡ng ká»ƒ tá»« ngÃ y xuáº¥t kho.</li>
                 </ul>
             </section>
 
             <section class="policy-doc__section">
-                <h2 class="policy-doc__heading">6. Thông Tin Liên Hệ &amp; Hỗ Trợ</h2>
-                <p class="policy-doc__text">Mọi thắc mắc về chính sách mua hàng, Quý khách vui lòng liên hệ:</p>
+                <h2 class="policy-doc__heading">6. ThÃ´ng Tin LiÃªn Há»‡ &amp; Há»— Trá»£</h2>
+                <p class="policy-doc__text">Má»i tháº¯c máº¯c vá» chÃ­nh sÃ¡ch mua hÃ ng, QuÃ½ khÃ¡ch vui lÃ²ng liÃªn há»‡:</p>
                 <div class="policy-table-wrap">
                     <table class="policy-table">
                         <tbody>
@@ -284,7 +296,7 @@
                                         href="mailto:marketing@bioelements.vn">marketing@bioelements.vn</a></td>
                             </tr>
                             <tr>
-                                <td class="policy-table__term policy-table__col-term">Hotline Hà Nội</td>
+                                <td class="policy-table__term policy-table__col-term">Hotline HÃ  Ná»™i</td>
                                 <td class="policy-table__value">0911.966.116</td>
                             </tr>
                             <tr>
@@ -293,26 +305,26 @@
                             </tr>
                             <tr>
                                 <td class="policy-table__term policy-table__col-term">Zalo</td>
-                                <td class="policy-table__value">0911.966.116 (HN) – 093.901.6969 (HCM)</td>
+                                <td class="policy-table__value">0911.966.116 (HN) â€“ 093.901.6969 (HCM)</td>
                             </tr>
                             <tr>
-                                <td class="policy-table__term policy-table__col-term">Trụ sở chính</td>
-                                <td class="policy-table__value">Tòa C, Nhà khách La Thành, 226 Vạn Phúc, Phường Ngọc Hà,
-                                    Hà Nội</td>
+                                <td class="policy-table__term policy-table__col-term">Trá»¥ sá»Ÿ chÃ­nh</td>
+                                <td class="policy-table__value">TÃ²a C, NhÃ  khÃ¡ch La ThÃ nh, 226 Váº¡n PhÃºc, PhÆ°á»ng Ngá»c HÃ ,
+                                    HÃ  Ná»™i</td>
                             </tr>
                             <tr>
-                                <td class="policy-table__term policy-table__col-term">Chi nhánh Tp. HCM</td>
-                                <td class="policy-table__value">114 Nguyễn Hoàng, Phường An Phú, TP. Thủ Đức</td>
+                                <td class="policy-table__term policy-table__col-term">Chi nhÃ¡nh Tp. HCM</td>
+                                <td class="policy-table__value">114 Nguyá»…n HoÃ ng, PhÆ°á»ng An PhÃº, TP. Thá»§ Äá»©c</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </section>
 
-            <p class="policy-doc__footer-note">Bioelements Việt Nam trân trọng cảm ơn Quý khách hàng đã tin tưởng và đồng
-                hành.</p>
-            <p class="policy-doc__footer-note policy-doc__footer-note--blue">Chính sách này có hiệu lực từ ngày ban hành
-                và có thể được cập nhật mà không cần thông báo trước.</p>
+            <p class="policy-doc__footer-note">Bioelements Viá»‡t Nam trÃ¢n trá»ng cáº£m Æ¡n QuÃ½ khÃ¡ch hÃ ng Ä‘Ã£ tin tÆ°á»Ÿng vÃ  Ä‘á»“ng
+                hÃ nh.</p>
+            <p class="policy-doc__footer-note policy-doc__footer-note--blue">ChÃ­nh sÃ¡ch nÃ y cÃ³ hiá»‡u lá»±c tá»« ngÃ y ban hÃ nh
+                vÃ  cÃ³ thá»ƒ Ä‘Æ°á»£c cáº­p nháº­t mÃ  khÃ´ng cáº§n thÃ´ng bÃ¡o trÆ°á»›c.</p>
         </article>
     </div>
 
@@ -325,13 +337,13 @@
                             loading="lazy">
                     </a>
                     <div class="site-footer__brand-body">
-                        <p class="site-footer__about">Công ty Cổ phần Labo De Dermafirm Việt Nam —<br>Nhà phân phối độc
-                            quyền thương hiệu Bioelements (USA) tại Việt Nam.</p>
+                        <p class="site-footer__about">CÃ´ng ty Cá»• pháº§n Labo De Dermafirm Viá»‡t Nam â€”<br>NhÃ  phÃ¢n phá»‘i Ä‘á»™c
+                            quyá»n thÆ°Æ¡ng hiá»‡u Bioelements (USA) táº¡i Viá»‡t Nam.</p>
                         <div class="site-footer__office">
-                            <p class="site-footer__office-title">Trụ sở chính · Hà Nội</p>
+                            <p class="site-footer__office-title">Trá»¥ sá»Ÿ chÃ­nh Â· HÃ  Ná»™i</p>
                             <p class="site-footer__contact-item">
                                 <i class="site-footer__icon fa-sharp fa-solid fa-location-dot"></i>
-                                Tòa C, Nhà khách La Thành, 226 Vạn Phúc , Phường Ngọc Hà, Thành Phố Hà Nội
+                                TÃ²a C, NhÃ  khÃ¡ch La ThÃ nh, 226 Váº¡n PhÃºc , PhÆ°á»ng Ngá»c HÃ , ThÃ nh Phá»‘ HÃ  Ná»™i
                             </p>
                             <p class="site-footer__contact-item">
                                 <i class="site-footer__icon fa-sharp fa-solid fa-phone"></i>
@@ -340,10 +352,10 @@
                         </div>
                         <hr class="site-footer__divider">
                         <div class="site-footer__office">
-                            <p class="site-footer__office-title">Chi nhánh · TP. Hồ Chí Minh</p>
+                            <p class="site-footer__office-title">Chi nhÃ¡nh Â· TP. Há»“ ChÃ­ Minh</p>
                             <p class="site-footer__contact-item">
                                 <i class="site-footer__icon fa-sharp fa-solid fa-location-dot"></i>
-                                114 Nguyễn Hoàng, Phường An Phú, TP. Thủ Đức.
+                                114 Nguyá»…n HoÃ ng, PhÆ°á»ng An PhÃº, TP. Thá»§ Äá»©c.
                             </p>
                             <p class="site-footer__contact-item">
                                 <i class="site-footer__icon fa-sharp fa-solid fa-phone"></i>
@@ -353,32 +365,32 @@
                     </div>
                 </div>
                 <div class="site-footer__col site-footer__col--explore">
-                    <p class="site-footer__col-title">Khám phá</p>
+                    <p class="site-footer__col-title">KhÃ¡m phÃ¡</p>
                     <ul class="site-footer__links">
-                        <li><a class="site-footer__link" href="#">Toàn bộ sản phẩm</a></li>
-                        <li><a class="site-footer__link" href="#">Liệu trình chuyên nghiệp</a></li>
+                        <li><a class="site-footer__link" href="#">ToÃ n bá»™ sáº£n pháº©m</a></li>
+                        <li><a class="site-footer__link" href="#">Liá»‡u trÃ¬nh chuyÃªn nghiá»‡p</a></li>
                         <li><a class="site-footer__link" href="ve-chung-toi.html">Tinh hoa Bioelements</a></li>
-                        <li><a class="site-footer__link" href="#">Công nghệ</a></li>
-                        <li><a class="site-footer__link" href="#">Cẩm nang</a></li>
-                        <li><a class="site-footer__link" href="#">Hệ thống Spa &amp; Clinic</a></li>
-                        <li><a class="site-footer__link" href="#">Tin tức</a></li>
-                        <li><a class="site-footer__link" href="lien-he.html">Liên hệ</a></li>
+                        <li><a class="site-footer__link" href="#">CÃ´ng nghá»‡</a></li>
+                        <li><a class="site-footer__link" href="#">Cáº©m nang</a></li>
+                        <li><a class="site-footer__link" href="#">Há»‡ thá»‘ng Spa &amp; Clinic</a></li>
+                        <li><a class="site-footer__link" href="#">Tin tá»©c</a></li>
+                        <li><a class="site-footer__link" href="lien-he.html">LiÃªn há»‡</a></li>
                     </ul>
                 </div>
                 <div class="site-footer__col site-footer__col--policy">
-                    <p class="site-footer__col-title">chính sách</p>
+                    <p class="site-footer__col-title">chÃ­nh sÃ¡ch</p>
                     <ul class="site-footer__links">
-                        <li><a class="site-footer__link" href="chinh-sach-mua-hang.html">Chính sách mua hàng</a></li>
-                        <li><a class="site-footer__link" href="chinh-sach-bao-mat.html">Chính sách bảo mật</a></li>
-                        <li><a class="site-footer__link" href="dieu-khoan-su-dung.html">Điều khoản sử dụng</a></li>
-                        <li><a class="site-footer__link" href="#">Chính sách vận chuyển</a></li>
+                        <li><a class="site-footer__link" href="chinh-sach-mua-hang.html">ChÃ­nh sÃ¡ch mua hÃ ng</a></li>
+                        <li><a class="site-footer__link" href="chinh-sach-bao-mat.html">ChÃ­nh sÃ¡ch báº£o máº­t</a></li>
+                        <li><a class="site-footer__link" href="dieu-khoan-su-dung.html">Äiá»u khoáº£n sá»­ dá»¥ng</a></li>
+                        <li><a class="site-footer__link" href="#">ChÃ­nh sÃ¡ch váº­n chuyá»ƒn</a></li>
                     </ul>
                 </div>
                 <div class="site-footer__contact">
                     <div class="site-footer__contact-block">
-                        <p class="site-footer__col-title">Liên hệ với chúng tôi</p>
+                        <p class="site-footer__col-title">LiÃªn há»‡ vá»›i chÃºng tÃ´i</p>
                         <div class="site-footer__email-group">
-                            <p class="site-footer__office-title">Kết nối qua email:</p>
+                            <p class="site-footer__office-title">Káº¿t ná»‘i qua email:</p>
                             <div class="site-footer__email-row">
                                 <i class="site-footer__icon fa-sharp fa-solid fa-envelope"></i>
                                 <a class="site-footer__email"
@@ -405,7 +417,7 @@
             </div>
             <div class="site-footer__bottom">
                 <hr class="site-footer__divider site-footer__divider--bottom">
-                <p class="site-footer__copy">© 2026 Bioelements Việt Nam · Labo De Dermafirm JSC</p>
+                <p class="site-footer__copy">Â© 2026 Bioelements Viá»‡t Nam Â· Labo De Dermafirm JSC</p>
             </div>
         </div>
     </footer>
@@ -415,7 +427,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"
         integrity="sha512-7rusk8kGPFynZWu26OKbTeI+QPoYchtxsmPeBqkHIEXJxeun4yJ4ISYe7C6sz9wdxeE1Gk3VxsIWgCZTc+vX3g=="
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/bio.js"></script>
 </body>
 
 </html>
+
+
