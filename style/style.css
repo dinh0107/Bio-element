@@ -800,10 +800,6 @@
   transform: translate(-50%, 0);
   pointer-events: auto;
 }
-.site-header__nav-inner li:has(> .site-header__submenu):hover .site-header__nav-caret,
-.site-header__nav-inner li:has(> .site-header__submenu):focus-within .site-header__nav-caret {
-  transform: rotate(180deg);
-}
 .site-header__nav-caret {
   font-size: 12px;
   line-height: 1;
@@ -979,8 +975,7 @@
     font-size: 18px;
     cursor: pointer;
   }
-  .site-header__nav-close:hover,
-  .site-header__nav-close:focus-visible {
+  .site-header__nav-close:hover, .site-header__nav-close:focus-visible {
     background: #e9f3fb;
     outline: none;
   }
@@ -1368,7 +1363,6 @@
 }
 .product-card__rating {
   display: inline-flex;
-  align-items: center;
   gap: 4px;
   font-family: "BeVietnamPro-Regular";
   font-size: 16px;
@@ -3151,7 +3145,7 @@
 }
 
 .about-why {
-  padding: 88px 60px;
+  padding: 88px 0;
   background: #ffffff;
   border-bottom: 1px solid #e9f3fb;
 }
@@ -3159,7 +3153,6 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
-  max-width: 1170px;
   margin: 0 auto;
 }
 .about-why__title {
@@ -3206,16 +3199,13 @@
 }
 @media (max-width: 991px) {
   .about-why {
-    padding: 64px 20px;
+    padding: 30px 0;
   }
   .about-why__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 @media (max-width: 575px) {
-  .about-why__grid {
-    grid-template-columns: 1fr;
-  }
   .about-why__icon {
     width: 180px;
     height: 180px;
@@ -3267,7 +3257,6 @@
   display: flex;
   flex-direction: column;
   gap: 72px;
-  max-width: 1170px;
   margin: 0 auto;
 }
 .about-journey__title {
@@ -3435,7 +3424,6 @@
   align-items: flex-start;
   justify-content: space-between;
   gap: 40px;
-  max-width: 1170px;
   margin: 0 auto;
   color: #ffffff;
 }
@@ -3749,7 +3737,6 @@
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  max-width: 1170px;
   margin: 0 auto;
 }
 .about-partners__title {
@@ -3951,15 +3938,14 @@
 }
 
 .contact-lookup {
-  padding: 64px 60px;
+  padding: 30px 0 20px 0;
 }
 @media (max-width: 991px) {
   .contact-lookup {
-    padding: 48px 20px;
+    padding: 30px 0 0 0;
   }
 }
 .contact-lookup__card {
-  max-width: 1170px;
   margin: 0 auto;
   padding: 40px;
   border: 1px solid #dce5ee;
@@ -4044,21 +4030,14 @@
 }
 
 .contact-channels {
-  padding: 0 60px 64px;
-}
-@media (max-width: 991px) {
-  .contact-channels {
-    padding: 0 20px 48px;
-  }
+  padding: 30px 0;
 }
 .contact-channels__title {
   margin: 0 auto 40px;
-  max-width: 1320px;
 }
 .contact-channels__grid {
   display: flex;
   gap: 30px;
-  max-width: 1170px;
   margin: 0 auto;
 }
 @media (max-width: 991px) {
@@ -4119,12 +4098,12 @@
 }
 
 .contact-consult {
-  padding: 64px 60px;
+  padding: 64px 0;
   background: #f4f8fc;
 }
 @media (max-width: 991px) {
   .contact-consult {
-    padding: 48px 20px;
+    padding: 30px 0;
   }
 }
 .contact-consult__intro {
@@ -4418,7 +4397,6 @@
 }
 
 .contact-offices {
-  max-width: 1170px;
   margin: 0 auto;
   padding-top: 64px;
 }
@@ -4515,16 +4493,15 @@
 }
 
 .contact-faq {
-  padding: 64px 60px;
+  padding: 64px 0;
 }
 @media (max-width: 991px) {
   .contact-faq {
-    padding: 48px 20px;
+    padding: 40px 0;
   }
 }
 .contact-faq__title {
   margin: 0 auto 40px;
-  max-width: 1320px;
 }
 .contact-faq__accordion {
   max-width: 1000px;
@@ -4813,7 +4790,6 @@
 .catalog-hero {
   position: relative;
   overflow: hidden;
-  background: #f3e8dc;
 }
 .catalog-hero__inner {
   width: 100%;
@@ -4857,10 +4833,6 @@
   line-height: 24px;
 }
 @media (max-width: 991px) {
-  .catalog-hero {
-    min-height: 360px;
-    padding: 72px 20px;
-  }
   .catalog-hero__content {
     max-width: 420px;
     padding: 28px;
@@ -4878,11 +4850,6 @@
   }
 }
 @media (max-width: 575px) {
-  .catalog-hero {
-    min-height: 420px;
-    align-items: flex-end;
-    padding: 24px 16px;
-  }
   .catalog-hero__content {
     max-width: none;
     gap: 16px;
@@ -5735,7 +5702,7 @@ input:checked + .catalog-filter-check__box::after {
 }
 
 .acne-about {
-  padding: 64px 60px 72px 60px;
+  padding: 64px 0 60px 0;
 }
 .acne-about .acne-about__img {
   border-radius: 16px;
@@ -6026,10 +5993,9 @@ input:checked + .catalog-filter-check__box::after {
 }
 
 .hybrid-section {
-  padding: 64px 60px 0 60px;
+  padding: 64px 0 0 0;
 }
 .hybrid-section .compare-table {
-  max-width: 1200px;
   margin: 40px auto;
   border-radius: 20px;
   overflow: hidden;
@@ -6055,9 +6021,9 @@ input:checked + .catalog-filter-check__box::after {
 .hybrid-section {
   /* Cột tiêu chí */
 }
-.hybrid-section .title {
+.hybrid-section .title-cell {
   font-size: 18px;
-  font-family: "BeVietnamPro-SemiBold";
+  font-family: "NotoSerif-Medium", serif;
   color: #1f2937;
 }
 .hybrid-section {
@@ -6139,11 +6105,14 @@ input:checked + .catalog-filter-check__box::after {
   gap: 16px;
 }
 
+.hero img {
+  width: 100%;
+}
+
 .product-detail {
   padding: 32px 60px 64px;
 }
 .product-detail__inner {
-  max-width: 1320px;
   margin: 0 auto;
 }
 .product-detail__layout {
@@ -6690,7 +6659,7 @@ input:checked + .catalog-filter-check__box::after {
 }
 @media (max-width: 575px) {
   .product-detail {
-    padding: 20px 16px 40px;
+    padding: 30px 0;
   }
   .product-detail__gallery-wrap {
     flex-direction: column-reverse;
@@ -6759,13 +6728,13 @@ input:checked + .catalog-filter-check__box::after {
   padding: 40px 0;
 }
 @media (max-width: 991px) {
-  .product-tabs__nav-wrap, .product-tabs__panels {
+  .product-tabs__nav-wrap {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 @media (max-width: 575px) {
-  .product-tabs__nav-wrap, .product-tabs__panels {
+  .product-tabs__nav-wrap {
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -7323,7 +7292,6 @@ input:checked + .catalog-filter-check__box::after {
   background: #ffffff;
 }
 .guide-chips__inner {
-  max-width: 1170px;
   margin: 0 auto;
   display: flex;
   align-items: flex-start;
@@ -7391,21 +7359,10 @@ input:checked + .catalog-filter-check__box::after {
 }
 
 .guide-page {
-  padding: 32px 60px 64px;
+  padding: 32px 0;
 }
 .guide-page__inner {
-  max-width: 1170px;
   margin: 0 auto;
-}
-@media (max-width: 991px) {
-  .guide-page {
-    padding: 24px 20px 48px;
-  }
-}
-@media (max-width: 575px) {
-  .guide-page {
-    padding: 20px 16px 40px;
-  }
 }
 
 .guide-featured {
@@ -7475,16 +7432,11 @@ input:checked + .catalog-filter-check__box::after {
 }
 .guide-article__media {
   flex: 0 0 302px;
-  max-width: 302px;
-  min-height: 217px;
   overflow: hidden;
 }
 .guide-article__media img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  display: block;
   transition: transform 0.5s ease;
 }
 .guide-article__body {
@@ -7758,7 +7710,7 @@ input:checked + .catalog-filter-check__box::after {
 }
 @media (max-width: 991px) {
   .guide-layout {
-    flex-direction: column;
+    display: block;
   }
   .guide-layout__sidebar {
     flex: none;
@@ -7947,7 +7899,7 @@ input:checked + .catalog-filter-check__box::after {
 }
 .guide-promo__card-rating {
   display: inline-flex;
-  align-items: center;
+  align-items: end;
   gap: 4px;
   color: #ffb535;
   font-family: "BeVietnamPro-Regular";
@@ -8161,7 +8113,7 @@ input:checked + .catalog-filter-check__box::after {
 .guide-sidebar__submit {
   width: 100%;
   height: 44px;
-  padding: 0 32px;
+  padding: 0 20px;
   border: 0;
   border-radius: 52px;
   background: #ffffff;
@@ -8250,11 +8202,10 @@ input:checked + .catalog-filter-check__box::after {
 }
 
 .guide-knowledge {
-  padding: 64px 60px;
+  padding: 64px 0;
   background: #ffffff;
 }
 .guide-knowledge__inner {
-  max-width: 1170px;
   margin: 0 auto;
   display: flex;
   align-items: flex-start;
@@ -8337,7 +8288,7 @@ input:checked + .catalog-filter-check__box::after {
 }
 @media (max-width: 991px) {
   .guide-knowledge {
-    padding: 48px 20px;
+    padding: 30px 0;
   }
   .guide-knowledge__inner {
     flex-direction: column;
@@ -8358,16 +8309,10 @@ input:checked + .catalog-filter-check__box::after {
 }
 
 .post-page {
-  padding: 24px 60px 56px;
+  padding: 24px 0 56px;
 }
 .post-page__inner {
-  max-width: 1170px;
   margin: 0 auto;
-}
-@media (max-width: 991px) {
-  .post-page {
-    padding: 24px 20px 48px;
-  }
 }
 
 .post-layout {
@@ -8863,7 +8808,6 @@ input:checked + .catalog-filter-check__box::after {
   background: #e8f2f8;
 }
 .post-related__inner {
-  max-width: 1170px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -8900,10 +8844,9 @@ input:checked + .catalog-filter-check__box::after {
 }
 
 .post-comments {
-  padding: 56px 60px 80px;
+  padding: 56px 0 80px;
 }
 .post-comments__inner {
-  max-width: 1170px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -9091,7 +9034,7 @@ input:checked + .catalog-filter-check__box::after {
 }
 @media (max-width: 767px) {
   .post-comments {
-    padding: 48px 20px 64px;
+    padding: 30px 0;
   }
   .post-comments__form-row {
     grid-template-columns: 1fr;
@@ -11007,7 +10950,7 @@ input:checked + .catalog-filter-check__box::after {
     gap: 20px;
   }
   .bio-profile__role {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 19px;
   }
   .bio-profile__avatar {
@@ -11063,7 +11006,8 @@ input:checked + .catalog-filter-check__box::after {
   .home-results__banner {
     padding: 20px;
   }
-  .home-results__banner-inner, .home-results__inner {
+  .home-results__banner-inner,
+  .home-results__inner {
     gap: 10px;
   }
   .home-blog__all {
@@ -11078,7 +11022,8 @@ input:checked + .catalog-filter-check__box::after {
   .bio-cta-form__submit span {
     display: none;
   }
-  .bio-title-display, .home-cta__title {
+  .bio-title-display,
+  .home-cta__title {
     font-size: 25px;
   }
   .home-cta {
@@ -11107,8 +11052,324 @@ input:checked + .catalog-filter-check__box::after {
     justify-content: end;
     font-size: 12px;
   }
-  .catalog-toolbar__filters, .catalog-toolbar__sort-select {
+  .catalog-toolbar__filters,
+  .catalog-toolbar__sort-select {
     font-size: 12px;
+  }
+  .product-card__body {
+    gap: 5px;
+    padding-top: 5px;
+  }
+  .product-card__price {
+    margin: 0;
+  }
+  .product-card__cart {
+    width: 38px;
+    height: 38px;
+  }
+  .product-card__cart img {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  .acne-about {
+    padding: 30px 0;
+  }
+  .acne-about h2 {
+    font-size: 22px;
+  }
+  .acne-about .acne-about__desc {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .acne-about__content {
+    margin-bottom: 10px;
+  }
+  .about-journey__title {
+    max-width: -moz-max-content;
+    max-width: max-content;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .about-journey__inner,
+  .about-journey__content {
+    gap: 10px;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    margin: 0 auto;
+  }
+  .about-journey__heading,
+  .hybrid-section-title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .about-journey__story {
+    gap: 20px;
+  }
+  .about-journey__text {
+    font-size: 14px;
+  }
+  .about-journey__caption-role {
+    font-size: 12px;
+  }
+  .hybrid-section {
+    padding: 30px 0;
+  }
+  .card-hybrid {
+    width: 48%;
+    padding: 10px;
+  }
+  .card-hybrid-list {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .hybrid-section-title {
+    margin-bottom: 10px;
+  }
+  .card-hybrid img {
+    width: 40px;
+    height: 40px;
+  }
+  .card-hybrid h5 {
+    font-size: 16px;
+    margin: 0;
+  }
+  .card-hybrid p {
+    font-size: 14px;
+  }
+  .card-hybrid .card-body {
+    padding: 10px 0;
+  }
+  .hybrid-section .compare-table {
+    margin: 20px 0 0 0;
+  }
+  .hybrid-section .icon {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .contact-faq__title {
+    margin: 0 auto 10px;
+  }
+  .contact-faq__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .contact-faq__answer {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .contact-hero__title {
+    font-size: 25px;
+  }
+  .contact-hero__copy {
+    min-height: 200px;
+    padding: 40px 20px 48px;
+  }
+  .contact-hero__inner {
+    gap: 10px;
+  }
+  .contact-hero__visual,
+  .contact-channels__icon,
+  .contact-lookup__icon {
+    display: none;
+  }
+  .contact-lookup__title {
+    font-size: 18px;
+  }
+  .contact-lookup__desc {
+    font-size: 14px;
+  }
+  .contact-lookup__input {
+    font-size: 14px;
+  }
+  .contact-channels__title {
+    margin: 0 auto 20px;
+  }
+  .contact-channels__name {
+    font-size: 18px;
+  }
+  .contact-channels__desc {
+    font-size: 14px;
+  }
+  .contact-channels__card {
+    gap: 10px;
+  }
+  .contact-consult__desc {
+    font-size: 14px;
+  }
+  .contact-consult__form-card,
+  .contact-consult__info-card {
+    padding: 20px;
+  }
+  .contact-consult__card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .contact-consult__offices {
+    gap: 0;
+  }
+  .guide-hero__search,
+  .guide-featured,
+  .guide-chips__search,
+  .guide-list__sort,
+  .guide-sidebar__widget,
+  .guide-sidebar__card,
+  .post-layout__toc,
+  .about-hero__desc {
+    display: none;
+  }
+  .guide-hero__title {
+    font-size: 25px;
+  }
+  .guide-hero__desc {
+    font-size: 14px;
+  }
+  .guide-chips__inner {
+    flex-wrap: nowrap;
+    overflow: scroll;
+  }
+  .guide-list__title {
+    font-size: 22px;
+    text-align: center;
+  }
+  .guide-list__head {
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+  .guide-promo__title {
+    font-size: 16px;
+  }
+  .guide-sidebar__lead {
+    margin-top: 30px;
+  }
+  .guide-knowledge__toc,
+  .about-therapy__visual {
+    display: none;
+  }
+  .guide-knowledge {
+    padding: 0;
+  }
+  .guide-knowledge__title {
+    font-size: 20px;
+  }
+  .post-layout {
+    gap: 0;
+  }
+  .post-page,
+  .post-related,
+  .about-hybrid {
+    padding: 30px 0;
+  }
+  .about-hero__title {
+    font-size: 20px;
+  }
+  .about-hero__subtitle {
+    font-size: 16px;
+  }
+  .about-hero__subtitle {
+    white-space: normal;
+    padding: 0;
+  }
+  .about-hero__inner {
+    min-height: auto;
+    padding-top: 48px;
+  }
+  .about-why__title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .about-why__label {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .about-hybrid__title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .about-hybrid__banner-inner {
+    gap: 10px;
+  }
+  .about-hybrid__lead {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .about-hybrid__quote-text {
+    margin-top: 24px;
+    font-size: 20px;
+    line-height: 34px;
+  }
+  .about-therapy__panel {
+    padding: 30px 10px !important;
+  }
+  .about-therapy__title {
+    font-size: 25px;
+    line-height: 33px;
+  }
+  .about-therapy__item-title {
+    font-size: 20px;
+    line-height: 15px;
+  }
+  .about-therapy__item-desc {
+    font-size: 14px;
+  }
+  .about-therapy {
+    height: auto;
+  }
+  .about-partners {
+    padding: 30px 0;
+  }
+  .about-partners__title {
+    font-size: 23px;
+    line-height: 30px;
+  }
+  .about-partners__inner {
+    gap: 0;
+  }
+  .catalog-hero__inner, .product-card__cart, .error-hero__search {
+    display: none;
+  }
+  .product-card__badge {
+    top: 15px;
+    left: 9px;
+  }
+  .bio-badge, .product-card__badge {
+    min-height: 20px;
+    font-size: 9px;
+  }
+  .product-card__category {
+    font-size: 12px;
+  }
+  .product-card__name {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .product-card__price-current, .product-card__price-old {
+    font-size: 12px;
+  }
+  .product-tabs {
+    padding-top: 0;
+  }
+  .product-tabs__link {
+    white-space: nowrap;
+  }
+  .product-tabs__nav {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  .product-tabs__panels {
+    padding-top: 10px;
+  }
+  .product-desc__title {
+    font-size: 25px;
+    line-height: 42px;
+    text-align: center;
+    margin: 0;
+  }
+  .post-article__header {
+    gap: 10px;
   }
 }
 html {

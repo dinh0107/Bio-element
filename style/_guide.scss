@@ -174,7 +174,6 @@
     background: $white;
 
     &__inner {
-        max-width: 1170px;
         margin: 0 auto;
         display: flex;
         align-items: flex-start;
@@ -244,20 +243,13 @@
 }
 
 .guide-page {
-    padding: 32px $section-pad-x 64px;
+    padding: 32px 0;
 
     &__inner {
-        max-width: 1170px;
         margin: 0 auto;
     }
 
-    @include maxWidth(991px) {
-        padding: 24px 20px 48px;
-    }
-
-    @include maxWidth(575px) {
-        padding: 20px 16px 40px;
-    }
+   
 }
 
 .guide-featured {
@@ -339,15 +331,11 @@
 
     &__media {
         flex: 0 0 302px;
-        max-width: 302px;
-        min-height: 217px;
         overflow: hidden;
 
         img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
-            display: block;
             transition: transform 0.5s ease;
         }
     }
@@ -659,7 +647,7 @@
     }
 
     @include maxWidth(991px) {
-        flex-direction: column;
+       display: block;
 
         &__sidebar {
             flex: none;
@@ -875,7 +863,7 @@
 
     &__card-rating {
         display: inline-flex;
-        align-items: center;
+        align-items: end;
         gap: 4px;
         color: #ffb535;
         @include BeVietnamPro-Regular;
@@ -1115,7 +1103,7 @@
     &__submit {
         width: 100%;
         height: 44px;
-        padding: 0 32px;
+        padding: 0 20px;
         border: 0;
         border-radius: 52px;
         background: $white;
@@ -1222,11 +1210,10 @@
 }
 
 .guide-knowledge {
-    padding: 64px $section-pad-x;
+    padding: 64px 0;
     background: $white;
 
     &__inner {
-        max-width: 1170px;
         margin: 0 auto;
         display: flex;
         align-items: flex-start;
@@ -1325,7 +1312,7 @@
     }
 
     @include maxWidth(991px) {
-        padding: 48px 20px;
+        padding: 30px 0;
 
         &__inner {
             flex-direction: column;

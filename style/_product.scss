@@ -2,7 +2,6 @@
     padding: 32px $section-pad-x 64px;
 
     &__inner {
-        max-width: 1320px;
         margin: 0 auto;
     }
 
@@ -630,7 +629,7 @@
     }
 
     @include maxWidth(575px) {
-        padding: 20px 16px 40px;
+        padding: 30px 0;
 
         &__gallery-wrap {
             flex-direction: column-reverse;
@@ -710,16 +709,14 @@
     }
 
     @include maxWidth(991px) {
-        &__nav-wrap,
-        &__panels {
+        &__nav-wrap {
             padding-left: 20px;
             padding-right: 20px;
         }
     }
 
     @include maxWidth(575px) {
-        &__nav-wrap,
-        &__panels {
+        &__nav-wrap {
             padding-left: 16px;
             padding-right: 16px;
         }

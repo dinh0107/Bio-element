@@ -153,7 +153,7 @@
 }
 
 .about-why {
-    padding: 88px $section-pad-x;
+    padding: 88px 0;
     background: $white;
     border-bottom: 1px solid $bio-light-blue;
 
@@ -161,7 +161,6 @@
         display: flex;
         flex-direction: column;
         gap: 40px;
-        max-width: 1170px;
         margin: 0 auto;
     }
 
@@ -217,7 +216,7 @@
     }
 
     @include maxWidth(991px) {
-        padding: 64px 20px;
+        padding: 30px 0;
 
         &__grid {
             grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -225,9 +224,7 @@
     }
 
     @include maxWidth(575px) {
-        &__grid {
-            grid-template-columns: 1fr;
-        }
+       
 
         &__icon {
             width: 180px;
@@ -284,7 +281,6 @@
         display: flex;
         flex-direction: column;
         gap: 72px;
-        max-width: 1170px;
         margin: 0 auto;
     }
 
@@ -481,7 +477,6 @@
         align-items: flex-start;
         justify-content: space-between;
         gap: 40px;
-        max-width: 1170px;
         margin: 0 auto;
         color: $white;
     }
@@ -845,7 +840,6 @@
         flex-direction: column;
         align-items: center;
         gap: 40px;
-        max-width: 1170px;
         margin: 0 auto;
     }
 

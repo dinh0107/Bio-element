@@ -339,10 +339,7 @@
             pointer-events: auto;
         }
 
-        li:has(> .site-header__submenu):hover .site-header__nav-caret,
-        li:has(> .site-header__submenu):focus-within .site-header__nav-caret {
-            transform: rotate(180deg);
-        }
+       
     }
 
     &__nav-caret {
@@ -1027,7 +1024,6 @@
 
     &__rating {
         display: inline-flex;
-        align-items: center;
         gap: 4px;
         @include BeVietnamPro-Regular;
         font-size: 16px;

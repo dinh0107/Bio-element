@@ -1,7 +1,6 @@
 .catalog-hero {
     position: relative;
     overflow: hidden;
-    background: #f3e8dc;
 
     &__inner {
         width: 100%;
@@ -52,8 +51,6 @@
     }
 
     @include maxWidth(991px) {
-        min-height: 360px;
-        padding: 72px 20px;
 
         &__content {
             max-width: 420px;
@@ -74,9 +71,6 @@
     }
 
     @include maxWidth(575px) {
-        min-height: 420px;
-        align-items: flex-end;
-        padding: 24px 16px;
 
         &__content {
             max-width: none;
@@ -1044,7 +1038,7 @@
 }
 
 .acne-about {
-    padding: 64px 60px 72px 60px;
+    padding: 64px 0 60px 0;
 
     .acne-about__img {
         border-radius: 16px;
@@ -1366,12 +1360,11 @@
 }
 
 .hybrid-section {
-    padding: 64px 60px 0 60px;
+    padding: 64px 0 0 0 ;
 
 
 
     .compare-table {
-        max-width: 1200px;
         margin: 40px auto;
         border-radius: 20px;
         overflow: hidden;
@@ -1400,9 +1393,9 @@
     }
 
     /* Cột tiêu chí */
-    .title {
+    .title-cell {
         font-size: 18px;
-        @include BeVietnamPro-SemiBold;
+        @include NotoSerifMedium;
         color: #1f2937;
     }
 
@@ -1490,4 +1483,10 @@
 .card-hybrid-list {
     display: flex;
     gap: 16px;
+}
+
+.hero{
+    img{
+        width: 100%;
+    }
 }
