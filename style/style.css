@@ -2039,7 +2039,8 @@
 }
 @media (max-width: 991px) {
   .home-experts {
-    padding: 30px 10px;
+    padding: 30px 0;
+    border-bottom: 0;
   }
   .home-experts__featured-content {
     padding-left: 0;
@@ -3132,7 +3133,7 @@
 @media (max-width: 767px) {
   .about-hero {
     min-height: auto;
-    padding: 0 20px 32px;
+    padding: 0 20px 0;
   }
   .about-hero__inner {
     min-height: 520px;
@@ -3207,8 +3208,8 @@
 }
 @media (max-width: 575px) {
   .about-why__icon {
-    width: 180px;
-    height: 180px;
+    width: 140px;
+    height: 140px;
   }
 }
 
@@ -9284,7 +9285,7 @@ input:checked + .catalog-filter-check__box::after {
 }
 
 .error-solutions {
-  padding: 64px 60px;
+  padding: 64px 0;
   background: #f4f8fc;
 }
 .error-solutions__inner {
@@ -9392,7 +9393,8 @@ input:checked + .catalog-filter-check__box::after {
 }
 @media (max-width: 991px) {
   .error-solutions {
-    padding: 48px 20px;
+    padding: 30px 0;
+    margin-bottom: 20px;
   }
   .error-solutions__grid {
     flex-wrap: wrap;
@@ -11277,13 +11279,15 @@ input:checked + .catalog-filter-check__box::after {
     min-height: auto;
     padding-top: 48px;
   }
-  .about-why__title {
+  .about-why__title,
+  .results__title {
     font-size: 22px;
     line-height: 30px;
   }
   .about-why__label {
     font-size: 12px;
     line-height: 20px;
+    width: 150px;
   }
   .about-hybrid__title {
     font-size: 20px;
@@ -11328,14 +11332,17 @@ input:checked + .catalog-filter-check__box::after {
   .about-partners__inner {
     gap: 0;
   }
-  .catalog-hero__inner, .product-card__cart, .error-hero__search {
+  .catalog-hero__inner,
+  .product-card__cart,
+  .error-hero__search {
     display: none;
   }
   .product-card__badge {
     top: 15px;
     left: 9px;
   }
-  .bio-badge, .product-card__badge {
+  .bio-badge,
+  .product-card__badge {
     min-height: 20px;
     font-size: 9px;
   }
@@ -11346,7 +11353,8 @@ input:checked + .catalog-filter-check__box::after {
     font-size: 14px;
     line-height: 19px;
   }
-  .product-card__price-current, .product-card__price-old {
+  .product-card__price-current,
+  .product-card__price-old {
     font-size: 12px;
   }
   .product-tabs {
@@ -11370,6 +11378,167 @@ input:checked + .catalog-filter-check__box::after {
   }
   .post-article__header {
     gap: 10px;
+  }
+  .error-solutions__title {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .error-channels__chat {
+    font-size: 16px;
+  }
+  .team-process__nav {
+    gap: 12px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    margin: 0;
+  }
+  .team-process__nav .nav-link {
+    font-size: 14px;
+    height: auto;
+    line-height: 35px;
+  }
+  .team-consult__heading-sub {
+    font-size: 20px;
+    line-height: 36px;
+  }
+  .team-consult__wrap {
+    gap: 0;
+  }
+  .ep-opt__name {
+    display: block;
+  }
+  .team-consult__photo {
+    display: none;
+  }
+  .about-hero__actions {
+    display: none;
+  }
+  .acne .about-hero__subtitle {
+    width: 353px;
+    font-size: 12px;
+  }
+  .acne-about .acne-about__subtitle {
+    margin-top: 0;
+    font-size: 14px;
+  }
+  .acne-about .acne-about__img {
+    margin-top: 20px;
+  }
+  .acne-solution,
+  .acne-steps,
+  .expert-expertise {
+    padding: 30px 0;
+  }
+  .acne-solution__center,
+  .progress-bottom {
+    display: none;
+  }
+  .acne-solution__item h3 {
+    font-size: 16px;
+  }
+  .acne-solution__item p {
+    font-size: 14px;
+  }
+  .acne-solution__item-img img {
+    width: 100%;
+  }
+  .acne-steps__list {
+    overflow-x: scroll;
+    gap: 30px;
+  }
+  .step-head {
+    text-align: center;
+  }
+  .step-head > img {
+    width: 130px;
+  }
+  .step-head__content img {
+    width: 25px;
+  }
+  .step-head__content span {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .step-body {
+    font-size: 12px;
+  }
+  .arrow-step {
+    top: 63px;
+    right: -36px;
+    width: 53px;
+  }
+  .acne-solution__item {
+    flex-direction: column-reverse !important;
+    gap: 10px;
+  }
+  .search-banner {
+    display: none;
+  }
+  .search-toolbar__count {
+    margin-top: 6px;
+    font-size: 12px;
+  }
+  .expert-story__photo {
+    height: auto;
+  }
+  .expert-story__content {
+    gap: 10px;
+    padding-top: 20px;
+  }
+  .achievements {
+    padding-bottom: 0;
+  }
+  .title-icon img {
+    width: 30px;
+    height: 30px;
+  }
+  .the-press {
+    padding-top: 0;
+  }
+  .info-press {
+    padding: 32px 20px;
+  }
+  .title {
+    margin-bottom: 28px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .feedback-master {
+    padding-bottom: 0;
+  }
+  .gallery-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 220px 84px;
+  }
+  .gallery-item--large {
+    grid-column: 1/span 4;
+    grid-row: 1;
+  }
+  .gallery-overlay p {
+    display: none;
+  }
+  .master-album {
+    padding: 0 0 20px 0;
+  }
+  .team-consult__heading-main {
+    font-size: 22px;
+  }
+  .master-connect {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .about-hybrid__quote-photo {
+    display: none;
+  }
+  .book-form {
+    margin-top: 30px;
+  }
+  .process-wap {
+    overflow-x: scroll;
   }
 }
 html {

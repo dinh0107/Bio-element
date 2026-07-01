@@ -1834,8 +1834,8 @@
     }
 
     @include maxWidth(991px) {
-        padding: 30px 10px;
-
+        padding: 30px 0;
+        border-bottom:0;
         &__featured-content {
             padding-left: 0;
         }

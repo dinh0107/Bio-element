@@ -138,7 +138,7 @@
 
     @include maxWidth(767px) {
         min-height: auto;
-        padding: 0 20px 32px;
+        padding: 0 20px 0;
 
         &__inner {
             min-height: 520px;
@@ -227,8 +227,8 @@
        
 
         &__icon {
-            width: 180px;
-            height: 180px;
+            width: 140px;
+            height: 140px;
         }
     }
 }
