@@ -106,7 +106,7 @@ AOS.init();
             e.stopPropagation();
 
             var $li = $(this).closest('li');
-            var $submenu = $li.children('.site-header__submenu');
+           var $submenu = $li.children('.site-header__submenu, .site-header__grid');
 
             if (!$submenu.length) {
                 return;

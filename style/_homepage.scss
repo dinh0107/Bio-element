@@ -288,7 +288,7 @@
             align-items: center;
             position: relative;
 
-            &::before {
+            &::affter {
                 content: "";
                 position: absolute;
                 width: 100%;
@@ -330,16 +330,24 @@
                 gap: 6px;
             }
         }
+        li:has(> .site-header__grid) {
+
+            >a {
+                gap: 6px;
+            }
+        }
 
         li:has(> .site-header__submenu):hover>.site-header__submenu,
-        li:has(> .site-header__submenu):focus-within>.site-header__submenu {
+        li:has(> .site-header__submenu):focus-within>.site-header__submenu  ,
+        li:has(> .site-header__grid):hover>.site-header__grid,
+        li:has(> .site-header__grid):focus-within>.site-header__grid{
             opacity: 1;
             visibility: visible;
             transform: translate(-50%, 0);
             pointer-events: auto;
         }
 
-       
+
     }
 
     &__nav-caret {
@@ -350,11 +358,11 @@
 
     &__submenu {
         position: absolute;
-        top: calc(100% + 8px);
+        top: calc(100% + -7px);
         left: 50%;
         z-index: 2;
-        padding: 8px 0;
         margin: 0;
+
         list-style: none;
         border: 1px solid $bio-border;
         border-radius: 8px;
@@ -377,6 +385,7 @@
             text-decoration: none;
             white-space: nowrap;
             transition: color 0.25s ease, background 0.25s ease;
+            border-radius: 8px;
 
             &:hover,
             &:focus-visible {
@@ -385,6 +394,20 @@
                 text-decoration: none;
             }
         }
+
+        >li {
+
+
+            &:hover {
+                ul {
+                    visibility: visible;
+                    opacity: 1;
+                    transform: translate(1%, 0);
+                    pointer-events: auto;
+                }
+            }
+        }
+
     }
 
     &__submenu-all {
@@ -576,6 +599,7 @@
             gap: 0;
             height: auto;
             width: 100%;
+
             li {
                 width: 100%;
             }
@@ -668,6 +692,61 @@
         }
     }
 }
+.menu-grid-title{
+    text-transform: capitalize;
+    @include BeVietnamPro-SemiBold;
+        color: #4e2921;
+}
+.site-header__grid {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: calc(100% - 5px);
+    left: 50%;
+    z-index: 99;
+    margin: 0;
+    list-style: none;
+    border: 1px solid #dce5ee;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 12px 32px rgba(10, 41, 58, 0.12);
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, 8px);
+    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+    padding:20px  10px;
+    ul{
+        padding: 0;
+        margin-top: 10px;
+        a{
+            @include BeVietnamPro-Regular;
+            font-size: 14px;
+        }
+    }
+}
+
+.menu-sub {
+    border: 1px solid #dce5ee;
+    border-radius: 8px;
+    background: #ffffff;
+    padding: 0;
+    left: 100%;
+    position: absolute;
+    top: 0;
+    visibility: visible;
+    opacity: 0;
+}
+
+.site-header__submenu {
+    &::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100px;
+        right: -14px;
+    }
+}
+
 
 // ─── Trust stats bar ───────────────────────────────────────────
 .home-stats {
@@ -1835,7 +1914,8 @@
 
     @include maxWidth(991px) {
         padding: 30px 0;
-        border-bottom:0;
+        border-bottom: 0;
+
         &__featured-content {
             padding-left: 0;
         }
@@ -1966,6 +2046,10 @@
         display: flex;
         align-items: center;
         gap: 16px;
+        &:hover{
+        text-decoration: none;
+
+        }
     }
 
     &__text {
@@ -2644,7 +2728,7 @@
         }
 
         &__visual-img {
-           display: none;
+            display: none;
         }
     }
 

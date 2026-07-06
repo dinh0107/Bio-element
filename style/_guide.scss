@@ -208,6 +208,9 @@
         &.is-active {
             background: $bio-blue-500;
             color: $white;
+            img {
+                filter: brightness(0) invert(1);
+            }
         }
     }
 

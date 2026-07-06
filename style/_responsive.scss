@@ -847,4 +847,23 @@
 .process-wap {
     overflow-x: scroll;
 }
+.site-header__grid{
+    position: unset;
+}
+    .site-header__nav-inner li {
+        flex-direction: column;
+    }
+
+    .site-header__grid {
+    border: 0;
+    box-shadow: unset;
+    opacity: 1;
+    visibility: visible;
+    transform: unset !important;
+    padding: 15px 0;
+    flex-direction: column;
+}
+.menu-grid-title {
+    font-size: 14px;
+}
 }

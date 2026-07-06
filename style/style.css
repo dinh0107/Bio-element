@@ -758,7 +758,7 @@
   align-items: center;
   position: relative;
 }
-.site-header__nav-inner li::before {
+.site-header__nav-inner li::affter {
   content: "";
   position: absolute;
   width: 100%;
@@ -793,8 +793,13 @@
 .site-header__nav-inner li:has(> .site-header__submenu) > a {
   gap: 6px;
 }
+.site-header__nav-inner li:has(> .site-header__grid) > a {
+  gap: 6px;
+}
 .site-header__nav-inner li:has(> .site-header__submenu):hover > .site-header__submenu,
-.site-header__nav-inner li:has(> .site-header__submenu):focus-within > .site-header__submenu {
+.site-header__nav-inner li:has(> .site-header__submenu):focus-within > .site-header__submenu,
+.site-header__nav-inner li:has(> .site-header__grid):hover > .site-header__grid,
+.site-header__nav-inner li:has(> .site-header__grid):focus-within > .site-header__grid {
   opacity: 1;
   visibility: visible;
   transform: translate(-50%, 0);
@@ -807,10 +812,9 @@
 }
 .site-header__submenu {
   position: absolute;
-  top: calc(100% + 8px);
+  top: calc(100% - 7px);
   left: 50%;
   z-index: 2;
-  padding: 8px 0;
   margin: 0;
   list-style: none;
   border: 1px solid #dce5ee;
@@ -834,11 +838,18 @@
   text-decoration: none;
   white-space: nowrap;
   transition: color 0.25s ease, background 0.25s ease;
+  border-radius: 8px;
 }
 .site-header__submenu a:hover, .site-header__submenu a:focus-visible {
   color: #4e2921;
   background: #e9f3fb;
   text-decoration: none;
+}
+.site-header__submenu > li:hover ul {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(1%, 0);
+  pointer-events: auto;
 }
 .site-header__submenu-all {
   font-family: "BeVietnamPro-SemiBold";
@@ -1072,6 +1083,60 @@
     -o-object-fit: contain;
        object-fit: contain;
   }
+}
+
+.menu-grid-title {
+  text-transform: capitalize;
+  font-family: "BeVietnamPro-SemiBold";
+  color: #4e2921;
+}
+
+.site-header__grid {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: calc(100% - 5px);
+  left: 50%;
+  z-index: 99;
+  margin: 0;
+  list-style: none;
+  border: 1px solid #dce5ee;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 12px 32px rgba(10, 41, 58, 0.12);
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, 8px);
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+  padding: 20px 10px;
+}
+.site-header__grid ul {
+  padding: 0;
+  margin-top: 10px;
+}
+.site-header__grid ul a {
+  font-family: "BeVietnamPro-Regular";
+  font-size: 14px;
+}
+
+.menu-sub {
+  border: 1px solid #dce5ee;
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 0;
+  left: 100%;
+  position: absolute;
+  top: 0;
+  visibility: visible;
+  opacity: 0;
+}
+
+.site-header__submenu::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100px;
+  right: -14px;
 }
 
 .home-stats {
@@ -2156,6 +2221,9 @@
   display: flex;
   align-items: center;
   gap: 16px;
+}
+.expert-card__footer:hover {
+  text-decoration: none;
 }
 .expert-card__text {
   flex: 1;
@@ -4892,6 +4960,7 @@
 }
 .catalog-breadcrumb__list .breadcrumb-item.active {
   color: #020d12;
+  font-family: "BeVietnamPro-Regular";
 }
 .catalog-breadcrumb__link {
   color: inherit;
@@ -7328,6 +7397,9 @@ input:checked + .catalog-filter-check__box::after {
   background: #0c608f;
   color: #ffffff;
 }
+.guide-chips__chip.is-active img {
+  filter: brightness(0) invert(1);
+}
 .guide-chips__search {
   display: inline-flex;
   align-items: center;
@@ -8368,7 +8440,7 @@ input:checked + .catalog-filter-check__box::after {
   margin: 0;
   color: inherit;
   font-family: "BeVietnamPro-Regular";
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
 }
 .post-layout__sidebar {
@@ -9952,6 +10024,12 @@ input:checked + .catalog-filter-check__box::after {
   opacity: 0.75;
   color: #0c608f;
   text-decoration: none;
+}
+.ec:hover {
+  border-radius: 16px;
+  border: 1px solid #0C608F;
+  background: #FFF;
+  box-shadow: 0 2px 10px 0 rgba(30, 115, 190, 0.25);
 }
 
 /* --- YÃªu cáº§u tham váº¥n (form) ---------------------------------------------- */
@@ -11540,6 +11618,24 @@ input:checked + .catalog-filter-check__box::after {
   }
   .process-wap {
     overflow-x: scroll;
+  }
+  .site-header__grid {
+    position: unset;
+  }
+  .site-header__nav-inner li {
+    flex-direction: column;
+  }
+  .site-header__grid {
+    border: 0;
+    box-shadow: unset;
+    opacity: 1;
+    visibility: visible;
+    transform: unset !important;
+    padding: 15px 0;
+    flex-direction: column;
+  }
+  .menu-grid-title {
+    font-size: 14px;
   }
 }
 html {

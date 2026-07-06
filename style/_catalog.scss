@@ -118,6 +118,7 @@
 
         .breadcrumb-item.active {
             color: $bio-body;
+            @include BeVietnamPro-Regular;
         }
     }
 
