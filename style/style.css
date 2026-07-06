@@ -9572,8 +9572,8 @@ input:checked + .catalog-filter-check__box::after {
 }
 
 /* ==========================================================================
-  Äá»™i ngÅ© chuyÃªn gia (team page)
-  ========================================================================== */
+   Äá»™i ngÅ© chuyÃªn gia (team page)
+   ========================================================================== */
 .team-hero {
   width: 100%;
 }
@@ -9951,6 +9951,7 @@ input:checked + .catalog-filter-check__box::after {
 .ec__link:hover {
   opacity: 0.75;
   color: #0c608f;
+  text-decoration: none;
 }
 
 /* --- YÃªu cáº§u tham váº¥n (form) ---------------------------------------------- */
