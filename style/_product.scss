@@ -3,6 +3,7 @@
 
     &__inner {
         margin: 0 auto;
+        max-width: 1320px;
     }
 
     &__layout {
@@ -15,7 +16,7 @@
         display: flex;
         gap: 16px;
         position: sticky;
-        top: 154px;
+        top: 74px;
         flex: 0 0 724px;
         max-width: 724px;
     }
@@ -1008,6 +1009,8 @@
         @include BeVietnamPro-SemiBold;
         font-size: 18px;
         line-height: 26px;
+        display: flex;
+        align-items: center;
     }
 
     &__meta {

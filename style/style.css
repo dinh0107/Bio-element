@@ -536,7 +536,7 @@
   position: absolute;
   left: calc(50% - 361.5px);
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-30%, -50%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -552,7 +552,7 @@
 }
 .hero-slider .owl-item.active .hero-slider__content {
   opacity: 1;
-  transform: translate(-50%, -50%);
+  transform: translate(-30%, -50%);
   transition-delay: 0.18s;
 }
 .hero-slider__text {
@@ -746,7 +746,7 @@
   height: 50px;
 }
 .site-header__nav-inner {
-  gap: 40px;
+  gap: 20px;
   height: 50px;
   padding: 0;
   margin: 0;
@@ -1958,13 +1958,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 20px;
 }
 
 .box-icon-scroll {
   display: none;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
 }
 .box-icon-scroll.active {
   display: flex;
@@ -6190,6 +6190,7 @@ input:checked + .catalog-filter-check__box::after {
 }
 .product-detail__inner {
   margin: 0 auto;
+  max-width: 1320px;
 }
 .product-detail__layout {
   display: flex;
@@ -6200,7 +6201,7 @@ input:checked + .catalog-filter-check__box::after {
   display: flex;
   gap: 16px;
   position: sticky;
-  top: 154px;
+  top: 74px;
   flex: 0 0 724px;
   max-width: 724px;
 }
@@ -7064,6 +7065,8 @@ input:checked + .catalog-filter-check__box::after {
   font-family: "BeVietnamPro-SemiBold";
   font-size: 18px;
   line-height: 26px;
+  display: flex;
+  align-items: center;
 }
 .product-reviews__meta {
   margin: 4px 0 0;
