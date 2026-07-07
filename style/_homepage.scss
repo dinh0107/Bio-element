@@ -3076,3 +3076,12 @@
 .home-therapies__featured-img.is-changing {
     opacity: 0;
 }
+
+
+.home-therapies__title{
+    span{
+        &:first-child{
+            color: #0C608F;
+        }   
+    }
+}

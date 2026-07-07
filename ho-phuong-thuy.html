@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="vi">
 
 <head>
@@ -13,6 +13,7 @@
         type="image/png">
     <link href="style/style.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/icon.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
         crossorigin="anonymous">
@@ -79,7 +80,7 @@
                     <ul class="site-header__nav-inner d-flex justify-content-center list-unstyled mb-0 position-relative">
                         <li class="is-active"><a href="index.html">Trang chủ</a></li>
                         <li>
-                            <a href="tay-trang-bioelements.html">
+                             <a href="ve-chung-toi.html">
                                 Giới thiệu
                                 <span class="site-header__nav-caret fa-sharp fa-solid fa-chevron-down"></span>
                             </a>
@@ -498,24 +499,24 @@
             <h2 class="title text-center">hình ảnh</h2>
 
             <div class="gallery-grid">
-                <div class="gallery-item gallery-item--large">
+                <a href="/images/chuyen-gia/gallery-1.jpg" data-fancybox="gallery" class="gallery-item gallery-item--large">
                     <img src="/images/chuyen-gia/gallery-1.jpg" alt="">
-                </div>
+                </a>
 
-                <div class="gallery-item">
+                <a href="/images/chuyen-gia/gallery-2.jpg" data-fancybox="gallery" class="gallery-item">
                     <img src="/images/chuyen-gia/gallery-2.jpg" alt="">
-                </div>
+                </a>
 
-                <div class="gallery-item">
+                <a href="/images/chuyen-gia/gallery-3.jpg" data-fancybox="gallery" class="gallery-item">
                     <img src="/images/chuyen-gia/gallery-3.jpg" alt="">
-                </div>
+                </a>
 
-                <div class="gallery-item">
+                <a href="/images/chuyen-gia/gallery-4.jpg" data-fancybox="gallery" class="gallery-item">
                     <img src="/images/chuyen-gia/gallery-4.jpg" alt="">
-                </div>
+                </a>
 
-                <div class="gallery-item gallery-item--more">
-                    <img src="/images/chuyen-gia/gallery-1.jpg" alt="">
+                <a href="/images/chuyen-gia/gallery-5.jpg" data-fancybox="gallery" class="gallery-item gallery-item--more">
+                    <img src="/images/chuyen-gia/gallery-5.jpg" alt="">
                     <div class="gallery-overlay">
                         <span>
                             <i class="fa-sharp fa-thin fa-images"></i>
@@ -523,7 +524,18 @@
                             Xem tất cả 12 ảnh
                         </span>
                     </div>
-                </div>
+                </a>
+            </div>
+
+            <!-- Hidden images to make up 12 photos -->
+            <div style="display:none;">
+                <a href="/images/chuyen-gia/thanh-tich-1.jpg" data-fancybox="gallery"></a>
+                <a href="/images/chuyen-gia/thanh-tich-2.jpg" data-fancybox="gallery"></a>
+                <a href="/images/chuyen-gia/thanh-tich-3.jpg" data-fancybox="gallery"></a>
+                <a href="/images/chuyen-gia/bai-viet-2.jpg" data-fancybox="gallery"></a>
+                <a href="/images/chuyen-gia/bao-chi.jpg" data-fancybox="gallery"></a>
+                <a href="/images/chuyen-gia/chuyen-gia-cup.jpg" data-fancybox="gallery"></a>
+                <a href="/images/chuyen-gia/expertise-overlay.jpg" data-fancybox="gallery"></a>
             </div>
         </div>
     </div>
@@ -641,7 +653,7 @@
                         <li><a class="site-footer__link" href="tinh-hoa-chi-tiet.html">Tinh hoa Bioelements</a></li>
                         <li><a class="site-footer__link" href="tinh-hoa-chi-tiet.html">Công nghệ</a></li>
                         <li><a class="site-footer__link" href="cam-nang.html">Cẩm nang</a></li>
-                        <li><a class="site-footer__link" href="lien-he.html">Hệ thống Spa &amp; Clinic</a></li>
+                        <li><a class="site-footer__link" href="ve-chung-toi.html">Về chúng tôi</a></li>
                         <li><a class="site-footer__link" href="tin-tuc.html">Tin tức</a></li>
                         <li><a class="site-footer__link" href="lien-he.html">Liên hệ</a></li>
                     </ul>
@@ -701,6 +713,13 @@
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous"></script>
     <script src="js/bio.js"></script>
+    <!-- Fancybox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+            // Options can be added here
+        });
+    </script>
 </body>
 
 </html>

@@ -333,7 +333,7 @@
         font-size: 16px;
         line-height: 24px;
 
-        li + li {
+        li+li {
             margin-top: 0;
         }
     }
@@ -405,7 +405,8 @@
         margin-right: -4px;
         margin-left: -4px;
         margin-top: 20px;
-        > [class*='col-'] {
+
+        >[class*='col-'] {
             padding-right: 4px;
             padding-left: 4px;
             margin-bottom: 8px;
@@ -469,7 +470,7 @@
             background: $white;
         }
 
-        input:checked + span {
+        input:checked+span {
             border-color: $bio-blue-500;
             background: $bio-blue-500;
             box-shadow: inset 0 0 0 3px $white;
@@ -671,10 +672,11 @@
 
 .product-tabs {
     padding: 30px 0;
+
     &__nav-wrap {
         margin: 0 auto;
-    background: #f4f8fc;
-    padding: 0 $section-pad-x;
+        background: #f4f8fc;
+        padding: 0 $section-pad-x;
     }
 
     &__nav {
@@ -828,6 +830,7 @@
     padding-top: 40px;
     border-top: 1px solid $bio-border;
     margin-top: 30px;
+
     &__title {
         margin: 0 0 24px;
         color: $bio-blue-500;
@@ -843,9 +846,10 @@
         gap: 24px;
         align-items: center;
         padding: 24px;
-        border: 1px solid $bio-border;
         border-radius: 12px;
         margin-bottom: 24px;
+        border: 0.5px solid #0C608F;
+        background: #F4F8FC;
     }
 
     &__score-wrap {
@@ -895,6 +899,9 @@
         @include BeVietnamPro-Regular;
         font-size: 16px;
         line-height: 24px;
+        i{
+            color: #FFC107;
+        }
     }
 
     &__bar-track {
@@ -1081,6 +1088,9 @@
         font-size: 16px;
         line-height: 24px;
         cursor: pointer;
+        &:hover{
+            background: #ffb535;
+        }
     }
 
     &__shown {
