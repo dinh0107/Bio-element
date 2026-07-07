@@ -3,12 +3,11 @@
     overflow: hidden;
 
     &__inner {
-        width: 100%;
         margin: 0 auto;
         position: absolute;
         z-index: 1;
         top: 50%;
-        left: 19%;
+        left: 12%;
         transform: translateY(-50%);
     }
 
@@ -117,7 +116,7 @@
         }
 
         .breadcrumb-item.active {
-            color: $bio-body;
+            color: #0D354B;
             @include BeVietnamPro-Regular;
         }
     }

@@ -1,3 +1,10 @@
+
+@include maxWidth(1024px) {
+  .catalog-hero__inner {
+    left: 7%;
+}
+}
+
 @include maxWidth(600px) {
     .box-icon-scroll {
         display: none !important;
@@ -813,57 +820,68 @@
     .feedback-master {
         padding-bottom: 0;
     }
-    .gallery-grid {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 220px 84px;
-}
 
-.gallery-item--large {
-    grid-column: 1 / span 4;
-    grid-row: 1;
-}
-.gallery-overlay{
-    p{
+    .gallery-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 220px 84px;
+    }
+
+    .gallery-item--large {
+        grid-column: 1 / span 4;
+        grid-row: 1;
+    }
+
+    .gallery-overlay {
+        p {
+            display: none;
+        }
+    }
+
+    .master-album {
+        padding: 0 0 20px 0;
+    }
+
+    .team-consult__heading-main {
+        font-size: 22px;
+    }
+
+    .master-connect {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .about-hybrid__quote-photo {
         display: none;
     }
-}
-.master-album {
-    padding: 0 0 20px 0;
-}
-.team-consult__heading-main {
-    font-size: 22px;
-}
-.master-connect {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 10px;
-}
-.about-hybrid__quote-photo{
-    display: none;
-}
-.book-form{
-    margin-top: 30px;
-}
-.process-wap {
-    overflow-x: scroll;
-}
-.site-header__grid{
-    position: unset;
-}
+
+    .book-form {
+        margin-top: 30px;
+    }
+
+    .process-wap {
+        overflow-x: scroll;
+    }
+
+    .site-header__grid {
+        position: unset;
+    }
+
     .site-header__nav-inner li {
         flex-direction: column;
     }
 
     .site-header__grid {
-    border: 0;
-    box-shadow: unset;
-    opacity: 1;
-    visibility: visible;
-    transform: unset !important;
-    padding: 15px 0;
-    flex-direction: column;
-}
-.menu-grid-title {
-    font-size: 14px;
-}
+        border: 0;
+        box-shadow: unset;
+        opacity: 1;
+        visibility: visible;
+        transform: unset !important;
+        padding: 15px 0;
+        flex-direction: column;
+    }
+
+    .menu-grid-title {
+        font-size: 14px;
+    }
 }

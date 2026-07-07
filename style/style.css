@@ -4868,12 +4868,11 @@
   overflow: hidden;
 }
 .catalog-hero__inner {
-  width: 100%;
   margin: 0 auto;
   position: absolute;
   z-index: 1;
   top: 50%;
-  left: 19%;
+  left: 12%;
   transform: translateY(-50%);
 }
 .catalog-hero__media {
@@ -4966,7 +4965,7 @@
   content: "/";
 }
 .catalog-breadcrumb__list .breadcrumb-item.active {
-  color: #020d12;
+  color: #0D354B;
   font-family: "BeVietnamPro-Regular";
 }
 .catalog-breadcrumb__link {
@@ -10972,6 +10971,11 @@ input:checked + .catalog-filter-check__box::after {
   width: 168px;
 }
 
+@media (max-width: 1024px) {
+  .catalog-hero__inner {
+    left: 7%;
+  }
+}
 @media (max-width: 600px) {
   .box-icon-scroll {
     display: none !important;
