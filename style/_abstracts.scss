@@ -61,42 +61,6 @@ $section-pad-x: 60px;
 
 
 @font-face {
-    font-family: 'BeVietnamPro-Regular';
-    font-display: swap;
-    font-weight: 400;
-    font-style: normal;
-    src: url('../webfonts/BeVietnamPro-Regular.ttf') format('opentype');
-}
-
-@font-face {
-    font-family: 'BeVietnamPro-SemiBold';
-    font-display: swap;
-    font-weight: 600;
-    font-style: normal;
-    src: url('../webfonts/BeVietnamPro-SemiBold.ttf') format('opentype');
-}
-
-@font-face {
-    font-family: 'BeVietnamPro-Bold';
-    font-display: swap;
-    font-weight: 700;
-    font-style: normal;
-    src: url('../webfonts/BeVietnamPro-Bold.ttf') format('opentype');
-}
-
-@font-face {
-    font-family: 'BeVietnamPro-ExtraBold.ttf';
-    font-display: swap;
-    font-weight: 800;
-    font-style: normal;
-    src: url('../webfonts/BeVietnamPro-ExtraBold.ttf') format('opentype');
-}
-
-
-
-
-
-@font-face {
     font-family: 'Cormorant-Regular';
     font-display: swap;
     font-weight: 400;
@@ -163,26 +127,21 @@ $section-pad-x: 60px;
 
 
 
-//BE
-
-
 @mixin BeVietnamPro-Regular {
-     font-family: 'BeVietnamPro-Regular';
+    @include AvertaRegular;
 }
 
 @mixin BeVietnamPro-SemiBold {
-      font-family: 'BeVietnamPro-SemiBold';
+    @include AvertaSemibold;
 }
 
 @mixin BeVietnamPro-Bold {
-    font-family: 'BeVietnamPro-Bold';
+    @include AvertaBold;
 }
 
 @mixin BeVietnamPro-ExtraBold {
-     font-family: 'BeVietnamPro-ExtraBold.ttf';
+    @include AvertaExtraBold;
 }
-
-//END
 
 
 @mixin AvertaRegular {
@@ -234,19 +193,19 @@ $section-pad-x: 60px;
 }
 
 @mixin Regular {
-    @include BeVietnamPro-Regular;
+    @include AvertaRegular;
 }
 
 @mixin Medium {
-    @include BeVietnamPro-SemiBold;
+    @include AvertaSemibold;
 }
 
 @mixin SemiBold {
-    @include BeVietnamPro-SemiBold;
+    @include AvertaSemibold;
 }
 
 @mixin Bold {
-    @include BeVietnamPro-Bold;
+    @include AvertaBold;
 }
 
 @mixin maxWidth($width) {
