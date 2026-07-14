@@ -643,11 +643,83 @@ AOS.init();
         });
     }
 
+    // layered product float + CSS drops (no video / no frame sequence)
+    function initHeroBottles() {
+        var stage = document.querySelector('[data-hero-stage]');
+        if (!stage) return;
+        requestAnimationFrame(function () {
+            stage.classList.add('is-ready');
+        });
+    }
+
+    // data-parallax="0.4" — offset theo scrollY (không đọc rect đã transform)
+    function initParallax() {
+        var reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+        var nodes = [];
+        var ticking = false;
+
+        function collect() {
+            nodes = Array.prototype.map.call(document.querySelectorAll('[data-parallax]'), function (el) {
+                el.style.removeProperty('--parallax-y');
+                el.style.removeProperty('--parallax-scale');
+                var top = el.getBoundingClientRect().top + window.pageYOffset;
+                return {
+                    el: el,
+                    speed: parseFloat(el.getAttribute('data-parallax'), 10) || 0.2,
+                    top: top,
+                    scale: el.hasAttribute('data-parallax-scale')
+                };
+            });
+        }
+
+        function update() {
+            ticking = false;
+            if (reduce.matches) {
+                nodes.forEach(function (item) {
+                    item.el.style.removeProperty('--parallax-y');
+                    item.el.style.removeProperty('--parallax-scale');
+                });
+                return;
+            }
+
+            var scrollY = window.pageYOffset;
+            var vh = window.innerHeight;
+
+            nodes.forEach(function (item) {
+                // khoảng element đi qua viewport → y rõ khi scroll
+                var y = (scrollY - item.top + vh * 0.35) * item.speed;
+                item.el.style.setProperty('--parallax-y', y.toFixed(1) + 'px');
+
+                if (item.scale) {
+                    var progress = Math.min(1, Math.max(0, (scrollY - item.top + vh * 0.2) / (vh * 1.2)));
+                    var s = 1 - progress * 0.12;
+                    item.el.style.setProperty('--parallax-scale', s.toFixed(3));
+                }
+            });
+        }
+
+        function onScroll() {
+            if (ticking) return;
+            ticking = true;
+            requestAnimationFrame(update);
+        }
+
+        collect();
+        update();
+        window.addEventListener('scroll', onScroll, { passive: true });
+        window.addEventListener('resize', function () {
+            collect();
+            onScroll();
+        }, { passive: true });
+    }
+
     document.addEventListener('DOMContentLoaded', function () {
         initMobileNav();
         initStickyHeader();
         initTherapyTabs();
         initCounters();
+        initHeroBottles();
+        initParallax();
     });
 
     window.jQuery(function ($) {

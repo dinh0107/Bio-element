@@ -23,6 +23,16 @@
 
     .hero-slide__bg {
         height: 400px;
+        object-fit: cover;
+    }
+
+    .home-hero {
+        min-height: auto;
+    }
+
+    .home-hero__stage {
+        width: min(92vw, 380px);
+        height: 400px;
     }
 
     .hero-slider__content {
